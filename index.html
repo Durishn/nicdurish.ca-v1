@@ -43,12 +43,14 @@
         		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
 			</ul>
 		</footer>
-	</body>
-	<script>
+
+		<!-- SCRIPTS -->
+		<script>
 		let navButton = document.getElementsByClassName("nav-button--bar")[0],
 			elementContainer = document.getElementsByClassName("nav-element--container")[0],
 			classes = elementContainer.classList;
 
 		navButton.onclick = function() { classes.contains("expand") ? classes.remove("expand") : classes.add("expand"); };
-	</script>
+		</script>
+	</body>
 </html>
