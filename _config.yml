@@ -3,7 +3,8 @@ title: Nic Durish
 email: n.durish@gmail.com
 author: Nic Durish
 description: Personal Site of Nic Durish
-url:
+url: nicdurish.org
+timezone: Canada/Eastern
 
 # Build settings
 permalink: :title/
