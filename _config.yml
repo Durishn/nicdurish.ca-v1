@@ -1,11 +1,22 @@
 # Site settings
-title:
-email:
-author:
-description:
+title: Nic Durish
+email: n.durish@gmail.com
+author: Nic Durish
+description: Personal Site of Nic Durish
 url:
 
 # Build settings
 permalink: :title/
 sass:
   sass_dir: css
+
+# Social icons
+show_social_icons: true
+facebook_username: ndurish
+linkedin_username: nicdurish
+github_username: Durishn
+instagram_username: nicdurish
+twitter_username: durishn
+couchsurfing_username: ndurish
+spotify_username: durishn
+youtube_username: NicDurish

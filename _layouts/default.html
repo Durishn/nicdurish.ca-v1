@@ -2,25 +2,7 @@
 <html lang="en">
   {% include head.html %}
   <body>
-  	<!-- Navigation -->
-	<header class="TopNav">
-	<nav>
-		<div class="nav-button--bar">
-			<!--<img src="/assets/menu.svg" alt="" class="nav-button"></img>-->
-		</div>
-		<div class="nav-element--container">
-    		<ul>
-        		<li><a class="nav-element" href="/">Home</a></li>
-	        	<li><a class="nav-element" href="/about">About</a></li>
-        		<li><a class="nav-element" href="/cv">Resume</a></li>
-        		<li><a class="nav-element" href="/projects">Projects</a></li>
-        		<li><a class="nav-element" href="/media">In The Media</a></li>
-        		<li><a class="nav-element" href="/scrapbook">Scrapbook</a></li>
-        		<li><a class="nav-element" href="/blog">Blog</a></li>
-    		</ul>
-    	</div>
-	</nav>
-	</header>
+  	{% include header.html %}
     {{ content }}
     {% include footer.html %}
   </body>
