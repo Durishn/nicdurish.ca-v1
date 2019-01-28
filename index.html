@@ -1,1 +1,54 @@
-Hello World
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Nic Durish</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head>
+	<body>
+
+		<!-- Navigation -->
+		<nav>
+			<div class="nav-button--bar">
+				<img src="/assets/menu.svg" alt="" class="nav-button"></img>
+			</div>
+			<div class="nav-element--container">
+	    		<ul>
+	        		<li><a class="nav-element" href="/">Home</a></li>
+		        	<li><a class="nav-element" href="/about">About</a></li>
+	        		<li><a class="nav-element" href="/cv">Resume</a></li>
+	        		<li><a class="nav-element" href="/projects">Projects</a></li>
+	        		<li><a class="nav-element" href="/media">In The Media</a></li>
+	        		<li><a class="nav-element" href="/scrapbook">Scrapbook</a></li>
+	        		<li><a class="nav-element" href="/blog">Blog</a></li>
+	    		</ul>
+	    	</div>
+		</nav>
+
+		<!-- MAIN -->
+		<div class="container">
+    		<div class="blurb">
+        		<h1>Hi there, I'm Nic Durish!</h1>
+				<p>BLAH BLAH <em>BLAH</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
+    		</div>
+		</div>
+
+		<!-- FOOTER -->
+		<footer>
+    		<ul>
+        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
+        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
+			</ul>
+		</footer>
+	</body>
+	<script>
+		let navButton = document.getElementsByClassName("nav-button--bar")[0],
+			elementContainer = document.getElementsByClassName("nav-element--container")[0],
+			classes = elementContainer.classList;
+
+		navButton.onclick = function() { classes.contains("expand") ? classes.remove("expand") : classes.add("expand"); };
+	</script>
+</html>
