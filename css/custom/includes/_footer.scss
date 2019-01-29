@@ -1,3 +1,15 @@
+.fixed-footer {
+	position: relative;
+	opacity: 0.9;
+	padding: 0px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
 .footer {
 	box-shadow: 1px -1px 2px;
 	position: fixed;
