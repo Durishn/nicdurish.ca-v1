@@ -1,16 +1,16 @@
-.fixed-footer {
-	position: relative;
+.footer {
+	//position: absolute;
 	//opacity: 0.9;
-	padding: 0px;
-	left: 0;
-	bottom: 0;
+	//padding: 0px;
+	//left: 0;
+	//bottom: 0;
 	width: 100%;
 	text-align: center;
 }
 
-.footer {
+.footer-index {
 	position: fixed;
-	//opacity: 0.9;
+	opacity: 0.9;
 	padding: 0px;
 	left: 0;
 	bottom: 0;
@@ -29,10 +29,10 @@
     padding: 10px;
     padding-left:20px;
     padding-right:20px;
-    color: $info;
+    color: $index-footer;
 
     &:hover {
-      color: $primary;
+      color: $index-footer-hover;
       cursor: pointer;
     }
   }

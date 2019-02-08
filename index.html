@@ -3,19 +3,47 @@ layout: index
 title: home
 ---
 
-<div class="back-image"></div>
-<!--<img class="back-image" style="background-image: url('../img/banner.jpg');" />-->
-
-<!--<section id="banner" class="py-5 d-none d-sm-block">
-  <div class="primary-overlay text-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-center">
-          <h1 class="display-3 pt-4">
-            Nic Durish
-          </h1>
+<div class="back-image">
+  <div class="back-image-filter">
+    <nav class="navbar navbar-expand-md navbar-index">
+      <div class="container">
+        <a href="{{ site.baseurl }}/" class="navbar-brand">
+          <h3 class="d-inline align-middle pl-3 text-primary">Nic Durish</h3>
+          <!--<img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">-->
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> <a href="{{ site.baseurl }}/about/" class="nav-link">About</a> </li>
+            <li class="nav-item"> <a href="{{ site.baseurl }}/resume/" class="nav-link">Resume</a> </li>
+            <li class="nav-item"> <a href="{{ site.baseurl }}/projects/" class="nav-link">Projects</a> </li> 
+            <li class="nav-item"> <a href="{{ site.baseurl }}/press/" class="nav-link">Press</a> </li>
+            <li class="nav-item"> <a href="{{ site.baseurl }}/scrapbook/" class="nav-link">Scrapbook</a> </li> 
+            <li class="nav-item"> <a href="{{ site.baseurl }}/blog/" class="nav-link">Blog</a> </li>
+          </ul>
+        </div>
       </div>
-      <div class="col-md-6"></div>
-    </div>
+    </nav>
+
+    <footer class="footer footer-index">
+      <div class="container text-center text-info">
+        <div class="row">
+          <div class="col social-links-container">
+            {% if site.show_social_icons %}
+              {% include social_links.html %}
+            {% endif %}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col copyright">
+            All content copyright Nic Durish &copy; {{ site.time | date: '%Y' }}.
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
-</section>-->
+</div>
+
+</section>

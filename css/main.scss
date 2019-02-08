@@ -5,23 +5,28 @@
 @import 'custom/includes/header';
 @import 'custom/includes/footer';
 
+body{
+	color: gray;
+}
+
 .back-image{
 	padding:0px;
  	height:100%;
  	width:100%;
- 	position:absolute;
- 	background: url('../img/banner.jpg');
+ 	position: absolute;
+ 	background-image: url('../img/banner.jpg');
 	background-repeat: no-repeat;
 	background-position: center top;
-    background-size: 210vh;
+    background-size: cover;
+    filter: greyscale(100%);
 }
 
-//body{
-//	background: url('../img/banner.jpg');
-//	background-repeat: no-repeat;
-//	background-position: center top;
-//    background-size: 210vh;
-//}
+.back-image-filter{
+	padding:0px;
+
+	//background-color: black;
+	//opacity: 0.4;
+}
 
 #banner{
 	position: relative;
