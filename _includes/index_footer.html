@@ -1,0 +1,16 @@
+  <footer class="index-footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col social-links-container">
+          {% if site.show_social_icons %}
+            {% include social_links.html %}
+          {% endif %}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col index-copyright">
+          All content copyright Nic Durish &copy; {{ site.time | date: '%Y' }}.
+        </div>
+      </div>
+    </div>
+  </footer>
