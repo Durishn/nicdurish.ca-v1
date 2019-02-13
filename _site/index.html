@@ -11,36 +11,50 @@
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
   <body>
-    <div class="back-image">
-  <div class="back-image-filter">
-    <nav class="navbar navbar-expand-md navbar-index">
-      <div class="container">
-        <a href="/" class="navbar-brand">
-          <h3 class="d-inline align-middle pl-3 text-primary">Nic Durish</h3>
-          <!--<img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">-->
-        </a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"> <a href="/about/" class="nav-link">About</a> </li>
-            <li class="nav-item"> <a href="/resume/" class="nav-link">Resume</a> </li>
-            <li class="nav-item"> <a href="/projects/" class="nav-link">Projects</a> </li> 
-            <li class="nav-item"> <a href="/press/" class="nav-link">Press</a> </li>
-            <li class="nav-item"> <a href="/scrapbook/" class="nav-link">Scrapbook</a> </li> 
-            <li class="nav-item"> <a href="/blog/" class="nav-link">Blog</a> </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+		<!-- NAV -->
+<nav class="nav">
+  <div class="container">
+    <div class="logo">
+      <a href="/" class="navbar-brand">
+        <img id="logo" src="/img/Logo_White.svg" width="60px" height="60px" class="d-inline-block align-top" alt="">
+      </a>
+    </div>
+    <div id="mainListDiv" class="main_list">
+        <ul class="navlinks">
+          <li class="nav-item"> <a href="/about/" class="nav-link">About</a> </li>
+          <li class="nav-item"> <a href="/projects/" class="nav-link">Projects</a> </li> 
+          <li class="nav-item"> <a href="/press/" class="nav-link">Press</a> </li>
+          <li class="nav-item"> <a href="/scrapbook/" class="nav-link">Scrapbook</a> </li> 
+          <li class="nav-item"> <a href="/resume/" class="nav-link">Resume</a> </li>
+          <li class="nav-item"> <a href="/blog/" class="nav-link">Blog</a> </li>
+        </ul>
+    </div>
+    <span class="navTrigger">
+        <i></i>
+        <i></i>
+        <i></i>
+    </span>
+  </div>
+</nav>
+	    <section class="back-image">
+  </section>
 
-    <footer class="footer footer-index">
-      <div class="container text-center text-info">
-        <div class="row">
-          <div class="col social-links-container">
-            
-              <div class="social-links">
+  <div class="center-div">
+    <div class="row">
+      <div class="col">
+        <span class="index-title thin">Nic</span>
+        <span class="index-title thick"><b>Durish</b></span>
+      </div>
+    <div class="row index-spacer1"></div>
+    <div class="row"><h3 class="index-subtitle">Innovator &nbsp; · &nbsp; Computer Scientist &nbsp; · &nbsp; Designer</h3></div>
+  </div>
+
+  <footer class="index-footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col social-links-container">
+          
+            <div class="social-links">
 
 	<!-- Email -->
 	<a href="mailto:n.durish@gmail.com">
@@ -87,25 +101,26 @@
 		<i class="fab fa-github fa-2x"></i>
 	</a>
 </div>
-            
-          </div>
-        </div>
-        <div class="row">
-          <div class="col copyright">
-            All content copyright Nic Durish &copy; 2019.
-          </div>
+          
         </div>
       </div>
-    </footer>
-  </div>
-</div>
-
-</section>
-
-	<!-- JAVASCRIPT -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <div class="row">
+        <div class="col index-copyright">
+          All content copyright Nic Durish &copy; 2019.
+        </div>
+      </div>
+    </div>
+  </footer>
   </body>
+
+
+	<!-- Necessary Libaries -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></script>
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+  <script src="scripts.js"></script>
+
+
 </html>
