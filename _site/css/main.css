@@ -8,9 +8,9 @@
 
 .nav div.logo a { text-decoration: none; color: #ffffff; font-size: 2rem; }
 
-.nav div.logo a:hover { color: #7f7f7f; }
+.nav div.logo a:hover { color: #ff0056; }
 
-a img:hover #logo { fill: #7f7f7f; }
+a img:hover #logo { fill: #ff0056; }
 
 .nav div.main_list { height: 5vh; float: right; }
 
@@ -20,7 +20,7 @@ a img:hover #logo { fill: #7f7f7f; }
 
 .nav div.main_list ul li a { text-decoration: none; color: #ffffff; line-height: 25px; font-size: 1rem; }
 
-.nav div.main_list ul li a:hover { color: #7f7f7f; }
+.nav div.main_list ul li a:hover { color: #ff0056; }
 
 .navTrigger { display: none; }
 
@@ -95,7 +95,7 @@ a img:hover #logo { fill: #7f7f7f; }
 .social-links-container { margin-top: 5px; }
 
 .social-links a { text-decoration: none; margin-top: 10px; padding: 10px; padding-left: 20px; padding-right: 20px; color: #ffffff; }
-.social-links a:hover { color: #7f7f7f; cursor: pointer; }
+.social-links a:hover { color: #ff0056; cursor: pointer; }
 
 .fab { margin-top: 10px; }
 
@@ -127,7 +127,7 @@ html, body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-s
 .index-spacer2 { height: 10vh; }
 
 .social-links a { text-decoration: none; margin-top: 30px; padding: 10px; padding-left: 25px; padding-right: 25px; size: 50px; color: #ffffff; }
-.social-links a:hover { color: #7f7f7f; cursor: pointer; }
+.social-links a:hover { color: #ff0056; cursor: pointer; }
 
 .index-footer { position: fixed; padding: 0px; left: 0; bottom: 0; width: 100%; text-align: center; }
 
