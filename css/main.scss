@@ -35,11 +35,17 @@ figure{
   background-color: $default-background;
 }
 
-.banner{
+.banner-div{
 	height: 25vh;
 	width: 100%;
-	position: center top;
+	display: block;
 	top: 0;
+}
+
+.banner{
+    width: 100%;
+	display: block;
+	position: center center;
 }
 
 /*

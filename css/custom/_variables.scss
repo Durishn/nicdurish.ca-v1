@@ -1,13 +1,18 @@
-$primary: #00B1FF;
+$primary: #152335;
+$secondary: #cf9623;
 
-$nav: #ffffff; // white
-$nav-hover: #ff0056; // pink
+$nav: #ffffff; 
+$nav-hover: $secondary;
 $nav-back: $primary;
-$fixed-nav-back: #323639;
+$fixed-nav-back: #323639; //PDFViewer Colour
 
-$index-footer: #ffffff; // white
-$index-footer-hover: #ff0056; // pink
+$index-footer: #ffffff;
+$index-footer-hover: $secondary;
 
-$index-background: #00B1FF;
+$index-background: $primary;
 
-$default-background: #00B1FF;
+$default-background: #e8e7e5;
+
+
+//OLD PRIMARY - 00B1FF
+//OLD SECONDARY - ff0056
