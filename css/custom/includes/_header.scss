@@ -6,6 +6,7 @@
     width: 100%;
     height: 65px;
     position: fixed;
+    top: 0;
     text-align: center;
     font-family: "Roboto", Roboto, Arial, sans-serif;
 }
@@ -14,6 +15,7 @@
     float: left;
     width: auto;
     height: auto;
+    padding-top: 5px;
     padding-left: 2rem;
 }
 
@@ -33,6 +35,7 @@ a img:hover #logo {
 
 .nav div.main_list {
     height: 5vh;
+    padding-top: 12px;
     float: right;
 }
 
@@ -319,5 +322,6 @@ a img:hover #logo {
 
 .affix {
     padding: 0;
-    background-color: $index-navbar;
+    height: 50px;
+    background-color: $primary;
 }

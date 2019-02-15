@@ -17,30 +17,29 @@ html,
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
-  	line-height: calc(1.3em + (2 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+  line-height: calc(1.3em + (2 - 1.2) * ((100vw - 300px)/(1600 - 300)));
 	height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.back-image{
-    width: 100%;
-    height: 100vh;
-    position: relative;
+figure{
+  margin: 0;
 }
 
-.back-image::before{
-    width: 100%;
-    height: 100%;
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    background-image: url('../img/banner.jpg');
-    background-position: center top;
-  	background-size:cover;
-  	filter: blur(1.5px) brightness(80%) contrast(150%);
-  	-webkit-filter: blur(1.5px) brightness(80%) contrast(150%); /* Safari */
+/*
+* DEFAULT SPECIFIC STYLES
+*/
+.default-body{
+  background-color: $primary;
+}
+
+/*
+* INDEX SPECIFIC STYLES
+*/
+.index-body{
+  background-color: $background;
 }
 
 .back-image-filter{
@@ -55,9 +54,11 @@ body {
     content: "";
     position: absolute;
     top: 0; left: 0;
-    background-color: #00B1FF;
+    background-color: $background;
     background-position: center top;
   	background-size:cover;
+    filter: blur(5px) brightness(80%) contrast(150%);
+    -webkit-filter: blur(5px) brightness(80%) contrast(150%); /* Safari */
   	opacity: 0.3;
 }
 
@@ -137,17 +138,73 @@ body {
 	font-size:0.4rem;
 }
 
-#banner{
-	position: relative;
-	background: url('../img/banner.jpg');
-	min-height: 250px;
+.crossfade > figure {
+  animation: imageAnimation 48s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center top;
+  color: transparent;
+  height: 100%; width: 100%;
+  left: 0px; top: 0px;
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+  filter: blur(2px) brightness(75%) contrast(150%);
+  -webkit-filter: blur(2px) brightness(75%) contrast(150%); /* Safari */
+}
 
-	.primary-overlay{
-		background: rgba(141,2,31,0.8);
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
+.crossfade > figure:nth-child(1) { 
+  background-image: url('../img/banner0.jpg'); 
+}
+
+.crossfade > figure:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url('../img/banner1.jpg');
+}
+
+.crossfade > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: url('../img/banner2.jpg');
+}
+
+.crossfade > figure:nth-child(4) {
+  animation-delay: 18s;
+  background-image: url('../img/banner3.jpg');
+}
+
+.crossfade > figure:nth-child(5) {
+  animation-delay: 24s;
+  background-image: url('../img/banner4.jpg');
+}
+.crossfade > figure:nth-child(6) {
+  animation-delay: 30s;
+  background-image: url('../img/banner5.jpg');
+}
+.crossfade > figure:nth-child(7) {
+  animation-delay: 36s;
+  background-image: url('../img/banner6.jpg');
+}
+.crossfade > figure:nth-child(8) {
+  animation-delay: 42s;
+  background-image: url('../img/banner7.jpg');
+}
+
+@keyframes 
+imageAnimation {  0% {
+ animation-timing-function: ease-in;
+ opacity: 0;
+}
+ 8% {
+ animation-timing-function: ease-out;
+ opacity: 1;
+}
+ 17% {
+ opacity: 1
+}
+ 25% {
+ opacity: 0
+}
+ 100% {
+ opacity: 0
+}
 }

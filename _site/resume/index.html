@@ -11,37 +11,42 @@
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
-  <body>
+  <body class="default-body">
   	<!-- NAV -->
-<nav class="navbar navbar-expand-md navbar-dark">
+<nav class="nav">
   <div class="container">
-    <a href="/" class="navbar-brand">
-      <img src="/img/Logo_White.svg" width="40" height="40" class="d-inline-block align-top" alt="">
-    </a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"> <a href="/about/" class="nav-link">About</a> </li>
-        <li class="nav-item"> <a href="/resume/" class="nav-link">Resume</a> </li>
-        <li class="nav-item"> <a href="/projects/" class="nav-link">Projects</a> </li> 
-        <li class="nav-item"> <a href="/media/" class="nav-link">Media</a> </li>
-        <li class="nav-item"> <a href="/scrapbook/" class="nav-link">Scrapbook</a> </li> 
-        <li class="nav-item"> <a href="/blog/" class="nav-link">Blog</a> </li>
-      </ul>
+    <div class="logo">
+      <a href="/" class="navbar-brand">
+        <svg class="logo-img" width="40px" height:"40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538.6 538.6"><style type="text/css">  
+          .st0{fill:#FFFFFF;}
+          .st1{fill:none;stroke:#FFFFFF;stroke-width:35;stroke-linecap:round;stroke-miterlimit:10;}
+        </style><path class="st0" d="M477 269.3c0 114.7-93 207.7-207.7 207.7 -114.7 0-207.7-93-207.7-207.7h17.5c0 104.9 85.3 190.2 190.2 190.2s190.2-85.3 190.2-190.2S374.2 79.1 269.3 79.1V61.6C384 61.6 477 154.6 477 269.3z"/><path class="st0" d="M428.5 110.1C386 67.5 329.4 44.1 269.3 44.1v35c104.9 0 190.2 85.3 190.2 190.2s-85.3 190.2-190.2 190.2S79.1 374.2 79.1 269.3h-35c0 60.2 23.4 116.7 66 159.2 42.5 42.5 99.1 66 159.2 66s116.7-23.4 159.2-66c42.5-42.5 66-99.1 66-159.2S471.1 152.6 428.5 110.1z"/><line class="st1" x1="269.3" y1="61.6" x2="269.3" y2="477"/><line class="st1" x1="61.6" y1="269.3" x2="61.6" y2="61.6"/><line class="st1" x1="269.3" y1="477" x2="61.6" y2="61.6"/></svg>
+      </a>
     </div>
+    <div id="mainListDiv" class="main_list">
+        <ul class="navlinks">
+          <li class="nav-item"> <a href="/about/" class="nav-link">About</a> </li>
+          <li class="nav-item"> <a href="/projects/" class="nav-link">Projects</a> </li> 
+          <li class="nav-item"> <a href="/press/" class="nav-link">Press</a> </li>
+          <li class="nav-item"> <a href="/scrapbook/" class="nav-link">Scrapbook</a> </li> 
+          <li class="nav-item"> <a href="/resume/" class="nav-link">Resumé</a> </li>
+          <li class="nav-item"> <a href="/blog/" class="nav-link">Blog</a> </li>
+        </ul>
+    </div>
+    <span class="navTrigger">
+        <i></i>
+        <i></i>
+        <i></i>
+    </span>
   </div>
 </nav>
-
-
     <embed src="/files/DurishN_CV.pdf" type="application/pdf" width="100%" height="100%-50px" />
-    <footer class="footer footer-light page-footer">
-  <div class="container text-center text-info">
-    <div class="row">
-      <div class="col social-links-container">
-        
-          <div class="social-links">
+      <footer class="footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col social-links-container">
+          
+            <div class="social-links">
 
 	<!-- Email -->
 	<a href="mailto:n.durish@gmail.com">
@@ -88,26 +93,22 @@
 		<i class="fab fa-github fa-2x"></i>
 	</a>
 </div>
-        
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col index-copyright">
+          All content copyright Nic Durish &copy; 2019.
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col copyright">
-        All content copyright Nic Durish &copy; 2019.
-      </div>
-    </div>
-  </div>
-</footer>
+  </footer>
   </body>
 
-	<!-- Necessary Libaries -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-	<!-- Jquery needed -->
+  <!-- Necessary Libaries -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/scripts.js"></script>
+
+  <script src="../scripts.js"></script>
   
 </html>
