@@ -1,9 +1,13 @@
 $primary: #00B1FF;
 
-$index-navbar: #111;
-$index-nav: #ffffff; // white
-$index-nav-hover: #ff0056; // pink
+$nav: #ffffff; // white
+$nav-hover: #ff0056; // pink
+$nav-back: $primary;
+$fixed-nav-back: #323639;
+
 $index-footer: #ffffff; // white
 $index-footer-hover: #ff0056; // pink
-$info: #ffffff; // white 
-$background: #00B1FF;
+
+$index-background: #00B1FF;
+
+$default-background: #00B1FF;

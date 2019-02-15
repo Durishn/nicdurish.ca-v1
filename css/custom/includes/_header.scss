@@ -21,21 +21,16 @@
 
 .nav div.logo a {
     text-decoration: none;
-    color: $index-nav;
+    color: $nav;
     font-size: 2rem;
 }
 
 .nav div.logo a:hover {
-    color: $index-nav-hover;
-}
-
-a img:hover #logo { 
-  fill:  $index-nav-hover;
+    color: $nav-hover;
 }
 
 .nav div.main_list {
-    height: 5vh;
-    padding-top: 12px;
+    height: 65px;
     float: right;
 }
 
@@ -50,20 +45,20 @@ a img:hover #logo {
 
 .nav div.main_list ul li {
     width: auto;
-    height: 2.5rem;
+    height: 65px;
     padding: 0;
-    padding-right: 2rem;
+    padding-right: 2.5rem;
 }
 
 .nav div.main_list ul li a {
     text-decoration: none;
-    color: $index-nav;
-    line-height: 25px;
-    font-size: 1rem;
+    color: $nav;
+    line-height: 65px;
+    font-size: 1.1rem;
 }
 
 .nav div.main_list ul li a:hover {
-    color: $index-nav-hover;
+    color: $nav-hover;
 }
 
 .navTrigger {
@@ -322,6 +317,14 @@ a img:hover #logo {
 
 .affix {
     padding: 0;
-    height: 50px;
-    background-color: $primary;
+    background-color: $nav-back;
+}
+
+.fixed-nav {
+    padding: 0;
+    background-color: $fixed-nav-back;
+}
+
+.fixed-nav-div {
+    height:65px;
 }
