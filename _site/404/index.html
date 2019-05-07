@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="description" content="">
@@ -11,8 +11,90 @@
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<link rel="shortcut icon" type="image/png" href="/img/favicon.png">
 </head>
-  <body class="default-body">
-    <div class="background">
+	<body>
+	    
+
+  		<!-- NAV -->
+<nav class="nav fixed-nav">
+  <div class="container">
+
+    <!-- Logo to Homepage-->
+    <div class="logo">
+      <a href="/" class="navbar-brand">
+        <svg width="55px" height:"55px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538.6 538.6"><path class="st0" d="M477 269.3c0 114.7-93 207.7-207.7 207.7 -114.7 0-207.7-93-207.7-207.7h17.5c0 104.9 85.3 190.2 190.2 190.2s190.2-85.3 190.2-190.2S374.2 79.1 269.3 79.1V61.6C384 61.6 477 154.6 477 269.3z"/><path class="st0" d="M428.5 110.1C386 67.5 329.4 44.1 269.3 44.1v35c104.9 0 190.2 85.3 190.2 190.2s-85.3 190.2-190.2 190.2S79.1 374.2 79.1 269.3h-35c0 60.2 23.4 116.7 66 159.2 42.5 42.5 99.1 66 159.2 66s116.7-23.4 159.2-66c42.5-42.5 66-99.1 66-159.2S471.1 152.6 428.5 110.1z"/><line class="st1" x1="269.3" y1="61.6" x2="269.3" y2="477"/><line class="st1" x1="61.6" y1="269.3" x2="61.6" y2="61.6"/><line class="st1" x1="269.3" y1="477" x2="61.6" y2="61.6"/></svg>
+      </a>
+    </div>
+
+    <!-- Main Navigation-->
+    <div id="mainListDiv" class="main_list">
+        <ul class="navlinks">
+
+          <!-- About -->
+          <li  class="nav-item"> 
+            <a href="/about/" class="nav-link">ABOUT</a> 
+          </li>
+
+          <!-- Portfolio -->
+          <div class="nav-dropdown">
+            <li  class="nav-item">
+              <a href="javascript:clickPortfolio();" class="nav-link portfolio-link">PORTFOLIO
+                <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+              </a> 
+              <div class="dropdown-content" id="portfolio-dropdown">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+          </div>
+
+          <!-- Resume -->
+          <li  class="nav-item">
+            <a href="/resume/" class="nav-link">RÉSUMÉ</a> 
+          </li>
+
+          <!-- Buckets -->
+          <li  class="nav-item">
+            <a href="javascript: void(0);" class="nav-link buckets-link">BUCKETS
+              <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+            </a> 
+          </li>
+
+          <!-- Blog -->
+          <li  class="nav-item">
+            <a href="/blog/" class="nav-link">BLOG</a> 
+          </li>
+        </ul>
+    </div>
+
+    <!-- For Mobile View -->
+    <span class="navTrigger">
+        <i></i>
+        <i></i>
+        <i></i>
+    </span>
+  </div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function clickPortfolio() {
+  document.getElementById("portfolio-dropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.nav-dropdown')) {
+  var myDropdown = document.getElementById("portfolio-dropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</nav>
+<div class="fixed-nav-div"></div>
+    	<div class="background">
   <svg class="cloud cloud--small cloud--1" viewbox="0 0 300 200"><path class="cloud__svg" d="M115,40h0A15,15,0,0,0,94,27.26c0-.09,0-.17,0-.26a26.47,26.47,0,0,0-.38-4.48A8,8,0,0,0,89,8a7.91,7.91,0,0,0-2.45.39,27,27,0,0,0-44.3,7.82A16.48,16.48,0,0,0,16,29.5a17.22,17.22,0,0,0,.33,3.32A12,12,0,1,0,12,56a12.66,12.66,0,0,0,1.64-.12A8.6,8.6,0,0,0,15,56H115a8,8,0,0,0,0-16Z"/></svg>
   <svg class="cloud cloud--medium cloud--2" viewbox="0 0 300 200"><path class="cloud__svg" d="M115,40h0A15,15,0,0,0,94,27.26c0-.09,0-.17,0-.26a26.47,26.47,0,0,0-.38-4.48A8,8,0,0,0,89,8a7.91,7.91,0,0,0-2.45.39,27,27,0,0,0-44.3,7.82A16.48,16.48,0,0,0,16,29.5a17.22,17.22,0,0,0,.33,3.32A12,12,0,1,0,12,56a12.66,12.66,0,0,0,1.64-.12A8.6,8.6,0,0,0,15,56H115a8,8,0,0,0,0-16Z"/></svg>
   <svg class="cloud cloud--large cloud--3" viewbox="0 0 300 200"><path class="cloud__svg" d="M115,40h0A15,15,0,0,0,94,27.26c0-.09,0-.17,0-.26a26.47,26.47,0,0,0-.38-4.48A8,8,0,0,0,89,8a7.91,7.91,0,0,0-2.45.39,27,27,0,0,0-44.3,7.82A16.48,16.48,0,0,0,16,29.5a17.22,17.22,0,0,0,.33,3.32A12,12,0,1,0,12,56a12.66,12.66,0,0,0,1.64-.12A8.6,8.6,0,0,0,15,56H115a8,8,0,0,0,0-16Z"/></svg>
@@ -31,9 +113,9 @@
  <div class="content-wrapper">
   <h1 class="header404">Under Construction</h1>
   <hr class="line">
-  <p class="text">Sorry! This website is currently being&nbsp;redesigned.</p>
+  <p class="text">Sorry! This page is currently being redesigned.<br>Be sure to check back soon for updates!</p>
     <div class="footer404">
-  		<p class="text text--footer">To view my work, please visit my other online&nbsp;presences:</p>
+  		<p class="text text--footer">Feel free to check out me out on other platforms:</p>
     	<div class="footer__social-media">
      		<div class="social-links">
 
@@ -90,4 +172,9 @@
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></script>
   </body>
+
+  <!-- Necessary Libaries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="../js/scripts.js"></script>
+  
 </html>
