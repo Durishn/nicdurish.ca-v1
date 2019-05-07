@@ -1,19 +1,52 @@
-/*-- Inspiration taken from abdo steif -->
-/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
-/* Navbar section */
-/*LOGO*/
+/* CSS for Navbar of NicDurish.org Author: Nic Durish Date: 2019
+ Feel free to use some of this code :) However if you use ALL of it, please reference me
+*/
+/* CSS for Navbar of NicDurish.org Author: Nic Durish Date: 2019
+ Feel free to use some of this code :) However if you use ALL of it, please reference me
+*/
+/******** 
+On Hovers
+*********/
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
+.nav div.logo:hover .st0 { fill: #cf9623; }
+
+.nav div.logo:hover .st1 { stroke: #cf9623; }
+
+.nav div.main_list ul li a:hover { color: #cf9623; }
+
+.nav div.main_list ul li a:hover .arrowpoly { fill: #cf9623; }
+
+/***
+Logo 
+****/
 .st0 { fill: #FFFFFF; }
 
 .st1 { fill: none; stroke: #FFFFFF; stroke-width: 35; stroke-linecap: round; stroke-miterlimit: 10; }
 
+/********
+Dropdowns 
+*********/
+/* The dropdown container */
+.nav-dropdown { float: left; overflow: hidden; }
+
+.dropdown-content { display: none; position: absolute; background-color: gray; min-width: 160px; z-index: 100 !important; }
+
+.dropdown-content a { float: none; color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
+
+.dropdown-content a:hover { background-color: #ddd; }
+
+.show { display: block; }
+
+.nav div.main_list ul li div a { line-height: 15px; }
+
+/************** 
+Main Nav Styles 
+***************/
+.dropdown-arrow { padding-bottom: 2px; }
+
 .nav { width: 100%; height: 65px; position: fixed; top: 0; text-align: center; font-family: "Roboto", Roboto, Arial, sans-serif; }
 
 .nav div.logo { float: left; width: auto; height: auto; padding-top: 5px; padding-left: 2rem; }
-
-.nav div.logo:hover .st0 { fill: #cf9623; }
-
-.nav div.logo:hover .st1 { stroke: #cf9623; }
 
 .nav div.logo a { text-decoration: none; color: #ffffff; font-size: 2rem; }
 
@@ -23,15 +56,15 @@
 
 .nav div.main_list ul li { width: auto; height: 65px; padding: 0; padding-right: 2.5rem; }
 
-.nav div.main_list ul li a { text-decoration: none; color: #ffffff; line-height: 65px; font-size: 1.1rem; }
-
-.nav div.main_list ul li a:hover { color: #cf9623; }
+.nav div.main_list ul li a { text-decoration: none; color: #ffffff; line-height: 65px; font-size: 0.9rem; }
 
 .navTrigger { display: none; }
 
 .nav { padding-top: 20px; padding-bottom: 20px; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
-/* Media qurey section */
+/************* 
+Screen Queries 
+**************/
 @media screen and (min-width: 768px) and (max-width: 1024px) { .container { margin: 0; } }
 @media screen and (max-width: 768px) { .navTrigger { display: block; }
   .nav div.logo { margin-left: 15px; }
@@ -39,10 +72,12 @@
   .nav div.show_list { height: auto; display: none; }
   .nav div.main_list ul { flex-direction: column; width: 100%; height: 100vh; top: 0; right: 0; left: 0; bottom: 0; /*background-color: #111;*/ /*same background color of navbar*/ background-position: center top; }
   .nav div.main_list ul li { width: 100%; text-align: right; }
-  .nav div.main_list ul li a { text-align: center; width: 100%; font-size: 1.1rem; padding-right: 20px; }
+  .nav div.main_list ul li a { text-align: center; width: 100%; font-size: 0.9rem; padding-right: 20px; }
   .nav div.media_button { display: block; } }
-/* Animation */
-/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+/********* 
+Animations 
+Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/
+**********/
 .navTrigger { cursor: pointer; width: 30px; height: 25px; margin: auto; position: absolute; right: 30px; top: 0; bottom: 0; }
 
 .navTrigger i { background-color: #fff; border-radius: 2px; content: ''; display: block; width: 100%; height: 4px; }
@@ -91,89 +126,119 @@
 @keyframes outBtm { 0% { transform: translateY(0px) rotate(0deg); }
   50% { transform: translateY(-9px) rotate(0deg); }
   100% { transform: translateY(-9px) rotate(135deg); } }
+/*************** 
+Navbar Overrides 
+****************/
 .affix { padding: 0; background-color: #152335; }
+
+#current a { color: #cf9623 !important; }
 
 .fixed-nav { padding: 0; background-color: #323639; }
 
 .fixed-nav-div { height: 65px; }
 
+/* CSS for Navbar of NicDurish.org Author: Nic Durish Date: 2019
+ Feel free to use some of this code :) However if you use ALL of it, please reference me
+*/
 .footer { position: relative; background-color: #152335; padding: 0px; left: 0; bottom: 0; width: 100%; text-align: center; }
 
-.footer-index { position: fixed; padding: 0px; left: 0; bottom: 0; width: 100%; text-align: center; }
+.footer-container { max-width: 90vw; margin: auto; }
+
+.index-footer { position: fixed; padding: 0px; padding-bottom: 15px; left: 0; bottom: 0; width: 100%; text-align: center; }
 
 .social-links-container { margin-top: 5px; }
 
 .social-links a { text-decoration: none; margin-top: 10px; padding: 10px; padding-left: 20px; padding-right: 20px; color: #ffffff; }
 .social-links a:hover { color: #cf9623; cursor: pointer; }
 
-.fab { margin-top: 10px; }
+.fab, .fa, .fas { margin-top: 20px; font-size: 1.5em; }
 
 .copyright { padding-top: 10px; padding-bottom: 5px; font-size: 0.4rem; }
 
+.index-copyright { color: #ffffff; font-size: 0.4rem; opacity: 0.7; }
+
+/******* 
+Sitewide 
+********/
 @font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: local("Open Sans"), local("OpenSans"), url("http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff"); }
 html, body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300))); line-height: calc(1.3em + (2 - 1.2) * ((100vw - 300px)/(1600 - 300))); height: 100%; margin: 0; padding: 0; box-sizing: border-box; }
 
 figure { margin: 0; }
 
-/*
-* DEFAULT SPECIFIC STYLES
-*/
-.default-body { background-color: #e8e7e5; }
-
-.banner-div { height: 25vh; width: 100%; display: block; top: 0; }
-
-.banner { width: 100%; display: block; position: center center; }
-
-/*
-* INDEX SPECIFIC STYLES
-*/
-.index-body { background-color: #152335; }
-
-.back-image-filter { width: 100%; height: 100vh; position: relative; }
-
-.back-image-filter::before { width: 100%; height: 100%; content: ""; position: absolute; top: 0; left: 0; background-color: #152335; background-position: center top; background-size: cover; filter: blur(5px) brightness(80%) contrast(150%); -webkit-filter: blur(5px) brightness(80%) contrast(150%); /* Safari */ opacity: 0.3; }
-
-.center-div { position: absolute; margin: auto; right: 0; top: 20vh; bottom: 0; left: 0; width: 85%; height: 100px; text-align: center; }
-
-.index-title { font-size: calc(2.5vw + 60px); color: white; line-height: 0px; }
-
+/************* 
+General Styles 
+**************/
 .thin { font-style: thin; font-weight: 100; -webkit-font-smoothing: antialiased; }
 
 .thick { font-style: bold; }
 
+.page-text { max-width: 80vw; }
+
+.row { vertical-align: top; }
+
+.fade-in-3s { animation: fadeIn ease 3s; -webkit-animation: fadeIn ease 3s; -moz-animation: fadeIn ease 3s; -o-animation: fadeIn ease 3s; -ms-animation: fadeIn ease 3s; }
+
+.fade-in-wait-3s { animation: fadeInWait ease 3s; -webkit-animation: fadeInWait ease 3s; -moz-animation: fadeInWait ease 3s; -o-animation: fadeInWait ease 3s; -ms-animation: fadeInWait ease 3s; }
+
+.fade-in-5s { animation: fadeIn ease 5s; -webkit-animation: fadeIn ease 5s; -moz-animation: fadeIn ease 5s; -o-animation: fadeIn ease 5s; -ms-animation: fadeIn ease 5s; }
+
+.fade-in-wait-5s { animation: fadeInWait ease 5s; -webkit-animation: fadeInWait ease 5s; -moz-animation: fadeInWait ease 5s; -o-animation: fadeInWait ease 5s; -ms-animation: fadeInWait ease 5s; }
+
+.fade-in-10s { animation: fadeIn ease 10s; -webkit-animation: fadeIn ease 10s; -moz-animation: fadeIn ease 10s; -o-animation: fadeIn ease 10s; -ms-animation: fadeIn ease 10s; }
+
+.fade-in-wait-10s { animation: fadeInWait ease 10s; -webkit-animation: fadeInWait ease 10s; -moz-animation: fadeInWait ease 10s; -o-animation: fadeInWait ease 10s; -ms-animation: fadeInWait ease 10s; }
+
+/************* 
+Default Layout 
+**************/
+.default-body { background-color: #e8e7e5; }
+
+.banner-div { height: 50vh; width: 100%; display: block; top: 0; }
+
+.banner { height: 100%; width: 100%; display: block; position: center center; }
+
+/************* 
+Index Layout 
+**************/
+.index-body { background-color: #152335; }
+
+#particles-js canvas { display: block; vertical-align: bottom; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); opacity: 1; -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease; transition: opacity 0.8s ease, transform 1.4s ease; }
+
+#particles-js { width: 100%; height: 100%; position: fixed; z-index: -10; top: 0; left: 0; }
+
+.index-center-div { position: absolute; margin: auto; right: 0; top: 2vh; bottom: 0; left: 0; width: calc(30vw + 230px); height: 100px; text-align: center; z-index: 1; }
+
+.index-title { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: calc(3.5vw + 50px); color: white; line-height: 1em; z-index: 1; vertical-align: top; }
+
 .index-spacer1 { height: 1vh; }
 
-.index-subtitle { font-size: calc(1vw + 12px); color: white; line-height: 0px; font-weight: 300; }
+.index-subtitle { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: calc(0.8vw + 11px); color: white; line-height: 0px; font-weight: 300; }
 
-.index-spacer2 { height: 10vh; }
-
-.social-links a { text-decoration: none; margin-top: 30px; padding: 10px; padding-left: 25px; padding-right: 25px; size: 50px; color: #ffffff; }
-.social-links a:hover { color: #cf9623; cursor: pointer; }
-
-.index-footer { position: fixed; padding: 0px; left: 0; bottom: 0; width: 100%; text-align: center; }
-
-.index-copyright { color: white; font-size: 0.4rem; }
-
-.crossfade > figure { animation: imageAnimation 48s linear infinite 0s; backface-visibility: hidden; background-size: cover; background-position: center top; color: transparent; height: 100%; width: 100%; left: 0px; top: 0px; position: absolute; opacity: 0; z-index: 0; filter: blur(2px) brightness(75%) contrast(150%); -webkit-filter: blur(2px) brightness(75%) contrast(150%); /* Safari */ }
-
-.crossfade > figure:nth-child(1) { background-image: url("../img/banner0.jpg"); }
-
-.crossfade > figure:nth-child(2) { animation-delay: 6s; background-image: url("../img/banner1.jpg"); }
-
-.crossfade > figure:nth-child(3) { animation-delay: 12s; background-image: url("../img/banner2.jpg"); }
-
-.crossfade > figure:nth-child(4) { animation-delay: 18s; background-image: url("../img/banner3.jpg"); }
-
-.crossfade > figure:nth-child(5) { animation-delay: 24s; background-image: url("../img/banner4.jpg"); }
-
-.crossfade > figure:nth-child(6) { animation-delay: 30s; background-image: url("../img/banner5.jpg"); }
-
-.crossfade > figure:nth-child(7) { animation-delay: 36s; background-image: url("../img/banner6.jpg"); }
-
-.crossfade > figure:nth-child(8) { animation-delay: 42s; background-image: url("../img/banner7.jpg"); }
-
-@keyframes imageAnimation { 0% { animation-timing-function: ease-in; opacity: 0; }
-  8% { animation-timing-function: ease-out; opacity: 1; }
-  17% { opacity: 1; }
-  25% { opacity: 0; }
-  100% { opacity: 0; } }
+/************* 
+Keyframes
+**************/
+@keyframes fadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+@-moz-keyframes fadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+@-webkit-keyframes fadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+@-o-keyframes fadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+@-ms-keyframes fadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+@keyframes fadeInWait { 0% { opacity: 0; }
+  30% { opacity: 0; }
+  100% { opacity: 1; } }
+@-moz-keyframes fadeInWait { 0% { opacity: 0; }
+  30% { opacity: 0; }
+  100% { opacity: 1; } }
+@-webkit-keyframes fadeInWait { 0% { opacity: 0; }
+  30% { opacity: 0; }
+  100% { opacity: 1; } }
+@-o-keyframes fadeInWait { 0% { opacity: 0; }
+  30% { opacity: 0; }
+  100% { opacity: 1; } }
+@-ms-keyframes fadeInWait { 0% { opacity: 0; }
+  30% { opacity: 0; }
+  100% { opacity: 1; } }

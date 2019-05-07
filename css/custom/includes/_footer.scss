@@ -1,3 +1,11 @@
+/*
+    CSS for Navbar of NicDurish.org
+    Author: Nic Durish
+    Date: 2019
+
+    Feel free to use some of this code :) However if you use ALL of it, please reference me
+*/
+
 .footer {
 	position: relative;
 	background-color: $primary;
@@ -8,9 +16,15 @@
 	text-align: center;
 }
 
-.footer-index {
+.footer-container{
+	max-width: 90vw;
+	margin: auto;
+}
+
+.index-footer {
 	position: fixed;
 	padding: 0px;
+	padding-bottom: 15px;
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -37,12 +51,19 @@
   }
 }
 
-.fab{
-	margin-top:10px;
+.fab, .fa, .fas{
+	margin-top:20px;
+	font-size: 1.5em;
 }
 
 .copyright {
 	padding-top:10px;
 	padding-bottom:5px;
 	font-size:0.4rem;
+}
+
+.index-copyright {
+	color: #ffffff;
+	font-size:0.4rem;
+	opacity: 0.7;
 }

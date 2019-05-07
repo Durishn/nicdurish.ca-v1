@@ -1,32 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
-  <body class="index-body">
-		<div class="crossfade">
-			<figure></figure>
-			<figure></figure>
-			<figure></figure>
-			<figure></figure>
-			<figure></figure>
-			<figure></figure>
-			<figure></figure>
-			<figure></figure>
-			<div class="back-image-filter"></div>
-		</div>
-
-
-	  		{% include header.html %}
-		  	{{ content }}
-		  	{% include index_footer.html %}
-
+    {% include head.html %}
+    <div id="particles-js"></div>
+    <body class="index-body">
+	    {% if jekyll.environment == 'production' %}
+	      {% include analytics.html %}
+	    {% endif %}
+	    
+  		<div class="fade-in-wait-5s">{% include header.html %}</div>
+	  	{{ content }}
+	  	<div class="fade-in-wait-5s">{% include footer_index.html %}</div>
 	</body>
 
-
-	<!-- Necessary Libaries -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-	<script src="scripts.js"></script>
-
+    <!-- Necessary Libaries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="../js/particles.js"></script>
+    <script src="../js/scripts.js"></script>
 
 </html>
