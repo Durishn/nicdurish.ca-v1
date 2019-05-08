@@ -1,7 +1,7 @@
 
 $(window).scroll(function() {
   var ww = document.body.clientWidth;
-  if ($(document).scrollTop() > 50 || ww < 769) {
+  if ($(document).scrollTop() > 50) {
       $('.nav').addClass('affix');
   } else {
       $('.nav').removeClass('affix');
@@ -28,18 +28,3 @@ particlesJS.load('particles-js', '../assets/particles.json', function() {
 })(jQuery); // end jQuery
 
 
-jQuery(document).ready(function($) {
-  var alterClass = function() {
-    var ww = document.body.clientWidth;
-    if (ww > 769 || location.pathname == '/index') {
-      $('.nav').removeClass('affix');
-    } else if (ww <= 768) {
-      $('.nav').addClass('affix');
-    };
-  };
-  $(window).resize(function(){
-    alterClass();
-  });
-  //Fire it when the page first loads:
-  alterClass();
-});
