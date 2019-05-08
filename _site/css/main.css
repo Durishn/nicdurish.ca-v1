@@ -191,7 +191,7 @@ p { font-weight: 300; text-align: center; font-size: calc(0.3vw + 15px); }
 Sitewide 
 ********/
 @font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: local("Open Sans"), local("OpenSans"), url("http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff"); }
-html, body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300))); line-height: calc(1.3em + (2 - 1.2) * ((100vw - 300px)/(1600 - 300))); height: 100%; margin: 0; padding: 0; box-sizing: border-box; }
+html, body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300))); line-height: calc(1.3em + (2 - 1.2) * ((100vw - 300px)/(1600 - 300))); height: 100%; text-align: center; margin: 0; padding: 0; box-sizing: border-box; }
 
 figure { margin: 0; }
 
@@ -207,6 +207,8 @@ General Styles
 .page-text { max-width: 80vw; }
 
 .row { vertical-align: top; }
+
+.centered-container { margin: auto; vertical-align: middle; }
 
 .fade-in-3s { animation: fadeIn ease 3s; -webkit-animation: fadeIn ease 3s; -moz-animation: fadeIn ease 3s; -o-animation: fadeIn ease 3s; -ms-animation: fadeIn ease 3s; }
 
@@ -225,9 +227,16 @@ Default Layout
 **************/
 .default-body { background-color: #e8e7e5; }
 
-.banner-div { height: 50vh; width: 100%; display: block; top: 0; }
+.banner-div { background-color: #152335; height: calc(70vh + 105px); width: 100%; }
+
+#bannertext-left { width: 50vw; height: calc(70vh - 20px); position: absolute; top: 100px; /*border: .3em solid #fff; 
+*/ margin-left: 3vw; padding: 10px; display: flex; justify-content: center; align-items: center; }
 
 .banner { height: 100%; width: 100%; display: block; position: center center; }
+
+.banner-title { margin-top: 0px; margin-bottom: 0px; color: #cf9623; }
+
+.banner-text { font-size: calc(0.6vw + 9px); line-height: calc(0.7vw + 10px); color: #c1c1c1; }
 
 /************* 
 Index Layout 

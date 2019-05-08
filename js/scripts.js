@@ -28,3 +28,23 @@ particlesJS.load('particles-js', '../assets/particles.json', function() {
 })(jQuery); // end jQuery
 
 
+function EasyPeasyParallax() {
+  scrollPos = $(this).scrollTop();
+  $('.banner').css({
+    'background-position' : '55% ' + (-scrollPos/8)+"px"
+  });
+  $('#bannertext-left').css({
+    'margin-top': (scrollPos)+"px",
+    'opacity': 1-(scrollPos/150)
+  });
+  $('#bannertext-right').css({
+    'margin-top': (scrollPos)+"px",
+    'opacity': 1-(scrollPos/150)
+  });
+}
+$(document).ready(function(){
+  $(window).scroll(function() {
+    EasyPeasyParallax();
+  });
+});
+
