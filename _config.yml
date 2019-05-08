@@ -3,7 +3,7 @@ title: Nic Durish
 email: n.durish@gmail.com
 author: Nic Durish
 description: Personal Site of Nic Durish
-url: nicdurish.org
+url: "https://nicdurish.ca"
 timezone: Canada/Eastern
 
 # Build settings
@@ -21,3 +21,6 @@ twitter_username: durishn
 couchsurfing_username: ndurish
 spotify_username: durishn
 youtube_username: NicDurish
+
+# Google Analytics
+google_analytics: UA-135084842-1

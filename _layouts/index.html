@@ -3,9 +3,6 @@
     {% include head.html %}
     <div id="particles-js"></div>
     <body class="index-body">
-	    {% if jekyll.environment == 'production' %}
-	      {% include analytics.html %}
-	    {% endif %}
 	    
   		<div class="fade-in-wait-5s">{% include header.html %}</div>
 	  	{{ content }}

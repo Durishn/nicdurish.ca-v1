@@ -2,10 +2,6 @@
 <html lang="en">
 	{% include head.html %}
 	<body class="fixedheader-body">
-	    {% if jekyll.environment == 'production' %}
-	      {% include analytics.html %}
-	    {% endif %}
-
   		{% include header_fixed.html %}
     	{{ content }}
   </body>

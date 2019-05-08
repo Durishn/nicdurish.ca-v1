@@ -15,4 +15,9 @@
     <script src="../js/scripts.js"></script>
     <script src="../js/uilang.js"></script>
 
+	<!-- Google Analytics -->
+	{% if site.google_analytics and jekyll.environment == 'production' %}
+		{% include analytics.html %}
+	{% endif %}
+
 </head>
