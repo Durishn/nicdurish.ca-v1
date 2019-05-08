@@ -1,11 +1,11 @@
 
 $(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
-        $('.nav').addClass('affix');
-        console.log("OK");
-    } else {
-        $('.nav').removeClass('affix');
-    }
+  var ww = document.body.clientWidth;
+  if ($(document).scrollTop() > 50 || ww < 769) {
+      $('.nav').addClass('affix');
+  } else {
+      $('.nav').removeClass('affix');
+  }
 });
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
@@ -31,7 +31,7 @@ particlesJS.load('particles-js', '../assets/particles.json', function() {
 jQuery(document).ready(function($) {
   var alterClass = function() {
     var ww = document.body.clientWidth;
-    if (ww > 769) {
+    if (ww > 769 || location.pathname == '/index') {
       $('.nav').removeClass('affix');
     } else if (ww <= 768) {
       $('.nav').addClass('affix');
