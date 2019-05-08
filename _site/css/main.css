@@ -9,13 +9,13 @@ On Hovers
 *********/
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
-.nav div.logo:hover .st0 { fill: #cf9623; }
+.nav .logo:hover .st0 { fill: #cf9623; }
 
-.nav div.logo:hover .st1 { stroke: #cf9623; }
+.nav .logo:hover .st1 { stroke: #cf9623; }
 
-.nav div.main_list ul li a:hover { color: #cf9623; }
+.nav .main_list ul li a:hover { color: #cf9623; }
 
-.nav div.main_list ul li a:hover .arrowpoly { fill: #cf9623; }
+.nav .main_list ul li a:hover .arrowpoly { fill: #cf9623; }
 
 /***
 Logo 
@@ -27,41 +27,66 @@ Logo
 /********
 Dropdowns 
 *********/
-/* The dropdown container */
-.nav-dropdown { float: left; overflow: hidden; }
+.nav-dropdown:hover { background: rgba(21, 35, 53, 0.9); border-radius: 5px 5px 0 0; }
 
-.dropdown-content { display: none; position: absolute; background-color: gray; min-width: 160px; z-index: 100 !important; }
+ul.drop-menu { position: absolute; top: 100%; left: 0%; width: 100%; padding: 0; z-index: 10; }
 
-.dropdown-content a { float: none; color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
+ul.drop-menu li { background: rgba(21, 35, 53, 0.9); color: white; font-size: 0.7rem; position: relative; z-index: 10; }
 
-.dropdown-content a:hover { background-color: #ddd; }
+ul.drop-menu li:hover { background: #152335; color: #cf9623; }
 
-.show { display: block; }
+ul.drop-menu li:first-child { border-radius: 0 0 0 0; }
 
-.nav div.main_list ul li div a { line-height: 15px; }
+ul.drop-menu li:last-child { border-radius: 0 0 5px 5px; }
 
+ul.drop-menu li { display: none; }
+
+ul.drop-menu li a { line-height: 40px; font-size: 0.7rem; }
+
+li:hover > ul.drop-menu li { display: block; }
+
+li:hover > ul.drop-menu.menu-2 { perspective: 1000px; }
+
+li:hover > ul.drop-menu.menu-2 li { transform-origin: top center; opacity: 0; }
+
+li:hover > ul.drop-menu.menu-2 li:nth-child(1) { animation-name: menu-2; animation-duration: 300ms; animation-delay: -150ms; animation-fill-mode: forwards; animation-timing-function: ease-in-out; }
+
+li:hover > ul.drop-menu.menu-2 li:nth-child(2) { animation-name: menu-2; animation-duration: 300ms; animation-delay: 0ms; animation-fill-mode: forwards; animation-timing-function: ease-in-out; }
+
+li:hover > ul.drop-menu.menu-2 li:nth-child(3) { animation-name: menu-2; animation-duration: 300ms; animation-delay: 150ms; animation-fill-mode: forwards; animation-timing-function: ease-in-out; }
+
+li:hover > ul.drop-menu.menu-2 li:nth-child(4) { animation-name: menu-2; animation-duration: 300ms; animation-delay: 300ms; animation-fill-mode: forwards; animation-timing-function: ease-in-out; }
+
+li:hover > ul.drop-menu.menu-2 li:nth-child(5) { animation-name: menu-2; animation-duration: 300ms; animation-delay: 450ms; animation-fill-mode: forwards; animation-timing-function: ease-in-out; }
+
+li:hover > ul.drop-menu.menu-2 li:nth-child(6) { animation-name: menu-2; animation-duration: 300ms; animation-delay: 600ms; animation-fill-mode: forwards; animation-timing-function: ease-in-out; }
+
+@keyframes menu-2 { 0% { opacity: 0; transform: rotateX(-90deg); }
+  50% { transform: rotateX(-20deg); }
+  100% { opacity: 1; transform: rotateX(0deg); } }
+/************** 
+Mobile Nav Styles 
+***************/
 /************** 
 Main Nav Styles 
 ***************/
 .dropdown-arrow { padding-bottom: 2px; }
 
-.nav { width: 100%; height: 65px; position: fixed; top: 0; text-align: center; font-family: "Roboto", Roboto, Arial, sans-serif; }
+.nav { width: 100%; height: 65px; position: fixed; top: 0; text-align: center; font-family: "Roboto", Roboto, Arial, sans-serif; padding-top: 20px; padding-bottom: 20px; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
-.nav div.logo { float: left; width: auto; height: auto; padding-top: 5px; padding-left: 2rem; }
+.nav .logo { float: left; width: auto; height: auto; padding-top: 5px; padding-left: 2rem; }
 
-.nav div.logo a { text-decoration: none; color: #ffffff; font-size: 2rem; }
+.nav .logo a { text-decoration: none; color: #ffffff; font-size: 2rem; }
 
-.nav div.main_list { height: 65px; float: right; }
+.nav .main_list { height: 65px; float: right; }
 
-.nav div.main_list ul { width: 100%; height: 65px; display: flex; list-style: none; margin: 0; padding: 0; }
+.nav .main_list > ul { width: 100%; height: 65px; display: flex; list-style: none; margin: 0; padding: 0; }
 
-.nav div.main_list ul li { width: auto; height: 65px; padding: 0; padding-right: 2.5rem; }
+.nav div.main_list > ul > li, .nav div.main_list ul .nav-dropdown { width: 130px; height: 65px; position: relative; line-height: 40px; }
 
-.nav div.main_list ul li a { text-decoration: none; color: #ffffff; line-height: 65px; font-size: 0.9rem; }
+.navlinks > li a, .nav-dropdown > li a { text-decoration: none; color: #ffffff; line-height: 65px; font-size: 0.9rem; display: block; }
 
 .navTrigger { display: none; }
-
-.nav { padding-top: 20px; padding-bottom: 20px; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 /************* 
 Screen Queries 
@@ -134,7 +159,7 @@ Navbar Overrides
 
 #current a { color: #cf9623 !important; }
 
-.fixed-nav { padding: 0; background-color: #323639; }
+.fixed-nav { padding: 0; background-color: #152335; }
 
 .fixed-nav-div { height: 65px; }
 
@@ -152,7 +177,7 @@ Navbar Overrides
 .social-links a { text-decoration: none; margin-top: 10px; padding: 10px; padding-left: 20px; padding-right: 20px; color: #ffffff; }
 .social-links a:hover { color: #cf9623; cursor: pointer; }
 
-.fab, .fa, .fas { margin-top: 20px; font-size: 1.5em; color: #ffffff !important; }
+.fab, .fa, .fas { margin-top: 20px; font-size: 1.5em; }
 
 .copyright { padding-top: 10px; padding-bottom: 5px; font-size: 0.4rem; }
 
@@ -217,7 +242,7 @@ Index Layout
 
 #particles-js { width: 100%; height: 100%; position: fixed; z-index: -10; top: 0; left: 0; }
 
-.index-center-div { position: absolute; margin: auto; right: 0; top: 2vh; bottom: 0; left: 0; width: calc(30vw + 230px); height: 100px; text-align: center; z-index: 1; }
+.index-center-div { position: absolute; margin: auto; right: 0; top: 2vh; bottom: 0; left: 0; width: calc(30vw + 230px); height: 100px; text-align: center; z-index: 1; position: absolute; }
 
 .index-title { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: calc(3.5vw + 50px); color: white; line-height: 1em; z-index: 1; vertical-align: top; }
 

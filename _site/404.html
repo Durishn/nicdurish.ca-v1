@@ -35,63 +35,64 @@
           </li>
 
           <!-- Portfolio -->
-          <div class="nav-dropdown">
-            <li  class="nav-item">
-              <a href="javascript:clickPortfolio();" class="nav-link portfolio-link">PORTFOLIO
-                <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
-              </a> 
-              <div class="dropdown-content" id="portfolio-dropdown">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
+      <div class="nav-dropdown">
+        <li  class="nav-item">
+          <a href="javascript:clickPortfolio();" class="nav-link portfolio-link">PORTFOLIO
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+          </a> 
+          <ul class="drop-menu menu-2">
+            <li >
+              <a href="/projects/">PROJECTS</a> 
             </li>
-          </div>
+            <li >
+              <a href="/presentations/">PRESENTATIONS</a> 
+            </li>
+            <li >
+              <a href="/press/">PRESS</a> 
+            </li>
+          </ul>
+        </li>
+      </div>
 
-          <!-- Resume -->
-          <li  class="nav-item">
-            <a href="/resume/" class="nav-link">RÉSUMÉ</a> 
-          </li>
+      <!-- Resume -->
+      <li  class="nav-item">
+        <a href="/resume/" class="nav-link">RÉSUMÉ</a> 
+      </li>
 
-          <!-- Buckets -->
-          <li  class="nav-item">
-            <a href="javascript: void(0);" class="nav-link buckets-link">BUCKETS
-              <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
-            </a> 
-          </li>
+      <!-- Buckets -->
+      <div class="nav-dropdown">
+        <li  class="nav-item">
+          <a href="javascript:clickBucket();" class="nav-link buckets-link">BUCKETS
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+          </a> 
+          <ul class="drop-menu menu-2">
+            <li >
+              <a href="/bucket_list/">BUCKET LIST</a> 
+            </li>
+            <li >
+              <a href="/photo_bucket/">PHOTO BUCKET</a> 
+            </li>
+            <li >
+              <a href="/travel_bucket/">TRAVEL BUCKET</a> 
+            </li>
+          </ul>
+        </li>
+      </div>
 
-          <!-- Blog -->
-          <li  class="nav-item">
-            <a href="/blog/" class="nav-link">BLOG</a> 
-          </li>
-        </ul>
-    </div>
-
-    <!-- For Mobile View -->
-    <span class="navTrigger">
-        <i></i>
-        <i></i>
-        <i></i>
-    </span>
+      <!-- Blog -->
+      <li  class="nav-item">
+        <a href="/blog/" class="nav-link">BLOG</a> 
+      </li>
+    </ul>
   </div>
 
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function clickPortfolio() {
-  document.getElementById("portfolio-dropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.nav-dropdown')) {
-  var myDropdown = document.getElementById("portfolio-dropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-</script>
+  <!-- For Mobile View -->
+  <span class="navTrigger">
+      <i></i>
+      <i></i>
+      <i></i>
+  </span>
+</div>
 </nav>
 <div class="fixed-nav-div"></div>
     	<body>

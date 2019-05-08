@@ -1,10 +1,12 @@
-$primary: #152335;
-$secondary: #cf9623;
+$primary: #152335;	//Dark Navy Blue
+$primary2: #294568;
+$secondary: #cf9623; //Mustard Yellow
 
-$nav: #ffffff; 
+$nav: #ffffff; //White
 $nav-hover: $secondary;
 $nav-current: $secondary;
 $nav-back: $primary;
+$nav-back-sec: $primary2;
 $fixed-nav-back: #323639; //PDFViewer Colour
 
 $affix: gray;
@@ -12,9 +14,9 @@ $affix: gray;
 $index-footer: #ffffff;
 $index-footer-hover: $secondary;
 
-$index-background: #152335;
+$index-background: $primary;
 
-$default-background: #e8e7e5;
+$default-background: #e8e7e5; //Off White
 
 
 //OLD PRIMARY - 00B1FF
