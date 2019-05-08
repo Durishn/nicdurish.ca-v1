@@ -1,21 +1,37 @@
+/***************************
+* COLOUR CODES
+****************************/
 $primary: #152335;	//Dark Navy Blue
-$primary2: #294568;
+$primary2: #294568; //Lighter Navy Blue
+$primary3: #4f719b;
 $secondary: #cf9623; //Mustard Yellow
+$white: #ffffffff;
 
-$nav: #ffffff; //White
+
+/***************************
+* NAVBAR & FOOTER
+****************************/
+$nav: $white;
 $nav-hover: $secondary;
 $nav-current: $secondary;
 $nav-back: $primary;
-$nav-back-sec: $primary2;
 $fixed-nav-back: #323639; //PDFViewer Colour
+
+$nav-mobile-back: $primary2;
+$nav-mobile-back-drop: $primary3;
+$nav-mobile-back-hover: $primary;
+$nav-mobile-hover: $secondary;
 
 $affix: gray;
 
 $index-footer: #ffffff;
 $index-footer-hover: $secondary;
 
-$index-background: $primary;
 
+/***************************
+* LAYOUTS
+****************************/
+$index-background: $primary;
 $default-background: #e8e7e5; //Off White
 
 

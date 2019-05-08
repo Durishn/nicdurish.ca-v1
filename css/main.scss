@@ -38,6 +38,11 @@ figure{
   margin: 0;
 }
 
+code {
+  color: transparent;
+  font-size: 0;
+}
+
 /************* 
 General Styles 
 **************/
@@ -167,6 +172,7 @@ Index Layout
   text-align: center;
   z-index: 1;
   position: absolute;
+  z-index:-1;
 }
 
 .index-title{

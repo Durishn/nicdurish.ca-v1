@@ -43,7 +43,7 @@ Logo
 
 
 /********
-Dropdowns 
+Main Dropdown 
 *********/
 .nav-dropdown:hover {
     background: rgba(21, 35, 53, 0.9);
@@ -157,9 +157,102 @@ li:hover > ul.drop-menu.menu-2 li:nth-child(6) {
 /************** 
 Mobile Nav Styles 
 ***************/
+/* http://demos.uilang.com/hamburger-menu/style.css */
+.navTrigg {
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  margin: auto;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  padding-top: 3px;
+  box-sizing: border-box;
+}
+.navTrigg > span {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: .7s;
+  pointer-events: none;
+}
+.navTrigg span:nth-child(2) {
+  margin: 3px 0;
+}
+.open {
+  border-color: rgba(255,255,255,.2);
+}
+.open span {
+  background: #fff;
+}
+.open :first-child {
+  transform: translateY(7px) rotate(-45deg);
+}
+.open :nth-child(2) {
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+.open :last-child {
+  transform: translateY(-7px) rotate(-135deg);
+}
+.mobile-nav {
+  position: absolute;
+  width: 38.2vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: $nav-mobile-back;
+  transform: translateX(+100%);
+  transition: .5s;
+  z-index:5;
+}
+.open + .mobile-nav {
+  transform: none;
+}
+/*MOBILE DROPDOWNS*/
+.mobile-nav-item:hover, .mobile-nav-dropdown:hover {
+  background: $nav-mobile-back-hover;
+  color: $nav-mobile-hover;
+}
 
+.mobile-nav ul li a:hover {
+    color: $nav-hover;
+}
 
+.mobile-nav ul li a:hover .arrowpoly {
+    fill: $nav-hover;
+}
 
+.mobile-navlinks > li a, .mobile-nav-dropdown > li a {
+    text-decoration: none;
+    color: $nav;
+    line-height: 40px;
+    font-size: 0.9rem;
+    display: block
+}
+
+.mobile-navlinks{
+    margin-top:80px;
+    padding-inline-start:0px;
+    list-style: none;
+}
+
+.mobile-drop-menu {
+    padding-inline-start:0px;
+    list-style: none;
+    display: none;
+    background: $nav-mobile-back-drop;
+}
+
+.mobile-drop-menu li a{
+    font-size: 0.7rem;
+}
 
 /************** 
 Main Nav Styles 
@@ -179,6 +272,7 @@ Main Nav Styles
     padding-bottom: 20px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    z-index:500;
 }
 
 .nav .logo {
@@ -210,7 +304,7 @@ Main Nav Styles
 }
 
 .nav div.main_list > ul > li, .nav div.main_list ul .nav-dropdown {
-    width: 130px;
+    width: calc(4vw + 100px);
     height: 65px;
     position: relative;
     line-height: 40px;
@@ -224,7 +318,7 @@ Main Nav Styles
     display: block
 }
 
-.navTrigger {
+.navTrigg {
     display: none;
 }
 
@@ -238,7 +332,7 @@ Screen Queries
 }
 
 @media screen and (max-width:768px) {
-    .navTrigger {
+    .navTrigg {
         display: block;
     }
     .nav div.logo {
@@ -277,199 +371,6 @@ Screen Queries
     }
     .nav div.media_button {
         display: block;
-    }
-}
-
-/********* 
-Animations 
-Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/
-**********/
-.navTrigger {
-    cursor: pointer;
-    width: 30px;
-    height: 25px;
-    margin: auto;
-    position: absolute;
-    right: 30px;
-    top: 0;
-    bottom: 0;
-}
-
-.navTrigger i {
-    background-color: #fff;
-    border-radius: 2px;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-}
-
-.navTrigger i:nth-child(1) {
-    -webkit-animation: outT 0.8s backwards;
-    animation: outT 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(2) {
-    margin: 5px 0;
-    -webkit-animation: outM 0.8s backwards;
-    animation: outM 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(3) {
-    -webkit-animation: outBtm 0.8s backwards;
-    animation: outBtm 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger.active i:nth-child(1) {
-    -webkit-animation: inT 0.8s forwards;
-    animation: inT 0.8s forwards;
-}
-
-.navTrigger.active i:nth-child(2) {
-    -webkit-animation: inM 0.8s forwards;
-    animation: inM 0.8s forwards;
-}
-
-.navTrigger.active i:nth-child(3) {
-    -webkit-animation: inBtm 0.8s forwards;
-    animation: inBtm 0.8s forwards;
-}
-
-@-webkit-keyframes inM {
-    50% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(45deg);
-    }
-}
-
-@keyframes inM {
-    50% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(45deg);
-    }
-}
-
-@-webkit-keyframes outM {
-    50% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(45deg);
-    }
-}
-
-@keyframes outM {
-    50% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(45deg);
-    }
-}
-
-@-webkit-keyframes inT {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(9px) rotate(135deg);
-    }
-}
-
-@keyframes inT {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(9px) rotate(135deg);
-    }
-}
-
-@-webkit-keyframes outT {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(9px) rotate(135deg);
-    }
-}
-
-@keyframes outT {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(9px) rotate(135deg);
-    }
-}
-
-@-webkit-keyframes inBtm {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(-9px) rotate(135deg);
-    }
-}
-
-@keyframes inBtm {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(-9px) rotate(135deg);
-    }
-}
-
-@-webkit-keyframes outBtm {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(-9px) rotate(135deg);
-    }
-}
-
-@keyframes outBtm {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(-9px) rotate(135deg);
     }
 }
 
