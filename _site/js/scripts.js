@@ -31,7 +31,7 @@ particlesJS.load('particles-js', '../assets/particles.json', function() {
 function EasyPeasyParallax() {
   scrollPos = $(this).scrollTop();
   $('.banner').css({
-    'background-position' : '55% ' + (-scrollPos/8)+"px"
+    'background-position' : '55% ' 
   });
   $('#bannertext-left').css({
     'margin-top': (scrollPos)+"px",
