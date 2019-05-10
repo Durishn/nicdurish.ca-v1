@@ -1,4 +1,6 @@
-
+/*****************
+* Navbar Animation
+*****************/
 $(window).scroll(function() {
   var ww = document.body.clientWidth;
   if ($(document).scrollTop() > 50) {
@@ -8,14 +10,19 @@ $(window).scroll(function() {
   }
 });
 
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+/*****************
+* Particle Animation
+*****************/
 particlesJS.load('particles-js', '../assets/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
 
 
-(function($) { // Begin jQuery
-  $(function() { // DOM ready
+/*****************
+* Mobile Dropdown Animation
+*****************/
+(function($) { 
+  $(function() {
 
     $('.mobile-nav-dropdown a:not(:only-child)').click(function() {
       $(this).siblings('.mobile-drop-menu').toggle();
@@ -24,10 +31,13 @@ particlesJS.load('particles-js', '../assets/particles.json', function() {
 //      e.stopPropagation();
     });
 
-  }); // end DOM ready
-})(jQuery); // end jQuery
+  });
+})(jQuery);
 
 
+/*****************
+* Parallax Banner Animation
+*****************/
 function EasyPeasyParallax() {
   scrollPos = $(this).scrollTop();
   $('.banner').css({
@@ -47,4 +57,7 @@ $(document).ready(function(){
     EasyPeasyParallax();
   });
 });
+
+
+
 
