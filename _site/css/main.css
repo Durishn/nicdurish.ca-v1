@@ -218,7 +218,7 @@ Navbar Overrides
 Sitewide 
 ********/
 @font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: local("Open Sans"), local("OpenSans"), url("http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff"); }
-html, body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300))); line-height: calc(1.3em + (2 - 1.2) * ((100vw - 300px)/(1600 - 300))); height: 100%; text-align: center; margin: 0; padding: 0; box-sizing: border-box; }
+html, body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: calc(14px + (6) * ((100vw - 300px) / (1600 - 300))); line-height: calc(1.3em + (0.8) * ((100vw - 300px)/(1600 - 300))); height: 100%; text-align: center; margin: 0; padding: 0; box-sizing: border-box; }
 
 h2 { font-weight: 500; font-size: 2em; }
 
@@ -260,7 +260,7 @@ Default Layout
 
 .banner-title { margin-top: 0px; margin-bottom: 0px; color: #cf9623; }
 
-.banner-text { color: #c1c1c1; }
+.banner-text { color: #c1c1c1; font-size: calc(0.7vw + 10px); line-height: calc(0.7vw + 12px); }
 
 /************* 
 Index Layout 

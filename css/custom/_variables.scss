@@ -48,7 +48,7 @@ $default-background: #e8e7e5; //Off White
 /***************************
 * FONT SIZES
 ****************************/
-$fontmain: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
-$linemain: calc(1.3em + (2 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+$fontmain: calc(14px + (6) * ((100vw - 300px) / (1600 - 300)));
+$linemain: calc(1.3em + (0.8) * ((100vw - 300px)/(1600 - 300)));
 
 $font5: calc(0.5vw + 23px);
