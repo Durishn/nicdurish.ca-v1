@@ -27,13 +27,26 @@ Sitewide
 html,
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(1.3em + (2 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+	font-size: $fontmain;
+  line-height: $linemain;
 	height: 100%;
   text-align: center;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h2{
+  font-weight: 500;
+  font-size: 2em;
+}
+
+h3{
+  font-weight: 450;
+}
+
+p{
+    font-weight: 300;
 }
 
 figure{
@@ -58,8 +71,10 @@ General Styles
   font-style: bold;
 }
 
-.page-text{
-  max-width: 80vw
+.page-content{
+  max-width: 1780px;
+  margin: auto;
+  width: calc(84vw + 20px);
 }
 
 .row{
@@ -71,52 +86,12 @@ General Styles
   vertical-align:middle;
 }
 
-.fade-in-3s {
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
-  -moz-animation: fadeIn ease 3s;
-  -o-animation: fadeIn ease 3s;
-  -ms-animation: fadeIn ease 3s;
-}
-
-.fade-in-wait-3s {
-  animation: fadeInWait ease 3s;
-  -webkit-animation: fadeInWait ease 3s;
-  -moz-animation: fadeInWait ease 3s;
-  -o-animation: fadeInWait ease 3s;
-  -ms-animation: fadeInWait ease 3s;
-}
-
-.fade-in-5s {
-  animation: fadeIn ease 5s;
-  -webkit-animation: fadeIn ease 5s;
-  -moz-animation: fadeIn ease 5s;
-  -o-animation: fadeIn ease 5s;
-  -ms-animation: fadeIn ease 5s;
-}
-
-.fade-in-wait-5s {
-  animation: fadeInWait ease 5s;
-  -webkit-animation: fadeInWait ease 5s;
-  -moz-animation: fadeInWait ease 5s;
-  -o-animation: fadeInWait ease 5s;
-  -ms-animation: fadeInWait ease 5s;
-}
-
-.fade-in-10s {
-  animation: fadeIn ease 10s;
-  -webkit-animation: fadeIn ease 10s;
-  -moz-animation: fadeIn ease 10s;
-  -o-animation: fadeIn ease 10s;
-  -ms-animation: fadeIn ease 10s;
-}
-
-.fade-in-wait-10s {
-  animation: fadeInWait ease 10s;
-  -webkit-animation: fadeInWait ease 10s;
-  -moz-animation: fadeInWait ease 10s;
-  -o-animation: fadeInWait ease 10s;
-  -ms-animation: fadeInWait ease 10s;
+section {
+  padding-top: 20px;
+  padding-bottom:30px;
+  h2 {
+    text-align: left;
+  }
 }
 
 /************* 
@@ -160,8 +135,6 @@ Default Layout
 }
 
 .banner-text{
-  font-size: calc(0.6vw + 10.5px);
-  line-height: calc(0.7vw + 11.5px);
   color: $light-grey;
 }
 
@@ -226,6 +199,54 @@ Index Layout
   color: white;
   line-height: 0px;
   font-weight:300;
+}
+
+.fade-in-3s {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+.fade-in-wait-3s {
+  animation: fadeInWait ease 3s;
+  -webkit-animation: fadeInWait ease 3s;
+  -moz-animation: fadeInWait ease 3s;
+  -o-animation: fadeInWait ease 3s;
+  -ms-animation: fadeInWait ease 3s;
+}
+
+.fade-in-5s {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+
+.fade-in-wait-5s {
+  animation: fadeInWait ease 5s;
+  -webkit-animation: fadeInWait ease 5s;
+  -moz-animation: fadeInWait ease 5s;
+  -o-animation: fadeInWait ease 5s;
+  -ms-animation: fadeInWait ease 5s;
+}
+
+.fade-in-10s {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+
+.fade-in-wait-10s {
+  animation: fadeInWait ease 10s;
+  -webkit-animation: fadeInWait ease 10s;
+  -moz-animation: fadeInWait ease 10s;
+  -o-animation: fadeInWait ease 10s;
+  -ms-animation: fadeInWait ease 10s;
 }
 
 /************* 

@@ -10,6 +10,9 @@
 /***************************
 * LAYOUTS
 ****************************/
+/***************************
+* FONT SIZES
+****************************/
 /* CSS for Navbar of NicDurish.org Author: Nic Durish Date: 2019
  Feel free to use some of this code :) However if you use ALL of it, please reference me
 */
@@ -177,35 +180,36 @@ Navbar Overrides
 
 .index-copyright { color: #ffffff; font-size: 0.4rem; opacity: 0.7; }
 
-body { background: #ffffff; color: #999; font-family: Roboto; overflow-x: hidden; }
-
-h1 { font-weight: 600; font-size: calc(0.5vw + 23px); color: #2D9F8A; }
-
-p { font-weight: 300; text-align: center; font-size: calc(0.3vw + 15px); }
-
 .warning-content { position: absolute; top: 25%; width: 100%; height: 300px; text-align: center; margin: 0; }
+.warning-content body { background: #ffffff; color: #999; font-family: Roboto; overflow-x: hidden; }
+.warning-content h1 { font-weight: 600; font-size: calc(0.5vw + 23px); color: #2D9F8A; }
+.warning-content p { font-weight: 300; text-align: center; font-size: calc(0.3vw + 15px); }
+.warning-content .img-responsive { display: block; max-width: 20%; height: auto; margin-left: 39%; }
 
-.img-responsive { display: block; max-width: 20%; height: auto; margin-left: 39%; }
-
-.timeline { color: #fff; }
-.timeline ul { padding: 50px 10px 0px 10px; margin: 0; }
+.timeline ul { padding: 5px 10px 5px 10px; margin: 0; }
 .timeline ul li { background: #67CC8E; position: relative; margin: 0 auto; width: 5px; padding-bottom: 40px; list-style-type: none; }
 .timeline ul li:last-child { padding-bottom: 7px; }
 .timeline ul li:before { content: ''; background: #faf8eb; position: absolute; left: 50%; top: -12px; transform: translateX(-50%); -webkit-transform: translateX(-50%); width: 40px; height: 40px; border: 3px solid #67CC8E; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; z-index: 1; }
+.timeline ul li time { position: absolute; z-index: 100; color: grey; left: -10px; top: -0.15vw; font-size: 18px; }
 .timeline ul li .hidden { opacity: 0; }
-.timeline ul li .content { background: #67CC8E; position: relative; top: 7px; width: 37vw; padding: 20px; }
-.timeline ul li .content h2 { color: #fff; padding-bottom: 10px; text-align: center; }
-.timeline ul li .content p { text-align: center; }
+.timeline ul li .content { background: #67CC8E; border-radius: 1%; position: relative; top: 7px; width: 37vw; padding: 20px; }
+.timeline ul li .content h3 { color: #fff; margin: 0px; text-align: center; }
+.timeline ul li .content p { color: #fff; text-align: center; margin: 0px; margin-top: 8px; }
 .timeline ul li .content:before { content: ''; background: #67CC8E; position: absolute; top: 0px; width: 38px; height: 5px; }
-.timeline ul li:nth-child(odd) .content { left: 45px; background: #67CC8E; background: -webkit-linear-gradient(-45deg, #56BC83, #67CC8E); background: linear-gradient(-45deg, #56BC83, #67CC8E); border-radius: 1%; }
+.timeline ul li .timeline-image { background: grey; position: absolute; top: 7px; width: 37vw; height: 63%; padding: 20px; }
+.timeline ul li:nth-child(n) { top: calc(120px * n); }
+.timeline ul li:nth-child(odd) .content { left: 45px; background: #67CC8E; background: -webkit-linear-gradient(-45deg, #56BC83, #67CC8E); background: linear-gradient(-45deg, #56BC83, #67CC8E); }
+.timeline ul li:nth-child(odd) .timeline-image { left: calc(-37vw - 86px); }
 .timeline ul li:nth-child(odd) .content:before { left: -35px; }
-.timeline ul li:nth-child(even) .content { left: calc(-37vw - 86px); background: #67CC8E; background: -webkit-linear-gradient(45deg, #56BC83, #67CC8E); background: linear-gradient(45deg, #56BC83, #67CC8E); border-radius: 1%; }
+.timeline ul li:nth-child(even) .content { left: calc(-37vw - 86px); background: #67CC8E; background: -webkit-linear-gradient(45deg, #56BC83, #67CC8E); background: linear-gradient(45deg, #56BC83, #67CC8E); }
+.timeline ul li:nth-child(even) .timeline-image { left: 45px; }
 .timeline ul li:nth-child(even) .content:before { right: -35px; }
 
 /* ------------------------- ----- Media Queries -----  ------------------------- */
-@media screen and (max-width: 1020px) { .timeline ul li .content { width: 37vw; }
-  .timeline ul li:nth-child(even) .content { left: calc(-$content-width - 86px); } }
-@media screen and (max-width: 700px) { .timeline ul li { margin-left: 20px; }
+@media screen and (min-width: 2200px) { .timeline ul li .content, .timeline ul li .timeline-image { max-width: 800px; }
+  .timeline ul li:nth-child(even) .content, .timeline ul li:nth-child(odd) .timeline-image { left: -886px; } }
+@media screen and (max-width: 768px) { .timeline ul { position: relative; left: -6vw; }
+  .timeline ul li { margin-left: 20px; top: 0px; }
   .timeline ul li .content { width: calc(100vw - 130px); }
   .timeline ul li .content h2 { text-align: initial; }
   .timeline ul li:nth-child(even) .content { left: 45px; background: #67CC8E; background: -webkit-linear-gradient(-45deg, #56BC83, #67CC8E); background: linear-gradient(-45deg, #56BC83, #67CC8E); }
@@ -215,6 +219,12 @@ Sitewide
 ********/
 @font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: local("Open Sans"), local("OpenSans"), url("http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff"); }
 html, body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300))); line-height: calc(1.3em + (2 - 1.2) * ((100vw - 300px)/(1600 - 300))); height: 100%; text-align: center; margin: 0; padding: 0; box-sizing: border-box; }
+
+h2 { font-weight: 500; font-size: 2em; }
+
+h3 { font-weight: 450; }
+
+p { font-weight: 300; }
 
 figure { margin: 0; }
 
@@ -227,23 +237,14 @@ General Styles
 
 .thick { font-style: bold; }
 
-.page-text { max-width: 80vw; }
+.page-content { max-width: 1780px; margin: auto; width: calc(84vw + 20px); }
 
 .row { vertical-align: top; }
 
 .centered-container { margin: auto; vertical-align: middle; }
 
-.fade-in-3s { animation: fadeIn ease 3s; -webkit-animation: fadeIn ease 3s; -moz-animation: fadeIn ease 3s; -o-animation: fadeIn ease 3s; -ms-animation: fadeIn ease 3s; }
-
-.fade-in-wait-3s { animation: fadeInWait ease 3s; -webkit-animation: fadeInWait ease 3s; -moz-animation: fadeInWait ease 3s; -o-animation: fadeInWait ease 3s; -ms-animation: fadeInWait ease 3s; }
-
-.fade-in-5s { animation: fadeIn ease 5s; -webkit-animation: fadeIn ease 5s; -moz-animation: fadeIn ease 5s; -o-animation: fadeIn ease 5s; -ms-animation: fadeIn ease 5s; }
-
-.fade-in-wait-5s { animation: fadeInWait ease 5s; -webkit-animation: fadeInWait ease 5s; -moz-animation: fadeInWait ease 5s; -o-animation: fadeInWait ease 5s; -ms-animation: fadeInWait ease 5s; }
-
-.fade-in-10s { animation: fadeIn ease 10s; -webkit-animation: fadeIn ease 10s; -moz-animation: fadeIn ease 10s; -o-animation: fadeIn ease 10s; -ms-animation: fadeIn ease 10s; }
-
-.fade-in-wait-10s { animation: fadeInWait ease 10s; -webkit-animation: fadeInWait ease 10s; -moz-animation: fadeInWait ease 10s; -o-animation: fadeInWait ease 10s; -ms-animation: fadeInWait ease 10s; }
+section { padding-top: 20px; padding-bottom: 30px; }
+section h2 { text-align: left; }
 
 /************* 
 Default Layout 
@@ -259,7 +260,7 @@ Default Layout
 
 .banner-title { margin-top: 0px; margin-bottom: 0px; color: #cf9623; }
 
-.banner-text { font-size: calc(0.6vw + 10.5px); line-height: calc(0.7vw + 11.5px); color: #c1c1c1; }
+.banner-text { color: #c1c1c1; }
 
 /************* 
 Index Layout 
@@ -277,6 +278,18 @@ Index Layout
 .index-spacer1 { height: 1vh; }
 
 .index-subtitle { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: calc(0.8vw + 11px); color: white; line-height: 0px; font-weight: 300; }
+
+.fade-in-3s { animation: fadeIn ease 3s; -webkit-animation: fadeIn ease 3s; -moz-animation: fadeIn ease 3s; -o-animation: fadeIn ease 3s; -ms-animation: fadeIn ease 3s; }
+
+.fade-in-wait-3s { animation: fadeInWait ease 3s; -webkit-animation: fadeInWait ease 3s; -moz-animation: fadeInWait ease 3s; -o-animation: fadeInWait ease 3s; -ms-animation: fadeInWait ease 3s; }
+
+.fade-in-5s { animation: fadeIn ease 5s; -webkit-animation: fadeIn ease 5s; -moz-animation: fadeIn ease 5s; -o-animation: fadeIn ease 5s; -ms-animation: fadeIn ease 5s; }
+
+.fade-in-wait-5s { animation: fadeInWait ease 5s; -webkit-animation: fadeInWait ease 5s; -moz-animation: fadeInWait ease 5s; -o-animation: fadeInWait ease 5s; -ms-animation: fadeInWait ease 5s; }
+
+.fade-in-10s { animation: fadeIn ease 10s; -webkit-animation: fadeIn ease 10s; -moz-animation: fadeIn ease 10s; -o-animation: fadeIn ease 10s; -ms-animation: fadeIn ease 10s; }
+
+.fade-in-wait-10s { animation: fadeInWait ease 10s; -webkit-animation: fadeInWait ease 10s; -moz-animation: fadeInWait ease 10s; -o-animation: fadeInWait ease 10s; -ms-animation: fadeInWait ease 10s; }
 
 /************* 
 Keyframes
