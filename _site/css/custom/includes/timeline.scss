@@ -47,7 +47,7 @@ $content-width: 37vw;
         z-index: 100;
         color: grey;
         left: -10px;
-        top: -0.15vw;
+        top: calc(-0.3vw + 3px);
         font-size: 18px;
       }
 
@@ -92,7 +92,7 @@ $content-width: 37vw;
         position: absolute;
         top: 7px;
         width: $content-width;
-        height: 63%;
+        height: 58%;
         padding: 20px;
       }
 
@@ -147,9 +147,13 @@ $content-width: 37vw;
 }
 
 @media screen and (max-width: 768px) {
+  .timeline-image{
+    display: none;
+  }
+
   .timeline ul {
     position: relative;
-    left: -6vw;
+    left: -2vw;
   }
 
   .timeline ul li {
@@ -157,7 +161,7 @@ $content-width: 37vw;
     top:0px;
     
     .content {
-      width: calc(100vw - 130px);
+      width: calc(88vw - 100px);
     
       h2{
         text-align: initial;
