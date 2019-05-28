@@ -75,18 +75,101 @@ particlesJS.load('particles-js', '../assets/particles.json', function() {
 *****************/
 function EasyPeasyParallax() {
   scrollPos = $(this).scrollTop();
-  $('.banner').css({
-    'background-position' : '55% ' 
+  var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+  var windowTop = $(this).scrollTop() + $(this).innerHeight() - $(window).height();
+  $('#EP-stay-55').css({
+    'background-position' : '55% ',
+    'opacity': 0 + (scrollPos/300) 
   });
-  $('#bannertext-left').css({
-    'margin-top': (scrollPos)+"px",
+  $('#EP-stay-015').css({
+    'background-position' : '55% ',
+    'opacity': 0.15 + ((scrollPos)/300) 
+  });
+  $('#EP-fade-stay').css({
+    'margin-top': (scrollPos/2)+"px",
     'opacity': 1-(scrollPos/150)
   });
-  $('#bannertext-right').css({
-    'margin-top': (scrollPos)+"px",
-    'opacity': 1-(scrollPos/150)
+  $('#EP-slightfade-slow').css({
+    'opacity': 0 + (scrollPos)
   });
+
+  $(".fadeinstay").each(function() {
+      objectBottom = $(this).offset().top + $(this).outerHeight();
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      }
+    });
+  $(".fadein").each(function() {
+      objectBottom = $(this).offset().top + $(this).outerHeight();
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  $(".fadein-05").each(function() {
+      objectMiddle = $(this).offset().top + $(this).outerHeight()/1.5;
+      if (objectMiddle < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+  });
+  $(".fadein-2").each(function() {
+      objectMiddle = $(this).offset().top + $(this).outerHeight()/2;
+      if (objectMiddle < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+  });
+  $(".fadein-3").each(function() {
+      objectMiddle = $(this).offset().top + $(this).outerHeight()/3;
+      if (objectMiddle < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+  });
+  $(".fadeinout-05").each(function() {
+      objectMiddle = $(this).offset().top + $(this).outerHeight()/1.5;
+      objectBase = $(this).offset().top + $(this).outerHeight()/1.5;
+      if ((objectMiddle < windowBottom) && (objectMiddle > windowTop)) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+  });
+  $(".fadeinout-2").each(function() {
+      objectMiddle = $(this).offset().top + $(this).outerHeight()/2;
+      objectBase = $(this).offset().top + $(this).outerHeight()/1.5;
+      if ((objectMiddle < windowBottom) && (objectBase > windowTop)) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+  });
+  $(".fadeinout-3").each(function() {
+      objectMiddle = $(this).offset().top + $(this).outerHeight()/3;
+      objectBase = $(this).offset().top + $(this).outerHeight()/1.5;
+      if ((objectMiddle < windowBottom) && (objectBase > windowTop)) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+  });
+  $(".fadeout").each(function() {
+      /* Check the location of each desired element */
+      objectMiddle = $(this).offset().top + $(this).outerHeight()/1.5;
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectMiddle > windowTop) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
 }
+
 $(document).ready(function(){
   $(window).scroll(function() {
     EasyPeasyParallax();

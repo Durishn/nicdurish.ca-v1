@@ -24,16 +24,18 @@ Sitewide
   src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
 }
 
-html,
-body {
+html, body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: $fontmain;
-  line-height: $linemain;
+  /*line-height: $linemain;*/
 	height: 100%;
-  text-align: center;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  background-color: $index-background;
 }
 
 h2{
@@ -42,6 +44,7 @@ h2{
 }
 
 h3{
+  margin: 0px;
   font-weight: 450;
 }
 
@@ -71,10 +74,18 @@ General Styles
   font-style: bold;
 }
 
+.center{
+  text-align: center;
+}
+
+.page-div{
+  background-color: $page-div-background;
+}
+
 .page-content{
   max-width: 1780px;
   margin: auto;
-  width: calc(84vw + 20px);
+  width: calc(80vw + 50px);
 }
 
 .row{
@@ -90,6 +101,8 @@ section {
   padding-top: 20px;
   padding-bottom:30px;
   h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
     text-align: left;
   }
 }
@@ -97,56 +110,158 @@ section {
 /************* 
 Default Layout 
 **************/
-/*.default-body{
-  background-color: $default-background;
-}*/
-
 .banner-div{
   background-color: $nav-back;
   height: calc(70vh + 105px);
   width: 100%;
+
+  .banner{
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: center center;
+  }
+
+  .bannertext-div { 
+    width: 47vw;
+    height: calc(70vh - 20px);
+    position: absolute; 
+    top: 100px; 
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+
+    .banner-title{
+     margin-top:0px;
+     margin-bottom:0px;
+     color: $secondary;
+    }
+
+    .banner-super-title{
+     margin-top:0px;
+     margin-bottom:0px;
+     color: $secondary;
+     font-size: calc( 2vw + 30px);
+    }
+
+    .banner-text{
+      color: $light-grey;
+      font-size: calc(0.7vw + 10px);
+      line-height: calc(0.7vw + 12px);
+    }
+  }
 }
 
-#bannertext-left { 
-  width: 50vw;
-  height: calc(70vh - 20px);
-  position: absolute; 
-  top: 100px; 
-  /*border: .3em solid #fff; 
-  */margin-left: 3vw; 
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-
+.right-div{
+  right: calc(7vw + 10px);
 }
 
-.banner{
-  height: 100%;
+.half-div{
+  height: calc(40vh + 105px);
+  .bannertext-div {
+    height: calc(40vh - 20px);
+  }
+}
+
+/************* 
+Card Options 
+**************/
+$card-options: (
+  primary: rgb(46, 160, 235),
+);
+
+.card {
+  display: inline-flex;
+  margin: 10px;
+  max-width: 320px;
+  position: relative;
+  vertical-align: top;
   width: 100%;
-  display: block;
-  position: center center;
 }
 
-.banner-title{
- margin-top:0px;
- margin-bottom:0px;
- color: $secondary;
+.card-front {
+  background: #fff;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  position: relative;  
+  width: 100%;  
 }
 
-.banner-text{
-  color: $light-grey;
-  font-size: calc(0.7vw + 10px);
-  line-height: calc(0.7vw + 12px);
+// Make card images responsive
+// 1. Fixes IE bug for oversized images in container
+.card-image {
+  min-height: 1px; // 1 
+  
+  > img {
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
+  
+  &:not(:first-child):not(:last-child) { 
+    border-radius: 0; 
+  } 
+}
+
+.card-image-top > img { border-radius: 5px 5px 0 0; }
+
+.card-content {
+  padding: 15px;
+  flex: 1 1 auto; // 1
+  h3, p {
+    text-align: center;
+  }
+}
+
+.card-badgebox{
+  position: absolute;
+  top: 6px;
+  right: 58px;
+  z-index: 1;
+  width: 80%;
+}
+
+.card-badgebox.bl2{
+  top: 121px;
+}
+
+.card-badge{
+  margin-bottom: 5px;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 1.5;
+  font-size: .875rem;
+  color: #fff;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+.card-actions {
+  padding: 15px;
+  
+  > a {
+    color: map-get($card-options, primary);
+    font-size: .8571rem;
+    text-decoration: none;
+    
+    &:not(:last-child) { 
+      margin-right: 10px; 
+    }
+    
+    &:hover {
+      color: mix(#000, map-get($card-options, primary), 20%);      
+    }
+  }
 }
 
 /************* 
 Index Layout 
 **************/
-.index-body{
-  background-color: $index-background;
-}
-
 #particles-js canvas {
     display: block;
     vertical-align: bottom;
@@ -201,6 +316,13 @@ Index Layout
   color: white;
   line-height: 0px;
   font-weight:300;
+}
+
+/************* 
+Fade Ins 
+**************/
+.fadeinstay{
+  opacity: 0;
 }
 
 .fade-in-3s {

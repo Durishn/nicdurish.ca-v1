@@ -2,12 +2,30 @@
 * COLOUR CODES
 ****************************/
 $primary: #152335;	//Dark Navy Blue
+.bcl-primary{
+	background-color: $primary;
+}
+
 $primary2: #294568; //Lighter Navy Blue
-$primary3: #4f719b;
+.bcl-primary2{
+	background-color: $primary2;
+}
+
+$primary3: #4f719b; //Lighter Navy Blue
+
 $secondary: #cf9623; //Mustard Yellow
+
+.bcl-secondary{
+	background-color: $secondary;
+}
+
 $white: #ffffffff;
 $off-white: #e8e7e5; //Off White
 $light-grey: #c1c1c1;
+$highlight-blue: #1e87f0;
+.bcl-hlblue{
+	background-color: $highlight-blue;
+}
 
 
 /***************************
@@ -33,6 +51,7 @@ $index-footer-hover: $secondary;
 /***************************
 * LAYOUTS
 ****************************/
+$page-div-background: $off-white;
 $index-background: $primary;
 $default-background: #e8e7e5; //Off White
 
