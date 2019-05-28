@@ -173,6 +173,7 @@ Navbar Overrides
 .footer { position: relative; background-color: #152335; padding: 0px; left: 0; bottom: 0; width: 100%; text-align: center; z-index: -1; }
 
 .footer-container { max-width: 90vw; margin: auto; }
+.footer-container .row { margin: 7px; }
 
 .index-footer { position: fixed; padding: 0px; padding-bottom: 15px; left: 0; bottom: 0; width: 100%; text-align: center; z-index: 1; }
 
@@ -270,6 +271,8 @@ General Styles
 section { padding-top: 20px; padding-bottom: 30px; }
 section h2 { margin-top: 10px; margin-bottom: 30px; text-align: left; }
 
+.fullpdf { width: 100%; height: calc(100vh - 65px); display: block; }
+
 /************* 
 Default Layout 
 **************/
@@ -330,7 +333,7 @@ Index Layout
 /************* 
 Fade Ins 
 **************/
-.fadeinstay { opacity: 0; }
+.fadeinstay, .fadein-3 { opacity: 0; }
 
 .fade-in-3s { animation: fadeIn ease 3s; -webkit-animation: fadeIn ease 3s; -moz-animation: fadeIn ease 3s; -o-animation: fadeIn ease 3s; -ms-animation: fadeIn ease 3s; }
 

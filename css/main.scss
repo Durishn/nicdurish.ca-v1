@@ -107,6 +107,11 @@ section {
   }
 }
 
+.fullpdf{
+  width: 100%; height: calc(100vh - 65px); display: block;
+}
+
+
 /************* 
 Default Layout 
 **************/
@@ -321,7 +326,7 @@ Index Layout
 /************* 
 Fade Ins 
 **************/
-.fadeinstay{
+.fadeinstay, .fadein-3{
   opacity: 0;
 }
 
