@@ -186,6 +186,15 @@ Navbar Overrides
 .warning-content p { font-weight: 300; text-align: center; font-size: calc(0.3vw + 15px); }
 .warning-content .img-responsive { display: block; max-width: 20%; height: auto; margin-left: 39%; }
 
+.more { display: none; }
+.no-js .more { display: inline; }
+
+.active { display: inline; }
+
+.visible { opacity: 1 !important; }
+
+.no-js .read-more { display: none; }
+
 .timeline ul { padding: 5px 10px 5px 10px; margin: 0; }
 .timeline ul li { background: #67CC8E; position: relative; margin: 0 auto; width: 5px; padding-bottom: 40px; list-style-type: none; }
 .timeline ul li:last-child { padding-bottom: 7px; }
@@ -196,7 +205,7 @@ Navbar Overrides
 .timeline ul li .content h3 { color: #fff; margin: 0px; text-align: center; }
 .timeline ul li .content p { color: #fff; text-align: center; margin: 0px; margin-top: 8px; }
 .timeline ul li .content:before { content: ''; background: #67CC8E; position: absolute; top: 0px; width: 38px; height: 5px; }
-.timeline ul li .timeline-image { background: grey; position: absolute; top: 7px; width: 37vw; height: 58%; padding: 20px; }
+.timeline ul li .timeline-image { opacity: 0; background: grey; position: absolute; top: 7px; width: 37vw; height: 58%; padding: 20px; }
 .timeline ul li:nth-child(n) { top: calc(120px * n); }
 .timeline ul li:nth-child(odd) .content { left: 45px; background: #67CC8E; background: -webkit-linear-gradient(-45deg, #56BC83, #67CC8E); background: linear-gradient(-45deg, #56BC83, #67CC8E); }
 .timeline ul li:nth-child(odd) .timeline-image { left: calc(-37vw - 86px); }

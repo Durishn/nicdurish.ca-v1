@@ -6,6 +6,27 @@ $time-color: #fff;
 $text-color: #fff;
 $content-width: 37vw;
 
+.tm-text{
+
+}
+
+.more {
+  display: none;
+  .no-js & {
+    display: inline;
+  }
+}
+.active { 
+  display: inline;
+}
+
+.visible {
+  opacity: 1 !important;
+}
+
+.no-js .read-more {
+  display: none;
+}
 
 .timeline{
   
@@ -88,6 +109,7 @@ $content-width: 37vw;
       }
 
       .timeline-image{
+        opacity: 0;
         background: grey; 
         position: absolute;
         top: 7px;
