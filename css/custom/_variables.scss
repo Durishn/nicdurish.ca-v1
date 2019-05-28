@@ -1,31 +1,65 @@
 /***************************
-* COLOUR CODES
+* COLOR CODES
 ****************************/
-$primary: #152335;	//Dark Navy Blue
-.bcl-primary{
-	background-color: $primary;
-}
-
-$primary2: #294568; //Lighter Navy Blue
-.bcl-primary2{
-	background-color: $primary2;
-}
-
-$primary3: #4f719b; //Lighter Navy Blue
-
-$secondary: #cf9623; //Mustard Yellow
-
-.bcl-secondary{
-	background-color: $secondary;
-}
-
 $white: #ffffffff;
-$off-white: #e8e7e5; //Off White
+$off-white: #e8e7e5;
 $light-grey: #c1c1c1;
+
+$dark-navy-blue: #152335;
+$navy-blue: #294568;
+$light-navy-blue: #4f719b;
+$mustard-yellow: #cf9623;
+
 $highlight-blue: #1e87f0;
-.bcl-hlblue{
-	background-color: $highlight-blue;
-}
+	.bcl-hlblue{ background-color: $highlight-blue; }
+$lowlight-blue: #479EF1;
+	.bcl-llblue{ background-color: $lowlight-blue; }
+
+$highlight-red: #FD0E2F;
+	.bcl-hlred{ background-color: $highlight-red; }
+$lowlight-red: #FD3D57;
+	.bcl-llred{ background-color: $lowlight-red; }
+$dulllight-red: #FD6D81;
+	.bcl-dlred{ background-color: $dulllight-red; }
+
+$lowlight-green: #85d687;
+	.bcl-llgreen{ background-color: $lowlight-green; }
+
+$lowlight-orange: #f5a75c;
+	.bcl-llorange{ background-color: $lowlight-orange; }
+
+
+/***************************
+* SCHEME CODES
+****************************/
+$primary: $dark-navy-blue;
+	.bcl-primary{ background-color: $primary; }
+	.cl-primary{ color: $primary; }
+
+$primary2: $navy-blue;
+	.bcl-primary2{ background-color: $primary2; }
+
+$primary3: $light-navy-blue;
+
+$secondary: $mustard-yellow;
+	.bcl-secondary{ background-color: $secondary; }
+
+
+
+
+
+
+/***************************
+* FONT SIZES
+****************************/
+$fontmain: calc(14px + (6) * ((100vw - 300px) / (1600 - 300)));
+$linemain: calc(1.3em + (0.8) * ((100vw - 300px)/(1600 - 300)));
+
+$font5: calc(0.5vw + 23px);
+
+
+
+
 
 
 /***************************
@@ -64,10 +98,3 @@ $default-background: #e8e7e5; //Off White
 
 
 
-/***************************
-* FONT SIZES
-****************************/
-$fontmain: calc(14px + (6) * ((100vw - 300px) / (1600 - 300)));
-$linemain: calc(1.3em + (0.8) * ((100vw - 300px)/(1600 - 300)));
-
-$font5: calc(0.5vw + 23px);

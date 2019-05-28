@@ -61,9 +61,29 @@ code {
   font-size: 0;
 }
 
+section {
+  padding-top: 15px;
+  padding-bottom:25px;
+  text-align: center;
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}
+
+iframe {
+  border-width: 0;
+  border-style: none;
+}
+
 /************* 
 General Styles 
 **************/
+.displaynone{
+  display:none;
+}
+
 .thin{
   font-style: thin;
   font-weight:100;
@@ -97,20 +117,16 @@ General Styles
   vertical-align:middle;
 }
 
-section {
-  padding-top: 20px;
-  padding-bottom:30px;
-  h2 {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    text-align: left;
-  }
-}
-
 .fullpdf{
   width: 100%; height: calc(100vh - 65px); display: block;
 }
 
+.featured-vid {
+  width: 86%;
+  height: 37vw;
+  position: relative;
+  margin-bottom: 20px;
+}
 
 /************* 
 Default Layout 
@@ -123,9 +139,6 @@ Default Layout
     height: 100%;
     width: 100%;
     display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
     z-index: -10;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -148,13 +161,7 @@ Default Layout
      margin-top:0px;
      margin-bottom:0px;
      color: $secondary;
-    }
-
-    .banner-super-title{
-     margin-top:0px;
-     margin-bottom:0px;
-     color: $secondary;
-     font-size: calc( 2vw + 30px);
+     font-size: 2.5em;
     }
 
     .banner-text{
@@ -186,10 +193,10 @@ $card-options: (
 .card {
   display: inline-flex;
   margin: 10px;
-  max-width: 320px;
+  max-width: 500px;
   position: relative;
   vertical-align: top;
-  width: 100%;
+  width: calc(2.2vw + 300px);
 }
 
 .card-front {
@@ -200,16 +207,17 @@ $card-options: (
   width: 100%;  
 }
 
-// Make card images responsive
-// 1. Fixes IE bug for oversized images in container
 .card-image {
-  min-height: 1px; // 1 
+  min-height: 1px;
+  height: 200px;
+  background: lightgrey; 
   
   > img {
     border-radius: 5px;
     display: block;
     margin: auto;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
   }
   
   &:not(:first-child):not(:last-child) { 
@@ -225,31 +233,52 @@ $card-options: (
   h3, p {
     text-align: center;
   }
+  h3{
+    margin-top: 15px;
+    color: $primary;
+  }
 }
 
 .card-badgebox{
   position: absolute;
-  top: 6px;
-  right: 58px;
+  top: 15px;
   z-index: 1;
-  width: 80%;
+  width: calc(100% - 30px);
+  text-align: left;
+}
+
+.card-badgebox.bl1{
+  top: 158px;
+  text-align: right;
 }
 
 .card-badgebox.bl2{
-  top: 121px;
+  top: 130px;
+  text-align: right;
+}
+
+.card-badgebox.ribbon{
+  top: 188px;
+  width: 100%;
+  right: 0px;
+  text-align: right;
 }
 
 .card-badge{
+  font-size: 15px;
   margin-bottom: 5px;
   display: inline-block;
   padding: 0 10px;
   line-height: 1.5;
-  font-size: .875rem;
   color: #fff;
   vertical-align: middle;
   white-space: nowrap;
-  border-radius: 2px;
+  border-radius: 4px;
   text-transform: uppercase;
+}
+
+.card-badge.ribbon{
+  border-radius: 4px 0px 0px 4px;
 }
 
 .card-actions {
@@ -318,7 +347,7 @@ Index Layout
 }
 
 .index-spacer1{
-  height:1vh;
+  height:25px;
 }
 
 .index-subtitle{
@@ -334,6 +363,10 @@ Fade Ins
 **************/
 .fadeinstay, .fadein-3{
   opacity: 0;
+}
+
+.movinright {
+  position: relative;
 }
 
 .fade-in-3s {
@@ -490,4 +523,40 @@ Keyframes
   100% {
     opacity:1;
   }
+}
+
+/************* 
+Banner Arrow
+**************/
+.scroll-down-arrow {
+  margin-top: calc(70vh + 75px);
+  position: absolute;
+  left: 49.5%;
+  -webkit-animation: bounce 1000ms ease  infinite;
+  -moz-animation: bounce 1000ms ease infinite;
+  -o-animation: bounce 1000ms ease infinite;
+  animation: bounce 1000ms ease infinite;
+  -webkit-animation-timing-function: cubic-bezier(.14, .75, .2, 1.01);
+  -moz-animation-timing-function: cubic-bezier(.14, .75, .2, 1.01);
+  -ms-animation-timing-function: cubic-bezier(.14, .75, .2, 1.01);
+  animation-timing-function: cubic-bezier(.14, .75, .2, 1.01);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid #f2f2f2; 
+  content: "";
+}
+
+.scroll-down-arrow.shortbann{
+  margin-top: calc(40vh + 75px);
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {top: 9px; opacity: 0.15}
+  25% {top: 12px; opacity: 0.45}
+  50% {opacity: 0.3}
+}
+@keyframes bounce {
+  0%, 100% {top: 9px; opacity: 0.15}
+  25% {top: 12px; opacity: 0.45}
+  50% {opacity: 0.3}
 }

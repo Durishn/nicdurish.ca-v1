@@ -143,6 +143,19 @@ function EasyPeasyParallax() {
         if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
       }
     });
+
+  $('.movinright').css({
+    'left': 0 + (scrollPos/15),
+    'opacity': 1 - (scrollPos/800)
+  });
+
+  $(".scrollvanish").each(function() {
+      if (scrollPos > 0) { //object comes into view (scrolling down)
+        $(this).addClass("displaynone");
+      } else {
+        $(this).removeClass("displaynone");
+      }
+    });
 }
 
 $(document).ready(function(){
@@ -151,6 +164,8 @@ $(document).ready(function(){
     EasyPeasyParallax();
   });
 });
+
+
 
 
  

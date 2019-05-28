@@ -1,24 +1,11 @@
-$title-background: #3d9e67;
+
 $background-color: #faf8eb;
 $content-background-color: #67CC8E;
 $content-background-gradient: #56BC83;
-$time-color: #fff;
+$content-background-gradient-dark: #4da575;
 $text-color: #fff;
-$content-width: 37vw;
 
-.tm-text{
-
-}
-
-.more {
-  display: none;
-  .no-js & {
-    display: inline;
-  }
-}
-.active { 
-  display: inline;
-}
+$content-width: 32vw;
 
 .visible {
   opacity: 1 !important;
@@ -39,7 +26,7 @@ $content-width: 37vw;
       position: relative;
       margin: 0 auto;
       width: 5px;
-      padding-bottom: 40px;
+      padding-bottom: 25px;
       list-style-type: none;
       
       &:last-child{
@@ -48,7 +35,7 @@ $content-width: 37vw;
       
       &:before{
         content: '';
-        background: $background-color;
+        background: $white;
         position: absolute;
         left: 50%;
         top: -12px;
@@ -66,9 +53,8 @@ $content-width: 37vw;
       time {
         position: absolute;
         z-index: 100;
-        color: grey;
+        color: $primary;
         left: -10px;
-        top: calc(-0.3vw + 3px);
         font-size: 18px;
       }
 
@@ -85,9 +71,10 @@ $content-width: 37vw;
         padding: 20px;
         
         h3{
-          color: $time-color;
+          color: $text-color;
           margin: 0px;
           text-align: center;
+          font-size: 1.05em;
         }
         
         p{
@@ -95,7 +82,7 @@ $content-width: 37vw;
           text-align: center;
           margin: 0px;
           margin-top: 8px;
-          
+          font-size: 0.95em;          
         }
         
         &:before{
@@ -129,6 +116,24 @@ $content-width: 37vw;
         background: linear-gradient(-45deg,  $content-background-gradient , $content-background-color);
       }
 
+      &:nth-child(odd) .content:hover{
+        background: $content-background-gradient;
+        background: -webkit-linear-gradient(-45deg, $content-background-gradient-dark , $content-background-gradient);
+        background: linear-gradient(-45deg,  $content-background-gradient-dark , $content-background-gradient);
+        &:before{
+          background: $content-background-gradient;
+        }
+      }
+
+      &:nth-child(even) .content:hover{
+        background: $content-background-gradient;
+        background: -webkit-linear-gradient(45deg, $content-background-gradient-dark , $content-background-gradient);
+        background: linear-gradient(45deg,  $content-background-gradient-dark , $content-background-gradient);
+        &:before{
+          background: $content-background-gradient;
+        }
+      }
+
       &:nth-child(odd) .timeline-image {
         left: calc(-37vw - 86px);
       }
@@ -155,6 +160,33 @@ $content-width: 37vw;
   }
 }
 
+.collapsible-div {
+  cursor: pointer;
+}
+
+.collapsible-div:hover {
+  background-color: #555;
+}
+
+.collapsible-div:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  font-size:1.4em;
+  top:5px;
+  position: relative;
+}
+
+.active:after {
+  content: "\2212"; /* Unicode character for "minus" sign (-) */
+}
+
+.collapsible-div-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
 /* -------------------------
    ----- Media Queries ----- 
    ------------------------- */
@@ -169,6 +201,21 @@ $content-width: 37vw;
 }
 
 @media screen and (max-width: 768px) {
+  .timeline{
+    ul{
+      li{
+        &:nth-child(even) .content:hover{
+          background: $content-background-gradient;
+          background: -webkit-linear-gradient(-45deg, $content-background-gradient-dark , $content-background-gradient);
+          background: linear-gradient(-45deg,  $content-background-gradient-dark , $content-background-gradient);
+          &:before{
+            background: $content-background-gradient;
+          }
+        }
+      }
+    }
+  }
+  
   .timeline-image{
     display: none;
   }
