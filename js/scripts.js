@@ -77,12 +77,8 @@ function EasyPeasyParallax() {
   scrollPos = $(this).scrollTop();
   var windowBottom = $(this).scrollTop() + $(this).innerHeight();
   var windowTop = $(this).scrollTop() + $(this).innerHeight() - $(window).height();
-  $('#EP-stay-55').css({
-    'background-position' : '55% ',
-    'opacity': 0 + (scrollPos/300) 
-  });
   $('#EP-stay-015').css({
-    'background-position' : '55% ',
+    
     'opacity': 0.15 + ((scrollPos)/300) 
   });
   $('#EP-fade-stay').css({
