@@ -10,13 +10,19 @@
 
 .bcl-llblue { background-color: #479EF1; }
 
+.bcl-llblue.darken { background-color: #0d5eab; }
+
 .bcl-hlred { background-color: #FD0E2F; }
 
 .bcl-llred { background-color: #FD3D57; }
 
 .bcl-dlred { background-color: #FD6D81; }
 
+.bcl-dlred.darken { background-color: #ce031f; }
+
 .bcl-llgreen { background-color: #85d687; }
+
+.bcl-llgreen.darken { background-color: #2a7e2c; }
 
 .bcl-llorange { background-color: #f5a75c; }
 

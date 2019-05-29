@@ -14,6 +14,7 @@ $highlight-blue: #1e87f0;
 	.bcl-hlblue{ background-color: $highlight-blue; }
 $lowlight-blue: #479EF1;
 	.bcl-llblue{ background-color: $lowlight-blue; }
+	.bcl-llblue.darken{ background-color: darken($lowlight-blue, 25%); }
 
 $highlight-red: #FD0E2F;
 	.bcl-hlred{ background-color: $highlight-red; }
@@ -21,9 +22,11 @@ $lowlight-red: #FD3D57;
 	.bcl-llred{ background-color: $lowlight-red; }
 $dulllight-red: #FD6D81;
 	.bcl-dlred{ background-color: $dulllight-red; }
+	.bcl-dlred.darken{ background-color: darken($dulllight-red, 30%); }
 
 $lowlight-green: #85d687;
 	.bcl-llgreen{ background-color: $lowlight-green; }
+	.bcl-llgreen.darken{ background-color: darken($lowlight-green, 35%); }
 
 $lowlight-orange: #f5a75c;
 	.bcl-llorange{ background-color: $lowlight-orange; }

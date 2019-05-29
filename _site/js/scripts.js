@@ -77,7 +77,7 @@ function EasyPeasyParallax() {
   scrollPos = $(this).scrollTop();
   var windowBottom = $(this).scrollTop() + $(this).innerHeight();
   var windowTop = $(this).scrollTop() + $(this).innerHeight() - $(window).height();
-  $("#EP-fade").each(function() {
+  $(".EP-fade").each(function() {
       $(this).css({ 'opacity': 1 - (scrollPos/125) });
   });
 
@@ -90,14 +90,14 @@ function EasyPeasyParallax() {
   });
 
 
-  $('#EP-stay-015').css({
+  $('.EP-stay-015').css({
     'opacity': 0.15 + ((scrollPos)/300) 
   });
-  $('#EP-fade-stay').css({
+  $('.EP-fade-stay').css({
     'margin-top': (scrollPos/2)+"px",
     'opacity': 1-(scrollPos/150)
   });
-  $('#EP-slightfade-slow').css({
+  $('.EP-slightfade-slow').css({
     'opacity': 0 + (scrollPos)
   });
 
