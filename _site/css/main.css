@@ -324,7 +324,7 @@ Default Layout
 /************* 
 Card Options 
 **************/
-.card { display: inline-flex; margin: 10px; max-width: 500px; position: relative; vertical-align: top; width: calc(2.2vw + 300px); }
+.card { display: inline-flex; margin: 10px; max-width: 500px; position: relative; vertical-align: top; width: calc(2.2vw + 290px); }
 
 .card-front { background: #fff; border: 1px solid #ddd; border-radius: 5px; position: relative; width: 100%; }
 
@@ -350,7 +350,7 @@ Card Options
 
 .card-badge.ribbon { border-radius: 4px 0px 0px 4px; }
 
-.card-actions { padding: 15px; }
+.card-actions { padding: 15px; padding-top: 0px; }
 .card-actions > a { color: #2ea0eb; font-size: .8571rem; text-decoration: none; }
 .card-actions > a:not(:last-child) { margin-right: 10px; }
 .card-actions > a:hover { color: #2580bc; }

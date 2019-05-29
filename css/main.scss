@@ -196,7 +196,7 @@ $card-options: (
   max-width: 500px;
   position: relative;
   vertical-align: top;
-  width: calc(2.2vw + 300px);
+  width: calc(2.2vw + 290px);
 }
 
 .card-front {
@@ -283,6 +283,7 @@ $card-options: (
 
 .card-actions {
   padding: 15px;
+  padding-top: 0px;
   
   > a {
     color: map-get($card-options, primary);
