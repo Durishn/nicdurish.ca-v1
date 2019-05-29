@@ -77,8 +77,11 @@ function EasyPeasyParallax() {
   scrollPos = $(this).scrollTop();
   var windowBottom = $(this).scrollTop() + $(this).innerHeight();
   var windowTop = $(this).scrollTop() + $(this).innerHeight() - $(window).height();
+  $('#EP-fade').css({
+    'margin-bottom': (scrollPos/3)+"px", 
+    'opacity': 1 - (scrollPos/250)
+  });  
   $('#EP-stay-015').css({
-    
     'opacity': 0.15 + ((scrollPos)/300) 
   });
   $('#EP-fade-stay').css({
@@ -133,6 +136,14 @@ function EasyPeasyParallax() {
         if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
       }
   });
+  $(".fadein-top").each(function() {
+      objectMiddle = $(this).offset().top + 180;
+      if (objectMiddle < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+  });
   $(".fadeout").each(function() {
       /* Check the location of each desired element */
       objectMiddle = $(this).offset().top + $(this).outerHeight()/1.5;
@@ -145,7 +156,7 @@ function EasyPeasyParallax() {
     });
 
   $('.movinright').css({
-    'left': 0 + (scrollPos/15),
+    'margin-left': 0 + (scrollPos/10),
     'opacity': 1 - (scrollPos/800)
   });
 

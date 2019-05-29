@@ -191,12 +191,22 @@ $card-options: (
 );
 
 .card {
+  opacity: 0.95;
   display: inline-flex;
   margin: 10px;
   max-width: 500px;
   position: relative;
   vertical-align: top;
   width: calc(2.2vw + 290px);
+}
+
+.card:hover {
+  cursor: pointer;
+  opacity: 1;
+  -webkit-filter: saturate(2);
+  box-shadow: 1px 1px 20px 0.5px #C9C9C9;
+  -webkit-box-shadow: 1px 1px 20px 0.5px #C9C9C9;
+  -moz-box-shadow: 1px 1px 20px 0.5px #C9C9C9;
 }
 
 .card-front {
@@ -324,18 +334,23 @@ Index Layout
 }
 
 .index-center-div{
-  position: absolute;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   right: 0;
-  top: 2vh;
-  bottom: 0;
+  bottom: 48%;
   left: 0;
   width: calc(30vw + 230px);
   height: 100px;
   text-align: center;
-  z-index: 1;
-  position: absolute;
-  z-index:-1;
+  position: fixed;
+  z-index: 10;
+}
+
+.row.name:hover{
+  cursor: pointer;
+  .index-title{
+    color: $secondary;
+  }
 }
 
 .index-title{
@@ -349,6 +364,10 @@ Index Layout
 
 .index-spacer1{
   height:25px;
+}
+
+.index-spacer2{
+  height:40px;
 }
 
 .index-subtitle{
@@ -368,6 +387,7 @@ Fade Ins
 
 .movinright {
   position: relative;
+  width: 60vw;
 }
 
 .fade-in-3s {
@@ -549,6 +569,18 @@ Banner Arrow
 
 .scroll-down-arrow.shortbann{
   margin-top: calc(40vh + 75px);
+}
+
+.scroll-down-arrow.fullbann{
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25px solid #f2f2f2;
+    position: fixed;
+    width: 0px;
+    height: 0px;
+    left: calc(50% - 30px);
+    top: 90%;
+    margin-top: 90vh;
 }
 
 @-webkit-keyframes bounce {

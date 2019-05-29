@@ -2,13 +2,92 @@
 layout: index
 title: home
 ---
-<div class="index-center-div">
-    <div class="row fade-in-3s">
-        <span class="index-title thin">Nic</span>
-        <span class="index-title thick"><b>Durish</b></span>
-    </div>
-    <div class="row index-spacer1"></div>
-    <div class="row fade-in-wait-3s">
-    	<h3 class="index-subtitle">Designer &nbsp; · &nbsp; Computer Scientist &nbsp; · &nbsp; Tinkerer</h3>
-    </div>
+<div style="height:100vh; width:100vw;">
+	<div id="EP-fade" class="index-center-div ">
+	    <div class="row fade-in-3s name" onclick="location.href='{{ site.baseurl }}/about/';">
+	        <span class="index-title thin">Nic</span>
+	        <span class="index-title thick"><b>Durish</b></span>
+	    </div>
+	    <div class="row index-spacer1"></div>
+	    <div class="row fade-in-wait-3s">
+	    	<h3 class="index-subtitle">Designer &nbsp; · &nbsp; Computer Scientist &nbsp; · &nbsp; Tinkerer</h3>
+	    </div>
+	    <div class="row index-spacer2"></div>
+	    <div class="row fade-in-wait-5s">
+	        <div class="col social-links-container" style="opacity:0.9; width: 80%; margin: auto;">
+	          {% if site.show_social_icons %}
+	            {% include social_links.html %}
+	          {% endif %}
+	        </div>
+      	</div>
+	</div>
+	<span class="scroll-down-arrow fullbann scrollvanish"></span>
+</div>
+
+<div class="page-div">
+<!--
+	FEATURED SECTION
+	-->
+	<section class="page-content">
+		<h2 class="cl-primary movinright">Featured Content </h2>
+		<iframe class="featured-vid" src="https://www.youtube.com/embed/Ckcx2caqY-0"></iframe>
+		<div class="card-container">
+			<div class="card fadein-3">
+				<div class="card-front" data-image-position="top">
+					<div class="card-image card-image-top">
+			       		<img src="http://placekitten.com/g/320/180" />
+			    	</div>
+			      	<div class="card-content">
+			      		<div class="card-badgebox">
+	                    	<span class="card-badge bcl-hlblue">Professional</span><br> 
+	                 	</div>
+			      		<div class="card-badgebox bl2">
+	                    	<span class="card-badge bcl-hlblue">HTML</span> 
+	                    	<span class="card-badge bcl-hlblue">CSS</span> 
+	                    	<span class="card-badge bcl-hlblue">JS</span>
+	                 	</div>
+			        	<h3>Images on top</h3>
+			        	<p>I was born during the summer months in Toronto, Ontario where I lived for the first 4 years of my life. To my memory, I spent most of this time climbing on things, exhausting my parents, tormenting my siblings or playing witudent c</p>
+			      	</div>
+			     </div>
+			</div>
+
+			<div class="card fadein-3">
+				<div class="card-front" data-image-position="top">
+					<div class="card-image card-image-top">
+			       		<img src="http://placekitten.com/g/320/180" />
+			    	</div>
+			      	<div class="card-content">
+			        	<h3>Images on top</h3>
+			        	<p>I was born during the summer months in Toronto, Ontario where I lived for the first 4 years of my life. To my memory, I spent most of this time climbing on things, exhausting my parents, tormenting my siblings or playing witudent c</p>
+			      	</div>
+			    	<div class="card-actions">
+			        	<a href="">Card link</a>
+			        	<a href="">Another link</a> 
+			      	</div>
+			     </div>
+			</div>
+
+			<div class="card fadein-3">
+				<div class="card-front" data-image-position="top">
+					<div class="card-image card-image-top">
+			       		<img src="http://placekitten.com/g/320/180" />
+			    	</div>
+			      	<div class="card-content">
+			        	<h3>Images on top</h3>
+			        	<p>I was born during the summer months in Toronto, Ontario where I lived for the first 4 years of my life. To my memory, I spent most of this time climbing on things, exhausting my parents, tormenting my siblings or playing witudent c</p>
+			      	</div>
+			    	<div class="card-actions">
+		        	<a href="">Card link</a>
+		        	<a href="">Another link</a> 
+			      </div>
+			    </div>
+			</div>
+		</div>
+
+
+
+
+
+	</section>
 </div>
