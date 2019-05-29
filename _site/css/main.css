@@ -435,8 +435,9 @@ Banner Arrow
 
 .scroll-down-arrow.shortbann { margin-top: calc(40vh + 75px); }
 
-.scroll-down-arrow.fullbann { border-left: 15px solid transparent; border-right: 15px solid transparent; border-top: 25px solid #f2f2f2; position: fixed; width: 0px; height: 0px; left: calc(50% - 15px); margin-top: 82vh; }
+.scroll-down-arrow.fullbann { border-left: 15px solid transparent; border-right: 15px solid transparent; border-top: 25px solid #f2f2f2; position: fixed; width: 0px; height: 0px; left: calc(50% - 15px); margin-top: calc(100vh - 40px - 20px); }
 
+@media screen and (max-width: 768px) { .scroll-down-arrow.fullbann { margin-top: calc(85vh - 40px - 20px); } }
 @-webkit-keyframes bounce { 0%, 100% { top: 9px; opacity: 0.15; }
   25% { top: 12px; opacity: 0.45; }
   50% { opacity: 0.3; } }

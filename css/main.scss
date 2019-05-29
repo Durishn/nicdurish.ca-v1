@@ -590,7 +590,13 @@ Banner Arrow
     width: 0px;
     height: 0px;
     left: calc(50% - 15px);
-    margin-top: 82vh;
+    margin-top: calc(100vh - 40px - 20px);
+}
+
+@media screen and (max-width: 768px) {
+  .scroll-down-arrow.fullbann{
+    margin-top: calc(85vh - 40px - 20px);
+  }
 }
 
 @-webkit-keyframes bounce {

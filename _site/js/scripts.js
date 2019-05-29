@@ -79,6 +79,9 @@ function EasyPeasyParallax() {
   var windowTop = $(this).scrollTop() + $(this).innerHeight() - $(window).height();
   $("#EP-fade").each(function() {
       $(this).css({ 'opacity': 1 - (scrollPos/125) });
+  });
+
+  $(".EP-displaynone").each(function() {
       if ($(this).css('opacity') <= 0) {
         $(this).addClass("displaynone");
       } else {
