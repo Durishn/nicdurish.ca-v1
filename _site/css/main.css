@@ -270,8 +270,8 @@ Navbar Overrides
 /******* 
 Sitewide 
 ********/
-@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: local("Open Sans"), local("OpenSans"), url("http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff"); }
-html, body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: calc(14px + (6) * ((100vw - 300px) / (1600 - 300))); /*line-height: $linemain;*/ height: 100%; margin: 0; padding: 0; box-sizing: border-box; }
+@font-face { font-family: 'Open Sans'; font-display: auto; font-style: normal; font-weight: 400; src: local("Open Sans"), local("OpenSans"), url("https://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff"); }
+html, body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-display: auto; font-size: calc(14px + (6) * ((100vw - 300px) / (1600 - 300))); /*line-height: $linemain;*/ height: 100%; margin: 0; padding: 0; box-sizing: border-box; }
 
 body { background-color: #152335; }
 

@@ -2,8 +2,15 @@
 <html lang="en">
 	{% include head.html %}
 	<body class="fixedheader-body">
-  		{% include header_fixed.html %}
+  		{% include header.html %}
+  		<div class="fixed-nav-div"></div>
     	{{ content }}
   </body>
   
 </html>
+
+<script>
+  $(".nav").each(function() {
+    $(this).addClass("fixed-nav");
+    });
+</script>

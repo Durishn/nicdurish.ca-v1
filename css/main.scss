@@ -19,13 +19,15 @@ Sitewide
 ********/
 @font-face {
   font-family: 'Open Sans';
+  font-display: auto;
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+  src: local('Open Sans'), local('OpenSans'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
 }
 
 html, body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-display: auto;
 	font-size: $fontmain;
   /*line-height: $linemain;*/
 	height: 100%;
