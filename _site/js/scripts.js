@@ -77,10 +77,16 @@ function EasyPeasyParallax() {
   scrollPos = $(this).scrollTop();
   var windowBottom = $(this).scrollTop() + $(this).innerHeight();
   var windowTop = $(this).scrollTop() + $(this).innerHeight() - $(window).height();
-  $('#EP-fade').css({
-    'margin-bottom': (scrollPos/3)+"px", 
-    'opacity': 1 - (scrollPos/250)
-  });  
+  $("#EP-fade").each(function() {
+      $(this).css({ 'opacity': 1 - (scrollPos/125) });
+      if ($(this).css('opacity') <= 0) {
+        $(this).addClass("displaynone");
+      } else {
+        $(this).removeClass("displaynone");
+      }
+  });
+
+
   $('#EP-stay-015').css({
     'opacity': 0.15 + ((scrollPos)/300) 
   });
@@ -97,7 +103,7 @@ function EasyPeasyParallax() {
       if (objectBottom < windowBottom) { //object comes into view (scrolling down)
         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
       }
-    });
+  });
     $(".fadeinstay2").each(function() {
       objectMiddle = $(this).offset().top + $(this).outerHeight()/2;
       if (objectMiddle < windowBottom) { //object comes into view (scrolling down)
@@ -137,8 +143,9 @@ function EasyPeasyParallax() {
       }
   });
   $(".fadein-top").each(function() {
-      objectMiddle = $(this).offset().top + 180;
-      if (objectMiddle < windowBottom) { //object comes into view (scrolling down)
+      objectTop = $(this).offset().top + 180;
+
+      if (objectTop < windowBottom) { //object comes into view (scrolling down)
         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
       } else { //object goes out of view (scrolling up)
         if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
