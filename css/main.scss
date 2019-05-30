@@ -158,6 +158,7 @@ Default Layout
     justify-content: center;
     align-items: center;  
     text-align: center;
+    left: 25px;
 
     .banner-title{
      margin-top:0px;
@@ -175,7 +176,7 @@ Default Layout
 }
 
 .right-div{
-  right: calc(7vw + 10px);
+  right: calc(25px);
 }
 
 .half-div{
