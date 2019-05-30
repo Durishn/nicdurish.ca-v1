@@ -91,13 +91,6 @@ iframe {
   width: 100%; height: calc(100vh - 65px); display: block;
 }
 
-.featured-vid {
-  width: 86%;
-  height: 37vw;
-  position: relative;
-  margin-bottom: 20px;
-}
-
 /************* 
 GENERAL STYLES 
 **************/
@@ -451,17 +444,22 @@ PicList
 /************* 
 Carousel 
 **************/
+.featured-vid {
+    width: 55vw;
+    height: 31vw;
+    position: relative;
+    pointer-events: none;
+}
+
 section.carousel-sec {
-  width: 40em;
-  height: 25em;
-  margin: 0 auto;
+  width: 100%;
   position: relative;
 }
 
 .carousel {
+  padding: 0;
+
    li {
-    width: 500px;
-    height: 281px;
     background: #333;
     display: inline-block;
     -webkit-transition: all .3s ease-in-out;
@@ -483,14 +481,15 @@ section.carousel-sec {
   }
 
   .main-pos {
-    margin-left: 2em !important;
     z-index: 3000;
+    margin: auto;
+    position: relative;
     /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
   }
 
   .left-pos {
-    opacity: .3;
-    margin-left: -17em !important;
+    opacity: 0.2;
+    left: -12vw ;
     z-index: 1000;
     -webkit-transform: scale(.75);
     -moz-transform: scale(.75);
@@ -498,16 +497,17 @@ section.carousel-sec {
   }
 
   .back-pos {
-    margin-left: 2em !important;
-    opacity: .05;
+    margin: auto;
+    position: absolute;
+    opacity: 0;
     -webkit-transform: scale(.5);
     -moz-transform: scale(.5);
     transform: scale(.5);
   }
 
   .right-pos {
-    opacity: .3;
-    margin-left:  21em !important;
+    opacity: 0.2;
+    right: -12vw;
     z-index: 1000;
     -webkit-transform: scale(.75);
     -moz-transform: scale(.75);
