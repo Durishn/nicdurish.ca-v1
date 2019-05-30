@@ -182,10 +182,10 @@ Default Layout
       line-height: calc(0.7vw + 12px);
     }
   }
-  @media screen and (max-width: 768px) {
-    .bannertext-div {
-      width: 66vw;
-    }
+}
+@media screen and (max-width: 768px) {
+  .bannertext-div {
+    width: 55vw !important;
   }
 }
 
