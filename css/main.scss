@@ -83,8 +83,23 @@ iframe {
   border-style: none;
 }
 
+.page-div{
+  background-color: $page-div-background;
+}
+
+.fullpdf{
+  width: 100%; height: calc(100vh - 65px); display: block;
+}
+
+.featured-vid {
+  width: 86%;
+  height: 37vw;
+  position: relative;
+  margin-bottom: 20px;
+}
+
 /************* 
-OVERRIDES & GENERAL STYLES 
+GENERAL STYLES 
 **************/
 .displaynone{
   display:none;
@@ -100,10 +115,6 @@ OVERRIDES & GENERAL STYLES
   font-style: bold;
 }
 
-.circle{
-  border-radius: 50%;
-}
-
 .center{
   text-align: center;
 }
@@ -112,8 +123,8 @@ OVERRIDES & GENERAL STYLES
   width:100%;
 }
 
-.page-div{
-  background-color: $page-div-background;
+.circle{
+  border-radius: 50%;
 }
 
 .page-content{
@@ -131,19 +142,8 @@ OVERRIDES & GENERAL STYLES
   vertical-align:middle;
 }
 
-.fullpdf{
-  width: 100%; height: calc(100vh - 65px); display: block;
-}
-
-.featured-vid {
-  width: 86%;
-  height: 37vw;
-  position: relative;
-  margin-bottom: 20px;
-}
-
 /************* 
-Default Layout 
+Banner 
 **************/
 .banner-div{
   height: calc(70vh + 105px);
@@ -195,6 +195,7 @@ Default Layout
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   .bannertext-div {
     width: 55vw !important;
@@ -214,12 +215,8 @@ Default Layout
 }
 
 /************* 
-Card Options 
+Cards
 **************/
-$card-options: (
-  primary: rgb(46, 160, 235),
-);
-
 .card {
   opacity: 0.95;
   display: inline-flex;
@@ -451,6 +448,81 @@ PicList
     border-width: 1px;
   }
 
+/************* 
+Carousel 
+**************/
+section.carousel-sec {
+  width: 40em;
+  height: 25em;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel {
+   li {
+    width: 500px;
+    height: 281px;
+    background: #333;
+    display: inline-block;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+  }
+
+  li p {
+    color: white;
+    font-weight: bold;
+    font-size: 5em;
+    text-align: center;
+    margin-top: 1.175em;
+  }
+
+  .items {
+    position: absolute;
+  }
+
+  .main-pos {
+    margin-left: 2em !important;
+    z-index: 3000;
+    /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
+  }
+
+  .left-pos {
+    opacity: .3;
+    margin-left: -17em !important;
+    z-index: 1000;
+    -webkit-transform: scale(.75);
+    -moz-transform: scale(.75);
+    transform: scale(.75);
+  }
+
+  .back-pos {
+    margin-left: 2em !important;
+    opacity: .05;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    transform: scale(.5);
+  }
+
+  .right-pos {
+    opacity: .3;
+    margin-left:  21em !important;
+    z-index: 1000;
+    -webkit-transform: scale(.75);
+    -moz-transform: scale(.75);
+    transform: scale(.75);
+  }
+
+  span {
+    position: relative;
+    margin: 0 auto;
+    left: 17em;
+    top: 20em;
+  }
+}
+ 
+
 
 /************* 
 Index Layout 
@@ -479,7 +551,7 @@ Index Layout
   margin-left: auto;
   margin-right: auto;
   right: 0;
-  bottom: 52%;
+  top: calc(50% - 100px);
   left: 0;
   width: calc(30vw + 230px);
   height: 100px;
