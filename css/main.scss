@@ -54,6 +54,10 @@ p{
     font-weight: 300;
 }
 
+a:hover {
+  color: $highlight-blue;
+}
+
 figure{
   margin: 0;
 }
@@ -96,8 +100,16 @@ General Styles
   font-style: bold;
 }
 
+.circle{
+  border-radius: 50%;
+}
+
 .center{
   text-align: center;
+}
+
+.fullcontainer{
+  width:100%;
 }
 
 .page-div{
@@ -152,10 +164,10 @@ Default Layout
     position: absolute;
     top: 0px;
     height: 80vh;
+    left:0;
+    right:0;
     margin: auto;
     width: calc(82vw + 20px);
-    margin-left: calc((100vw - calc(80vw + 20px)) /2 );
-    margin-right: calc((100vw - calc(80vw + 20px)) /2 );
   }
 
   .bannertext-div { 
@@ -315,6 +327,7 @@ $card-options: (
   padding: 5px;
   position: relative;
   top: -18px;
+  text-align: center;
   
   > a {
     margin: 0px;
@@ -329,6 +342,89 @@ $card-options: (
 .card a:hover {
     color: $highlight-blue;
   }
+
+
+/************* 
+PicList
+**************/
+.piclist{
+  padding: 0px;
+  
+  hr{
+    margin: 20px 0px;
+  }
+
+  .piclist-item{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    margin-left: -30px;
+  }
+
+  .piclist-pic{
+    width: 10vw;
+    height: 10vw;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 110px;
+    min-height: 110px;
+    margin: 1.2em;
+    position: relative;
+    float: left;
+
+    img{
+      width:100%;
+    }
+
+  }
+
+  .piclist-text{
+    flex: 1;
+    min-width: 0;
+    flex-basis: 1px;
+    text-align: left;
+    overflow: hidden;
+    margin: 0.2em 0;
+
+    h3{
+      margin: 0.4em 0;
+    }
+    p{
+      margin: 1em 0px;
+    }
+    a{
+      margin: 0 2em;
+      line-height: 2.2em;
+    }
+
+    .card-actions{
+      margin-top: 1.8em;
+      padding-top: 10px;
+      padding-bottom: 0;
+    }
+  }
+}
+.piclist li:after {
+    content: "";
+    display: block;
+    height: 1px;
+    opacity: 0.1;
+    width: 100%;
+    background: #000;
+
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+  }
+
 
 /************* 
 Index Layout 

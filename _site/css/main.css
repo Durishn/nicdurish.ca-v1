@@ -281,6 +281,8 @@ h3 { margin: 0px; font-weight: 450; }
 
 p { font-weight: 300; }
 
+a:hover { color: #1e87f0; }
+
 figure { margin: 0; }
 
 code { color: transparent; font-size: 0; }
@@ -299,7 +301,11 @@ General Styles
 
 .thick { font-style: bold; }
 
+.circle { border-radius: 50%; }
+
 .center { text-align: center; }
+
+.fullcontainer { width: 100%; }
 
 .page-div { background-color: #e8e7e5; }
 
@@ -318,7 +324,7 @@ Default Layout
 **************/
 .banner-div { height: calc(70vh + 105px); width: 100%; }
 .banner-div .banner { height: 100%; width: 100%; display: block; z-index: -10; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-.banner-div .page-content { position: absolute; top: 0px; height: 80vh; margin: auto; width: calc(82vw + 20px); margin-left: calc((100vw - calc(80vw + 20px)) /2 ); margin-right: calc((100vw - calc(80vw + 20px)) /2 ); }
+.banner-div .page-content { position: absolute; top: 0px; height: 80vh; left: 0; right: 0; margin: auto; width: calc(82vw + 20px); }
 .banner-div .bannertext-div { width: 47vw; height: calc(70vh - 20px); position: absolute; top: 100px; padding: 5px; display: flex; justify-content: center; align-items: center; text-align: center; }
 .banner-div .bannertext-div .banner-title { margin-top: 0px; margin-bottom: 0px; color: #cf9623; font-size: 2.5em; }
 .banner-div .bannertext-div .banner-text { color: #c1c1c1; font-size: calc(0.7vw + 10px); line-height: calc(0.7vw + 12px); }
@@ -362,10 +368,26 @@ Card Options
 
 .card-badge.ribbon { border-radius: 4px 0px 0px 4px; }
 
-.card-actions { padding: 5px; position: relative; top: -18px; }
+.card-actions { padding: 5px; position: relative; top: -18px; text-align: center; }
 .card-actions > a { margin: 0px; font-weight: 400; text-decoration: none; margin-right: 15px; margin-left: 15px; line-height: 2.2em; }
 
 .card a:hover { color: #1e87f0; }
+
+/************* 
+PicList
+**************/
+.piclist { padding: 0px; }
+.piclist hr { margin: 20px 0px; }
+.piclist .piclist-item { display: flex; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; align-items: center; margin-left: -30px; }
+.piclist .piclist-pic { width: 10vw; height: 10vw; max-width: 200px; max-height: 200px; min-width: 110px; min-height: 110px; margin: 1.2em; position: relative; float: left; }
+.piclist .piclist-pic img { width: 100%; }
+.piclist .piclist-text { flex: 1; min-width: 0; flex-basis: 1px; text-align: left; overflow: hidden; margin: 0.2em 0; }
+.piclist .piclist-text h3 { margin: 0.4em 0; }
+.piclist .piclist-text p { margin: 1em 0px; }
+.piclist .piclist-text a { margin: 0 2em; line-height: 2.2em; }
+.piclist .piclist-text .card-actions { margin-top: 1.8em; padding-top: 10px; padding-bottom: 0; }
+
+.piclist li:after { content: ""; display: block; height: 1px; opacity: 0.1; width: 100%; background: #000; unicode-bidi: isolate; margin-block-start: 0.5em; margin-block-end: 0.5em; margin-inline-start: auto; margin-inline-end: auto; overflow: hidden; border-style: inset; border-width: 1px; }
 
 /************* 
 Index Layout 
