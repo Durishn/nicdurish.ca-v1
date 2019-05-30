@@ -354,6 +354,8 @@ Card Options
 
 .card-badgebox.ribbon { top: 188px; width: 100%; right: 0px; text-align: right; }
 
+.card-badgebox.ribbon.v2 { top: 162px; }
+
 .card-badge { font-size: 15px; margin-bottom: 5px; display: inline-block; padding: 0 10px; line-height: 1.5; color: #fff; vertical-align: middle; white-space: nowrap; border-radius: 4px; text-transform: uppercase; }
 
 .card-badge.ribbon { border-radius: 4px 0px 0px 4px; }
