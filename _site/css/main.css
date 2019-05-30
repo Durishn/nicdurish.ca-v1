@@ -401,9 +401,9 @@ section.carousel-sec { width: 100%; position: relative; }
 .carousel li p { color: white; font-weight: bold; font-size: 5em; text-align: center; margin-top: 1.175em; }
 .carousel .items { position: absolute; }
 .carousel .main-pos { z-index: 3000; margin: auto; position: relative; /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/ }
-.carousel .left-pos { opacity: 0.2; left: -12vw; z-index: 1000; -webkit-transform: scale(0.75); -moz-transform: scale(0.75); transform: scale(0.75); }
+.carousel .left-pos { opacity: 0.2; left: 0vw; z-index: 1000; -webkit-transform: scale(0.75); -moz-transform: scale(0.75); transform: scale(0.75); }
 .carousel .back-pos { margin: auto; position: absolute; opacity: 0; -webkit-transform: scale(0.5); -moz-transform: scale(0.5); transform: scale(0.5); }
-.carousel .right-pos { opacity: 0.2; right: -12vw; z-index: 1000; -webkit-transform: scale(0.75); -moz-transform: scale(0.75); transform: scale(0.75); }
+.carousel .right-pos { opacity: 0.2; right: 0vw; z-index: 1000; -webkit-transform: scale(0.75); -moz-transform: scale(0.75); transform: scale(0.75); }
 .carousel span { position: relative; margin: 0 auto; left: 17em; top: 20em; }
 
 /************* 

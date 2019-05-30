@@ -489,7 +489,7 @@ section.carousel-sec {
 
   .left-pos {
     opacity: 0.2;
-    left: -12vw ;
+    left: 0vw ;
     z-index: 1000;
     -webkit-transform: scale(.75);
     -moz-transform: scale(.75);
@@ -507,7 +507,7 @@ section.carousel-sec {
 
   .right-pos {
     opacity: 0.2;
-    right: -12vw;
+    right: 0vw;
     z-index: 1000;
     -webkit-transform: scale(.75);
     -moz-transform: scale(.75);
