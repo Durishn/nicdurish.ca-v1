@@ -322,6 +322,7 @@ Default Layout
 .banner-div .bannertext-div { width: 47vw; height: calc(70vh - 20px); position: absolute; top: 100px; padding: 5px; display: flex; justify-content: center; align-items: center; text-align: center; }
 .banner-div .bannertext-div .banner-title { margin-top: 0px; margin-bottom: 0px; color: #cf9623; font-size: 2.5em; }
 .banner-div .bannertext-div .banner-text { color: #c1c1c1; font-size: calc(0.7vw + 10px); line-height: calc(0.7vw + 12px); }
+@media screen and (max-width: 768px) { .banner-div .bannertext-div { width: 62vw; } }
 
 .right-div { right: 0px; }
 

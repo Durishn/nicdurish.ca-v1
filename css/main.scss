@@ -182,6 +182,11 @@ Default Layout
       line-height: calc(0.7vw + 12px);
     }
   }
+  @media screen and (max-width: 768px) {
+    .bannertext-div {
+      width: 62vw;
+    }
+  }
 }
 
 .right-div{
