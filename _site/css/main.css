@@ -254,7 +254,7 @@ Navbar Overrides
 .collapsible-div-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out; }
 
 /* ------------------------- ----- Media Queries -----  ------------------------- */
-@media screen and (min-width: 2200px) { .timeline ul li .content, .timeline ul li .timeline-image { max-width: 800px; }
+@media screen and (min-width: 2500px) { .timeline ul li .content, .timeline ul li .timeline-image { max-width: 800px; }
   .timeline ul li:nth-child(even) .content, .timeline ul li:nth-child(odd) .timeline-image { left: -886px; } }
 @media screen and (max-width: 768px) { .timeline ul li:nth-child(even) .content:hover { background: #56BC83; background: -webkit-linear-gradient(-45deg, #4da575, #56BC83); background: linear-gradient(-45deg, #4da575, #56BC83); }
   .timeline ul li:nth-child(even) .content:hover:before { background: #56BC83; }
@@ -286,7 +286,7 @@ figure { margin: 0; }
 code { color: transparent; font-size: 0; }
 
 section { padding-top: 15px; padding-bottom: 25px; text-align: center; }
-section h2 { margin-top: 20px; margin-bottom: 30px; text-align: left; }
+section h2 { margin-top: 20px; margin-bottom: 25px; text-align: left; }
 
 iframe { border-width: 0; border-style: none; }
 
