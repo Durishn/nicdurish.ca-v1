@@ -291,7 +291,7 @@ section h2 { margin-top: 20px; margin-bottom: 30px; text-align: left; }
 iframe { border-width: 0; border-style: none; }
 
 /************* 
-General Styles 
+OVERRIDES & GENERAL STYLES 
 **************/
 .displaynone { display: none; }
 
@@ -330,7 +330,7 @@ Default Layout
 @media screen and (max-width: 768px) { .bannertext-div { width: 55vw !important; } }
 .right-div { right: 0px; }
 
-.half-div { height: calc(40vh + 105px); }
+.half-div { height: calc(40vh + 105px) !important; }
 .half-div .bannertext-div { height: calc(40vh - 20px); }
 
 /************* 
@@ -379,11 +379,15 @@ PicList
 .piclist .piclist-item { display: flex; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; align-items: center; }
 .piclist .piclist-pic { width: 10vw; height: 10vw; max-width: 200px; max-height: 200px; min-width: 110px; min-height: 110px; margin: 1.2em; position: relative; float: left; }
 .piclist .piclist-pic img { width: 100%; }
+.piclist .piclist-pic.smaller { width: 5vw; height: 5vw; max-width: 100px; max-height: 100px; min-width: 55px; min-height: 55px; margin: 3em; }
 .piclist .piclist-text { flex: 1; min-width: 0; flex-basis: 1px; text-align: left; overflow: hidden; margin: 0.2em 0; }
 .piclist .piclist-text h3 { margin: 0.4em 0; }
+.piclist .piclist-text .piclist-subtitle { margin: 0 0 0.5em 0; position: relative; top: 5px; }
 .piclist .piclist-text p { margin: 1em 0px; }
 .piclist .piclist-text a { margin: 0 2em; line-height: 2.2em; }
 .piclist .piclist-text .card-actions { margin-top: 1.8em; padding-top: 10px; padding-bottom: 0; }
+.piclist .piclist-text .card-actions.nopad { padding-top: 0; margin-top: 0; top: 0; }
+.piclist .piclist-text .shorttt { margin: 0.4em 0 0 0; }
 
 .piclist li:after { content: ""; display: block; height: 1px; opacity: 0.1; width: 100%; background: #000; unicode-bidi: isolate; margin-block-start: 0.5em; margin-block-end: 0.5em; margin-inline-start: auto; margin-inline-end: auto; overflow: hidden; border-style: inset; border-width: 1px; }
 

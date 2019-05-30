@@ -84,7 +84,7 @@ iframe {
 }
 
 /************* 
-General Styles 
+OVERRIDES & GENERAL STYLES 
 **************/
 .displaynone{
   display:none;
@@ -207,7 +207,7 @@ Default Layout
 }
 
 .half-div{
-  height: calc(40vh + 105px);
+  height: calc(40vh + 105px) !important;
   .bannertext-div {
     height: calc(40vh - 20px);
   }
@@ -380,6 +380,16 @@ PicList
 
   }
 
+  .piclist-pic.smaller{
+        width: 5vw;
+    height: 5vw;
+    max-width: 100px;
+    max-height: 100px;
+    min-width: 55px;
+    min-height: 55px;
+    margin: 3em;
+  }
+
   .piclist-text{
     flex: 1;
     min-width: 0;
@@ -391,6 +401,13 @@ PicList
     h3{
       margin: 0.4em 0;
     }
+
+    .piclist-subtitle{
+      margin: 0 0 0.5em 0;
+      position: relative;
+      top: 5px;
+    }
+
     p{
       margin: 1em 0px;
     }
@@ -403,6 +420,16 @@ PicList
       margin-top: 1.8em;
       padding-top: 10px;
       padding-bottom: 0;
+    }
+
+    .card-actions.nopad{
+      padding-top: 0;
+      margin-top: 0;
+      top: 0; 
+    }
+
+    .shorttt{
+      margin: 0.4em 0 0 0;
     }
   }
 }

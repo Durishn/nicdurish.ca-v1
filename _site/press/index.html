@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Personal/Professional website of Nic Durish">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Nic Durish</title>
+
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+
+	  <!-- Necessary Libaries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../js/particles.js"></script>
+    <script src="../js/uilang.js"></script>
+    <script src="../js/scripts.js"></script>
+
+	<!-- Google Analytics -->
+	
+
+</head>
+	<body class="default-body">
+		<!-- NAV -->
+<nav class="nav">
+
+<!-- Logo to Homepage-->
+  <div class="logo">
+    <a aria-label="Go Home" href="/" class="navbar-brand">
+      <svg width="55px" height:"55px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538.6 538.6"><path class="st0" d="M477 269.3c0 114.7-93 207.7-207.7 207.7 -114.7 0-207.7-93-207.7-207.7h17.5c0 104.9 85.3 190.2 190.2 190.2s190.2-85.3 190.2-190.2S374.2 79.1 269.3 79.1V61.6C384 61.6 477 154.6 477 269.3z"/><path class="st0" d="M428.5 110.1C386 67.5 329.4 44.1 269.3 44.1v35c104.9 0 190.2 85.3 190.2 190.2s-85.3 190.2-190.2 190.2S79.1 374.2 79.1 269.3h-35c0 60.2 23.4 116.7 66 159.2 42.5 42.5 99.1 66 159.2 66s116.7-23.4 159.2-66c42.5-42.5 66-99.1 66-159.2S471.1 152.6 428.5 110.1z"/><line class="st1" x1="269.3" y1="61.6" x2="269.3" y2="477"/><line class="st1" x1="61.6" y1="269.3" x2="61.6" y2="61.6"/><line class="st1" x1="269.3" y1="477" x2="61.6" y2="61.6"/></svg>
+    </a>
+  </div>
+
+
+
+<!-- Main Navigation-->
+  <div id="mainListDiv" class="main_list">
+    <ul class="navlinks">
+
+      <!-- About -->
+      <li  class="nav-item">
+        <a aria-label="Go to About" href="/about/" class="nav-link">ABOUT</a> 
+      </li>
+
+      <!-- Portfolio -->
+        <li  class="nav-dropdown nav-item">
+          <a class="nav-link portfolio-link">PORTFOLIO
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+          </a> 
+          <ul class="drop-menu menu-2">
+            <li >
+              <a href="/projects/">PROJECTS</a> 
+            </li>
+            <li >
+              <a href="/presentations/">PRESENTATIONS</a> 
+            </li>
+            <li >
+              <a href="/service/">SERVICE</a> 
+            </li>
+            <li >
+              <a href="/awards/">AWARDS</a> 
+            </li>
+            <li  id="current" >
+              <a href="/press/">PRESS</a> 
+            </li>
+          </ul>
+        </li>
+
+      <!-- Resume -->
+      <li  class="nav-item">
+        <a href="/resume/" class="nav-link">RÉSUMÉ</a> 
+      </li>
+
+      <!-- Buckets -->
+      <div class="nav-dropdown">
+        <li  class="nav-item">
+          <a class="nav-link buckets-link">BUCKETS
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+          </a> 
+          <ul class="drop-menu menu-2">
+            <li >
+              <a href="/bucket_list/">BUCKET LIST</a> 
+            </li>
+            <li >
+              <a href="/set_list/">SET LIST</a> 
+            </li>
+            <!--<li >
+              <a href="/photo_bucket/">PHOTO BUCKET</a> 
+            </li>
+            <li >
+              <a href="/travel_bucket/">TRAVEL BUCKET</a> 
+            </li>-->
+          </ul>
+        </li>
+      </div>
+
+      <!-- Blog -->
+      <li  class="nav-item">
+        <a href="/construct/" class="nav-link">BLOG</a> 
+      </li>
+    </ul>
+  </div> 
+
+<!-- Mobile Navigation -->
+  <a class="navTrigg">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+
+  <div class="mobile-nav">
+    <ul class="mobile-navlinks">
+
+      <!-- About -->
+      <li  class="mobile-nav-item">
+        <a href="/about/" class="nav-link">ABOUT</a> 
+      </li>
+
+      <!-- Portfolio -->
+      <li  class="mobile-nav-item mobile-nav-dropdown">
+        <a class="nav-link portfolio-link">PORTFOLIO
+          <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+        </a> 
+        <ul class="mobile-drop-menu">
+          <li >
+            <a href="/projects/">PROJECTS</a> 
+          </li>
+          <li >
+            <a href="/presentations/">PRESENTATIONS</a> 
+          </li>
+          <li >
+            <a href="/service/">SERVICE</a> 
+          </li>
+          <li >
+            <a href="/awards/">AWARDS</a> 
+          </li>
+          <li  id="current" >
+            <a href="/press/">PRESS</a> 
+          </li>
+        </ul>
+      </li>
+
+      <!-- Resume -->
+      <li  class="mobile-nav-item">
+        <a href="/resume/" class="nav-link">RÉSUMÉ</a> 
+      </li>
+
+      <!-- Buckets -->
+      <li  class="mobile-nav-item mobile-nav-dropdown">
+        <a class="nav-link buckets-link">BUCKETS
+          <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+        </a> 
+        <ul class="mobile-drop-menu">
+          <li >
+            <a href="/bucket_list/">BUCKET LIST</a> 
+          </li>
+          <li >
+            <a href="/set_list/">SET LIST</a> 
+          </li>
+          <!--<li >
+            <a href="/photo_bucket/">PHOTO BUCKET</a> 
+          </li>
+          <li >
+            <a href="/travel_bucket/">TRAVEL BUCKET</a> -->
+          </li>
+        </ul>
+      </li>
+
+      <!-- Blog -->
+      <li  class="mobile-nav-item">
+        <a href="/construct/" class="nav-link">BLOG</a> 
+      </li>
+    </ul>
+  </div>
+
+  <code>
+    clicking on ".navTrigg" toggles class "open" on ".navTrigg"
+  </code>
+</nav>
+		<div class="banner-div half-div">
+	<div class="banner EP-stay-015" style="background: url(../img/banner/banner_6.jpg) no-repeat fixed 60% 0%; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
+	<div class="page-content half-div">
+		<div class="bannertext-div EP-fade-stay">
+			<div id="bannertext-container">
+			<h1 class="banner-title">In The Press</h1>
+			<p class="banner-text">Every once in a while I pop up in a video, blogpost, or article.</p>
+			</div>
+		</div>
+	</div>
+	<span class="scroll-down-arrow shortbann scrollvanish"></span>
+</div>
+
+<div class="page-div">
+	<section class="page-content">
+		<ul class="piclist">
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">Maple Ridge tech company announces brain gain </h3>
+		            <p class="piclist-subtitle">Maple Ridge News</p>
+		            <small>2018</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.mapleridgenews.com/news/maple-ridge-tech-company-announces-brain-gain/">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">U of G Computer Scientists Part of $2.13-Million Project to Improve Data Sharing in Northern, Remote Places</h3>
+		            <p class="piclist-subtitle">UoG News</p>
+		            <small>2018</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://news.uoguelph.ca/2018/11/u-of-g-computer-scientists-part-of-2-13-million-project-to-improve-data-sharing-in-northern-remote-places/">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">Northern remote communities partner with academics to test mobile mesh networking technology</h3>
+		            <p class="piclist-subtitle">First Mile</p>
+		            <small>2018</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="http://firstmile.ca/northern-remote-communities-partner-with-academics-to-test-mobile-mesh-networking-technology/">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">Look who won a business award!</h3>
+		            <p class="piclist-subtitle">Guelph Today</p>
+		            <small>2018</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.guelphtoday.com/local-news/2018-business-award-recipients-973743">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">SoCS Grad Student Receives Young Innovator Award</h3>
+		            <p class="piclist-subtitle">SoCS News</p>
+		            <small>2018</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.uoguelph.ca/computing/socs-grad-student-receives-young-innovator-award">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/vid.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">Young Innovator Finalists</h3>
+		            <p class="piclist-subtitle">Guelph Chamber of Commerce</p>
+		            <small>2018</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.youtube.com/watch?v=UIHqUyFtG1s">View Video</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">Chamber Celebrates 2018 Business Award Recipients</h3>
+		            <p class="piclist-subtitle">Guelph Chamber of Commerce</p>
+		            <small>2018</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.guelphchamber.com/post/3804206-chamber-celebrates-2018-business-award-recipients">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/vid.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">#TeamThursday Interview with Dan Gillis and Nic Durish</h3>
+		            <p class="piclist-subtitle">RightMesh</p>
+		            <small>2018</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.youtube.com/watch?v=Ckcx2caqY-0">View Video</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">Computer Science Students Receive PSEER Travel & Workshop Award</h3>
+		            <p class="piclist-subtitle">SoCS News</p>
+		            <small>2018</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.uoguelph.ca/computing/news/computer-science-students-receive-pseer-travel-workshop-award">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">Computing Students Receive NSTP Award to Assist with eNuk Project</h3>
+		            <p class="piclist-subtitle">SoCS News</p>
+		            <small>2018</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.uoguelph.ca/computing/news/computing-students-receive-nstp-award-assist-enuk-project">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">SoCS Grad Student A Finalist For The Guelph Chamber Of Commerce Awards Of Excellence</h3>
+		            <p class="piclist-subtitle">SoCS News</p>
+		            <small>2018</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.uoguelph.ca/computing/news/socs-grad-student-finalist-guelph-chamber-commerce-awards-excellence">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">Computer Science Meets Public Health: 2018 CPHAZ Symposium</h3>
+		            <p class="piclist-subtitle">Climate Change & Global Health Research Group</p>
+		            <small>2018</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.climatechangeandglobalhealth.com/blog/2018/06/20/computer-science-meets-public-health-2018-cphaz-symposium">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">CPHAZ Symposium focuses on One Health</h3>
+		            <p class="piclist-subtitle">OVC News</p>
+		            <small>2018</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://ovc.uoguelph.ca/news/cphaz-symposium-focuses-one-health">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">Meet our Students: Nic Durish</h3>
+		            <p class="piclist-subtitle">SoCS News</p>
+		            <small>2018</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.uoguelph.ca/computing/graduates/meet-our-students">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">A Meshnet Will Help This Inuit Town Monitor the Effects of Climate Change</h3>
+		            <p class="piclist-subtitle">Vice</p>
+		            <small>2018</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.vice.com/en_us/article/qvwnzd/rightmesh-is-building-a-meshnet-in-rigolet-labrador-enuk-app">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">School of Computer Science Graduate Awards Announced</h3>
+		            <p class="piclist-subtitle">SoCS News</p>
+		            <small>2018</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.vice.com/en_us/article/qvwnzd/rightmesh-is-building-a-meshnet-in-rigolet-labrador-enuk-app">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">CS Professor Working to Improve Life in the Circumpolar North</h3>
+		            <p class="piclist-subtitle">SoCS News</p>
+		            <small>2017</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.uoguelph.ca/computing/news/cs-professor-working-improve-life-circumpolar-north">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">Success At Pitch For Progress</h3>
+		            <p class="piclist-subtitle">SoCS News</p>
+		            <small>2015</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.uoguelph.ca/computing/content/success-pitch-progress">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">Smart Compost Bin Puts a Dollar Value on Food Waste</h3>
+		            <p class="piclist-subtitle">UoG News</p>
+		            <small>2015</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://news.uoguelph.ca/2015/06/smart-compost-bin-puts-a-dollar-value-on-food-waste/">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">Winning projects in Guelph’s Elevator Project span art, culture, music and food</h3>
+		            <p class="piclist-subtitle">Guelph Mercury</p>
+		            <small>2015</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.guelphmercury.com/news-story/5650806-winning-projects-in-guelph-s-elevator-project-span-art-culture-music-and-food/">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">Scotiabank Celebrates Earth Day by Announcing the Finalists for the 2015 Scotiabank EcoLiving Awards and a Redesigned Educational EcoLiving Website</h3>
+		            <p class="piclist-subtitle">TMX Money</p>
+		            <small>2015</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://web.tmxmoney.com/article.php?newsid=74909213&qm_symbol=BNS">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">Corunna resident part of team tackling composting challenge</h3>
+		            <p class="piclist-subtitle">The Sarnia Observer</p>
+		            <small>2015</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.theobserver.ca/2015/04/17/corunna-resident-part-of-team-tackling-composting-challenge/wcm/09526a19-bb56-1e4a-176d-eae79cc9b327">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">Smart compost bin translates food waste into dollars</h3>
+		            <p class="piclist-subtitle">AgInnovation</p>
+		            <small>2015</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="http://www.aginnovationontario.ca/en/smart-compost-bin-translates-food-waste-into-dollars/">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt">Students challenged to cut food waste</h3>
+		            <p class="piclist-subtitle">Guelph Mercury Tribune</p>
+		            <small>2015</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.guelphmercury.com/news-story/4979332-students-challenged-to-cut-food-waste/">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+			<li class="piclist-item">
+				<div class="piclist-pic col smaller">
+					<img alt="Award SVG" src="../img/svg/doc.svg" >
+				</div>
+				<div class="piclist-text col">
+		            <h3 class="shorttt"> Leader-In-Training Program Leadership: More than just a leadership training</h3>
+		            <p class="piclist-subtitle">YMCA Alumni Newsletter</p>
+		            <small>2009</small>
+		            <div class="card-actions nopad">
+			            <a rel="noopener" target="_blank" aria-label="Read More" href="https://www.sudbury.ymca.ca/johnisland/images/pdf/2009decemberalumninewsletter.pdf">Read More</a>
+		        	</div>
+	  			</div>
+			</li>
+
+		</ul>
+	</section>
+</div>
+
+		  <footer class="footer">
+    <div class="footer-container text-center">
+      <div class="row">
+        <div class="col social-links-container">
+          
+            <div class="social-links">
+
+	<!-- Email -->
+	<a rel="noopener" target="_blank" aria-label="Mail" href="mailto:n.durish@gmail.com">
+		<i class="fa fa-envelope" ></i>
+	</a>
+
+	<!-- Facebook -->
+	<a rel="noopener" target="_blank" aria-label="Facebook" href="https://facebook.com/ndurish">
+		<i class="fab fa-facebook"></i>
+	</a>
+
+	<!-- LinkedIn -->
+	<a rel="noopener" target="_blank" aria-label="LinkedIn" href="http://linkedin.com/in/nicdurish">
+		<i class="fab fa-linkedin"></i>
+	</a>
+
+	<!-- Twitter -->
+	<a rel="noopener" target="_blank" aria-label="Twitter" href="https://twitter.com/durishn">
+		<i class="fab fa-twitter-square"></i>
+	</a>
+
+	<!-- Instagram -->
+	<a rel="noopener" target="_blank" aria-label="Instagram" href="https://instagram.com/nicdurish">
+		<i class="fab fa-instagram"></i>
+	</a>
+
+	<!-- Couchsurfing -->
+	<a rel="noopener" target="_blank" aria-label="CouchSurfing" href="https://couchsurfing.com/people/ndurish">
+		<i class="fas fa-couch"></i>
+	</a>
+
+	<!-- Spotify -->
+	<a rel="noopener" target="_blank" aria-label="Spotify" href="https://open.spotify.com/user/durishn">
+		<i class="fab fa-spotify"></i>
+	</a>
+
+	<!-- Youtube -->
+	<a rel="noopener" target="_blank" aria-label="Youtube" href="https://www.youtube.com/user/NicDurish">
+		<i class="fab fa-youtube"></i>
+	</a>
+
+	<!-- GitHub -->
+	<a rel="noopener" target="_blank" aria-label="GitHub" href="https://github.com/Durishn">
+		<i class="fab fa-github"></i>
+	</a>
+</div>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></script>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col copyright" onclick="location.href='https://github.com/Durishn/Durishn.github.io';">
+          All content copyright Nic Durish &copy; 2019.
+        </div>
+      </div>
+    </div>
+  </footer>
+	</body>
+  
+</html>

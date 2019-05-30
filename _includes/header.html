@@ -48,7 +48,7 @@
         <a href="{{ site.baseurl }}/resume/" class="nav-link">RÉSUMÉ</a> 
       </li>
 
-      <!-- Buckets 
+      <!-- Buckets -->
       <div class="nav-dropdown">
         <li {% if page.url contains '/buckets/' or page.path contains "buckets/"%} id="current" {% endif %} class="nav-item">
           <a class="nav-link buckets-link">BUCKETS
@@ -58,20 +58,23 @@
             <li {% if page.url contains '/bucket_list/' or page.path contains "bucket_list/"%} id="current" {% endif %}>
               <a href="{{ site.baseurl }}/bucket_list/">BUCKET LIST</a> 
             </li>
-            <li {% if page.url contains '/photo_bucket/' or page.path contains "photo_bucket/"%} id="current" {% endif %}>
+            <li {% if page.url contains '/set_list/' or page.path contains "set_list/"%} id="current" {% endif %}>
+              <a href="{{ site.baseurl }}/set_list/">SET LIST</a> 
+            </li>
+            <!--<li {% if page.url contains '/photo_bucket/' or page.path contains "photo_bucket/"%} id="current" {% endif %}>
               <a href="{{ site.baseurl }}/photo_bucket/">PHOTO BUCKET</a> 
             </li>
             <li {% if page.url contains '/travel_bucket/' or page.path contains "travel_bucket/"%} id="current" {% endif %}>
               <a href="{{ site.baseurl }}/travel_bucket/">TRAVEL BUCKET</a> 
-            </li>
+            </li>-->
           </ul>
         </li>
-      </div>-->
+      </div>
 
-      <!-- Blog
-      <li {% if page.url contains '/blog/' or page.path contains "blog/"%} id="current" {% endif %} class="nav-item">
-        <a href="{{ site.baseurl }}/blog/" class="nav-link">BLOG</a> 
-      </li>-->
+      <!-- Blog -->
+      <li {% if page.url contains '/construct/' or page.path contains "construct/"%} id="current" {% endif %} class="nav-item">
+        <a href="{{ site.baseurl }}/construct/" class="nav-link">BLOG</a> 
+      </li>
     </ul>
   </div> 
 
@@ -119,7 +122,7 @@
         <a href="{{ site.baseurl }}/resume/" class="nav-link">RÉSUMÉ</a> 
       </li>
 
-      <!-- Buckets 
+      <!-- Buckets -->
       <li {% if page.url contains '/buckets/' or page.path contains "buckets/"%} id="current" {% endif %} class="mobile-nav-item mobile-nav-dropdown">
         <a class="nav-link buckets-link">BUCKETS
           <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
@@ -128,21 +131,24 @@
           <li {% if page.url contains '/bucket_list/' or page.path contains "bucket_list/"%} id="current" {% endif %}>
             <a href="{{ site.baseurl }}/bucket_list/">BUCKET LIST</a> 
           </li>
-          <li {% if page.url contains '/photo_bucket/' or page.path contains "photo_bucket/"%} id="current" {% endif %}>
+          <li {% if page.url contains '/set_list/' or page.path contains "set_list/"%} id="current" {% endif %}>
+            <a href="{{ site.baseurl }}/set_list/">SET LIST</a> 
+          </li>
+          <!--<li {% if page.url contains '/photo_bucket/' or page.path contains "photo_bucket/"%} id="current" {% endif %}>
             <a href="{{ site.baseurl }}/photo_bucket/">PHOTO BUCKET</a> 
           </li>
           <li {% if page.url contains '/travel_bucket/' or page.path contains "travel_bucket/"%} id="current" {% endif %}>
-            <a href="{{ site.baseurl }}/travel_bucket/">TRAVEL BUCKET</a> 
+            <a href="{{ site.baseurl }}/travel_bucket/">TRAVEL BUCKET</a> -->
           </li>
         </ul>
-      </li>-->
+      </li>
 
-      <!-- Blog 
-      <li {% if page.url contains '/blog/' or page.path contains "blog/"%} id="current" {% endif %} class="mobile-nav-item">
-        <a href="{{ site.baseurl }}/blog/" class="nav-link">BLOG</a> 
+      <!-- Blog -->
+      <li {% if page.url contains '/construct/' or page.path contains "construct/"%} id="current" {% endif %} class="mobile-nav-item">
+        <a href="{{ site.baseurl }}/construct/" class="nav-link">BLOG</a> 
       </li>
     </ul>
-  </div>-->
+  </div>
 
   <code>
     clicking on ".navTrigg" toggles class "open" on ".navTrigg"
