@@ -358,12 +358,10 @@ Card Options
 
 .card-badge.ribbon { border-radius: 4px 0px 0px 4px; }
 
-.card-actions { padding: 5px; position: relative; top: -18px; cursor: pointer; }
-.card-actions > p { margin: 0px; font-weight: 300; text-decoration: none; }
-.card-actions > p:not(:last-child) { margin-right: 10px; }
-.card-actions > p:hover { color: #2580bc; }
+.card-actions { padding: 5px; position: relative; top: -18px; }
+.card-actions > a { margin: 0px; font-weight: 400; text-decoration: none; margin-right: 15px; margin-left: 15px; line-height: 2.2em; }
 
-.card-actions:hover > p { color: #1e87f0; font-weight: 500; }
+.card a:hover { color: #1e87f0; }
 
 /************* 
 Index Layout 

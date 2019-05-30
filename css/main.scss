@@ -296,27 +296,19 @@ $card-options: (
   padding: 5px;
   position: relative;
   top: -18px;
-  cursor: pointer;
   
-  > p {
+  > a {
     margin: 0px;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
-    
-    &:not(:last-child) { 
-      margin-right: 10px; 
-    }
-    
-    &:hover {
-      color: mix(#000, map-get($card-options, primary), 20%);      
-    }
+    margin-right: 15px;
+    margin-left: 15px; 
+    line-height: 2.2em;
   }
 }
-.card-actions:hover
 
-  > p {
+.card a:hover {
     color: $highlight-blue;
-    font-weight: 500;
   }
 
 /************* 
