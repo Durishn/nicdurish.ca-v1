@@ -251,7 +251,7 @@
 <!--
 FEATURED SECTION
 -->
-	<section class="page-content">
+	<section class="page-content" style:"padding: 20px 0 0 0; margin: 0 auto;">
 		<div style="height:calc(2.5em + 30px)"><h2 class="cl-primary movinright EP-displaynone">Featured Content </h2></div>
 	</section>
 
@@ -335,6 +335,11 @@ FEATURED SECTION
 </div>
 
 <script src="../js/carousel.js"></script>
+<script>
+  $(".main-pos").each(function() {
+    	$(this).firstChild.css("pointer-events") = 'all';
+  });
+</script>
 	  	  <footer class="footer">
     <div class="footer-container text-center">
       <div class="row">

@@ -485,6 +485,10 @@ section.carousel-sec {
     margin: auto;
     position: relative;
     /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
+    
+    .featured-vid {
+      pointer-events: all
+    }
   }
 
   .left-pos {
