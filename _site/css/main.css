@@ -318,11 +318,12 @@ Default Layout
 **************/
 .banner-div { height: calc(70vh + 105px); width: 100%; }
 .banner-div .banner { height: 100%; width: 100%; display: block; z-index: -10; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-.banner-div .bannertext-div { width: 47vw; height: calc(70vh - 20px); position: absolute; top: 100px; padding: 5px; display: flex; justify-content: center; align-items: center; text-align: center; left: 25px; }
+.banner-div .page-content { position: absolute; top: 0px; height: 80vh; margin: auto; width: calc(80vw + 50px); margin-left: calc(10vw - 25px); margin-right: calc(10vw - 25px); }
+.banner-div .bannertext-div { width: 47vw; height: calc(70vh - 20px); position: absolute; top: 100px; padding: 5px; display: flex; justify-content: center; align-items: center; text-align: center; }
 .banner-div .bannertext-div .banner-title { margin-top: 0px; margin-bottom: 0px; color: #cf9623; font-size: 2.5em; }
 .banner-div .bannertext-div .banner-text { color: #c1c1c1; font-size: calc(0.7vw + 10px); line-height: calc(0.7vw + 12px); }
 
-.right-div { right: calc(25px); }
+.right-div { right: 0px; }
 
 .half-div { height: calc(40vh + 105px); }
 .half-div .bannertext-div { height: calc(40vh - 20px); }
@@ -332,7 +333,7 @@ Card Options
 **************/
 .card { opacity: 0.95; display: inline-flex; margin: 10px; max-width: 500px; position: relative; vertical-align: top; width: calc(2.2vw + 290px); }
 
-.card:hover { opacity: 1; -webkit-filter: saturate(2); box-shadow: 1px 1px 20px 0.5px #C9C9C9; -webkit-box-shadow: 1px 1px 20px 0.5px #C9C9C9; -moz-box-shadow: 1px 1px 20px 0.5px #C9C9C9; }
+.card:hover { opacity: 1; -webkit-filter: saturate(1.5); box-shadow: 1px 1px 20px 0.5px #C9C9C9; -webkit-box-shadow: 1px 1px 20px 0.5px #C9C9C9; -moz-box-shadow: 1px 1px 20px 0.5px #C9C9C9; }
 
 .card-front { background: #fff; border: 1px solid #ddd; border-radius: 5px; position: relative; width: 100%; }
 
