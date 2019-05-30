@@ -2,6 +2,9 @@
  Feel free to use some of this code :) However if you use ALL of it, please reference me
 */
 /***************************
+* BASE SETTINGS
+****************************/
+/***************************
 * COLOR CODES
 ****************************/
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
@@ -37,9 +40,6 @@
 
 .bcl-secondary { background-color: #cf9623; }
 
-/***************************
-* FONT SIZES
-****************************/
 /***************************
 * NAVBAR & FOOTER
 ****************************/
@@ -303,7 +303,7 @@ General Styles
 
 .page-div { background-color: #e8e7e5; }
 
-.page-content { max-width: 1780px; margin: auto; width: calc(80vw + 50px); }
+.page-content { max-width: 1780px; margin: auto; width: calc(80vw + 20px); }
 
 .row { vertical-align: top; }
 
@@ -318,7 +318,7 @@ Default Layout
 **************/
 .banner-div { height: calc(70vh + 105px); width: 100%; }
 .banner-div .banner { height: 100%; width: 100%; display: block; z-index: -10; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-.banner-div .page-content { position: absolute; top: 0px; height: 80vh; margin: auto; width: calc(80vw + 50px); margin-left: calc(10vw - 25px); margin-right: calc(10vw - 25px); }
+.banner-div .page-content { position: absolute; top: 0px; height: 80vh; margin: auto; width: calc(82vw + 20px); margin-left: calc((100vw - calc(80vw + 20px)) /2 ); margin-right: calc((100vw - calc(80vw + 20px)) /2 ); }
 .banner-div .bannertext-div { width: 47vw; height: calc(70vh - 20px); position: absolute; top: 100px; padding: 5px; display: flex; justify-content: center; align-items: center; text-align: center; }
 .banner-div .bannertext-div .banner-title { margin-top: 0px; margin-bottom: 0px; color: #cf9623; font-size: 2.5em; }
 .banner-div .bannertext-div .banner-text { color: #c1c1c1; font-size: calc(0.7vw + 10px); line-height: calc(0.7vw + 12px); }

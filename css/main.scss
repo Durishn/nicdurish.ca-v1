@@ -107,7 +107,7 @@ General Styles
 .page-content{
   max-width: 1780px;
   margin: auto;
-  width: calc(80vw + 50px);
+  width: calc(80vw + 20px);
 }
 
 .row{
@@ -153,9 +153,9 @@ Default Layout
     top: 0px;
     height: 80vh;
     margin: auto;
-    width: calc(80vw + 50px);
-    margin-left: calc(10vw - 25px);
-    margin-right: calc(10vw - 25px);
+    width: calc(82vw + 20px);
+    margin-left: calc((100vw - calc(80vw + 20px)) /2 );
+    margin-right: calc((100vw - calc(80vw + 20px)) /2 );
   }
 
   .bannertext-div { 

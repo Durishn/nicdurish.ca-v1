@@ -1,4 +1,12 @@
 /***************************
+* BASE SETTINGS
+****************************/
+$fontmain: calc(14px + (6) * ((100vw - 300px) / (1600 - 300)));
+$linemain: calc(1.3em + (0.8) * ((100vw - 300px)/(1600 - 300)));
+$font5: calc(0.5vw + 23px);
+
+
+/***************************
 * COLOR CODES
 ****************************/
 $white: #ffffffff;
@@ -46,20 +54,6 @@ $primary3: $light-navy-blue;
 
 $secondary: $mustard-yellow;
 	.bcl-secondary{ background-color: $secondary; }
-
-
-
-
-
-
-/***************************
-* FONT SIZES
-****************************/
-$fontmain: calc(14px + (6) * ((100vw - 300px) / (1600 - 300)));
-$linemain: calc(1.3em + (0.8) * ((100vw - 300px)/(1600 - 300)));
-
-$font5: calc(0.5vw + 23px);
-
 
 
 
