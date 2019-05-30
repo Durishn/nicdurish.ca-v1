@@ -144,8 +144,6 @@ Mobile Nav Styles
 
 .mobile-drop-menu { padding-inline-start: 0px; list-style: none; display: none; background: #4f719b; }
 
-.mobile-drop-menu li a { font-size: 0.7rem; }
-
 /************** 
 Main Nav Styles 
 ***************/
@@ -378,7 +376,7 @@ PicList
 **************/
 .piclist { padding: 0px; }
 .piclist hr { margin: 20px 0px; }
-.piclist .piclist-item { display: flex; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; align-items: center; margin-left: -30px; }
+.piclist .piclist-item { display: flex; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; align-items: center; }
 .piclist .piclist-pic { width: 10vw; height: 10vw; max-width: 200px; max-height: 200px; min-width: 110px; min-height: 110px; margin: 1.2em; position: relative; float: left; }
 .piclist .piclist-pic img { width: 100%; }
 .piclist .piclist-text { flex: 1; min-width: 0; flex-basis: 1px; text-align: left; overflow: hidden; margin: 0.2em 0; }
