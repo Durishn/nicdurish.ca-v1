@@ -221,6 +221,8 @@ Cards
 }
 
 .cardcontainer-head {
+  /*REMOVE HEADINGSS FOR NOW*/
+  display:none;
   position: relative;
     font-size: 1.5em;
     font-weight: 400;
@@ -229,6 +231,8 @@ Cards
 }
 
 .card-head{
+    /*REMOVE HEADINGSS FOR NOW*/
+  display:none;
     position: absolute;
     width: 100%;
     top: -3.5em;

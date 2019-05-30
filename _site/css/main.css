@@ -336,9 +336,9 @@ Cards
 **************/
 .card { opacity: 0.95; display: inline-flex; margin: 10px; max-width: 500px; position: relative; vertical-align: top; width: calc(2.2vw + 290px); }
 
-.cardcontainer-head { position: relative; font-size: 1.5em; font-weight: 400; text-decoration: none; top: 1.5em; }
+.cardcontainer-head { /*REMOVE HEADINGSS FOR NOW*/ display: none; position: relative; font-size: 1.5em; font-weight: 400; text-decoration: none; top: 1.5em; }
 
-.card-head { position: absolute; width: 100%; top: -3.5em; font-size: 1.5em; font-weight: 400; text-decoration: none; }
+.card-head { /*REMOVE HEADINGSS FOR NOW*/ display: none; position: absolute; width: 100%; top: -3.5em; font-size: 1.5em; font-weight: 400; text-decoration: none; }
 
 .card-head:hover, .cardcontainer-head:hover { font-weight: 500; text-decoration: underline; }
 
