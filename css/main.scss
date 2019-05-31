@@ -87,12 +87,18 @@ iframe {
   background-color: $page-div-background;
 }
 
+.page-content{
+  max-width: 1780px;
+  margin: auto;
+  width: calc(85vw + 20px);
+}
+
 .fullpdf{
   width: 100%; height: calc(100vh - 65px); display: block;
 }
 
 /************* 
-GENERAL STYLES 
+SUPER-GENERAL STYLES 
 **************/
 .displaynone{
   display:none;
@@ -118,12 +124,6 @@ GENERAL STYLES
 
 .circle{
   border-radius: 50%;
-}
-
-.page-content{
-  max-width: 1780px;
-  margin: auto;
-  width: calc(80vw + 20px);
 }
 
 .row{
