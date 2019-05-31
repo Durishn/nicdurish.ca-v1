@@ -59,6 +59,21 @@ $secondary: $mustard-yellow;
 
 
 
+
+/***************************
+* LAYOUTS
+****************************/
+$page-div-background: $off-white;
+
+
+$index-background: $primary;
+$default-background: #e8e7e5; //Off White
+
+$tlcol: $secondary;
+$tlboxcol: lighten($primary, 30%);
+
+
+
 /***************************
 * NAVBAR & FOOTER
 ****************************/
@@ -77,20 +92,6 @@ $affix: gray;
 
 $index-footer: #ffffff;
 $index-footer-hover: $secondary;
-
-
-/***************************
-* LAYOUTS
-****************************/
-$page-div-background: $off-white;
-
-
-$index-background: $primary;
-$default-background: #e8e7e5; //Off White
-
-
-//OLD PRIMARY - 00B1FF
-//OLD SECONDARY - ff0056
 
 
 
