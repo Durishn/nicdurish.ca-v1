@@ -73,6 +73,16 @@ function swap(action) {
   }
 }
 
+//next button click function
+$('#next').click(function() {
+  swap('clockwise');
+});
+
+//prev button click function
+$('#prev').click(function() {
+  swap('counter-clockwise');
+});
+
 //if any visible items are clicked
 $('li').click(function() {
   if($(this).attr('class') == 'items left-pos') {

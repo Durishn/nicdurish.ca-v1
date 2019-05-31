@@ -206,7 +206,7 @@ Navbar Overrides
 
 .fab, .fa, .fas { margin-top: 20px; font-size: 1.5em; }
 
-.copyright { color: #ffffff; font-size: 0.65rem; opacity: 0.7; padding: 5px; cursor: pointer; }
+.copyright { color: #ffffff; font-size: 0.65rem; opacity: 0.7; padding-bottom: 5px; cursor: pointer; }
 
 .copyright:hover { color: #cf9623; }
 
@@ -286,7 +286,7 @@ figure { margin: 0; }
 code { color: transparent; font-size: 0; }
 
 section { padding-top: 15px; padding-bottom: 25px; text-align: center; }
-section h2 { margin-top: 20px; margin-bottom: 25px; text-align: left; }
+section h2 { text-align: left; }
 
 iframe { border-width: 0; border-style: none; }
 
@@ -295,6 +295,8 @@ iframe { border-width: 0; border-style: none; }
 .page-content { max-width: 1780px; margin: auto; width: calc(85vw + 20px); }
 
 .fullpdf { width: 100%; height: calc(100vh - 65px); display: block; }
+
+.holds-the-iframe { background: url(../img/gif/loading.gif) center center no-repeat; background-size: 80px; }
 
 /************* 
 SUPER-GENERAL STYLES 
@@ -393,7 +395,7 @@ PicList
 .piclist .piclist-text .card-actions.nopad { padding-top: 0; margin-top: 0; top: 0; }
 .piclist .piclist-text .shorttt { margin: 0.4em 0 0 0; }
 
-.piclist li:after { content: ""; display: block; height: 1px; opacity: 0.1; width: 100%; background: #000; unicode-bidi: isolate; margin-block-start: 0.5em; margin-block-end: 0.5em; margin-inline-start: auto; margin-inline-end: auto; overflow: hidden; border-style: inset; border-width: 1px; }
+.piclist.afterlines li:after { content: ""; display: block; height: 1px; opacity: 0.1; width: 100%; background: #000; unicode-bidi: isolate; margin-block-start: 0.5em; margin-block-end: 0.5em; margin-inline-start: auto; margin-inline-end: auto; overflow: hidden; border-style: inset; border-width: 1px; }
 
 /************* 
 Carousel 
@@ -402,6 +404,16 @@ Carousel
 
 section.carousel-sec { width: 100%; position: relative; }
 
+.vidcontroldiv { height: 2.1em; width: 2.1em; position: absolute; border-style: solid; border-color: #152335; border-radius: 50%; opacity: 0.4; }
+
+.vidcontroldiv:hover { opacity: 0.8; }
+
+#prev { transform: rotate(90deg); left: calc(20vw - 50px); }
+
+#next { transform: rotate(-90deg); right: calc(20vw - 50px); }
+
+.carousel-sec.darkenback { background-color: #e1e0dd; }
+
 .carousel { padding: 0; }
 .carousel li { background: #333; display: inline-block; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; transition: all .3s ease-in-out; overflow: hidden; }
 .carousel li p { color: white; font-weight: bold; font-size: 5em; text-align: center; margin-top: 1.175em; }
@@ -409,8 +421,10 @@ section.carousel-sec { width: 100%; position: relative; }
 .carousel .main-pos { z-index: 3000; margin: auto; position: relative; /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/ }
 .carousel .main-pos .featured-vid { pointer-events: all; }
 .carousel .left-pos { opacity: 0.2; left: 0vw; z-index: 1000; -webkit-transform: scale(0.75); -moz-transform: scale(0.75); transform: scale(0.75); }
+.carousel .left-pos:hover { opacity: 0.8; }
 .carousel .back-pos { right: 23vw; position: absolute; opacity: 0; -webkit-transform: scale(0.5); -moz-transform: scale(0.5); transform: scale(0.5); }
 .carousel .right-pos { opacity: 0.2; right: 0vw; z-index: 1000; -webkit-transform: scale(0.75); -moz-transform: scale(0.75); transform: scale(0.75); }
+.carousel .right-pos:hover { opacity: 0.8; }
 .carousel span { position: relative; margin: 0 auto; left: 17em; top: 20em; }
 
 /************* 

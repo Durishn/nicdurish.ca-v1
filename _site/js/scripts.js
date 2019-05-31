@@ -146,7 +146,7 @@ function EasyPeasyParallax() {
       }
   });
   $(".fadein-top").each(function() {
-      objectTop = $(this).offset().top + 180;
+      objectTop = $(this).offset().top + 100;
 
       if (objectTop < windowBottom) { //object comes into view (scrolling down)
         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}

@@ -72,8 +72,6 @@ section {
   padding-bottom:25px;
   text-align: center;
   h2 {
-    margin-top: 20px;
-    margin-bottom: 25px;
     text-align: left;
   }
 }
@@ -96,6 +94,11 @@ iframe {
 .fullpdf{
   width: 100%; height: calc(100vh - 65px); display: block;
 }
+
+.holds-the-iframe {
+  background:url(../img/gif/loading.gif) center center no-repeat;
+  background-size: 80px;
+ }
 
 /************* 
 SUPER-GENERAL STYLES 
@@ -449,7 +452,7 @@ PicList
     }
   }
 }
-.piclist li:after {
+.piclist.afterlines li:after {
     content: "";
     display: block;
     height: 1px;
@@ -480,6 +483,34 @@ Carousel
 section.carousel-sec {
   width: 100%;
   position: relative;
+}
+
+.vidcontroldiv{
+  height: 2.1em;
+  width: 2.1em;
+  position: absolute;
+  border-style: solid;
+  border-color: $primary;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.vidcontroldiv:hover{
+  opacity: 0.8;
+}
+
+#prev{
+  transform: rotate(90deg);
+  left: calc(20vw - 50px);
+}
+
+#next{
+  transform: rotate(-90deg);
+  right: calc(20vw - 50px);
+}
+
+.carousel-sec.darkenback{
+  background-color: darken($off-white, 3%);;
 }
 
 .carousel {
@@ -525,6 +556,9 @@ section.carousel-sec {
     -moz-transform: scale(.75);
     transform: scale(.75);
   }
+  .left-pos:hover{
+    opacity: 0.8;
+  }
 
   .back-pos {
     right: 23vw;
@@ -542,6 +576,9 @@ section.carousel-sec {
     -webkit-transform: scale(.75);
     -moz-transform: scale(.75);
     transform: scale(.75);
+  }
+  .right-pos:hover{
+    opacity: 0.8;
   }
 
   span {
