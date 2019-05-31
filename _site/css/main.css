@@ -349,25 +349,32 @@ Cards
 **************/
 .card { opacity: 0.95; display: inline-flex; margin: 10px; max-width: 500px; position: relative; vertical-align: top; width: calc(2.2vw + 290px); }
 
+.card.smaller { width: 225px; }
+
 .cardcontainer-head { /*REMOVE HEADINGSS FOR NOW*/ display: none; position: relative; font-size: 1.5em; font-weight: 400; text-decoration: none; top: 1.5em; }
 
 .card-head { /*REMOVE HEADINGSS FOR NOW*/ display: none; position: absolute; width: 100%; top: -3.5em; font-size: 1.5em; font-weight: 400; text-decoration: none; }
 
 .card-head:hover, .cardcontainer-head:hover { font-weight: 500; text-decoration: underline; }
 
-.card:hover { opacity: 1; -webkit-filter: saturate(1.5); box-shadow: 1px 1px 20px 0.5px #C9C9C9; -webkit-box-shadow: 1px 1px 20px 0.5px #C9C9C9; -moz-box-shadow: 1px 1px 20px 0.5px #C9C9C9; }
+.card:hover:not(.nohover) { opacity: 1; -webkit-filter: saturate(1.5); box-shadow: 1px 1px 20px 0.5px #C9C9C9; -webkit-box-shadow: 1px 1px 20px 0.5px #C9C9C9; -moz-box-shadow: 1px 1px 20px 0.5px #C9C9C9; }
 
 .card-front { background: #fff; border: 1px solid #ddd; border-radius: 5px; position: relative; width: 100%; }
+
+.card-front.clearcard { background: rgba(0, 0, 0, 0); border: 0; border-radius: 0; position: relative; width: 100%; }
 
 .card-image { min-height: 1px; height: 200px; background: lightgrey; }
 .card-image > img { border-radius: 5px; display: block; margin: auto; height: 100%; width: 100%; }
 .card-image:not(:first-child):not(:last-child) { border-radius: 0; }
+
+.card.smaller .card-image { height: 150px; background: rgba(0, 0, 0, 0); }
 
 .card-image-top > img { border-radius: 5px 5px 0 0; }
 
 .card-content { padding: 15px; flex: 1 1 auto; }
 .card-content h3, .card-content p { text-align: center; }
 .card-content h3 { margin-top: 15px; color: #152335; }
+.card-content h4 { font-weight: 400; margin: 10px 0; color: #dca330; }
 
 .card-badgebox { position: absolute; top: 15px; z-index: 1; width: calc(100% - 30px); text-align: left; }
 
