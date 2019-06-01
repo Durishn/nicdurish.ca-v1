@@ -138,6 +138,37 @@ SUPER-GENERAL STYLES
   vertical-align:middle;
 }
 
+.bucketlist-wrapper{
+  text-align: left;
+  width: 66%;
+
+  h3{
+    margin: 25px 0 5px 0;
+  }
+
+  ul{
+    margin: 0 0 1em;
+  }
+
+  .strikeout {
+    position: relative;
+  }
+  .strikeout::after {
+    border-bottom: 0.125em solid $primary;
+    content: "";
+    left: 0;
+    margin-top: calc(0.125em / 2 * -1);
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+
+  li {
+    ul {
+      margin-bottom: 5px
+    }
+  }
+}
 /************* 
 Banner 
 **************/

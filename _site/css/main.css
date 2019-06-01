@@ -328,6 +328,13 @@ SUPER-GENERAL STYLES
 
 .centered-container { margin: auto; vertical-align: middle; }
 
+.bucketlist-wrapper { text-align: left; width: 66%; }
+.bucketlist-wrapper h3 { margin: 25px 0 5px 0; }
+.bucketlist-wrapper ul { margin: 0 0 1em; }
+.bucketlist-wrapper .strikeout { position: relative; }
+.bucketlist-wrapper .strikeout::after { border-bottom: 0.125em solid #152335; content: ""; left: 0; margin-top: calc(0.125em / 2 * -1); position: absolute; right: 0; top: 50%; }
+.bucketlist-wrapper li ul { margin-bottom: 5px; }
+
 /************* 
 Banner 
 **************/
