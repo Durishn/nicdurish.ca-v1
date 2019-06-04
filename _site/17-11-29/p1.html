@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Personal/Professional website of Nic Durish">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Nic Durish</title>
+
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+
+	  <!-- Necessary Libaries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../js/particles.js"></script>
+    <script src="../js/uilang.js"></script>
+    <script src="../js/scripts.js"></script>
+
+	<!-- Google Analytics -->
+	
+
+</head>
+	<body class="default-body">
+		<!-- NAV -->
+<nav class="nav">
+
+<!-- Logo to Homepage-->
+  <div class="logo">
+    <a aria-label="Go Home" href="/" class="navbar-brand">
+      <svg width="55px" height:"55px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538.6 538.6"><path class="st0" d="M477 269.3c0 114.7-93 207.7-207.7 207.7 -114.7 0-207.7-93-207.7-207.7h17.5c0 104.9 85.3 190.2 190.2 190.2s190.2-85.3 190.2-190.2S374.2 79.1 269.3 79.1V61.6C384 61.6 477 154.6 477 269.3z"/><path class="st0" d="M428.5 110.1C386 67.5 329.4 44.1 269.3 44.1v35c104.9 0 190.2 85.3 190.2 190.2s-85.3 190.2-190.2 190.2S79.1 374.2 79.1 269.3h-35c0 60.2 23.4 116.7 66 159.2 42.5 42.5 99.1 66 159.2 66s116.7-23.4 159.2-66c42.5-42.5 66-99.1 66-159.2S471.1 152.6 428.5 110.1z"/><line class="st1" x1="269.3" y1="61.6" x2="269.3" y2="477"/><line class="st1" x1="61.6" y1="269.3" x2="61.6" y2="61.6"/><line class="st1" x1="269.3" y1="477" x2="61.6" y2="61.6"/></svg>
+    </a>
+  </div>
+
+
+
+<!-- Main Navigation-->
+  <div id="mainListDiv" class="main_list">
+    <ul class="navlinks">
+
+      <!-- About -->
+      <li  class="nav-item">
+        <a aria-label="Go to About" href="/about/" class="nav-link">ABOUT</a> 
+      </li>
+
+      <!-- Portfolio -->
+        <li  class="nav-dropdown nav-item">
+          <a class="nav-link portfolio-link">PORTFOLIO
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+          </a> 
+          <ul class="drop-menu menu-2">
+            <li >
+              <a href="/projects/">PROJECTS</a> 
+            </li>
+            <li >
+              <a href="/presentations/">PRESENTATIONS</a> 
+            </li>
+            <li >
+              <a href="/service/">SERVICE</a> 
+            </li>
+            <li >
+              <a href="/awards/">AWARDS</a> 
+            </li>
+            <li >
+              <a href="/press/">PRESS</a> 
+            </li>
+          </ul>
+        </li>
+
+      <!-- Resume -->
+      <li  class="nav-item">
+        <a href="/resume/" class="nav-link">RÉSUMÉ</a> 
+      </li>
+
+      <!-- Buckets -->
+      <li  class="nav-dropdown nav-item">
+          <a class="nav-link buckets-link">BUCKETS
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+          </a> 
+          <ul class="drop-menu menu-2">
+            <li >
+              <a href="/bucket_list/">BUCKET LIST</a> 
+            </li>
+            <li >
+              <a href="/set_list/">SET LIST</a> 
+            </li>
+            <!--<li >
+              <a href="/photo_bucket/">PHOTO BUCKET</a> 
+            </li>
+            <li >
+              <a href="/travel_bucket/">TRAVEL BUCKET</a> 
+            </li>-->
+          </ul>
+      </li>
+
+      <!-- Blog -->
+      <li  class="nav-item">
+        <a href="/construct/" class="nav-link">BLOG</a> 
+      </li>
+    </ul>
+  </div> 
+
+<!-- Mobile Navigation -->
+  <a class="navTrigg">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+
+  <div class="mobile-nav">
+    <ul class="mobile-navlinks">
+
+      <!-- About -->
+      <li  class="mobile-nav-item">
+        <a href="/about/" class="nav-link">ABOUT</a> 
+      </li>
+
+      <!-- Portfolio -->
+      <li  class="mobile-nav-item mobile-nav-dropdown">
+        <a class="nav-link portfolio-link">PORTFOLIO
+          <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+        </a> 
+        <ul class="mobile-drop-menu">
+          <li >
+            <a href="/projects/">PROJECTS</a> 
+          </li>
+          <li >
+            <a href="/presentations/">PRESENTATIONS</a> 
+          </li>
+          <li >
+            <a href="/service/">SERVICE</a> 
+          </li>
+          <li >
+            <a href="/awards/">AWARDS</a> 
+          </li>
+          <li >
+            <a href="/press/">PRESS</a> 
+          </li>
+        </ul>
+      </li>
+
+      <!-- Resume -->
+      <li  class="mobile-nav-item">
+        <a href="/resume/" class="nav-link">RÉSUMÉ</a> 
+      </li>
+
+      <!-- Buckets -->
+      <li  class="mobile-nav-item mobile-nav-dropdown">
+        <a class="nav-link buckets-link">BUCKETS
+          <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+        </a> 
+        <ul class="mobile-drop-menu">
+          <li >
+            <a href="/bucket_list/">BUCKET LIST</a> 
+          </li>
+          <li >
+            <a href="/set_list/">SET LIST</a> 
+          </li>
+          <!--<li >
+            <a href="/photo_bucket/">PHOTO BUCKET</a> 
+          </li>
+          <li >
+            <a href="/travel_bucket/">TRAVEL BUCKET</a> -->
+          </li>
+        </ul>
+      </li>
+
+      <!-- Blog -->
+      <li  class="mobile-nav-item">
+        <a href="/construct/" class="nav-link">BLOG</a> 
+      </li>
+    </ul>
+  </div>
+
+  <code>
+    clicking on ".navTrigg" toggles class "open" on ".navTrigg"
+  </code>
+</nav>
+		
+
+
+
+
+<div class="banner-div half-div">
+	<div class="banner EP-stay-015-quick" style="background: url(../img/posts/17-11-29-b.png) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 80%; width: 100%; opacity: 0.15;"></div>
+	<div class="page-content">
+		<div class="bannertext-div EP-fade-stay-quick center-div">
+			<div id="bannertext-container">
+			<h1 class="post-title">Exploring the Needs of a Community-Based Monitoring System</h1>
+			<p class="post-subtitle">What Brings A T-Rex, Triceratops, Elephant, Giraffe, And Unicorn To Labrador</p>
+			<div class="row">
+				<p class="post-details">
+					November 29, 2017 
+					<span class="px2">•</span>9 min read 
+					
+					  	
+					  		<span class="px2">•</span>
+					    	
+					      		<a href="/blog/reflection-piece">Reflection-piece</a>
+					      		,  
+					    	
+					      		<a href="/blog/academic">Academic</a>
+					      		,  
+					    	
+					      		<a href="/blog/travel">Travel</a>
+					      		
+					    	
+					  	
+					
+				</p>
+			</div>
+			</div>
+		</div>
+	</div>
+	<span class="scroll-down-arrow shortbann scrollvanish"></span>
+</div>
+
+
+<div class="page-div post">
+	<section class="post-content-div page-content">
+
+		
+			<div id="alert" class="alert-div">
+		        <a class="alert-close"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line fill="none" stroke="#000" stroke-width="1.3" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.3" x1="13" y1="1" x2="1" y2="13"></line></svg></a>
+		        <p>This is a revision of a blogpost that I originally wrote for my advisors blog 
+		        	
+		        	 - <a rel="noopener" target="_blank" aria-label="Found Here" href="https://danielgillis.wordpress.com/2017/11/29/breaking-the-digital-divide-what-brings-a-t-rex-triceratops-elephant-giraffe-and-unicorn-to-labrador/">Found Here</a> 
+		        	</p>
+		  	</div>
+      	
+
+		<div class="post-contents"><p>Much like my first trip in November, I arrived at the airport at 6:30 in Goose Bay, and sleepily loaded my bags and self into the 19-seater Twin Otter airplane<sup><a href="#fnote1">1</a></sup>, headed to Rigolet, Labrador. Unlike my trip in August, however, the skies were dark, the air was cold, my bag was packed with Halloween costumes and candy, and most importantly, I knew where in the world I was going, both figuratively and literally.</p>
+
+<figure class="post-img-fig" style="float:left; width:60%">
+  <img class="post-img" src="../img/posts/17-11-29-i0.png" alt="Rigolet, Nunatsiavut in the Autumn" />
+  <figcaption class="post-img-cap">Rigolet, Nunatsiavut in the Autumn</figcaption>
+</figure>
+
+<p>If you don’t know already, our small multidisciplinary team is working closely with the community of Rigolet, to design, develop and distribute a community-led health and environmental monitoring application called <a href="https://enuk.eco">eNuk</a>. Designed with and by the community of Rigolet, eNuk allows community members to geospatially and categorically track changes in land, environment, and wellbeing that are relevant to them. Users will be able to track thoughts, feelings, photos, videos, audio, and comments, effectively crowd-sourcing their traditional knowledge and stories. Data may be used to; improve safety and efficiency of land use, adapt to climate changes, understand significant environmental and health influences, and provide timely health intervention. To overcome the lack of cellular and poor internet connection in Rigolet, we’ve partnered with Dr Jason Ernst and the <a href="https://www.rightmesh.io/">RightMesh</a> team, to integrate a mobile ad-hoc mesh network within the application and community. Though the project has been in the works for a few years now, its scope has been consistently expanding as we continue to better understand the niche that the application is attempting to fill. Specifically, the introduction of the mesh network into the application proposes a plethora of new potential features, and of course, problems. That being said, though our timeline has been extended, the goal of the project is more clear and dazzling than ever before.</p>
+
+<figure class="post-img-fig" style="float:right; width:40%">
+  <img class="post-img" src="../img/posts/17-11-29-i1.png" alt="Exploring the boardwalk - 2017" />
+  <figcaption class="post-img-cap">Exploring the boardwalk - 2017</figcaption>
+</figure>
+
+<p>So where do I fit into the picture, and what brought me to this 19-seater plane? Each team member is involved in almost every step of design &amp; development, however, my focus is on the interactivity of the application; how do we make eNuk not only functional but interesting, fun, and engaging to users? During my trip in August, I had the opportunity of meeting with the team, introducing myself to community-members, understanding where the project has come so far, and understanding where I fit into the timeline. This time I had a more defined agenda; to solve the following question – What is the best strategy for designing an engagement, or gamification<sup><a href="#fnote3">2</a></sup> piece for eNuk?</p>
+
+<p>This question is FAR more nuanced than I had ever imagined. The study of gamification, engagement, and UI design are significant in the computer science domain (I’ll save you the explanation, but think ‘badges’, ‘streaks’, ‘points’, ‘competitions’, etc. ). But that’s just the problem, they are studied through the lens of Computer Science; we need to explore this problem from the context of the community. How can we integrate the most successful and renown engagement strategies from Computer Science and properly tailor them to the needs, traditions, and culture of the community members of Rigolet? This is precisely what was going through my head as we landed in Rigolet at 7:35 am on October 31st.</p>
+
+<p>But first, there were more important matters that needed attending to; Halloween Festivities! What better way to thank the community for welcoming us and leading the research than to suit up in our Research Onesies and do some reverse trick-or-treating. Dan, Jason, Sheri, Jacquie and myself, dressed as a troupe of animals (fictional, extinct, and current), put together what I can only describe as a metric butt tonne of candy bags, and paraded to each house in the community to distribute them.</p>
+
+<figure class="post-img-fig" style="float:left; width:50%">
+  <img class="post-img" src="../img/posts/17-11-29-i2.png" alt="Left to right: Nic, Jason, Jacquie, and a “metric butt tonne of candy”" />
+  <figcaption class="post-img-cap">Left to right: Nic, Jason, Jacquie, and a “metric butt tonne of candy”</figcaption>
+</figure>
+
+<p>Now that the important stuff was out of the way, it was time to get to our research! The next day was spent preparing for our presentation for the Grade 7/8 class at the elementary school and an Open-House for all community members at the new Strathcona building. I had planned on engaging the kids in some computer science related activities, namely building a game using <a href="https://scratch.mit.edu/">Scratch</a>, then playing with some Hardware on the Raspberry Pi or Arduino. We’d then move on to explaining our project, then getting some ideas from them on their favourite forms of engagement within an application and how they might work in the setting of eNuk. However, much like our project, it seems you can’t design something for an audience that you don’t truly understand, and thankfully, my presentation was more led by the kids, than it was by me.</p>
+
+<p>After meeting the school Principle, Tom, the previous night, he recommended that I instead start the presentation with a brief introduction to myself and my interests, namely, the school bus that I converted into a Tiny Home and travelled the country with a year ago<sup><a href="#fnote3">3</a></sup>. We then moved onto our discussion about eNuk.</p>
+
+<figure class="post-img-fig" style="float:right; width:50%">
+  <img class="post-img" src="../img/posts/17-11-29-i3.png" alt="Learning from the students at Northern Lights Academy." />
+  <figcaption class="post-img-cap">Learning from the students at Northern Lights Academy.</figcaption>
+</figure>
+
+<p><strong>This is how I thought it would play out:</strong> I’d spend most of my time attempting to explain the methods and goals behind eNuk. I’d explain engagement in other applications, such as skill-trees in video games or badges in online education systems, and have them name some examples. Finally, if time permitted, we’d talk about some decent badges that might work in eNuk, like, ‘walk the entire boardwalk’, ‘make a post every-day for a week’, or ‘use eNuk to post a picture’.</p>
+
+<p><strong>This is how it actually played out:</strong> The kids listened more attentively than anyone I’ve presented the project to. Why? Because they understood the benefits that the applications could have in their community! I explained engagement, they responded with forms of engagement that my biases had blinded me from; <em>“So, like Snapchat streaks?”</em>  Snapchat tracks how many consecutive daily posts a user has made and as it turns out, there is a small competition between pupils in the class, with some pupils posting for over 500 days. When we finally got to potential badge ideas, their imagination truly began to soar. Where I was confined by the lens of Computer Science, they were empowered by their imaginations. They imagined the badges instead as a set of all the things that an individual could do and learn in Rigolet, as a community-passport, for lack of a better term. <em>“Do a Dog Team race!”</em> said one boy, <em>“Catch a salmon!”</em> said another, <em>“Go berry picking!”</em>, <em>“Slide down Dan’s Bank!”</em>, <em>“Sing a song in Inuktitut!”</em>, <em>“Learn grass-weaving!”</em>.  I think it’s safe to say, I left that classroom with more answers, questions, and direction than I had when I walked in.</p>
+
+<p>Now armed with the ideas and enthusiasm of the Grade 7/8 classroom, the team and I had an Open House to run. Each member set up their respective booths, explaining some section of the project. Initially, the intent of my booth was to gather a few more badge ideas and have participants draw what a given badge might look like. However, as I explained the results of my visit to the school with community members, their eyes lit up with possibilities – this might not only be a way of engaging kids/users in the application but also their traditional knowledge and skills! We started by writing down some of the ideas that the kids in the school had on post-it notes, then we asked participants to write down things that they thought it was important for kids in the community to learn, and the necessary steps to learn that skill.</p>
+
+<figure class="post-img-fig" style="float:left; width:50%">
+  <img class="post-img" src="../img/posts/17-11-29-i4.png" alt="Post-its: the beginning of an eNuk engagement piece, by Rigolet, for Rigolet." />
+  <figcaption class="post-img-cap">Post-its: the beginning of an eNuk engagement piece, by Rigolet, for Rigolet.</figcaption>
+</figure>
+
+<p>Over the course of a couple hours, I ended up with 59 different Rigolet-specific skills in 13 categories such as; <em>Language, Beading, Sewing, Winter Safety, Trapping, Cooking, Hunting, and Tool Making</em>, to name a few. While obviously not a complete and exclusive list, my badge system was beginning to transform into an educational tree; a curriculum for self-learning of traditional knowledge and skills.</p>
+
+<p>Throughout this exercise, there was a looming question in my mind. <em>“Is this really feasible? An application can’t know with reasonable accuracy if a user has completed one of these goals!”</em>. Queue, my saviour – after providing some great post-its, a woman proposed the idea of an individual (or a small handful of people) in the community being associated with each category. That way, people could go to that person to either receive their badge or to learn that skill.</p>
+
+<p>Suddenly the entire engagement piece was flipped on its head. Instead of simply providing some badges for completing a task that eNuk could recognize, we could provide a resource for users to log their journey in understanding traditional knowledge and skills. A way to visualize and compare what a community-member has accomplished and the many things they still can learn from others.</p>
+
+<p>There are a few morals to this story, for those of you who don’t like reading between the lines:</p>
+<ul>
+  <li>Leave your biases at home.</li>
+  <li>For something to be tailored to its audience, it needs to designed BY its audience and not FOR them.</li>
+  <li>Research is better in a onesie.</li>
+</ul>
+
+<p><br /></p>
+<hr />
+
+<p><a name="fnote1"><sup>1</sup></a> or as my Advisor, Dan would call it, ‘a glorified lawn dart’. I’ll never think of an airplane the same way…<br />
+<a name="fnote2"><sup>2</sup></a> if you’ve never heard of gamification, now might be a good time to use that Google-machine.<br />
+<a name="fnote3"><sup>3</sup></a> but that’s a story for another blog post.<br /></p>
+</div>
+
+
+		<div id="share-bar">
+
+    <div class="row has-separator"><div class="cell-text">ENJOYED THIS ARTICLE? SHARE WITH</div></div>
+    <div class="row share-buttons">
+
+        <a rel="noopener" target="_blank" aria-label="Twitter" href="https://twitter.com/intent/tweet?text=Check out this article: Exploring the Needs of a Community-Based Monitoring System - &url=http://localhost:4000/17-11-29/p1.html" class="at-share-btn" style="background-color: rgb(29, 161, 242); border-radius: 26px;"><span style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-twitter-1" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;" class="at-icon at-icon-twitter"><title id="at-svg-twitter-1">Twitter</title><g><path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path></g></svg></span></a>
+
+        <a rel="noopener" target="_blank" aria-label="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/17-11-29/p1.html" class="at-share-btn" style="background-color: rgb(59, 89, 152); border-radius: 26px;"><span style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-2" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;" class="at-icon at-icon-facebook"><title id="at-svg-facebook-2">Facebook</title><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg></span></a>
+
+
+        <a rel="noopener" target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/17-11-29/p1.html&title=Exploring the Needs of a Community-Based Monitoring System&summary=" class="at-share-btn" style="background-color: rgb(0, 119, 181); border-radius: 26px;"><span style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-linkedin-3" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;" class="at-icon at-icon-linkedin"><title id="at-svg-linkedin-3">LinkedIn</title><g><path d="M26 25.963h-4.185v-6.55c0-1.56-.027-3.57-2.175-3.57-2.18 0-2.51 1.7-2.51 3.46v6.66h-4.182V12.495h4.012v1.84h.058c.558-1.058 1.924-2.174 3.96-2.174 4.24 0 5.022 2.79 5.022 6.417v7.386zM8.23 10.655a2.426 2.426 0 0 1 0-4.855 2.427 2.427 0 0 1 0 4.855zm-2.098 1.84h4.19v13.468h-4.19V12.495z" fill-rule="evenodd"></path></g></svg></span></a>
+
+        <a aria-label="Email" href="mailto:?subject=Check Out This Article&amp;body=Exploring the Needs of a Community-Based Monitoring System: http://localhost:4000/17-11-29/p1.html" class="at-share-btn" style="background-color: rgb(132, 132, 132); border-radius: 26px;"><span style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-email-4" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;" class="at-icon at-icon-email"><title id="at-svg-email-4">Email</title><g><g fill-rule="evenodd"></g><path d="M27 22.757c0 1.24-.988 2.243-2.19 2.243H7.19C5.98 25 5 23.994 5 22.757V13.67c0-.556.39-.773.855-.496l8.78 5.238c.782.467 1.95.467 2.73 0l8.78-5.238c.472-.28.855-.063.855.495v9.087z"></path><path d="M27 9.243C27 8.006 26.02 7 24.81 7H7.19C5.988 7 5 8.004 5 9.243v.465c0 .554.385 1.232.857 1.514l9.61 5.733c.267.16.8.16 1.067 0l9.61-5.733c.473-.283.856-.96.856-1.514v-.465z"></path></g></svg></span></a>
+    </div>
+</div>
+
+
+		<div id="nextart-bar">
+	      <p><a href="/blog/">← Article Index</a> <span class="px2">|</span> Next Article:</p>
+
+	      <h3 class="title ln-height-1 neg-letter-spacing mb1 mt2">
+	        <a href="/writing/why-we-fear" class="text-black">Why we fear</a>
+	      </h3>
+	        
+	          <p class="subhead ln-height-1 m0 mb2 text-large">Usually, because of the unknown</p>
+	        
+	        <p>February 2015</p>
+	    </div>
+	</section>
+</div>
+
+<script>
+	$(".alert-close").click(function(){
+	  $("#alert").addClass("displaynone");
+	}); 
+</script>
+
+
+
+
+		  <footer class="footer">
+    <div class="footer-container text-center">
+      <div class="row">
+        <div class="col social-links-container">
+          
+            <div class="social-links">
+
+	<!-- Email -->
+	<a rel="noopener" target="_blank" aria-label="Mail" href="mailto:n.durish@gmail.com">
+		<i class="fa fa-envelope" ></i>
+	</a>
+
+	<!-- Facebook -->
+	<a rel="noopener" target="_blank" aria-label="Facebook" href="https://facebook.com/ndurish">
+		<i class="fab fa-facebook"></i>
+	</a>
+
+	<!-- LinkedIn -->
+	<a rel="noopener" target="_blank" aria-label="LinkedIn" href="http://linkedin.com/in/nicdurish">
+		<i class="fab fa-linkedin"></i>
+	</a>
+
+	<!-- Twitter -->
+	<a rel="noopener" target="_blank" aria-label="Twitter" href="https://twitter.com/durishn">
+		<i class="fab fa-twitter-square"></i>
+	</a>
+
+	<!-- Instagram -->
+	<a rel="noopener" target="_blank" aria-label="Instagram" href="https://instagram.com/nicdurish">
+		<i class="fab fa-instagram"></i>
+	</a>
+
+	<!-- Couchsurfing -->
+	<a rel="noopener" target="_blank" aria-label="CouchSurfing" href="https://couchsurfing.com/people/ndurish">
+		<i class="fas fa-couch"></i>
+	</a>
+
+	<!-- Spotify -->
+	<a rel="noopener" target="_blank" aria-label="Spotify" href="https://open.spotify.com/user/durishn">
+		<i class="fab fa-spotify"></i>
+	</a>
+
+	<!-- Youtube -->
+	<a rel="noopener" target="_blank" aria-label="Youtube" href="https://www.youtube.com/user/NicDurish">
+		<i class="fab fa-youtube"></i>
+	</a>
+
+	<!-- GitHub -->
+	<a rel="noopener" target="_blank" aria-label="GitHub" href="https://github.com/Durishn">
+		<i class="fab fa-github"></i>
+	</a>
+</div>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></script>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col copyright" onclick="location.href='https://github.com/Durishn/Durishn.github.io';">
+          All content copyright Nic Durish &copy; 2019.
+        </div>
+      </div>
+    </div>
+  </footer>
+	</body>
+  
+</html>

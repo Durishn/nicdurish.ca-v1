@@ -93,9 +93,16 @@ function EasyPeasyParallax() {
   $('.EP-stay-015').css({
     'opacity': 0.15 + ((scrollPos)/300) 
   });
+    $('.EP-stay-015-quick').css({
+    'opacity': 0.15 + ((scrollPos)/50) 
+  });
   $('.EP-fade-stay').css({
     'margin-top': (scrollPos/2)+"px",
     'opacity': 1-(scrollPos/150)
+  });
+    $('.EP-fade-stay-quick').css({
+    'margin-top': (scrollPos)+"px",
+    'opacity': 1-(scrollPos/25)
   });
   $('.EP-slightfade-slow').css({
     'opacity': 0 + (scrollPos)
