@@ -21,17 +21,28 @@ permalink: /blog/
 <div class="page-div">
 	<section class="page-content">
 
-{% assign categories_list = site.categories %}
-  {% if categories_list.first[0] == null %}
-    {% for category in categories_list %}
-      <a href="{{ site.baseurl }}/blog/{{ category[0] | downcase | downcase | url_escape | strip | replace: ' ', '-' }}"><div class="category-box">{{ category[0] | camelcase }} ({{ site.tags[category].size }})</div></a>
-    {% endfor %}
-  {% else %}
-    {% for category in categories_list %}
-      <a href="{{ site.baseurl }}/blog/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}"><div class="category-box">{{ category[0] | camelcase }} ({{ category[1].size }})</div></a>
-    {% endfor %}
-  {% endif %}
-{% assign categories_list = nil %}
+		{% assign categories_list = site.categories %}
+		  {% if categories_list.first[0] == null %}
+		    {% for category in categories_list %}
+		      <a href="{{ site.baseurl }}/blog/{{ category[0] | downcase | downcase | url_escape | strip | replace: ' ', '-' }}"><div class="category-box"><p>{{ category[0] | camelcase }} ({{ site.tags[category].size }})</p></div></a>
+		    {% endfor %}
+		  {% else %}
+		    {% for category in categories_list %}
+		      <a href="{{ site.baseurl }}/blog/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}"><div class="category-box"><p>{{ category[0] | camelcase }} ({{ category[1].size }})</p></div></a>
+		    {% endfor %}
+		  {% endif %}
+		{% assign categories_list = nil %}
+
+		<div class="row">
+	        <div class="login_container">
+	            <div class="login_bar">
+	                <input id="subemail" class="login" type="text" onfocus="this.value=''" name="Email" value="Enter Your Email">
+	                <span class="subscribe_button" onclick="subscribeOnClick()">subscribe</span>
+	                <span class="subscribing"></span>
+	                <span class="thanks"> Thank you. You have been subscribed</span>
+	            </div>
+	        </div>
+	    </div>
 
 
 
@@ -62,4 +73,6 @@ permalink: /blog/
 		</ul>
 	</section>
 </div>
+
+
 
