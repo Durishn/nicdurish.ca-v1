@@ -353,7 +353,7 @@ Post Layouts
 
 .post-img-fig{
   margin: 15px;
-  min-width: 250px;
+  min-width: 180px;
 
   .post-img{
     width:100%;
@@ -382,12 +382,11 @@ BlogCard
     width: calc(70% + 80px);
     height: 10em;
     margin: 2.5em auto;
-    min-width: 410px;
     overflow: hidden;
 
     .blog-card-img{
       width: 13em;
-      max-width: 37%;
+      max-width: 45%;
       height: 10em;
       /* position: relative; */
       float: left;
@@ -403,10 +402,10 @@ BlogCard
 
     .blog-card-content{
       width: calc(100% - 14em);
-      height: 8em;
+      height: 9em;
       float: left;
-      min-width: calc(63% - 1em);
-      margin: 1em 0 1em 1em;
+      min-width: calc(55% - 1em);
+      margin: 0.5em 0 0.5em 1em;
       position: relative;
       color: lighten($primary, 5%);
 
@@ -433,7 +432,7 @@ BlogCard
     background: #233b5a;
     margin: 0;
     width: calc(100% - 12.9em);
-    min-width: calc(63.1%);
+    min-width: calc(55.1%);
     float: right;
     height: 10em;
     border-radius: 0 15px 15px 0;
@@ -457,9 +456,34 @@ BlogCard
 }
 
 @media screen and (max-width: 768px) {
-  .blog-card-sub, .blog-card-prevdiv {
-    display: none;
+  .blog-card-sub{
+    display: none !important;
   }
+  .blog-card-content{
+    h3{
+      font-size: 1.1em;
+      line-height: 1.1em;
+    }
+    .blog-card-details, .blog-card-cat{
+      font-size: 0.9em;
+    }
+    .px2{
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+  .blog-card-prevdiv{
+    p{
+      font-size:0.85em;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .blog-card-sub, .blog-card-prevdiv {
+    display: none !important;
+  }
+
 }
 
 
