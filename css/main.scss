@@ -260,6 +260,7 @@ Post Layouts
 .post-content-div.page-content{
   max-width: 850px;
   text-align: left;
+  padding-bottom: 5rem;
 }
 
 .post-title{
@@ -283,6 +284,12 @@ Post Layouts
     font-size: 0.8em;
     margin: 20px 0 0;
     line-height: calc(0.7vw + 12px);
+    a{
+      color: $post-header;
+    }
+    a:hover{
+      color: $dulllight-red;
+    }
 }
 .post-contents{
   /*margin-bottom: 5.5em;*/
@@ -323,6 +330,9 @@ Post Layouts
   }
 }
 
+/************* 
+Share Bar
+**************/
 #share-bar{
   margin-top: 4em;
   text-align: center;
@@ -339,14 +349,13 @@ Post Layouts
         font-size: 0.9rem;
         line-height: 1.7;
         color: #82888c;
-        white-space: nowrap;
         letter-spacing: 2px;
         letter-spacing: 0.2rem;
         position: relative;
         z-index: 2;
         margin: auto;
         background-color: lighten($page-div-background, 4%);
-        width:23rem;
+        width:17rem;
       }
   }
 
@@ -361,7 +370,7 @@ Post Layouts
   }
 
   .share-buttons{
-    padding: 15px 0;
+    padding: 12px 0;
 
     .at-share-btn{
       padding: 5px;
@@ -381,8 +390,186 @@ Post Layouts
 }
 
 #nextart-bar{
-  margin-top: 5em;
+  margin-top: 4em;
+  h3{
+    margin-top: 15px;
+  }
+  p{
+    margin: 0;
+  }
+
+  .next-details{
+    font-weight: 400;
+    font-size: 0.9em;
+    opacity: 0.5;
+  }
+  .next-cat{
+    margin-top: 8px;
+    font-size: 0.8em;
+    font-weight: 400;
+  }
 }
+
+
+.category-box{ 
+  background: indianred;
+  width: 10em;
+  height: 2em;
+  position: relative;
+
+  a{
+    top: 5px;
+    padding: auto 0;
+    padding-top: 10px;
+    position: relative;
+  }
+}
+/************* 
+Subscribe Bar
+**************/
+.login_container {  
+  width:50%;
+  min-width: 300px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.login_bar {
+  height: 40px;
+  background: white;
+  border-radius: 10px;
+  top: 50%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  
+  input[type="text"]{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: lighten($primary, 10%);
+  }
+
+  .subscribe_button{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+
+.login {
+  left: 0;
+  cursor: text;
+  padding: 0 0 0 10px;
+  border-width: 0px;
+  background: transparent;
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  padding-left: 10px;
+  text-align: left;
+  line-height: 40px;
+  vertical-align: middle;
+  z-index: 10;
+  -webkit-transition: transform 0.2s ease-in-out 0s;
+     -moz-transition: transform 0.2s ease-in-out 0s;
+       -o-transition: transform 0.2s ease-in-out 0s;
+          transition: transform 0.2s ease-in-out 0s;
+}
+
+.login_active {
+  -webkit-transform: translateX(150%);
+     -moz-transform: translateX(150%);
+      -ms-transform: translateX(150%);
+       -o-transform: translateX(150%);
+          transform: translateX(150%);
+}
+
+.subscribe_button:hover{
+  background-color: lighten($primary, 20%);
+  cursor:pointer;
+}
+
+.subscribe_button {
+  background: lighten($primary, 10%);
+  position: absolute;
+  top: -55px;
+  left: 70%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 150px;
+  width: 30%;
+  text-align: center;
+  line-height: 150px;
+  vertical-align: middle; 
+  color: white;
+  -webkit-transition: transform 0.5s ease 0s;
+     -moz-transition: transform 0.5s ease 0s;
+       -o-transition: transform 0.5s ease 0s;
+          transition: transform 0.5s ease 0s;
+}
+
+.subscribe_button_active{
+  -webkit-transform: translateY(50px);
+     -moz-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+       -o-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.subscribing{
+  background: lighten($secondary, 20%);
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+  left:-100%;
+  display: inline-block;
+  -webkit-transition: transform 1s ease 0s ;
+     -moz-transition: transform 1s ease 0s ;
+       -o-transition: transform 1s ease 0s ;
+          transition: transform 1s ease 0s ;
+}
+
+.subscribing_active {
+  -webkit-transform: translateX(100%);
+     -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+       -o-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.thanks{
+  left: 0;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  text-align: left;
+  line-height: 50px;
+  vertical-align: middle;
+  padding-left: 10px;
+  position: absolute;
+  top:45px;
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: lighten($primary, 10%);
+  -webkit-transition: transform 0.5s ease 0s ;
+     -moz-transition: transform 0.5s ease 0s ;
+       -o-transition: transform 0.5s ease 0s ;
+          transition: transform 0.5s ease 0s ;
+}
+
+.thanks_active {
+  -webkit-transform: translateY(-50px);
+     -moz-transform: translateY(-50px);
+      -ms-transform: translateY(-50px);
+       -o-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
 
 /************* 
 Alerts 
@@ -428,6 +615,7 @@ Banner
 .banner-div{
   height: calc(70vh + 105px);
   width: 100%;
+  z-index: -1;
 
   .banner{
     height: 100%;
@@ -447,6 +635,11 @@ Banner
     left:0;
     right:0;
     margin: auto;
+    z-index: -1;
+  }
+
+  .page-content.post{
+    z-index: 0;
   }
 
   .bannertext-div { 

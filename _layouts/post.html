@@ -1,24 +1,26 @@
 ---
 layout: default
 ---
-{% include readingtime_page.html %}
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=226927067364156&autoLogAppEvents=1"></script>
 
 <div class="banner-div {{ page.divsize }}">
 	<div class="banner EP-stay-015-quick" style="background: url({{ page.banner }}) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 80%; width: 100%; opacity: 0.15;"></div>
-	<div class="page-content">
-		<div class="bannertext-div EP-fade-stay-quick center-div">
+	<div class="page-content post">
+		<div class="bannertext-div EP-fade-stay-quick EP-displaynone center-div">
 			<div id="bannertext-container">
 			<h1 class="post-title">{{ page.title }}</h1>
 			<p class="post-subtitle">{{ page.subtitle }}</p>
 			<div class="row">
 				<p class="post-details">
 					{{ page.date | date: "%B %e, %Y" }} 
-					<span class="px2">•</span>{{ reading_time }} read 
-					{% assign categories_list = site.categories %}
-					  	{% if categories_list.first[0] != null %}
+					<span class="px2">•</span>{{ page.content | number_of_words | divided_by: 200 | ceil}} min read 
+					{% assign categories_list = page.categories %}
+					  	{% if categories_list.first != null %}
 					  		<span class="px2">•</span>
 					    	{% for category in categories_list %}
-					      		<a href="{{ site.baseurl }}/blog/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }}</a>
+					      		<a href="{{ site.baseurl }}/blog/{{ category | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }}</a>
 					      		{% if forloop.last %}{%else%},  {% endif %}
 					    	{% endfor %}
 					  	{% endif %}
@@ -50,18 +52,31 @@ layout: default
 
 		{% include share-bar.html %}
 
+		
+			<div id="nextart-bar">
+		        <p><a href="/blog/">← Article Index</a> {% if page.previous %}<span class="px2">|</span> Next Article:</p>
 
-		<div id="nextart-bar">
-	      <p><a href="/blog/">← Article Index</a> <span class="px2">|</span> Next Article:</p>
+			        <h3 class=""><a href="{{ page.previous.url }}" class="text-black">{{ page.previous.title }}</a></h3>
+					<p class="next-details">{{ page.previous.date | date: "%B %e, %Y" }}<br>
+						{{ page.previous.content | number_of_words | divided_by: 200 | ceil}} min read<br>
+					</p>
 
-	      <h3 class="title ln-height-1 neg-letter-spacing mb1 mt2">
-	        <a href="/writing/why-we-fear" class="text-black">Why we fear</a>
-	      </h3>
-	        
-	          <p class="subhead ln-height-1 m0 mb2 text-large">Usually, because of the unknown</p>
-	        
-	        <p>February 2015</p>
-	    </div>
+					<p class="next-cat">
+						{% assign categories_list = page.previous.categories %}
+						  	{% if categories_list.first != null %}
+						    	{% for category in categories_list %}
+						      		<a href="{{ site.baseurl }}/blog/{{ category | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }}</a>
+						      		{% if forloop.last %}{%else%},  {% endif %}
+						    	{% endfor %}
+						  	{% endif %}
+						{% assign categories_list = nil %}
+					</p>
+					
+			    {% else %}
+			    	</p>
+		        {% endif %}
+		    </div>
+
 	</section>
 </div>
 
