@@ -7,26 +7,47 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Hello Ma</title>
-        <description>Emma is Cute</description>
-        <pubDate>Mon, 15 Apr 2019 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000//19-04-15/p1.html</link>
-        <guid isPermaLink="true">http://localhost:4000//19-04-15/p1.html</guid>
-      </item>
-    
-      <item>
-        <title>Test</title>
-        <description>&lt;p&gt;This is only a test&lt;/p&gt;
+        <title>Reflection On A Properly Run Conference - People, Places and Public Engagement</title>
+        <description>&lt;p&gt;I’ve always had an excitable, yet tentative outlook on academic conferences. Most conferences that I’ve attended over the past year and a half of my Masters in CompSci have represented (as they should) an opportunity to think outside of the box, to understand how other researchers are solving problems, to network with like-minded individuals and to share research which could have a positive impact on the respective field. After attending a conference that has met these goals, I consistently end up leaving with, what I like to call, an after-conference glow, that leaves me feeling re-energized in my research; more curious, more productive, more insightful, and more willing to work and share with other researchers. For those of you that have experienced this academic bliss, you know that it’s a feeling worth striving for. That being said, not all conferences that I’ve been to, have impacted me in this way which is why I try to be prepared and excited for conferences, but never too expectant.&lt;/p&gt;
+
+&lt;p&gt;That is exactly what was going through my mind as my advisor Dr. Dan Gillis and I loaded our bags onto our flight towards the People, Places and Public Engagement Conference in St. Johns in October of 2018. The focus of the conference was on exploring how universities and the public, including communities, governments, industry, not-for-profits, and others, collaborate, and work together. We had applied to speak at the conference months earlier, through the recommendation of one of our research partners who noted that it might be a good opportunity to share our research and network with individuals who were doing work related to Public Engagement in the region. Without delving too much into our own research project (for more info visit: enuk.eco), we are in the process of building an environment and health monitoring application, built with a mesh network for the remote, indigenous community of Rigolet in Nunatsiavut. While Dan and I are more involved on the ‘technical’ side, the project lies at the intersection of a multitude of fields, including; Computer Science, Public Health, Environmental Sciences, Public Engagement, Indigenous Studies and many more. While having experts in each of these fields is a necessity, it’s also necessary to identify a common means of communication within the team, and to work to understand how Computer Science fits within each of these domains in the context of our project. After identifying the conference as a good fit, and receiving our acceptance to present, we were able to garner enough funding through PSEER to cover my 5 days in St. Johns.&lt;/p&gt;
+
+&lt;p&gt;We arrived at our hotel with just enough time to unpack our bags and head up to Memorial Universities new building on Signal Hill for the ‘Welcome Social’ event. As we joined the queue for registration, I began to take in my surroundings, noting evidence which might support my hopes that this was indeed going to be one of the good ones. The building was fairly small; with one large conference room, a number of smaller meeting rooms, and an atrium that was full of smiles, deep conversation, a local band, and the aroma of local and traditional delicacies. By the end of the evening, Dan and I began walking back to our Hotel; our bellies satisfied, our heads full of excitement for the upcoming presentations, and pockets full of business cards and numbers from other researchers and our faces strained from smiling. It was going to be one of the good ones.&lt;/p&gt;
+
+&lt;p&gt;We arrived at the conference centre by 9:30 AM on Thursday Morning, just in time to grab some coffee, meet with our community research partner Inez Shiwak and chat with some individuals we met the previous night, before the plenary panel began. Ted Hewitt, Sara Woods, and Kevin Morgan began the conference by setting the stage for the next couple of days, identifying the importance of public engagement, discussing the role of communities, businesses, and academic institutions and addressing the many challenges. To my surprise, this plenary, the closing presentations and a couple luncheon plenaries would be the only presentations we attended in the larger conference hall throughout the week. The next 48 hours was a non-stop race against time, it was clear that the conversations that were to happen within these walls was of grave importance to our research and to the livelihoods of Canadians, and every passing moment was an opportunity to learn from someone new. Inez, Dan and I even opted to split up for a few of the workshops, taking notes and reconvening to share what we had learned. I decided that, while every presentation was valuable, I was going to focus on Arctic, Inuit, Community-based engagement, as well as projects that included some technical aspects, which I then narrowed down to the following presentations and workshops:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Advancing Public Engagement in Canada&lt;/li&gt;
+  &lt;li&gt;Transforming University-Indigenous Relationships for Reconciliation&lt;/li&gt;
+  &lt;li&gt;Creating Meaningful Curricular Learning Experiences with Public Engagement&lt;/li&gt;
+  &lt;li&gt;Engagement and Network Leadership for Arctic Development&lt;/li&gt;
+  &lt;li&gt;Right in the Middle of Somewhere: Public Engagement in Northern and Remote Regions&lt;/li&gt;
+  &lt;li&gt;Engaging the Public Through Citizen Science&lt;/li&gt;
+  &lt;li&gt;Closing Plenary - President Natan Obed, Inuit Tapiriit Kanatami (ITK)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dan, Inez and I each present in separate workshops, on different aspects of our project. Dan discussed “How Community Engaged Computer Science Can Change The World”, Inez explored the importance of Community Leadership in the design and implementation of the eNuk App and I explored “How Bridging the Digital Divide can Improve Community-Based Monitoring Programs in the Circumpolar North”. Within each of these sessions, we had a brief presentation before the room erupted into questions and discussions. Questions varied from supportive, such as “Could this research easily be extended to other communities, to more critical (yet incredibly important) questions such as “Have you considered the potential negative impacts of bringing high-speed internet to remote communities”. But this balance was exactly what we needed and exactly what we got; critical insight from a variety of parties on the best way of approaching Public Engagement. This balance of criticisms and support from active and diverse attendees was a theme that persisted through the entire conference. Each presentation involved active participation from the audience and presenters in the discussion of the importance of public engagement, community-engaged learning and scholarship, and our role in addressing the many challenges currently faced in society. Natan Obed, president of the ITK, summed up the week perfectly with his closing statement; “We have determined that it must end with us. Now, we must follow through on the actions we have agreed to undertake together and make them a priority in every aspect of our work and our lives.”&lt;/p&gt;
+
+&lt;p&gt;While I could ramble on about the PPP, and there are some key takeaways that have stuck with me since leaving St. Johns;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;The benefit of a conference can be described as the sum of passion and knowledge it provided to its attendees, not its cost, location or the fame of its presenters.&lt;/li&gt;
+  &lt;li&gt;If you’re asking “How do I get community members involved in my research”, you’re too late, they need to be involved in the design and planning of the research as well.&lt;/li&gt;
+  &lt;li&gt;Don’t be defensive of your research&lt;/li&gt;
+  &lt;li&gt;Practise a healthy amount of skepticism&lt;/li&gt;
+  &lt;li&gt;Go to conferences and most importantly&lt;/li&gt;
+  &lt;li&gt;There are many types of knowledge, and each one deserves to be equally recognized.&lt;/li&gt;
+&lt;/ol&gt;
 </description>
-        <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000//19-01-01/p1.html</link>
-        <guid isPermaLink="true">http://localhost:4000//19-01-01/p1.html</guid>
+        <pubDate>Fri, 26 Oct 2018 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000//18-10-26/p1.html</link>
+        <guid isPermaLink="true">http://localhost:4000//18-10-26/p1.html</guid>
       </item>
     
       <item>
         <title>Exploring the Needs of a Community-Based Monitoring System</title>
-        <description>&lt;p&gt;Much like my first trip in November, I arrived at the airport at 6:30 in Goose Bay, and sleepily loaded my bags and self into the 19-seater Twin Otter airplane&lt;sup&gt;&lt;a href=&quot;#fnote1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, headed to Rigolet, Labrador. Unlike my trip in August, however, the skies were dark, the air was cold, my bag was packed with Halloween costumes and candy, and most importantly, I knew where in the world I was going, both figuratively and literally.&lt;/p&gt;
+        <description>&lt;p&gt;Much like my first trip in November, I arrived at the airport at 6:30 in Goose Bay, and sleepily loaded my bags and self into the 19-seater Twin Otter airplane&lt;sup&gt;1&lt;/sup&gt;, headed to Rigolet, Labrador. Unlike my trip in August, however, the skies were dark, the air was cold, my bag was packed with Halloween costumes and candy, and most importantly, I knew where in the world I was going, both figuratively and literally.&lt;/p&gt;
 
+&lt;!--more--&gt;
 &lt;figure class=&quot;post-img-fig&quot; style=&quot;float:left; width:60%&quot;&gt;
   &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/17-11-29-i0.png&quot; alt=&quot;Rigolet, Nunatsiavut in the Autumn&quot; /&gt;
   &lt;figcaption class=&quot;post-img-cap&quot;&gt;Rigolet, Nunatsiavut in the Autumn&lt;/figcaption&gt;
@@ -93,6 +114,75 @@
         <pubDate>Wed, 29 Nov 2017 00:00:00 -0500</pubDate>
         <link>http://localhost:4000//17-11-29/p1.html</link>
         <guid isPermaLink="true">http://localhost:4000//17-11-29/p1.html</guid>
+      </item>
+    
+      <item>
+        <title>Critical Review - Good Ideas Through The Looking Glass by Niklaus Wirth</title>
+        <description>&lt;p&gt;A spent a significantly larger portion of my time preparing for this assignment, than I did actually writing it. I read large sections of many of the papers and realized how difficult it was going to be to support my review with valid criticisms without being to subjective. This is especially true when reviewing comments that were made by some of the most renown programmers of our time; Djistra, Holt, Wirth, Hoare &amp;amp; Ritchie. For this reason, instead of formal critique, my paper expands on quote’s by the author that may have been vague, unclear or needed a devil’s advocate (such as myself).&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;“Good ideas, through the looking glass” is a Computer Science paper written by Niklaus Wirth in 2005. Unlike many other popular STEM articles, Wirth didn’t focus on the introduction, benefits or flaws of any specific computer system or paradigm. Instead, Wirth wanted to discuss “an entire potpourri of ideas, listed from the past decades of Computer Science and Computer Technology”. Specifically, he brought his attention to historically unique or novel ideas, and whether or not they withstood the test of time. As Wirth points out, it’s important to “try to learn from the past, be it for the sake of progress, intellectual stimulation, or fun” &lt;a href=&quot;#wirt6&quot;&gt;(Wirth, 2006)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The article is a fantastic read, and brings due credit to many forgotten concepts, though there were some areas where Wirth’s statements are slightly unclear, or exaggerated. Specifically, my review will discuss a single statement from each of the three sections of the article. Within Programming Language Features, I discuss the statement that the equal sign as an assignment was “a notorious example for a bad idea”. In Miscellaneous Techniques I explore the idea that Wizards typically “are obstinate and immortal like devils”. Finally in Computer Architecture, the notion that “the idea of an expression stack proved to be rather questionable”. In no way are these statements wrong, but due to their subjective nature, they deserve to be explored further. My comments should be considered additions to Wirth’s original paper, as opposed to replacements.&lt;/p&gt;
+
+&lt;h1 id=&quot;programming-language-features---the-equal-sign&quot;&gt;Programming Language Features - The Equal Sign&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“A notorious example for a bad idea was the choice of the equal sign to denote assignment. It goes back to FORTRAN in 1957 and has blindly been copied by armies of language designers. Why is it a bad idea? Because it overthrows a century old tradition to let &lt;code class=&quot;highlighter-rouge&quot;&gt;=&lt;/code&gt; denote a comparison for equality, a predicate which is either true or false”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Wirth comments that there was a traditional and widely accepted usage of the equal sign that Fortran wrongly changed in 1957, causing mass confusion. While it’s true that Fortran (as well as C, Perl, Python, etc) used the equal sign as an assignment, and the Pascal family (Ada, Eiffel, APL) used it as a comparison &lt;a href=&quot;#germ6&quot;&gt;(Germain, 2006)&lt;/a&gt;. It’s a drastic simplification to imply that the debate over the proper usage of the equal sign began with these languages. The &lt;code class=&quot;highlighter-rouge&quot;&gt;=&lt;/code&gt; symbol; which is now universally accepted in mathematics for equality was first recorded by Welsh mathematician Robert Recorde in The Whetstone of Witte (Recorde, 1557). Within the book, Recorde explains that his design of the ‘twin lines’ was to avoid the tedious repetition of these words: “is equal to”. He wrote “I will set (as I do often in work use) a pair of parallels, or Gemowe lines, of one length (thus =), because no two things can be more equal” &lt;a href=&quot;#reco7&quot;&gt;(Recorde, 1557)&lt;/a&gt;. While it could be considered a conditional assignment (i.e. “Given that x is equal to y”), based
+on the context of the symbol it seems that Recorde originally intended the equal sign to be written as an absolute assignment (i.e. “x is equal to y”).&lt;/p&gt;
+
+&lt;p&gt;However, as quickly as the symbol was invented, it was misinterpreted. Historically this failed to gain significant attention, as generally the context
+of an equation implied the intended usage of the equal sign. While it’s true that after the 1800’s the symbol was generally accepted as a conditional,
+there was not a universal symbol for assignments, and documents were still full of ‘improper’ uses. The distinction gained attention and significance with the introduction of computation. Consider the following code; other than the run on equation in Line 5, most individuals would understand this equation without a problem, as context distinguishes between assignments and conditions. However, a computer needs to explicitly know the difference, therefore most programming language would not be able to compile this code.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-lisp&quot; data-lang=&quot;lisp&quot;&gt;x = 5
+y = x + 5 + 2
+if (y = x + 7)
+	printf(&quot;TRUE&quot;)
+y = x + 5 = 10 + 2 = 12&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Wirth also expands his distaste to other symbols, such as incrementing via &lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt;. This, like Right-Associativity was indeed a poor design decision, as it can’t distinguish between statements and expressions. While there’s no saying which usage of the equal symbol is best (it’s subjective!), it’s easy to see that there should be two universally accepted symbols for conditions and absolute assignments that are mutually exclusive.&lt;/p&gt;
+
+&lt;h1 id=&quot;miscellaneous-techniques---wizards&quot;&gt;Miscellaneous Techniques - Wizards&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“This author’s experiences with wizards were largely unfortunate. He found it impossible to avoid confronting them in text editors. Worst are those wizards that constantly interfere with one’s writing… if at least they could easily be deactivated, but typically they are obstinate and immortal like devils.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Within Wirth’s Miscellaneous Techniques section he touches on the poor implementation of Wizards, implying that generally do more bad than good. He defends that wizards are indeed necessary, but are largely executed improperly. While I don’t disagree that there was and still is very evil software wizards out there, it’s important to give due credit to the good wizards, if you will. A Wizard (also known as Assistant, or Helper) is a help feature of a software package that automates complex tasks based on user-inputs &lt;a href=&quot;#chri6&quot;&gt;(Christensson, 2006)&lt;/a&gt;. Wizards (as opposed to daemons) are processes or features within a program, never a program itself. They are most common when installing new software, as a Setup Assistant. However they are used frequently to automate tasks within software, such as with text-editors; spellchecking, auto-indenting, auto- capitalization, auto-saving etc. More or less any action that occurs without being explicitly told to do so &lt;a href=&quot;#scot1&quot;&gt;(Scott, 2011)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Wirth’s most significant gripe with Wizards, is that they generally cannot be customized and are permanent. However, this is one of the only features that make wizards, well, wizards! If a user needed to initialize or start-up a wizard, it would simply be a separate task or process. It’s important to realize that we’ve been spoiled by the wonders of wizards. Most individuals recognize when wizards aren’t working properly, such as inaccurate autocorrecting, or automatically changing certain strings into symbols. But no longer recognize it’s plentiful benefits; capitalizing, saving, or using the open/closing quotation points when necessary. I agree with Wirth’s sentiments; Wizards that get in the way of the task at hand should be quickly re-evaluated or destroyed. But that isn’t to say that we shouldn’t be forever grateful to all of the work performed be our wizards. I mean, they are called Wizards for a reason! &lt;/p&gt;
+
+&lt;h1 id=&quot;computer-architecture---expression-stacks&quot;&gt;Computer Architecture - Expression Stacks&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“Still, the idea of an expression stack proved to be rather questionable, particularly after the advent of architectures with register banks in the mid 1960s. Now simplicity of compilation was sacrificed for any gain in execution speed. The stack organization had restricted the use of a scarce resource to a fixed strategy. “&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Wirth’s section describing the timeless yet flawed ideas of computer architecture was incredibly insightful and well written. I had to read it multiple times, looking for a quotation that I could critique, or at least add to. I chose these lines as I felt he potentially overemphasized the questionability of expression stacks as they stood at that point in time.&lt;/p&gt;
+
+&lt;p&gt;F. L. Bauer and E. W. Dijkstra independently proposed the same scheme for the evaluation of arbitrary expressions. When evaluating an expression from left to right, following the priority rules, the last item is the first needed, therefore making a stack. This was a convenient notion at the time, as implementing this strategy into a register bank was straight-forward. This was the introduction of stack computing &lt;a href=&quot;#koop4&quot;&gt;(Koopman, 1994)&lt;/a&gt;. The significant problem with stack machines was their need for a predefined register amount, sometimes wasting precious resources. While the architecture was quite successful for a while, it was quickly replaced after the introduction of register machines.&lt;/p&gt;
+
+&lt;p&gt;Wirth explains these events quite well in his article, and outlines the advantages that architectures with register banks had over expression stacks. However stack machines do have their advantages, and it wouldn’t be doing expressions stacks any justice to not discuss them. Stack machines may have larger operand loads than register machines, but smaller instructions and smaller total object code &lt;a href=&quot;#shan6&quot;&gt;(Shannon, 2006)&lt;/a&gt;. A stack machine’s compact code naturally fits more instructions in cache, and therefore could achieve better cache efficiency, reducing memory costs or permitting faster memory systems for a given cost. Also, what stack machines lacked in performance, they made up for in the efficiency of their compilers. While many of these benefits are overshadowed by the massive performance enhancement provided by register computing, they are not without value. Stack machines are still used today in some research, small hardware and in hybrid machines. Expression stacks served as a novel solution at the time, only retired after better hardware introductions allowed for more dynamic approaches &lt;a href=&quot;#sinn2&quot;&gt;(Sinnathanby 2012)&lt;/a&gt;. I might argue that instead of “expression stacks [being…] rather questionable”, it was the notion that stack machines were the best architecture for our computing that was questionable.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;Niklaus Wirth’s article “Good ideas, through the looking glass” was a fantastic piece of literature. He outlined the most significant ideas of computation within the last century, not by their success, but by their novelty and genius. Through his discussion of computer architectures, language features, and miscellaneous techniques, he does his best to provide as much information about each idea, it’s benefits and downfalls, as possible. While I certainly wouldn’t change anything about the article, there were some topics which I felt could have been explored further, and presented differently. His statements about equal signs as assignments, wizards and expressions stacks were informative and quite accurate. However, he seemed to end the sections by defining them as bad, or questionable ideas (if not outright calling them devils). While, again, potentially valid, I believe these ideas deserve a little more credit, and their benefits could have been further explored. Subjectivity aside however, another fantastic article from Niklaus Wirth.&lt;/p&gt;
+
+&lt;h4 id=&quot;references&quot;&gt;References&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a name=&quot;chri6&quot;&gt;Christensson, P. (2006). Wizard Definition. Retrieved 2016, Feb 28, from http://techterms.com &lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;germ6&quot;&gt;Germain, J. (2006). Variable Assignment. Retrieved February 28th, 2016, from http://www.cs.utah.edu/~germain/PPS/Topics/assignment_statement.html&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;koop4&quot;&gt;Koopman, P (1994). “A Preliminary Exploration of Optimized Stack Code Generation” (PDF). Journal of Forth applications and Research 6 (3).&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;reco7&quot;&gt;Recorde, R. (1557). The Whetstone of Witte. Retrieved February 27th, 2016 from http://www.maa.org/press/periodicals/convergence/mathematical-treasures-robert-recordes- whetstone-of-witte&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;scot1&quot;&gt;Scott, B. (2011). Main menu. Retrieved February 29, 2016, from http://designinginterfaces.com/ patterns/wizard/&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;shan6&quot;&gt;Shannon, M. Bailey, C (2006). “Global Stack Allocation : Register Allocation for Stack Machines”. Retrieved February 27th, 2016&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;sinn2&quot;&gt;Sinnathanby, M. (2012). Stack based vs Register based Virtual Machine Architecture, and the Dalvik VM. Retrieved February 29, 2016, from https://markfaction.wordpress.com/2012/07/15/ stack-based-vs-register-based-virtual-machine-architecture-and-the-dalvik-vm/&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a name=&quot;wirt6&quot;&gt;Wirth, N. (2006). Good ideas, through the looking glass [computing history]. Computer, 39(1), 28-39.&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 23 Feb 2016 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000//16-02-23/p1.html</link>
+        <guid isPermaLink="true">http://localhost:4000//16-02-23/p1.html</guid>
       </item>
     
   </channel>

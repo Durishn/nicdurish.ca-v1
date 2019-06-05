@@ -56,21 +56,28 @@ layout: default
 			<div id="nextart-bar">
 		        <p><a href="/blog/">← Article Index</a> {% if page.previous %}<span class="px2">|</span> Next Article:</p>
 
-			        <h3 class=""><a href="{{ page.previous.url }}" class="text-black">{{ page.previous.title }}</a></h3>
-					<p class="next-details">{{ page.previous.date | date: "%B %e, %Y" }}<br>
-						{{ page.previous.content | number_of_words | divided_by: 200 | ceil}} min read<br>
-					</p>
+			        <div class="blog-card-div">
+					    <a href="{{ page.previous.url }}"><div class= "blog-card">
+					    	<div class="blog-card-img"><img alt="Blogpost Banner" src="{{ page.previous.banner }}" /></div>
+					    	<div class="blog-card-content">
+						      	<h3 class="blog-card-title">{{ page.previous.title }}</h3>
+						      	<h5 class="blog-card-sub">{{ page.previous.subtitle }}</h5>
+								<p class="blog-card-details"><small>{{ page.previous.date | date: "%B %e, %Y" }}<span class="px2">•</span>{{ page.previous.content | number_of_words | divided_by: 200 | ceil}} min read</small></p>
 
-					<p class="next-cat">
-						{% assign categories_list = page.previous.categories %}
-						  	{% if categories_list.first != null %}
-						    	{% for category in categories_list %}
-						      		<a href="{{ site.baseurl }}/blog/{{ category | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }}</a>
-						      		{% if forloop.last %}{%else%},  {% endif %}
-						    	{% endfor %}
-						  	{% endif %}
-						{% assign categories_list = nil %}
-					</p>
+								<p class="blog-card-cat"><small>
+									{% assign categories_list = page.previous.categories %}
+									  	{% if categories_list.first != null %}
+									    	{% for category in categories_list %}
+									      		{{ category | camelcase }}
+									      		{% if forloop.last %}{%else%},  {% endif %}
+									    	{% endfor %}
+									  	{% endif %}
+									{% assign categories_list = nil %}
+								</small></p>
+							</div>
+							<div class="blog-card-prevdiv"><div>{{ page.previous.content | truncate:280 }}</div></div>
+					    </div></a>
+					</div>
 					
 			    {% else %}
 			    	</p>

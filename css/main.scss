@@ -301,6 +301,10 @@ Post Layouts
   text-align: left;
   color: $post-text;
   }
+  h1, h2{
+    margin: 1em 0 0.1em;
+    color: darken($post-text, 10%);
+  }
   li{
     font-size: 0.95rem;
     font-weight: 400;
@@ -308,6 +312,42 @@ Post Layouts
     line-height: 1.6rem;
     text-align: left;
     color: #55585a;
+  }
+  blockquote {
+    position: relative;
+    font-style: italic;
+    &:before {
+      content: '\201C';
+      position: absolute;
+      top: -0.25em;
+      left: -0.3em;
+      color: #000;
+      font-size: 6em;
+      z-index: 0;
+      opacity: 0.1;
+     }
+  }
+
+  code{
+    font-size:0.9rem;
+    color: darken($post-text, 10%);
+    background-color: #edf5fb;
+    padding: 4px 8px;
+    border-radius: 5px;
+  }
+
+  .highlight{
+    border-radius: 10px;
+    padding: 20px 30px;
+    border: 1px solid #ddd;
+    font-size: 20px;
+  }
+  .highlight pre{
+    margin: 0;
+  }
+  .highlight pre code{
+    background-color: transparent;
+    padding: 0;
   }
 }
 
@@ -317,7 +357,7 @@ Post Layouts
 
   .post-img{
     width:100%;
-    } 
+  } 
 
   .post-img-cap{
     width: 100%;
@@ -329,6 +369,102 @@ Post Layouts
     color: $post-text;
   }
 }
+
+/************* 
+BlogCard
+**************/
+.blog-card-div{
+  text-align: left;
+  margin: 4em 0 4em;
+
+  .blog-card{
+    opacity: 0.9;
+    width: calc(70% + 80px);
+    height: 10em;
+    margin: 2.5em auto;
+    min-width: 410px;
+    overflow: hidden;
+
+    .blog-card-img{
+      width: 13em;
+      max-width: 37%;
+      height: 10em;
+      /* position: relative; */
+      float: left;
+      overflow: hidden;
+      border-radius: 15px 0 0 15px;
+      img{
+        height: 100%;
+        left: -30%;
+        position: relative;
+      }
+
+    }
+
+    .blog-card-content{
+      width: calc(100% - 14em);
+      height: 8em;
+      float: left;
+      min-width: calc(63% - 1em);
+      margin: 1em 0 1em 1em;
+      position: relative;
+      color: lighten($primary, 5%);
+
+      .blog-card-sub{
+        margin: 5px 0 0 0;
+      }
+
+      .blog-card-details{
+        margin: 5px 0 0 0;
+      }
+
+      .blog-card-cat{
+        margin: 0;
+        position: absolute;
+        bottom: 0px;
+      }
+    }
+  }
+
+  .blog-card-prevdiv{
+    opacity: 0;
+    position: relative;
+    top: -10em;
+    background: #233b5a;
+    margin: 0;
+    width: calc(100% - 12.9em);
+    min-width: calc(63.1%);
+    float: right;
+    height: 10em;
+    border-radius: 0 15px 15px 0;
+    transition: all .5s ease-in-out;
+    display: table-cell;
+    vertical-align: middle;
+
+    p{
+      margin:1em;
+      height:calc(100% - 2em);
+      color: darken($white, 2%);
+    }
+  }
+
+  .blog-card:hover {
+    opacity: 1;
+    -webkit-filter: saturate(1.2);
+    .blog-card-prevdiv{opacity: 1;}
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-card-sub, .blog-card-prevdiv {
+    display: none;
+  }
+}
+
+
+
+
 
 /************* 
 Share Bar
@@ -391,25 +527,18 @@ Share Bar
 
 #nextart-bar{
   margin-top: 4em;
-  h3{
-    margin-top: 15px;
-  }
-  p{
+  .blog-card-div{
     margin: 0;
   }
-
-  .next-details{
-    font-weight: 400;
-    font-size: 0.9em;
-    opacity: 0.5;
-  }
-  .next-cat{
-    margin-top: 8px;
-    font-size: 0.8em;
-    font-weight: 400;
+  .blog-card{
+    margin: 0.5em auto 4em;
+    width: 100%;
   }
 }
 
+.category-button{
+  color: darken($lowlight-green, 35%);
+}
 
 .category-box{ 
   width: 10em;
@@ -421,10 +550,6 @@ Share Bar
   margin: 12px;
   transition: all .2s ease-in-out;
 
-  a{
-    padding: 0;
-    position: relative;
-  }
 
   p{
     margin:auto;
@@ -434,6 +559,10 @@ Share Bar
 
 .category-box:hover{
   transform: translateY(-6px);
+}
+
+.currentcat{
+  color: $dulllight-red;
 }
 /************* 
 Subscribe Bar
@@ -465,6 +594,7 @@ Subscribe Bar
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 16px;
+    transition: all .2s ease-in-out;
   }
 }
 
@@ -497,7 +627,7 @@ Subscribe Bar
 }
 
 .subscribe_button:hover{
-  background-color: lighten($primary, 20%);
+  background-color: darken($dulllight-red, 5%);
   cursor:pointer;
 }
 
@@ -565,7 +695,7 @@ Subscribe Bar
   display: inline-block;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   color: lighten($primary, 10%);
   -webkit-transition: transform 0.5s ease 0s ;
      -moz-transition: transform 0.5s ease 0s ;

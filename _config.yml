@@ -14,9 +14,6 @@ sass:
 
 exclude: ["script", "vendor", "Gemfile", "Gemfile.lock", "config.ru", "Procfile", "Rakefile", "README.md", "scss"]
 
-plugins: [jekyll-paginate]
-paginate: 3
-
 # Social icons
 show_social_icons: true
 facebook_username: ndurish
@@ -30,3 +27,15 @@ youtube_username: NicDurish
 
 # Google Analytics
 google_analytics: UA-135084842-1
+
+collections:
+  category:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"

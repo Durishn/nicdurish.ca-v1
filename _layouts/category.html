@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Blog
-permalink: /blog/
+title: Category
+permalink: /category/
 ---
 
 <div class="banner-div half-div">
-	<div class="banner EP-stay-015" style="background: url(../img/banner/banner_8.jpg) no-repeat fixed 40% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
+	<div class="banner EP-stay-015" style="background: url({{ page.banner }}) no-repeat fixed 40% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
 	<div class="page-content">
 		<div class="bannertext-div  EP-fade-stay right-div">
 			<div id="bannertext-container">
-			<h1 class="banner-title">Writing</h1>
-			<p class="banner-text">A collection of my ramblings and reflections on a variety of random topics, thoughts and experiences. </p>
+			<h1 class="banner-title">Writing: {{ page.tag }}</h1>
+			<p class="banner-text">{{ page.subtitle }}</p>
 			</div>
 		</div>
 	</div>
@@ -39,7 +39,7 @@ permalink: /blog/
 
 
 		<div class="blog-card-div">
-		  {% for post in site.posts %}
+		  {% for post in site.categories[page.tag] %}
 		    <a href="{{ post.url }}"><div class= "blog-card">
 		    	<div class="blog-card-img"><img alt="Blogpost Banner" src="{{ post.banner }}" /></div>
 		    	<div class="blog-card-content">
@@ -65,6 +65,3 @@ permalink: /blog/
 		</div>
 	</section>
 </div>
-
-
-
