@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Personal/Professional website of Nic Durish">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Nic Durish</title>
+
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+	<link href='http://nicdurish.ca/feed.xml' rel='alternate' type='application/atom+xml'>
+
+	  <!-- Necessary Libaries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../js/particles.js"></script>
+    <script src="../js/uilang.js"></script>
+    <script src="../js/scripts.js"></script>
+
+	<!-- Google Analytics -->
+	
+
+</head>
+	<body class="default-body">
+		<!-- NAV -->
+<nav class="nav">
+
+<!-- Logo to Homepage-->
+  <div class="logo">
+    <a aria-label="Go Home" href="/" class="navbar-brand">
+      <svg width="55px" height:"55px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538.6 538.6"><path class="st0" d="M477 269.3c0 114.7-93 207.7-207.7 207.7 -114.7 0-207.7-93-207.7-207.7h17.5c0 104.9 85.3 190.2 190.2 190.2s190.2-85.3 190.2-190.2S374.2 79.1 269.3 79.1V61.6C384 61.6 477 154.6 477 269.3z"/><path class="st0" d="M428.5 110.1C386 67.5 329.4 44.1 269.3 44.1v35c104.9 0 190.2 85.3 190.2 190.2s-85.3 190.2-190.2 190.2S79.1 374.2 79.1 269.3h-35c0 60.2 23.4 116.7 66 159.2 42.5 42.5 99.1 66 159.2 66s116.7-23.4 159.2-66c42.5-42.5 66-99.1 66-159.2S471.1 152.6 428.5 110.1z"/><line class="st1" x1="269.3" y1="61.6" x2="269.3" y2="477"/><line class="st1" x1="61.6" y1="269.3" x2="61.6" y2="61.6"/><line class="st1" x1="269.3" y1="477" x2="61.6" y2="61.6"/></svg>
+    </a>
+  </div>
+
+
+
+<!-- Main Navigation-->
+  <div id="mainListDiv" class="main_list">
+    <ul class="navlinks">
+
+      <!-- About -->
+      <li  class="nav-item">
+        <a aria-label="Go to About" href="/about/" class="nav-link">ABOUT</a> 
+      </li>
+
+      <!-- Portfolio -->
+        <li  class="nav-dropdown nav-item">
+          <a class="nav-link portfolio-link">PORTFOLIO
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+          </a> 
+          <ul class="drop-menu menu-2">
+            <li >
+              <a href="/projects/">PROJECTS</a> 
+            </li>
+            <li >
+              <a href="/presentations/">PRESENTATIONS</a> 
+            </li>
+            <li >
+              <a href="/service/">SERVICE</a> 
+            </li>
+            <li >
+              <a href="/awards/">AWARDS</a> 
+            </li>
+            <li >
+              <a href="/press/">PRESS</a> 
+            </li>
+          </ul>
+        </li>
+
+      <!-- Resume -->
+      <li  class="nav-item">
+        <a href="/resume/" class="nav-link">RÉSUMÉ</a> 
+      </li>
+
+      <!-- Buckets -->
+      <li  class="nav-dropdown nav-item">
+          <a class="nav-link buckets-link">BUCKETS
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+          </a> 
+          <ul class="drop-menu menu-2">
+            <li >
+              <a href="/bucket_list/">BUCKET LIST</a> 
+            </li>
+            <li >
+              <a href="/set_list/">SET LIST</a> 
+            </li>
+            <!--<li >
+              <a href="/photo_bucket/">PHOTO BUCKET</a> 
+            </li>
+            <li >
+              <a href="/travel_bucket/">TRAVEL BUCKET</a> 
+            </li>-->
+          </ul>
+      </li>
+
+      <!-- Blog -->
+      <li  class="nav-item">
+        <a href="/blog/" class="nav-link">BLOG</a> 
+      </li>
+    </ul>
+  </div> 
+
+<!-- Mobile Navigation -->
+  <a class="navTrigg">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+
+  <div class="mobile-nav">
+    <ul class="mobile-navlinks">
+
+      <!-- About -->
+      <li  class="mobile-nav-item">
+        <a href="/about/" class="nav-link">ABOUT</a> 
+      </li>
+
+      <!-- Portfolio -->
+      <li  class="mobile-nav-item mobile-nav-dropdown">
+        <a class="nav-link portfolio-link">PORTFOLIO
+          <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+        </a> 
+        <ul class="mobile-drop-menu">
+          <li >
+            <a href="/projects/">PROJECTS</a> 
+          </li>
+          <li >
+            <a href="/presentations/">PRESENTATIONS</a> 
+          </li>
+          <li >
+            <a href="/service/">SERVICE</a> 
+          </li>
+          <li >
+            <a href="/awards/">AWARDS</a> 
+          </li>
+          <li >
+            <a href="/press/">PRESS</a> 
+          </li>
+        </ul>
+      </li>
+
+      <!-- Resume -->
+      <li  class="mobile-nav-item">
+        <a href="/resume/" class="nav-link">RÉSUMÉ</a> 
+      </li>
+
+      <!-- Buckets -->
+      <li  class="mobile-nav-item mobile-nav-dropdown">
+        <a class="nav-link buckets-link">BUCKETS
+          <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+        </a> 
+        <ul class="mobile-drop-menu">
+          <li >
+            <a href="/bucket_list/">BUCKET LIST</a> 
+          </li>
+          <li >
+            <a href="/set_list/">SET LIST</a> 
+          </li>
+          <!--<li >
+            <a href="/photo_bucket/">PHOTO BUCKET</a> 
+          </li>
+          <li >
+            <a href="/travel_bucket/">TRAVEL BUCKET</a> -->
+          </li>
+        </ul>
+      </li>
+
+      <!-- Blog -->
+      <li  class="mobile-nav-item">
+        <a href="/blog/" class="nav-link">BLOG</a> 
+      </li>
+    </ul>
+  </div>
+
+  <code>
+    clicking on ".navTrigg" toggles class "open" on ".navTrigg"
+  </code>
+</nav>
+		<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=226927067364156&autoLogAppEvents=1"></script>
+
+<div class="banner-div half-div">
+	<div class="banner EP-stay-015-quick" style="background: url(../img/posts/18-03-01-b1.jpg) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 80%; width: 100%; opacity: 0.15;"></div>
+	<div class="page-content post">
+		<div class="bannertext-div EP-fade-stay-quick EP-displaynone center-div">
+			<div id="bannertext-container">
+			<h1 class="post-title">'The Humble Programmer' by Edsger Dijsktra</h1>
+			<p class="post-subtitle">Did Edsger Dijkstra harness the power of precognition or have we still not learned from our past mistakes?</p>
+			<div class="row">
+				<p class="post-details">
+					March  1, 2018 
+					<span class="px2">•</span>9 min read 
+					
+					  	
+					  		<span class="px2">•</span>
+					    	
+					      		<a href="/blog/review">Review</a>
+					      		,  
+					    	
+					      		<a href="/blog/compsci">CompSci</a>
+					      		
+					    	
+					  	
+					
+				</p>
+			</div>
+			</div>
+		</div>
+	</div>
+	<span class="scroll-down-arrow shortbann scrollvanish"></span>
+</div>
+
+
+<div class="page-div post">
+	<section class="post-content-div page-content">
+
+		
+			<div id="alert" class="alert-div">
+		        <a class="alert-close"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line fill="none" stroke="#000" stroke-width="1.3" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.3" x1="13" y1="1" x2="1" y2="13"></line></svg></a>
+		        <p>This paper was originally written for my course CIS*4500 - Programming Languages, taken at the University of Guelph. The paper I'm reviewing is a Computer Science Publication by Edsger Dijkstra 
+		        	</p>
+		  	</div>
+      	
+
+		<div class="post-contents"><p>It would be modest to call Edsger W. Dijkstra (May 1930 - August 2002) simply a programmer, computer scientist or software engineer. Dijkstra was; the father of structured programming, a visionary and a pioneer in computer science. Many of his teachings and ideologies are considered fundamental, and have had a lasting affect on software design for the last half a century. On August 14th, 1972, Dijkstra presented a brief, yet timeless lecture at the ACM Annual Conference in Boston, entitled The Humble Programmer. Within this talk, Dijkstra analyzes and criticizes the modern (at least in 1972) approaches to programming, development, and language design. His writing is intuitive enough to be understandable to any reader and yet perceptive enough to continuously provide novel meanings after each reread. Dijkstra artfully and implicitly states the necessary conditions for his…</p>
+<blockquote>
+  <p>“Vision that, well before the seventies have run to completion, we shall be able to design and implement the kind of systems that are now straining our programming ability at the expense of only a few percent in man-years of what they cost us now, and that besides that, these systems will be virtually free of bugs”.</p>
+</blockquote>
+
+<p>Unfortunately, Edsger W. Dijkstra’s vision never came to fruition. On the contrary, 46 years later, the software crisis is arguably more cancerous than previously described, if not due to worse design practises than at least due to increased reliance on software systems. As we continue to struggle to refine our systems and design practises, we have started to put more weight on the arguments made in The Humble Programmer. Entire industries, markets, careers and textbooks (including principles such as KISS, Agile, and Test-Driven Development) have been created in an effort to actualize Dijkstra’s vision. However, for the purposes of this exploration of the text, instead in jumping off of a bridge in an attempt to dissect what I can only describe as one of Computer Science’s few spiritual texts, I’ll discuss a single sentence which aptly describes our short-comings in the design of programming languages, both in the seventies and today;</p>
+
+<p><strong>“Another lesson we should have learned from the recent past is that development of ‘richer’ or ‘more powerful’ programming languages was a mistake in the sense that these baroque monstrosities, these conglomerations of idiosyncrasies, are really unmanageable both mechanically and mentally.”</strong></p>
+
+<p>This sentence prefaces Dijkstra’s argument that languages were beginning to be produced that programmers couldn’t intellectually handle. Which inevitably causes a programmer to “concentrate on the vagaries of the programming language and distracts him [or her] from the complexity of the problem”. But does Dijkstra’s argument hold weight? Were languages already starting to balloon and overcomplicate the problems they were attempting to solve? How does adding features and complexity to a language diminish it’s productivity? In what way do these problems translate to contemporary languages? And most importantly how do we finally learn the lesson that Dijkstra describes in the above quote, so that we can end the software crisis once and for all.</p>
+
+<p><strong>“[T]hese conglomerations of idiosyncrasies, are really unmanageable both mechanically and mentally.”</strong></p>
+
+<p>To understand why Edsger W. Dijkstra’s believed that programming languages may have become unmanageable, it’s first necessary to build a brief foundation; what is the point and purpose of a programming language? While there are a variety of programming languages with a wide range of features and specifications, languages in general are meant to serve as a means of efficient communication between humans and computers. Computers use a series of boolean bits as an instruction set for logical operations, equations, data storage and more. While that may seem complicated, it is orders of magnitude more difficult to parse the series of ambiguous, emotional and illogical grunts and noises than make up human language. But until the day that we can teach machines to understand our language (or at least they can teach us to fluently speak theirs), we will have to settle for designing and maintaining languages to act as the middle ground. Inhabiting this delicate region however is a task in and of itself. Languages need to find a balance between including too few and too many features, then implement them properly. While, again, this topic deserves an entire paper itself, in its place a brief parable will have to suffice.</p>
+
+<p>If programming is indeed a craft, as opposed to an art or a science (perhaps a controversial view, but for the sake of argument), than language is simply a crafters tools. Consider two carpenters attempting to build an intricate piece of furniture; the first owns only a hammer and the second an entire warehouse with thousands of tools each of its own specific task. Abraham Maslow described exactly what might happen in the first situation within his 1966 publication, The Psychology of Science; “if all you have is a hammer, everything looks like a nail”. In short, because his tools aren’t appropriate for the job, you can expect a crude solution, tortured into working properly. On the other hand, the second carpenter is sure to have either forgotten how to use his tools properly, mixed up appropriate tools or died of fatigue in search of his tools and their documentation. Programming languages must focus both on the quality and the quantity of their features and specifications. As Dijkstra states later in The Humble Programmer, “the tools we are trying to use and the language or notation we are using to express or record our thoughts arc the major factors determining what we can think or express at all”. Similarly, the quality of our languages affects the quality of our software, too many features, abstractions, structures, et cetera truly are unmanageable both for computer systems and their programmers.</p>
+
+<p><strong>“[L]esson[s] we should have learned from the recent past”</strong></p>
+
+<p>Dijkstra’s statement in The Humble Programmer shows that he believed that a ballooning of language complexity was already beginning to occur. Relative to modern languages it’s easy to scoff at Dijkstra’s outlook, this was of course prior to the internet and technological revolution. But in retrospect, this statement may have occurred at right about the time that language complexities were starting to spiral out of control. Remember, this ACM conference was occurring less than two decades after the release of the first compiler, FORTRAN, LISP, ALGOL 58, COBOL, and less than a decade after the release of Simula, Speakeasy, BASIC, B, and Pascal. In the late 60’s and early 70’s programming languages and paradigms started to flower. Object-Oriented programming began to be developed in Speakeasy and Simula, the general-purpose imperative language C was about to be released, Prolog introduced the first logic programming language and ML built a polymorphic type system. And while these are all significant advances in the Computer Science field, they introduced new problems.</p>
+
+<p>Initially almost any update of a language was unequivocally considered an improvement, however specifications for new languages were becoming too complex for developers, and compilers were wrought with bugs. Many of these languages released faulty updates in an attempt to create more productive languages within their domain. COBOL’s gravitation towards human-readability for businesses led many programmers to migrate back to symbol based languages, and Lisps introduction of the first garbage-collector, as well as functional and procedural paradigms felt cumbersome for its time. Language designers were being heralded as the messiahs of computer science, and their over-confidence led to the creation of tools, features and specifications that simply couldn’t be intuitively built or maintained. I’m inclined to believe that Dijkstra was being purposefully exaggerative within his quote, in an attempt to scare the programming world into avoiding building bad languages that would inevitably be the foundation for bad software.  </p>
+
+<p><strong>“‘richer’ or ‘more powerful’ [contemporary] programming languages”</strong></p>
+
+<p>Unfortunately the momentum of software complexity has continued to build to this day. While a mere 3.6 MB of code brought the Apollo 11 to the moon <sup><a href="#foot1">1</a></sup> (which is now publicly available on GitHub courtesy of Chris Garry), the newest Mac operating system was nearly 15 GB in size. Where legacy software often resembled a perfectly assembled jigsaw puzzle, modern software is akin to taking a piece from multiple puzzles and forcing them together. The multitude and complexity of programming languages, their features, libraries, and lack of maintenance and documentation has exacerbated this problem. Consider the timeline of the C-Family of programming languages. Initially called BCPL, it was introduced in 1966 as a procedural, imperative, and structured computer programming language with constructs that mapped efficiently to typical machine instructions. BCPL evolved into B which introduced recursion, machine independence and non-numeric data, then updated and rereleased in 1969 as C. As described earlier these changes were (for the most part) unequivocally were considered improvements. However the same cannot be said for the changes to C since then. While C itself has only undergone modest changes (thank goodness), it has since branched into a plethora of derivatives such as; Ratfor, AWK, C++, AMPL, PROMAL, Objective-C, C*, Perl, Telescript, Java, S-Lang, Oak, Split-C, Agora, Amiga E, R, SAC, Pike Cilk, Claire, Alef, Limbo, PHP, LPC, Handel-C, Charm, C—, CINT, C#, Ch, D, Cyclone, Falcon, Nemerle, eC, Neko, BitC, NCS, GO, Lite-C, OpenCL, Noop, Axum, Dart, S. AHHHHHHHH. Thankfully, for the sake of your time and my own, we’ll simply look at the complexity of one of C’s most popular derivates; C++.</p>
+
+<p>C++ is one of the richest programming languages currently available, it has almost any control structure, data structure, operator and feature available in some way or another to the user. Advocates of the language believe this is a feature, that users should understand each feature they are using prior to using it. I have two counterpoints to this; 1) There are many things a programmer doesn’t know they don’t know, they can’t understand something if they don’t know there is something to understand. 2) The language itself is still too vast to understand all of the features and complexities that it holds. Bjarne Stroupstrup, the creator and developer of C++ has said himself “Even I can’t answer every question about C++ without reference to supporting material (e.g. my own books, online documentation, or the standard). I’m sure that if I tried to keep all of that information in my head, I’d become a worse programmer. What I do have is a far less detailed – arguably higher level – model of C++ in my head”<sup><a href="#foot2">2</a></sup>. This is the most notable reason to the slow phasing out of C++; it’s complexities are unsafe for the unaware and unproductive for the rest of us.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>In 1972 Edsger Dijkstra commented on the detrimental nature of unmanageable and complex ‘rich’ programming languages within his ACM presentation The Humble Programmer. His observations were sound in the seventies, however, the momentum of language complexity has yet to falter. The breadth and multitude of languages, documentation, and features available today only reinforces Dijkstra’s fears. Rich and General-purpose languages such as C++ and Java have started to balloon to an unmanageable size. If we aren’t able to realize Dijkstra’s vision of simple and manageable language development, we will be building a foundation for unmanageable software systems in the future and consequently contributing to the software crisis (which will inevitably collapse with size). As similar as Computer Science is to carpentry, people tend to be more courteous of the learning how to operate a dangerous power tool than they do of operating a dangerous language. Perhaps if the flaws in our languages cut off limbs, we would finally be truly critical of the languages that construct our digital systems.  </p>
+
+<p><br />
+<a name="fnote1"><sup>1</sup></a> https://github.com/chrislgarry/Apollo-11<br />
+<a name="fnote1"><sup>1</sup></a> http://www.stroustrup.com/japanese2010.pdf</p>
+</div>
+
+
+		<div id="share-bar">
+
+    <div class="row has-separator"><div class="cell-text">ENJOYED THIS ARTICLE? SHARE OR SUBSCRIBE!</div></div>
+    <div class="row share-buttons">
+
+        <a rel="noopener" target="_blank" aria-label="Twitter" href="https://twitter.com/intent/tweet?text=Check out this article: 'The Humble Programmer' by Edsger Dijsktra - &url=http://localhost:4000/18-03-01/p1.html" class="at-share-btn" style="background-color: rgb(29, 161, 242); border-radius: 26px;"><span style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-twitter-1" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;" class="at-icon at-icon-twitter"><title id="at-svg-twitter-1">Twitter</title><g><path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path></g></svg></span></a>
+
+        <a rel="noopener" target="_blank" aria-label="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/18-03-01/p1.html" class="at-share-btn" style="background-color: rgb(59, 89, 152); border-radius: 26px;"><span style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-2" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;" class="at-icon at-icon-facebook"><title id="at-svg-facebook-2">Facebook</title><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg></span></a>
+
+
+        <a rel="noopener" target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/18-03-01/p1.html&title='The Humble Programmer' by Edsger Dijsktra&summary=" class="at-share-btn" style="background-color: rgb(0, 119, 181); border-radius: 26px;"><span style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-linkedin-3" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;" class="at-icon at-icon-linkedin"><title id="at-svg-linkedin-3">LinkedIn</title><g><path d="M26 25.963h-4.185v-6.55c0-1.56-.027-3.57-2.175-3.57-2.18 0-2.51 1.7-2.51 3.46v6.66h-4.182V12.495h4.012v1.84h.058c.558-1.058 1.924-2.174 3.96-2.174 4.24 0 5.022 2.79 5.022 6.417v7.386zM8.23 10.655a2.426 2.426 0 0 1 0-4.855 2.427 2.427 0 0 1 0 4.855zm-2.098 1.84h4.19v13.468h-4.19V12.495z" fill-rule="evenodd"></path></g></svg></span></a>
+
+        <a aria-label="Email" href="mailto:?subject=Check Out This Article&amp;body='The Humble Programmer' by Edsger Dijsktra: http://localhost:4000/18-03-01/p1.html" class="at-share-btn" style="background-color: rgb(132, 132, 132); border-radius: 26px;"><span style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-email-4" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;" class="at-icon at-icon-email"><title id="at-svg-email-4">Email</title><g><g fill-rule="evenodd"></g><path d="M27 22.757c0 1.24-.988 2.243-2.19 2.243H7.19C5.98 25 5 23.994 5 22.757V13.67c0-.556.39-.773.855-.496l8.78 5.238c.782.467 1.95.467 2.73 0l8.78-5.238c.472-.28.855-.063.855.495v9.087z"></path><path d="M27 9.243C27 8.006 26.02 7 24.81 7H7.19C5.988 7 5 8.004 5 9.243v.465c0 .554.385 1.232.857 1.514l9.61 5.733c.267.16.8.16 1.067 0l9.61-5.733c.473-.283.856-.96.856-1.514v-.465z"></path></g></svg></span></a>
+    </div>
+    <div class="row">
+    <div class="login_container">
+        <form class="login_bar" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=nicdurish/XdKT', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+            <input class="login" type="text" onfocus="this.value=''" name="email" value="Enter Your Email">
+            <input type="hidden" value="nicdurish/XdKT" name="uri"/>
+            <input type="hidden" name="loc" value="en_CA"/>
+            <input class="subscribe_button" onclick="subscribeOnClick()" type="submit" value="Subscribe"></input>
+            <span class="subscribing"></span>
+            <span class="thanks"> Thank you. Please confirm your subscription with FeedBurner</span>
+        </form>
+    </div>
+</div>
+
+<script>
+    var subscribe_button = document.querySelector(".subscribe_button");
+    subscribe_button.addEventListener('click', function(){
+        var subscribing = document.querySelector(".subscribing");
+        var thanks = document.querySelector(".thanks");
+        var login = document.querySelector(".login");
+
+        subscribing.classList.add("subscribing_active");
+        subscribe_button.classList.add("subscribe_button_active");
+        setTimeout(function(){
+            login.classList.add("login_active");
+        }, 1200);
+        setTimeout(function(){
+            thanks.classList.add("thanks_active");
+        }, 1400);
+    });
+</script>
+
+
+
+</div>
+
+
+
+		
+			<div id="nextart-bar">
+		        <p><a href="/blog/">← Article Index</a> <span class="px2">|</span> Next Article:</p>
+
+			        <div class="blog-card-div">
+					    <a href="/17-11-29/p1.html"><div class= "blog-card">
+					    	<div class="blog-card-img"><img alt="Blogpost Banner" src="../img/posts/17-11-29-b.png" /></div>
+					    	<div class="blog-card-content">
+						      	<h3 class="blog-card-title">Exploring the Needs of a Community-Based Monitoring System in Rigolet, Nunatsiavut</h3>
+						      	<h5 class="blog-card-sub">What brings a t-rex, triceratops, elephant, giraffe, and unicorn To a fly-out community in Labrador?</h5>
+								<p class="blog-card-details"><small>November 29, 2017<span class="px2">•</span>8 min read</small></p>
+
+								<p class="blog-card-cat"><small>
+									
+									  	
+									    	
+									      		Reflection
+									      		,  
+									    	
+									      		Research-Trip
+									      		
+									    	
+									  	
+									
+								</small></p>
+							</div>
+							<div class="blog-card-prevdiv"><div><p>Much like my first trip in November, I arrived at the airport at 6:30 in Goose Bay, and sleepily loaded my bags and self into the 19-seater Twin Otter airplane<sup>1</sup>, headed to Rigolet, Labrador. Unlike my trip in August, however, the ski...</div></div>
+					    </div></a>
+					</div>
+					
+			    
+		    </div>
+
+		    
+		   		<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_config = function () {
+    // Here is an example,
+    // this.page.url = "https://poanchen.github.io/18-03-01/p1.html";
+    this.page.url = "https://nicdurish.ca/18-03-01/p1.html";
+    this.page.identifier = "/18-03-01/p1.html";
+  };
+
+  // You should be able to get the following lines of code from your Disqus admin.
+  // https://disqus.com/admin/universalcode
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://nicdurish.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+
+		    
+
+	</section>
+</div>
+
+<script>
+	$(".alert-close").click(function(){
+	  $("#alert").addClass("displaynone");
+	}); 
+</script>
+
+
+
+
+		  <footer class="footer">
+    <div class="footer-container text-center">
+      <div class="row">
+        <div class="col social-links-container">
+          
+            <div class="social-links">
+
+	<!-- Email -->
+	<a rel="noopener" target="_blank" aria-label="Mail" href="mailto:n.durish@gmail.com">
+		<i class="fa fa-envelope" ></i>
+	</a>
+
+	<!-- Facebook -->
+	<a rel="noopener" target="_blank" aria-label="Facebook" href="https://facebook.com/ndurish">
+		<i class="fab fa-facebook"></i>
+	</a>
+
+	<!-- LinkedIn -->
+	<a rel="noopener" target="_blank" aria-label="LinkedIn" href="http://linkedin.com/in/nicdurish">
+		<i class="fab fa-linkedin"></i>
+	</a>
+
+	<!-- Twitter -->
+	<a rel="noopener" target="_blank" aria-label="Twitter" href="https://twitter.com/durishn">
+		<i class="fab fa-twitter-square"></i>
+	</a>
+
+	<!-- Instagram -->
+	<a rel="noopener" target="_blank" aria-label="Instagram" href="https://instagram.com/nicdurish">
+		<i class="fab fa-instagram"></i>
+	</a>
+
+	<!-- Couchsurfing -->
+	<a rel="noopener" target="_blank" aria-label="CouchSurfing" href="https://couchsurfing.com/people/ndurish">
+		<i class="fas fa-couch"></i>
+	</a>
+
+	<!-- Spotify 
+	<a rel="noopener" target="_blank" aria-label="Spotify" href="https://open.spotify.com/user/durishn">
+		<i class="fab fa-spotify"></i>
+	</a> -->
+
+	<!-- Youtube -->
+	<a rel="noopener" target="_blank" aria-label="Youtube" href="https://www.youtube.com/user/NicDurish">
+		<i class="fab fa-youtube"></i>
+	</a>
+
+	<!-- GitHub -->
+	<a rel="noopener" target="_blank" aria-label="GitHub" href="https://github.com/Durishn">
+		<i class="fab fa-github"></i>
+	</a>
+</div>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></script>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col copyright" onclick="location.href='https://github.com/Durishn/Durishn.github.io';">
+          All content copyright Nic Durish &copy; 2019.
+        </div>
+      </div>
+    </div>
+  </footer>
+	</body>
+  
+</html>

@@ -258,6 +258,7 @@ Post Layouts
 }
 
 .post-content-div.page-content{
+    padding-top: 1.5em;
   max-width: 850px;
   text-align: left;
   padding-bottom: 5rem;
@@ -301,9 +302,12 @@ Post Layouts
   text-align: left;
   color: $post-text;
   }
-  h1, h2{
+  h1, h2, h3{
     margin: 1em 0 0.1em;
     color: darken($post-text, 10%);
+  }
+  p{
+    margin-top: 0.3em;
   }
   li{
     font-size: 0.95rem;
@@ -394,7 +398,7 @@ BlogCard
       border-radius: 15px 0 0 15px;
       img{
         height: 100%;
-        left: -30%;
+        left: -25%;
         position: relative;
       }
 

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Personal/Professional website of Nic Durish">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Nic Durish</title>
+
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+	<link href='http://nicdurish.ca/feed.xml' rel='alternate' type='application/atom+xml'>
+
+	  <!-- Necessary Libaries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../js/particles.js"></script>
+    <script src="../js/uilang.js"></script>
+    <script src="../js/scripts.js"></script>
+
+	<!-- Google Analytics -->
+	
+
+</head>
+	<body class="default-body">
+		<!-- NAV -->
+<nav class="nav">
+
+<!-- Logo to Homepage-->
+  <div class="logo">
+    <a aria-label="Go Home" href="/" class="navbar-brand">
+      <svg width="55px" height:"55px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538.6 538.6"><path class="st0" d="M477 269.3c0 114.7-93 207.7-207.7 207.7 -114.7 0-207.7-93-207.7-207.7h17.5c0 104.9 85.3 190.2 190.2 190.2s190.2-85.3 190.2-190.2S374.2 79.1 269.3 79.1V61.6C384 61.6 477 154.6 477 269.3z"/><path class="st0" d="M428.5 110.1C386 67.5 329.4 44.1 269.3 44.1v35c104.9 0 190.2 85.3 190.2 190.2s-85.3 190.2-190.2 190.2S79.1 374.2 79.1 269.3h-35c0 60.2 23.4 116.7 66 159.2 42.5 42.5 99.1 66 159.2 66s116.7-23.4 159.2-66c42.5-42.5 66-99.1 66-159.2S471.1 152.6 428.5 110.1z"/><line class="st1" x1="269.3" y1="61.6" x2="269.3" y2="477"/><line class="st1" x1="61.6" y1="269.3" x2="61.6" y2="61.6"/><line class="st1" x1="269.3" y1="477" x2="61.6" y2="61.6"/></svg>
+    </a>
+  </div>
+
+
+
+<!-- Main Navigation-->
+  <div id="mainListDiv" class="main_list">
+    <ul class="navlinks">
+
+      <!-- About -->
+      <li  class="nav-item">
+        <a aria-label="Go to About" href="/about/" class="nav-link">ABOUT</a> 
+      </li>
+
+      <!-- Portfolio -->
+        <li  class="nav-dropdown nav-item">
+          <a class="nav-link portfolio-link">PORTFOLIO
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+          </a> 
+          <ul class="drop-menu menu-2">
+            <li >
+              <a href="/projects/">PROJECTS</a> 
+            </li>
+            <li >
+              <a href="/presentations/">PRESENTATIONS</a> 
+            </li>
+            <li >
+              <a href="/service/">SERVICE</a> 
+            </li>
+            <li >
+              <a href="/awards/">AWARDS</a> 
+            </li>
+            <li >
+              <a href="/press/">PRESS</a> 
+            </li>
+          </ul>
+        </li>
+
+      <!-- Resume -->
+      <li  class="nav-item">
+        <a href="/resume/" class="nav-link">RÉSUMÉ</a> 
+      </li>
+
+      <!-- Buckets -->
+      <li  class="nav-dropdown nav-item">
+          <a class="nav-link buckets-link">BUCKETS
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+          </a> 
+          <ul class="drop-menu menu-2">
+            <li >
+              <a href="/bucket_list/">BUCKET LIST</a> 
+            </li>
+            <li >
+              <a href="/set_list/">SET LIST</a> 
+            </li>
+            <!--<li >
+              <a href="/photo_bucket/">PHOTO BUCKET</a> 
+            </li>
+            <li >
+              <a href="/travel_bucket/">TRAVEL BUCKET</a> 
+            </li>-->
+          </ul>
+      </li>
+
+      <!-- Blog -->
+      <li  class="nav-item">
+        <a href="/blog/" class="nav-link">BLOG</a> 
+      </li>
+    </ul>
+  </div> 
+
+<!-- Mobile Navigation -->
+  <a class="navTrigg">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+
+  <div class="mobile-nav">
+    <ul class="mobile-navlinks">
+
+      <!-- About -->
+      <li  class="mobile-nav-item">
+        <a href="/about/" class="nav-link">ABOUT</a> 
+      </li>
+
+      <!-- Portfolio -->
+      <li  class="mobile-nav-item mobile-nav-dropdown">
+        <a class="nav-link portfolio-link">PORTFOLIO
+          <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+        </a> 
+        <ul class="mobile-drop-menu">
+          <li >
+            <a href="/projects/">PROJECTS</a> 
+          </li>
+          <li >
+            <a href="/presentations/">PRESENTATIONS</a> 
+          </li>
+          <li >
+            <a href="/service/">SERVICE</a> 
+          </li>
+          <li >
+            <a href="/awards/">AWARDS</a> 
+          </li>
+          <li >
+            <a href="/press/">PRESS</a> 
+          </li>
+        </ul>
+      </li>
+
+      <!-- Resume -->
+      <li  class="mobile-nav-item">
+        <a href="/resume/" class="nav-link">RÉSUMÉ</a> 
+      </li>
+
+      <!-- Buckets -->
+      <li  class="mobile-nav-item mobile-nav-dropdown">
+        <a class="nav-link buckets-link">BUCKETS
+          <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+        </a> 
+        <ul class="mobile-drop-menu">
+          <li >
+            <a href="/bucket_list/">BUCKET LIST</a> 
+          </li>
+          <li >
+            <a href="/set_list/">SET LIST</a> 
+          </li>
+          <!--<li >
+            <a href="/photo_bucket/">PHOTO BUCKET</a> 
+          </li>
+          <li >
+            <a href="/travel_bucket/">TRAVEL BUCKET</a> -->
+          </li>
+        </ul>
+      </li>
+
+      <!-- Blog -->
+      <li  class="mobile-nav-item">
+        <a href="/blog/" class="nav-link">BLOG</a> 
+      </li>
+    </ul>
+  </div>
+
+  <code>
+    clicking on ".navTrigg" toggles class "open" on ".navTrigg"
+  </code>
+</nav>
+		<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=226927067364156&autoLogAppEvents=1"></script>
+
+<div class="banner-div half-div">
+	<div class="banner EP-stay-015-quick" style="background: url(../img/posts/19-01-30-b.jpg) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 80%; width: 100%; opacity: 0.15;"></div>
+	<div class="page-content post">
+		<div class="bannertext-div EP-fade-stay-quick EP-displaynone center-div">
+			<div id="bannertext-container">
+			<h1 class="post-title">Let's Talk: About #BellLetsTalk</h1>
+			<p class="post-subtitle">Be it an 'awareness initiative' or 'marketing campaign', #BellLetsTalk may be doing more damage than good.</p>
+			<div class="row">
+				<p class="post-details">
+					January 30, 2019 
+					<span class="px2">•</span>5 min read 
+					
+					  	
+					  		<span class="px2">•</span>
+					    	
+					      		<a href="/blog/reflection">Reflection</a>
+					      		,  
+					    	
+					      		<a href="/blog/telecom">Telecom</a>
+					      		
+					    	
+					  	
+					
+				</p>
+			</div>
+			</div>
+		</div>
+	</div>
+	<span class="scroll-down-arrow shortbann scrollvanish"></span>
+</div>
+
+
+<div class="page-div post">
+	<section class="post-content-div page-content">
+
+		
+			<div id="alert" class="alert-div">
+		        <a class="alert-close"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line fill="none" stroke="#000" stroke-width="1.3" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.3" x1="13" y1="1" x2="1" y2="13"></line></svg></a>
+		        <p>This wasn’t an easy thing to write or to post. It’s been on my mind quite a bit over the last few days, and I’ve had numerous conversations with friends and coworkers about it, who all have differing (and all valid!) viewpoints. I was actually advised AGAINST making a post or writeup about it, due to the sensitivity and optics of the whole thing. But I’d be beating myself up if those were the only reasons that deterred me from joining the conversation. So against my better judgement, here goes nothing. 
+		        	</p>
+		  	</div>
+      	
+
+		<div class="post-contents"><p>The BellLetsTalk campaign is an initiative to raise awareness and end stigma surrounding Canadian’s Mental Health. Largely the ad campaign (yes, it’s an ad campaign, if it was purely an outreach initiative their name wouldn’t be in the title) encourages individuals to use social media platforms such as Twitter, Facebook, Instagram and Snapchat to share posts with their campaign hashtag. Since the advent of the campaign in 2010, I shared their hashtag almost every year, and even felt ‘proud’ of my contribution to a cause that I stand behind 100% - because let’s face it, stigma around mental health is inarguably damaging to our society. All this being said, the campaign is starting to leave a bad taste in my mouth.</p>
+
+<h3 id="lets-talk-about---pr--pseudo-astroturfing">Let’s Talk about - PR &amp; Pseudo-Astroturfing</h3>
+<p>Astroturfing is the process of masking the sponsor of a message to make it appear as though it is supported by or supports a grassroots movement. By this definition, is BellLetsTalk a form of astroturfing? No. However the implications are the same, the movement presents itself as being in full support of a grassroots movement, and downplays their economic/financial benefits. In short, this might be one of the most powerful (and potentially insidious) ad campaigns I’ve seen from an organization in the last few years. That’s a bold claim, let’s explore it a bit more.</p>
+
+<h3 id="lets-talk-about---cost-per-click-advertising">Let’s Talk about - Cost Per Click Advertising</h3>
+<p>Bell isn’t dumb, there is a reason that they are Canadas largest telecom. They know the importance of advertising, and one of the biggest ways of advertising now a days is through social platforms. Facebook charges $0.72 per click (CPC) for advertisers on their platform <sup><a href="#ref1">1</a></sup>. This heuristic of clicks does not guarantee user engagement, and doesn’t continue the spread of the message. I’d argue that PER SHARE is far, far more valuable than per click, and Bell doesn’t even incentivize likes, just shares. On top of this, Bell gets tax breaks for their donation, meaning they likely spend even less than $0.05 per share (and we won’t even go into the fact that many people are likely using their Bell data to do so). In short, we might collectively be giving Canadas largest telecom a 93% discount on their advertising. Jason Magder of the Montreal Gazette said it quite well, “It’s one thing to give a bunch of money to help improve mental health. And it’s quite another to try to benefit from free advertising at the same time.” The obvious argument is “But hey, at least that money is going to charities!”. First off, while we know which charities that money goes to, it is not shared which departments or projects it directly supports. But, this argument is a long rabbit hole to go down - my best advice is to look up some of the negative implications of astroturfing, as they can be subtle, but over time detrimental to the cause. These next few points are really what drives this point home for me.</p>
+
+<h3 id="lets-talk-about---a-corporate-image-inconsistent-with-their-practises">Let’s Talk about - A corporate image inconsistent with their practises</h3>
+<p>I don’t mind supporting businesses, particularly ones that I believe are transparent in their practices and have a net benefit on our society. So does Bell believe in their message? It might seem that way, but talk to most individuals who have worked in a Bell sales office or call centre - it’s a dog eat dog world, and support systems and considerations to mental health are lacking. When CBC launched their investigation on Bell in 2017, over 600 individuals voluntarily called-in to describe the irony of the campaign <sup><a href="#ref2">2</a></sup>. As it turns out, crying before your shift, taking stress leave, and being consistently pressured by sales management seems to be a common occurrence at Bell. Maria McLean, the Grand River radio host claims that she was even fired within an hour of bringing her boss a doctors note stating she needed two weeks off work for mental health reasons <sup><a href="#ref3">3</a></sup>.
+As a short side note - I don’t even know whether Bell is going about spreading Mental Health awareness properly. Check out the <a href="https://letstalk.bell.ca/en/ways-to-help">this site</a>. Each picture they use seems to be upper-middle class, white individuals… Mental Health knows no bounds and affects us all. Last time I checked, there is a far wider demographic of Canadians than these images show. But hey, I’m sure their PR/Marketing team did their research on what increased public engagement. Bell sure talks the talk, but the jury’s still out on whether it walks the walk.</p>
+
+<h3 id="lets-talk-about---bad-business-practices-in-general">Let’s Talk about - Bad business practices in general</h3>
+<p>Let’s keep this section short and to the point - cause hell, I could go on forever. Bell exploits one of the worlds most underdeveloped wireless markets in the world in order to price-gouge Canadians. To put that into perspective, individuals in India pay on average 70 times less than Canadians per Mbps <sup><a href="#ref4">4</a></sup>. Bell has consistently been campaigning to the Government of Canada to censor access to websites because of torrenting <sup><a href="#ref5">5</a></sup>. Bell has historically been systematically deterring any competition from the country, and been protected whilst doing so <sup><a href="#ref6">6</a></sup>. Bell has been campaigning to NAFTA to ban Virtual Private Networks (VPNs) from Canada, because, hell, who needs privacy <sup><a href="#ref7">7</a></sup>. Bell contributes to a massive Digital Divide in our nation where remote and often marginalized communities suffer from inequitable, dismally slow, unstable and expensive access to telecommunications. The CRTC announced in the last few years its plan for Broadband Internet and Telecommunications to be a fundamental human right - so why in the hell are we allowing such an oligopoly to oversee its distribution.</p>
+
+<p><br /></p>
+
+<p><strong>Bell already monopolizes internet, they don’t need to monopolize the conversation around Mental Health.</strong> Instead of sharing the hashtag and contributing $0.05 to a charity and a hell of a lot more to the advertising costs of a 9 Billion Dollar corporation. Skip the middle man - share #LetsTalk and donate to a local charity that supports Mental Health. I chose to donate $25 to the Canadian Mental Health Association of Waterloo Wellington.</p>
+
+<p>Let’s Talk about building environments where individuals can safely discuss Mental Health.<br />
+Let’s Talk about how having Mental Health issues does not make you ‘weak’, and end the stigmas associated with it.<br />
+Let’s Talk about suicide prevention. <br />
+Let’s Talk about holding businesses accountable for responsibly dealing with individuals with Mental Health issues. <br />
+Let’s Talk about investing in Mental Health professionals and research initiatives.<br /></p>
+
+<p><em>Let’s Talk about Mental Health, not about Bell</em></p>
+
+<p><br /></p>
+<hr />
+
+<ul>
+  <li><a name="ref1"><sup>1</sup></a> - https://blog.adstage.io/adstages-q3-2018-paid-media-benchmark-report?fbclid=IwAR3UctqGna4wYeYRik9V_LWFkGV4H9QgY6LA54eusyS6IaP-CdZk3cx7Osw<br /></li>
+  <li><a name="ref2"><sup>2</sup></a> - https://www.cbc.ca/news/health/bell-employees-stressed-by-sales-targets-1.4418876?fbclid=IwAR3ZaXMDPWEb7Y3sNCdxwmY1B_DmJoWAYovQzhkiG4ug7QOm6PndoEnRFPo<br /></li>
+  <li><a name="ref3"><sup>3</sup></a> - https://www.cbc.ca/news/canada/new-brunswick/bell-media-host-mental-health-1.3950097?fbclid=IwAR0_64ygkTdLRgqXJ3_WtvsAANZHnrqINu61SA40BGDtgYXjGmpYPO5ED50<br /></li>
+  <li><a name="ref4"><sup>4</sup></a> - https://mobilesyrup.com/2019/01/22/canada-mobile-data-use-low-revenue-per-gigabyte-high-tefficient-report/?fbclid=IwAR3Cj1kH2aTCMNoFc6c5YG-AVZTzPCFgC8780ztZ06bJv_u1C-YCQdHk6kU<br /></li>
+  <li><a name="ref5"><sup>5</sup></a> - https://www.huffingtonpost.ca/laura-tribe/internet-piracy-website-blocking-proposal-protest_a_23372670/?fbclid=IwAR1pF_9mwPfb6TPz98EnkBMCOflBB8Ar7wrB_pDvz3OCJCcj029uq3hjWUI<br /></li>
+  <li><a name="ref6"><sup>6</sup></a> - https://business.financialpost.com/telecom/tight-reins-leaves-our-telecom-sector-open-to-criticism-but-sadly-not-competition?fbclid=IwAR3ksxe9_fL7DxYCwupq6KMbmDbcG4WORrCK7qENMufa1xW7PKNn_tdtQW0<br /></li>
+  <li><a name="ref7"><sup>7</sup></a> - https://motherboard.vice.com/en_us/article/d3mvam/canadian-telecom-giant-bell-wanted-nafta-to-ban-some-vpns?fbclid=IwAR0DGP9AWTEXR_LmgMM8Eb6Q60NoMmKAbxtIhCSdLaG7ughZe9-xXnvoo1Q<br /></li>
+</ul>
+</div>
+
+
+		<div id="share-bar">
+
+    <div class="row has-separator"><div class="cell-text">ENJOYED THIS ARTICLE? SHARE OR SUBSCRIBE!</div></div>
+    <div class="row share-buttons">
+
+        <a rel="noopener" target="_blank" aria-label="Twitter" href="https://twitter.com/intent/tweet?text=Check out this article: Let's Talk: About #BellLetsTalk - &url=http://localhost:4000/19-01-30/p1.html" class="at-share-btn" style="background-color: rgb(29, 161, 242); border-radius: 26px;"><span style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-twitter-1" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;" class="at-icon at-icon-twitter"><title id="at-svg-twitter-1">Twitter</title><g><path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path></g></svg></span></a>
+
+        <a rel="noopener" target="_blank" aria-label="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/19-01-30/p1.html" class="at-share-btn" style="background-color: rgb(59, 89, 152); border-radius: 26px;"><span style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-2" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;" class="at-icon at-icon-facebook"><title id="at-svg-facebook-2">Facebook</title><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg></span></a>
+
+
+        <a rel="noopener" target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/19-01-30/p1.html&title=Let's Talk: About #BellLetsTalk&summary=" class="at-share-btn" style="background-color: rgb(0, 119, 181); border-radius: 26px;"><span style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-linkedin-3" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;" class="at-icon at-icon-linkedin"><title id="at-svg-linkedin-3">LinkedIn</title><g><path d="M26 25.963h-4.185v-6.55c0-1.56-.027-3.57-2.175-3.57-2.18 0-2.51 1.7-2.51 3.46v6.66h-4.182V12.495h4.012v1.84h.058c.558-1.058 1.924-2.174 3.96-2.174 4.24 0 5.022 2.79 5.022 6.417v7.386zM8.23 10.655a2.426 2.426 0 0 1 0-4.855 2.427 2.427 0 0 1 0 4.855zm-2.098 1.84h4.19v13.468h-4.19V12.495z" fill-rule="evenodd"></path></g></svg></span></a>
+
+        <a aria-label="Email" href="mailto:?subject=Check Out This Article&amp;body=Let's Talk: About #BellLetsTalk: http://localhost:4000/19-01-30/p1.html" class="at-share-btn" style="background-color: rgb(132, 132, 132); border-radius: 26px;"><span style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-email-4" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;" class="at-icon at-icon-email"><title id="at-svg-email-4">Email</title><g><g fill-rule="evenodd"></g><path d="M27 22.757c0 1.24-.988 2.243-2.19 2.243H7.19C5.98 25 5 23.994 5 22.757V13.67c0-.556.39-.773.855-.496l8.78 5.238c.782.467 1.95.467 2.73 0l8.78-5.238c.472-.28.855-.063.855.495v9.087z"></path><path d="M27 9.243C27 8.006 26.02 7 24.81 7H7.19C5.988 7 5 8.004 5 9.243v.465c0 .554.385 1.232.857 1.514l9.61 5.733c.267.16.8.16 1.067 0l9.61-5.733c.473-.283.856-.96.856-1.514v-.465z"></path></g></svg></span></a>
+    </div>
+    <div class="row">
+    <div class="login_container">
+        <form class="login_bar" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=nicdurish/XdKT', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+            <input class="login" type="text" onfocus="this.value=''" name="email" value="Enter Your Email">
+            <input type="hidden" value="nicdurish/XdKT" name="uri"/>
+            <input type="hidden" name="loc" value="en_CA"/>
+            <input class="subscribe_button" onclick="subscribeOnClick()" type="submit" value="Subscribe"></input>
+            <span class="subscribing"></span>
+            <span class="thanks"> Thank you. Please confirm your subscription with FeedBurner</span>
+        </form>
+    </div>
+</div>
+
+<script>
+    var subscribe_button = document.querySelector(".subscribe_button");
+    subscribe_button.addEventListener('click', function(){
+        var subscribing = document.querySelector(".subscribing");
+        var thanks = document.querySelector(".thanks");
+        var login = document.querySelector(".login");
+
+        subscribing.classList.add("subscribing_active");
+        subscribe_button.classList.add("subscribe_button_active");
+        setTimeout(function(){
+            login.classList.add("login_active");
+        }, 1200);
+        setTimeout(function(){
+            thanks.classList.add("thanks_active");
+        }, 1400);
+    });
+</script>
+
+
+
+</div>
+
+
+
+		
+			<div id="nextart-bar">
+		        <p><a href="/blog/">← Article Index</a> <span class="px2">|</span> Next Article:</p>
+
+			        <div class="blog-card-div">
+					    <a href="/18-10-26/p1.html"><div class= "blog-card">
+					    	<div class="blog-card-img"><img alt="Blogpost Banner" src="../img/posts/18_10_26-b.jpg" /></div>
+					    	<div class="blog-card-content">
+						      	<h3 class="blog-card-title">What It Feels Like To Attend A Refreshingly Well-Run Conference</h3>
+						      	<h5 class="blog-card-sub">People, Places and Public Engagement in St. Johns.</h5>
+								<p class="blog-card-details"><small>October 26, 2018<span class="px2">•</span>6 min read</small></p>
+
+								<p class="blog-card-cat"><small>
+									
+									  	
+									    	
+									      		Reflection
+									      		,  
+									    	
+									      		Conference
+									      		
+									    	
+									  	
+									
+								</small></p>
+							</div>
+							<div class="blog-card-prevdiv"><div><p>I’ve always had an excitable, yet tentative outlook on academic conferences. Most conferences that I’ve attended over the past year and a half of my Masters in CompSci have represented (as they should) an opportunity to think outside of the box...</div></div>
+					    </div></a>
+					</div>
+					
+			    
+		    </div>
+
+		    
+		   		<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_config = function () {
+    // Here is an example,
+    // this.page.url = "https://poanchen.github.io/19-01-30/p1.html";
+    this.page.url = "https://nicdurish.ca/19-01-30/p1.html";
+    this.page.identifier = "/19-01-30/p1.html";
+  };
+
+  // You should be able to get the following lines of code from your Disqus admin.
+  // https://disqus.com/admin/universalcode
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://nicdurish.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+
+		    
+
+	</section>
+</div>
+
+<script>
+	$(".alert-close").click(function(){
+	  $("#alert").addClass("displaynone");
+	}); 
+</script>
+
+
+
+
+		  <footer class="footer">
+    <div class="footer-container text-center">
+      <div class="row">
+        <div class="col social-links-container">
+          
+            <div class="social-links">
+
+	<!-- Email -->
+	<a rel="noopener" target="_blank" aria-label="Mail" href="mailto:n.durish@gmail.com">
+		<i class="fa fa-envelope" ></i>
+	</a>
+
+	<!-- Facebook -->
+	<a rel="noopener" target="_blank" aria-label="Facebook" href="https://facebook.com/ndurish">
+		<i class="fab fa-facebook"></i>
+	</a>
+
+	<!-- LinkedIn -->
+	<a rel="noopener" target="_blank" aria-label="LinkedIn" href="http://linkedin.com/in/nicdurish">
+		<i class="fab fa-linkedin"></i>
+	</a>
+
+	<!-- Twitter -->
+	<a rel="noopener" target="_blank" aria-label="Twitter" href="https://twitter.com/durishn">
+		<i class="fab fa-twitter-square"></i>
+	</a>
+
+	<!-- Instagram -->
+	<a rel="noopener" target="_blank" aria-label="Instagram" href="https://instagram.com/nicdurish">
+		<i class="fab fa-instagram"></i>
+	</a>
+
+	<!-- Couchsurfing -->
+	<a rel="noopener" target="_blank" aria-label="CouchSurfing" href="https://couchsurfing.com/people/ndurish">
+		<i class="fas fa-couch"></i>
+	</a>
+
+	<!-- Spotify 
+	<a rel="noopener" target="_blank" aria-label="Spotify" href="https://open.spotify.com/user/durishn">
+		<i class="fab fa-spotify"></i>
+	</a> -->
+
+	<!-- Youtube -->
+	<a rel="noopener" target="_blank" aria-label="Youtube" href="https://www.youtube.com/user/NicDurish">
+		<i class="fab fa-youtube"></i>
+	</a>
+
+	<!-- GitHub -->
+	<a rel="noopener" target="_blank" aria-label="GitHub" href="https://github.com/Durishn">
+		<i class="fab fa-github"></i>
+	</a>
+</div>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></script>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col copyright" onclick="location.href='https://github.com/Durishn/Durishn.github.io';">
+          All content copyright Nic Durish &copy; 2019.
+        </div>
+      </div>
+    </div>
+  </footer>
+	</body>
+  
+</html>
