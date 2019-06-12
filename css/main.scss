@@ -1,12 +1,5 @@
 ---
 ---
-/*
-    CSS for Navbar of NicDurish.org
-    Author: Nic Durish
-    Date: 2019
-
-    Feel free to use some of this code :) However if you use ALL of it, please reference me
-*/
 @import 'custom/variables';
 @import 'custom/includes/header';
 @import 'custom/includes/footer';
@@ -1214,6 +1207,7 @@ section.carousel-sec {
 
   .items {
     position: absolute;
+    cursor: pointer;
   }
 
   .main-pos {
