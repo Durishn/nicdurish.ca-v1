@@ -25,19 +25,20 @@ permalink: /category/
 		<a class="category-button" href="{{ site.baseurl }}/blog"><div class="category-box"><p>All ({{ site.posts | size }})</p></div></a>
 		  {% if categories_list.first[0] == null %}
 		    {% for category in categories_list %}
-		      <a href="{{ site.baseurl }}/category/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}"><div class="category-box"><p>{{ category[0] | camelcase }} ({{ site.tags[category].size }})</p></div></a>
+		    	{% if category[0] != page.tag %}
+		      		<a href="{{ site.baseurl }}/category/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}"><div class="category-box"><p>{{ category[0] | camelcase }} ({{ site.tags[category].size }})</p></div></a>
+		      	{% endif %}
 		    {% endfor %}
 		  {% else %}
 		    {% for category in categories_list %}
-		    	<a  class="category-button" href="{{ site.baseurl }}/category/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}"><div class="category-box"><p>{{ category[0] | camelcase }} ({{ category[1].size }})</p></div></a>
+		    	{% if category[0] != page.tag %}
+		    		<a  class="category-button" href="{{ site.baseurl }}/category/{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}"><div class="category-box"><p>{{ category[0] | camelcase }} ({{ category[1].size }}) </p></div></a>
+		    	{% endif %}
 		    {% endfor %}
 		  {% endif %}
 		{% assign categories_list = nil %}
 
-
-		{% include subscribe_form.html %}
-
-
+		<!--Print all posts that are in this Category-->
 		<div class="blog-card-div">
 		  {% for post in site.categories[page.tag] %}
 		    <a href="{{ post.url }}"><div class= "blog-card">
@@ -47,7 +48,7 @@ permalink: /category/
 			      	<h5 class="blog-card-sub">{{ post.subtitle }}</h5>
 					<p class="blog-card-details"><small>{{ post.date | date: "%B %e, %Y" }}<span class="px2">•</span>{{ post.content | number_of_words | divided_by: 200 | ceil}} min read</small></p>
 
-					<p class="blog-card-cat"><small>
+					<p class="blog-card-cat"><small><b>
 						{% assign categories_list = post.categories %}
 						  	{% if categories_list.first != null %}
 						    	{% for category in categories_list %}
@@ -56,11 +57,23 @@ permalink: /category/
 						    	{% endfor %}
 						  	{% endif %}
 						{% assign categories_list = nil %}
+					- </b>
+						
+						{% assign tags_list = post.tags %}
+						  	{% if tags_list.first != null %}
+						    	{% for tag in tags_list %}
+						      		{{ tag | camelcase }}
+						      		{% if forloop.last %}{%else%},  {% endif %}
+						    	{% endfor %}
+						  	{% endif %}
+						{% assign tags_list = nil %}
 					</small></p>
 				</div>
 				<div class="blog-card-prevdiv"><div>{{ post.content | truncate:250 }}</div></div>
 		    </div></a>
 		  {% endfor %}
+
+		  {% include subscribe_form.html %}
 
 		</div>
 	</section>

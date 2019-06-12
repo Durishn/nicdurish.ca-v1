@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Personal/Professional website of Nic Durish">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Nic Durish</title>
+
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+	<link href='http://nicdurish.ca/feed.xml' rel='alternate' type='application/atom+xml'>
+
+	  <!-- Necessary Libaries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../js/particles.js"></script>
+    <script src="../js/uilang.js"></script>
+    <script src="../js/scripts.js"></script>
+
+	<!-- Google Analytics -->
+	
+
+</head>
+	<body class="default-body">
+		<!-- NAV -->
+<nav class="nav">
+
+<!-- Logo to Homepage-->
+  <div class="logo">
+    <a aria-label="Go Home" href="/" class="navbar-brand">
+      <svg width="55px" height:"55px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538.6 538.6"><path class="st0" d="M477 269.3c0 114.7-93 207.7-207.7 207.7 -114.7 0-207.7-93-207.7-207.7h17.5c0 104.9 85.3 190.2 190.2 190.2s190.2-85.3 190.2-190.2S374.2 79.1 269.3 79.1V61.6C384 61.6 477 154.6 477 269.3z"/><path class="st0" d="M428.5 110.1C386 67.5 329.4 44.1 269.3 44.1v35c104.9 0 190.2 85.3 190.2 190.2s-85.3 190.2-190.2 190.2S79.1 374.2 79.1 269.3h-35c0 60.2 23.4 116.7 66 159.2 42.5 42.5 99.1 66 159.2 66s116.7-23.4 159.2-66c42.5-42.5 66-99.1 66-159.2S471.1 152.6 428.5 110.1z"/><line class="st1" x1="269.3" y1="61.6" x2="269.3" y2="477"/><line class="st1" x1="61.6" y1="269.3" x2="61.6" y2="61.6"/><line class="st1" x1="269.3" y1="477" x2="61.6" y2="61.6"/></svg>
+    </a>
+  </div>
+
+
+
+<!-- Main Navigation-->
+  <div id="mainListDiv" class="main_list">
+    <ul class="navlinks">
+
+      <!-- About -->
+      <li  class="nav-item">
+        <a aria-label="Go to About" href="/about/" class="nav-link">ABOUT</a> 
+      </li>
+
+      <!-- Portfolio -->
+        <li  class="nav-dropdown nav-item">
+          <a class="nav-link portfolio-link">PORTFOLIO
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+          </a> 
+          <ul class="drop-menu menu-2">
+            <li >
+              <a href="/projects/">PROJECTS</a> 
+            </li>
+            <li >
+              <a href="/presentations/">PRESENTATIONS</a> 
+            </li>
+            <li >
+              <a href="/service/">SERVICE</a> 
+            </li>
+            <li >
+              <a href="/awards/">AWARDS</a> 
+            </li>
+            <li >
+              <a href="/press/">PRESS</a> 
+            </li>
+          </ul>
+        </li>
+
+      <!-- Resume -->
+      <li  class="nav-item">
+        <a href="/resume/" class="nav-link">RÉSUMÉ</a> 
+      </li>
+
+      <!-- Buckets -->
+      <li  class="nav-dropdown nav-item">
+          <a class="nav-link buckets-link">BUCKETS
+            <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+          </a> 
+          <ul class="drop-menu menu-2">
+            <li >
+              <a href="/bucket_list/">BUCKET LIST</a> 
+            </li>
+            <li >
+              <a href="/set_list/">SET LIST</a> 
+            </li>
+            <!--<li >
+              <a href="/photo_bucket/">PHOTO BUCKET</a> 
+            </li>
+            <li >
+              <a href="/travel_bucket/">TRAVEL BUCKET</a> 
+            </li>-->
+          </ul>
+      </li>
+
+      <!-- Blog -->
+      <li  class="nav-item">
+        <a href="/blog/" class="nav-link">BLOG</a> 
+      </li>
+    </ul>
+  </div> 
+
+<!-- Mobile Navigation -->
+  <a class="navTrigg">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+
+  <div class="mobile-nav">
+    <ul class="mobile-navlinks">
+
+      <!-- About -->
+      <li  class="mobile-nav-item">
+        <a href="/about/" class="nav-link">ABOUT</a> 
+      </li>
+
+      <!-- Portfolio -->
+      <li  class="mobile-nav-item mobile-nav-dropdown">
+        <a class="nav-link portfolio-link">PORTFOLIO
+          <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+        </a> 
+        <ul class="mobile-drop-menu">
+          <li >
+            <a href="/projects/">PROJECTS</a> 
+          </li>
+          <li >
+            <a href="/presentations/">PRESENTATIONS</a> 
+          </li>
+          <li >
+            <a href="/service/">SERVICE</a> 
+          </li>
+          <li >
+            <a href="/awards/">AWARDS</a> 
+          </li>
+          <li >
+            <a href="/press/">PRESS</a> 
+          </li>
+        </ul>
+      </li>
+
+      <!-- Resume -->
+      <li  class="mobile-nav-item">
+        <a href="/resume/" class="nav-link">RÉSUMÉ</a> 
+      </li>
+
+      <!-- Buckets -->
+      <li  class="mobile-nav-item mobile-nav-dropdown">
+        <a class="nav-link buckets-link">BUCKETS
+          <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+        </a> 
+        <ul class="mobile-drop-menu">
+          <li >
+            <a href="/bucket_list/">BUCKET LIST</a> 
+          </li>
+          <li >
+            <a href="/set_list/">SET LIST</a> 
+          </li>
+          <!--<li >
+            <a href="/photo_bucket/">PHOTO BUCKET</a> 
+          </li>
+          <li >
+            <a href="/travel_bucket/">TRAVEL BUCKET</a> -->
+          </li>
+        </ul>
+      </li>
+
+      <!-- Blog -->
+      <li  class="mobile-nav-item">
+        <a href="/blog/" class="nav-link">BLOG</a> 
+      </li>
+    </ul>
+  </div>
+
+  <code>
+    clicking on ".navTrigg" toggles class "open" on ".navTrigg"
+  </code>
+</nav>
+		<div class="banner-div half-div">
+	<div class="banner EP-stay-015" style="background: url(../img/banner/banner_tr.jpg) no-repeat fixed 40% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
+	<div class="page-content">
+		<div class="bannertext-div  EP-fade-stay right-div">
+			<div id="bannertext-container">
+			<h1 class="banner-title">Writing: Literary Review</h1>
+			<p class="banner-text">I sometimes have opinions on specific things - like literature!</p>
+			</div>
+		</div>
+	</div>
+	<span class="scroll-down-arrow shortbann scrollvanish"></span>
+</div>
+
+
+<div class="page-div">
+	<section class="page-content">
+
+		
+		<a class="category-button" href="/blog"><div class="category-box"><p>All (5)</p></div></a>
+		  
+		    
+		    	
+		    
+		    	
+		    		<a  class="category-button" href="/category/reflection"><div class="category-box"><p>Reflection (2) </p></div></a>
+		    	
+		    
+		    	
+		    		<a  class="category-button" href="/category/rant"><div class="category-box"><p>Rant (1) </p></div></a>
+		    	
+		    
+		  
+		
+
+		<!--Print all posts that are in this Category-->
+		<div class="blog-card-div">
+		  
+		    <a href="/18-03-01/p1.html"><div class= "blog-card">
+		    	<div class="blog-card-img"><img alt="Blogpost Banner" src="../img/posts/18-03-01-b1.jpg" /></div>
+		    	<div class="blog-card-content">
+			      	<h3 class="blog-card-title">'The Humble Programmer' by Edsger Dijsktra</h3>
+			      	<h5 class="blog-card-sub">Did Edsger Dijkstra harness the power of precognition or have we still not learned from our past mistakes?</h5>
+					<p class="blog-card-details"><small>March  1, 2018<span class="px2">•</span>9 min read</small></p>
+
+					<p class="blog-card-cat"><small><b>
+						
+						  	
+						    	
+						      		Literary Review
+						      		
+						    	
+						  	
+						
+					- </b>
+						
+						
+						  	
+						    	
+						      		Academic
+						      		,  
+						    	
+						      		CompSci
+						      		,  
+						    	
+						      		Publication
+						      		
+						    	
+						  	
+						
+					</small></p>
+				</div>
+				<div class="blog-card-prevdiv"><div><p>It would be modest to call Edsger W. Dijkstra (May 1930 - August 2002) simply a programmer, computer scientist or software engineer. Dijkstra was; the father of structured programming, a visionary and a pioneer in computer science. Many of his ...</div></div>
+		    </div></a>
+		  
+		    <a href="/16-02-23/p1.html"><div class= "blog-card">
+		    	<div class="blog-card-img"><img alt="Blogpost Banner" src="../img/posts/16-02-23-b.jpg" /></div>
+		    	<div class="blog-card-content">
+			      	<h3 class="blog-card-title">'Good Ideas Through The Looking Glass' by Niklaus Wirth</h3>
+			      	<h5 class="blog-card-sub">Niklaus Wirth is one of the most prominent Computer Scientists and Tech-Advocates, but do his assertions hold weight today?</h5>
+					<p class="blog-card-details"><small>February 23, 2016<span class="px2">•</span>9 min read</small></p>
+
+					<p class="blog-card-cat"><small><b>
+						
+						  	
+						    	
+						      		Literary Review
+						      		
+						    	
+						  	
+						
+					- </b>
+						
+						
+						  	
+						    	
+						      		Academic
+						      		,  
+						    	
+						      		CompSci
+						      		,  
+						    	
+						      		Publication
+						      		
+						    	
+						  	
+						
+					</small></p>
+				</div>
+				<div class="blog-card-prevdiv"><div><p>A spent a significantly larger portion of my time preparing for this assignment, than I did actually writing it. I read large sections of many of the papers and realized how difficult it was going to be to support my review with valid criticism...</div></div>
+		    </div></a>
+		  
+
+		  <div class="row">
+    <div class="login_container">
+        <form class="login_bar" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=nicdurish/XdKT', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+            <input class="login" type="text" onfocus="this.value=''" name="email" value="Enter Your Email">
+            <input type="hidden" value="nicdurish/XdKT" name="uri"/>
+            <input type="hidden" name="loc" value="en_CA"/>
+            <input class="subscribe_button" onclick="subscribeOnClick()" type="submit" value="Subscribe"></input>
+            <span class="subscribing"></span>
+            <span class="thanks"> Thank you. Please confirm your subscription with FeedBurner</span>
+        </form>
+    </div>
+</div>
+
+<script>
+    var subscribe_button = document.querySelector(".subscribe_button");
+    subscribe_button.addEventListener('click', function(){
+        var subscribing = document.querySelector(".subscribing");
+        var thanks = document.querySelector(".thanks");
+        var login = document.querySelector(".login");
+
+        subscribing.classList.add("subscribing_active");
+        subscribe_button.classList.add("subscribe_button_active");
+        setTimeout(function(){
+            login.classList.add("login_active");
+        }, 1200);
+        setTimeout(function(){
+            thanks.classList.add("thanks_active");
+        }, 1400);
+    });
+</script>
+
+		</div>
+	</section>
+</div>
+		  <footer class="footer">
+    <div class="footer-container text-center">
+      <div class="row">
+        <div class="col social-links-container">
+          
+            <div class="social-links">
+
+	<!-- Email -->
+	<a rel="noopener" target="_blank" aria-label="Mail" href="mailto:n.durish@gmail.com">
+		<i class="fa fa-envelope" ></i>
+	</a>
+
+	<!-- Facebook -->
+	<a rel="noopener" target="_blank" aria-label="Facebook" href="https://facebook.com/ndurish">
+		<i class="fab fa-facebook"></i>
+	</a>
+
+	<!-- LinkedIn -->
+	<a rel="noopener" target="_blank" aria-label="LinkedIn" href="http://linkedin.com/in/nicdurish">
+		<i class="fab fa-linkedin"></i>
+	</a>
+
+	<!-- Twitter -->
+	<a rel="noopener" target="_blank" aria-label="Twitter" href="https://twitter.com/durishn">
+		<i class="fab fa-twitter-square"></i>
+	</a>
+
+	<!-- Instagram -->
+	<a rel="noopener" target="_blank" aria-label="Instagram" href="https://instagram.com/nicdurish">
+		<i class="fab fa-instagram"></i>
+	</a>
+
+	<!-- Couchsurfing -->
+	<a rel="noopener" target="_blank" aria-label="CouchSurfing" href="https://couchsurfing.com/people/ndurish">
+		<i class="fas fa-couch"></i>
+	</a>
+
+	<!-- Spotify 
+	<a rel="noopener" target="_blank" aria-label="Spotify" href="https://open.spotify.com/user/durishn">
+		<i class="fab fa-spotify"></i>
+	</a> -->
+
+	<!-- Youtube -->
+	<a rel="noopener" target="_blank" aria-label="Youtube" href="https://www.youtube.com/user/NicDurish">
+		<i class="fab fa-youtube"></i>
+	</a>
+
+	<!-- GitHub -->
+	<a rel="noopener" target="_blank" aria-label="GitHub" href="https://github.com/Durishn">
+		<i class="fab fa-github"></i>
+	</a>
+</div>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></script>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col copyright" onclick="location.href='https://github.com/Durishn/Durishn.github.io';">
+          All content copyright Nic Durish &copy; 2019.
+        </div>
+      </div>
+    </div>
+  </footer>
+	</body>
+  
+</html>
