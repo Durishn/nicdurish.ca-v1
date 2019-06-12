@@ -286,7 +286,8 @@ Post Layouts
     }
 }
 .post-contents{
-  /*margin-bottom: 5.5em;*/
+  overflow: hidden;
+
   p{
   font-size: 0.95rem;
   font-weight: 400;
@@ -301,7 +302,6 @@ Post Layouts
   }
   p{
     margin-top: 0.3em;
-    overflow: hidden;
   }
   li{
     font-size: 0.95rem;
@@ -323,7 +323,7 @@ Post Layouts
       font-size: 6em;
       z-index: 0;
       opacity: 0.1;
-     }
+    }
   }
 
   code{
