@@ -32,4 +32,31 @@
 		{% include analytics.html %}
 	{% endif %}
 
+	<!-- for social media -->
+	{% if page.categories %}
+	<meta property="og:image" content="{{ site.url }}/{{ page.header }}" />
+	<meta property="og:author" content="https://nicdurish.ca/about" />
+	<meta property="og:type" content="article" />
+	<meta name="twitter:image:src" content="{{ site.url }}/{{ page.header }}">
+	<meta name="twitter:card" content="summary_large_image">
+	{% else %}
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="http://nicdurish.ca/img/banner/banner_1.jpg" />
+	{% endif %}
+
+	{% if page.title %}
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta name="twitter:title" content="{{ page.title }}">
+	{% endif %}
+
+	{% if page.subtitle %}
+	<meta property="og:description" content="{{ page.subtitle }}" />
+	<meta name="twitter:description" content="{{ page.subtitle }}">
+	{% endif %}
+
+	<meta name="twitter:domain" content="nicdurish.ca">
+	<meta name="twitter:site" content="@Durishn">
+	<meta name="twitter:creator" content="@Durishn">
+	<meta property="og:site_name" content="Nic Durish's Cyber-spot" />
+
 </head>
