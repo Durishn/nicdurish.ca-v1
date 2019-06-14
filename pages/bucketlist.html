@@ -1,15 +1,19 @@
 ---
 layout: default
-title: Bucket List
+title: Bucket-List
+subtitle: "This is not a list of goals to be completed before I 'kick the bucket', so much as a collection of things I think would be fun to do or learn in my lifetime. It's a subtle but significant difference - my true bucket list can be found at the bottom"
+banner: ../img/banner/banner_7.jpg
+divsize: half-div
+divside: left-div
 permalink: /bucket_list/
 ---
-<div class="banner-div half-div">
-	<div class="banner EP-stay-015" style="background: url(../img/banner/banner_7.jpg) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 80%; width: 100%; opacity: 0.15;"></div>
+<div class="banner-div {{ page.divsize }}">
+	<div class="banner EP-stay-015" style="background: url({{page.banner}}) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
 	<div class="page-content">
-		<div class="bannertext-div EP-fade-stay ">
+		<div class="bannertext-div {{page.divside}} EP-fade-stay">
 			<div id="bannertext-container">
-			<h1 class="banner-title">Bucket-List</h1>
-			<p class="banner-text">This is not a list of goals to be completed before I "kick the bucket", so much as a collection of things I think would be fun to do or learn in my lifetime. It's a subtle but significant difference - my true "bucket list" can be found at the bottom</p>
+			<h1 class="banner-title">{{page.title}}</h1>
+			<p class="banner-text">{{page.subtitle}}</p>
 			</div>
 		</div>
 	</div>

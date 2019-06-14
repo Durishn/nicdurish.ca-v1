@@ -1,15 +1,19 @@
 ---
 layout: default
-title: Awards
+title: Honours & Awards
+subtitle: "Recognitions I've received that I'd put in a trophy-case if I had one."
+banner: ../img/banner/banner_5.jpg
+divsize: half-div
+divside: right-div
 permalink: /awards/
 ---
-<div class="banner-div half-div">
-	<div class="banner EP-stay-015" style="background: url(../img/banner/banner_5.jpg) no-repeat fixed 44% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
+<div class="banner-div {{ page.divsize }}">
+	<div class="banner EP-stay-015" style="background: url({{page.banner}}) no-repeat fixed 44% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
 	<div class="page-content">
-		<div class="bannertext-div EP-fade-stay right-div">
+		<div class="bannertext-div {{page.divside}} EP-fade-stay">
 			<div id="bannertext-container">
-			<h1 class="banner-title">Honours & Awards</h1>
-			<p class="banner-text">Recognitions I've received that I'd put in a trophy-case if I had one.</p>
+			<h1 class="banner-title">{{page.title}}</h1>
+			<p class="banner-text">{{page.subtitle}}</p>
 			</div>
 		</div>
 	</div>

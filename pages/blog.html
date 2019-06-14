@@ -1,22 +1,24 @@
 ---
 layout: default
 title: Blog
+subtitle: "A collection of my ramblings and reflections on a variety of random topics, thoughts and experiences. "
+banner: ../img/banner/banner_8.jpg
+divsize: half-div
+divside: right-div
 permalink: /blog/
 ---
-
-<div class="banner-div half-div">
-	<div class="banner EP-stay-015" style="background: url(../img/banner/banner_8.jpg) no-repeat fixed 40% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
+<div class="banner-div {{ page.divsize }}">
+	<div class="banner EP-stay-015" style="background: url({{page.banner}}) no-repeat fixed 40% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
 	<div class="page-content">
-		<div class="bannertext-div  EP-fade-stay right-div">
+		<div class="bannertext-div {{page.divside}} EP-fade-stay">
 			<div id="bannertext-container">
-			<h1 class="banner-title">Writing</h1>
-			<p class="banner-text">A collection of my ramblings and reflections on a variety of random topics, thoughts and experiences. </p>
+			<h1 class="banner-title">{{page.title}}</h1>
+			<p class="banner-text">{{page.subtitle}}</p>
 			</div>
 		</div>
 	</div>
 	<span class="scroll-down-arrow shortbann scrollvanish"></span>
 </div>
-
 
 <div class="page-div">
 	<section class="page-content">

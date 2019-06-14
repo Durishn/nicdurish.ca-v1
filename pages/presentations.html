@@ -1,15 +1,19 @@
 ---
 layout: default
 title: Presentations
+subtitle: "Sometimes I get up and talk to people, here are some of the things I tend to say"
+banner: ../img/banner/banner_3.jpg
+divsize: half-div
+divside: right-div
 permalink: /presentations/
 ---
-<div class="banner-div half-div">
-	<div class="banner EP-stay-015" style="background: url(../img/banner/banner_3.jpg) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
-	<div class="page-content pagebanner">
-		<div class="bannertext-div right-div EP-fade-stay ">
+<div class="banner-div {{ page.divsize }}">
+	<div class="banner EP-stay-015" style="background: url({{page.banner}}) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
+	<div class="page-content">
+		<div class="bannertext-div {{page.divside}} EP-fade-stay">
 			<div id="bannertext-container">
-			<h1 class="banner-title">Presentations</h1>
-			<p class="banner-text">Sometimes I get up and talk to people, here are some of the things I tend to say</p>
+			<h1 class="banner-title">{{page.title}}</h1>
+			<p class="banner-text">{{page.subtitle}}</p>
 			</div>
 		</div>
 	</div>

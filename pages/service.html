@@ -1,15 +1,19 @@
 ---
 layout: default
 title: Service
+subtitle: "A handful of the ways I like to get involved in the community around me :)"
+banner: ../img/banner/banner_4.jpg
+divsize: half-div
+divside: right-div
 permalink: /service/
 ---
-<div class="banner-div half-div">
-	<div class="banner EP-stay-015" style="background: url(../img/banner/banner_4.jpg) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 80%; width: 100%; opacity: 0.15;"></div>
+<div class="banner-div {{ page.divsize }}">
+	<div class="banner EP-stay-015" style="background: url({{page.banner}}) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
 	<div class="page-content">
-		<div class="bannertext-div EP-fade-stay ">
+		<div class="bannertext-div {{page.divside}} EP-fade-stay">
 			<div id="bannertext-container">
-			<h1 class="banner-title">Service</h1>
-			<p class="banner-text">A handful of the ways I like to get involved in the community around me :)</p>
+			<h1 class="banner-title">{{page.title}}</h1>
+			<p class="banner-text">{{page.subtitle}}</p>
 			</div>
 		</div>
 	</div>

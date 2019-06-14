@@ -1,15 +1,19 @@
 ---
 layout: default
 title: Projects
+subtitle: "A collection of some of the personal and professional projects that I'm most proud of (and allowed to share)."
+banner: ../img/banner/banner_1.jpg
+divsize: half-div
+divside: left-div
 permalink: /projects/
 ---
-<div class="banner-div half-div">
-	<div class="banner EP-stay-015" style="background: url(../img/banner/banner_2.jpg) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
+<div class="banner-div {{ page.divsize }}">
+	<div class="banner EP-stay-015" style="background: url({{page.banner}}) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
 	<div class="page-content">
-		<div class="bannertext-div  EP-fade-stay">
+		<div class="bannertext-div {{page.divside}} EP-fade-stay">
 			<div id="bannertext-container">
-			<h1 class="banner-title">Projects</h1>
-			<p class="banner-text">A collection of some of the personal and professional projects that I'm most proud of (and allowed to share).</p>
+			<h1 class="banner-title">{{page.title}}</h1>
+			<p class="banner-text">{{page.subtitle}}</p>
 			</div>
 		</div>
 	</div>
