@@ -1,18 +1,27 @@
 # Site settings
-title: Nic Durish
+title: Nic Durish's Corner Of The Internet
 email: n.durish@gmail.com
 author: Nic Durish
 description: "The slightly personal, slightly professional site of Nic Durish - Check out my portfolio, resume, or read some of my blogs!"
 url: "https://nicdurish.ca"
 timezone: Canada/Eastern
 
+# Plugins
+plugins:
+  - jekyll-paginate
+
+paginate: 3
+paginate_path: "/blog/page:num/"
+
+
 # Build settings
 permalink: /:short_year-:month-:day/:title:output_ext
+exclude: ["script", "vendor", "Gemfile", "Gemfile.lock", "config.ru", "Procfile", "Rakefile", "README.md", "scss"]
+markdown_ext:   markdown,mkd,mkdn,md
 sass:
   sass_dir: css
   style: compressed
 
-exclude: ["script", "vendor", "Gemfile", "Gemfile.lock", "config.ru", "Procfile", "Rakefile", "README.md", "scss"]
 
 # Social icons
 show_social_icons: true
