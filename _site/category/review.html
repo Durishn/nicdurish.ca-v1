@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 	<meta charset="UTF-8">
-  	<title>Tag</title>
+  	<title>Review</title>
   	<meta name="description" content="The slightly personal, slightly professional site of Nic Durish - Check out my portfolio, resume, or read some of my blogs!" />
 
   	<!-- styling -->
@@ -14,7 +14,7 @@
 	<link rel="icon" type="image/png" href="/img/favicon.png" />
 
 	<!-- for search engines and compatability -->
-	<link rel="canonical" href="http://localhost:4000/tag/" />
+	<link rel="canonical" href="http://localhost:4000/category/review" />
 	<link href='http://nicdurish.ca/feed.xml' rel='alternate' type='application/atom+xml'>
 	<meta name="copyright" content="Nic Durish 2019" />
 	<meta name="robots" content="index, follow" />
@@ -38,22 +38,23 @@
 	<meta property="og:author" content="https://nicdurish.ca/about" />
 
 	
-		<meta property="og:image" content="http://nicdurish.ca/img/banner/banner_0.jpg" />
-		<meta name="twitter:image:src" content="http://nicdurish.ca/img/banner/banner_0.jpg">
+		<meta property="og:image" content="http://localhost:4000/img/banner/banner_tr.jpg" />
+		<meta name="twitter:image:src" content="http://localhost:4000/img/banner/banner_tr.jpg">
 	
 
 	
-		<meta property="og:type" content="website" />
+		<meta property="og:type" content="article" />
+		<meta name="twitter:card" content="summary_large_image">
 	
 
 	
-		<meta property="og:title" content="Tag" />
-		<meta name="twitter:title" content="Tag">
+		<meta property="og:title" content="Review" />
+		<meta name="twitter:title" content="Review">
 	
 
 	
-		<meta property="og:description" content="The slightly personal, slightly professional site of Nic Durish - Check out my portfolio, resume, or read some of my blogs!" />
-		<meta name="twitter:description" content="The slightly personal, slightly professional site of Nic Durish - Check out my portfolio, resume, or read some of my blogs!">
+		<meta property="og:description" content="I sometimes have opinions on specific things!" />
+		<meta name="twitter:description" content="I sometimes have opinions on specific things!">
 	
 
 </head>
@@ -213,12 +214,12 @@
   </code>
 </nav>
 		<div class="banner-div half-div">
-	<div class="banner EP-stay-015" style="background: url() no-repeat fixed 40% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
+	<div class="banner EP-stay-015" style="background: url(../img/banner/banner_tr.jpg) no-repeat fixed 40% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
 	<div class="page-content">
 		<div class="bannertext-div  EP-fade-stay right-div">
 			<div id="bannertext-container">
-			<h1 class="banner-title">Writing: </h1>
-			<p class="banner-text"></p>
+			<h1 class="banner-title">Writing: Review</h1>
+			<p class="banner-text">I sometimes have opinions on specific things!</p>
 			</div>
 		</div>
 	</div>
@@ -233,18 +234,66 @@
 		<a class="category-button" href="/blog"><div class="category-box"><p>All (6)</p></div></a>
 		  
 		    
-		    	<a  class="category-button" href="/category/literary-review"><div class="category-box"><p>Literary Review (2)</p></div></a>
+		    	
+		    		<a  class="category-button" href="/category/literary-review"><div class="category-box"><p>Literary Review (2) </p></div></a>
+		    	
 		    
-		    	<a  class="category-button" href="/category/reflection"><div class="category-box"><p>Reflection (2)</p></div></a>
+		    	
+		    		<a  class="category-button" href="/category/reflection"><div class="category-box"><p>Reflection (2) </p></div></a>
+		    	
 		    
-		    	<a  class="category-button" href="/category/review"><div class="category-box"><p>Review (1)</p></div></a>
+		    	
 		    
-		    	<a  class="category-button" href="/category/rant"><div class="category-box"><p>Rant (1)</p></div></a>
+		    	
+		    		<a  class="category-button" href="/category/rant"><div class="category-box"><p>Rant (1) </p></div></a>
+		    	
 		    
 		  
 		
 
+		<!--Print all posts that are in this Category-->
+		<div class="blog-card-div">
+		  
+		    <a href="/18-03-26/p1.html"><div class= "blog-card">
+		    	<div class="blog-card-img"><img alt="Blogpost Banner" src="../img/posts/18-03-26-b.jpg" /></div>
+		    	<div class="blog-card-content">
+			      	<h3 class="blog-card-title">Encountering The R Programming Language In The Wild</h3>
+			      	<h5 class="blog-card-sub">A critique of the R programming language, generously padded with a personal anecdote.</h5>
+					<p class="blog-card-details"><small>March 26, 2018<span class="px2">•</span>7 min read</small></p>
 
+					<p class="blog-card-cat"><small><b>
+						
+						  	
+						    	
+						      		Review
+						      		
+						    	
+						  	
+						
+					- </b>
+						
+						
+						  	
+						    	
+						      		Academic
+						      		,  
+						    	
+						      		CompSci
+						      		,  
+						    	
+						      		Programming
+						      		
+						    	
+						  	
+						
+					</small></p>
+				</div>
+				<div class="blog-card-prevdiv"><div><p>If you’ve made it this far, you’ve likely read the previous papers in this 6650(01) sega; <em>Why the C Programming Language Deserves an F</em> &amp; <em>A Scripture Reading - ‘The Humble Programmer’</em>, and probably also noticed a trend in m...</div></div>
+		    </div></a>
+		  
+		</div>
+
+		<div class="row subbar has-separator"><div class="cell-text">SIGN-UP FOR EMAIL NOTIFICATIONS!</small></div></div>
 		
 
 <div class="row">
@@ -282,12 +331,7 @@
         }, 1400);
     });
 </script>
-
-		<!--Print all posts that are in this Tag-->
-		<div class="blog-card-div">
-		  
-
-		</div>
+		
 	</section>
 </div>
 		  <footer class="footer">
