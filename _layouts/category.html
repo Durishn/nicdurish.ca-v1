@@ -72,9 +72,10 @@ permalink: /category/
 				<div class="blog-card-prevdiv"><div>{{ post.content | truncate:250 }}</div></div>
 		    </div></a>
 		  {% endfor %}
-
-		  {% include subscribe_form.html %}
-
 		</div>
+
+		<div class="row subbar has-separator"><div class="cell-text">SIGN-UP FOR EMAIL NOTIFICATIONS!</small></div></div>
+		{% include subscribe_form.html %}
+		
 	</section>
 </div>

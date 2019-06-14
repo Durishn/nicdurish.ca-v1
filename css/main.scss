@@ -491,11 +491,6 @@ BlogCard
 /************* 
 Share Bar
 **************/
-#share-bar{
-  margin-top: 4em;
-  text-align: center;
-
-
   .has-separator {
       position: relative;
       text-align: center;
@@ -512,20 +507,28 @@ Share Bar
         position: relative;
         z-index: 2;
         margin: auto;
-        background-color: lighten($page-div-background, 4%);
+        
         width:17rem;
       }
   }
 
   .has-separator:after {
       content: '';
-      border-bottom: 1px solid #d9d9d9;
+      border-bottom: 2px solid #d9d9d9;
       width: 100%;
       left: 0;
       top: 50%;
       position: absolute;
       z-index: 1;
   }
+
+#share-bar{
+  margin-top: 4em;
+  text-align: center;
+  .has-separator .cell-text{
+    background-color: lighten($page-div-background, 4%);
+  }
+
 
   .share-buttons{
     padding: 12px 0;
@@ -589,6 +592,15 @@ Share Bar
 /************* 
 Subscribe Bar
 **************/
+.subbar.has-separator .cell-text{
+    background-color: $page-div-background;
+}
+
+.subscribetext{
+  color: #82888c;
+  margin-top: 10px;
+}
+
 .login_container {  
   width:50%;
   min-width: 300px;
