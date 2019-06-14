@@ -40,6 +40,9 @@
 	{% if page.banner %}
 		<meta property="og:image" content="{{ site.url }}{{ page.banner | slice: 2,page.banner.size }}" />
 		<meta name="twitter:image:src" content="{{ site.url }}{{ page.banner | slice: 2,page.banner.size }}">
+	{% elsif post.banner%}
+		<meta property="og:image" content="{{ site.url }}{{ post.banner | slice: 2,post.banner.size }}" />
+		<meta name="twitter:image:src" content="{{ site.url }}{{ post.banner | slice: 2,post.banner.size }}">
 	{% else %}
 		<meta property="og:image" content="http://nicdurish.ca/img/banner/banner_0.jpg" />
 		<meta name="twitter:image:src" content="http://nicdurish.ca/img/banner/banner_0.jpg">
