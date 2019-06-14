@@ -1,6 +1,6 @@
 <head>
 	<meta charset="UTF-8">
-  	<title>{% if page.title %}{{ page.title }}{% else %}joelglovier.com{% endif %}</title>
+  	<title>{% if page.title %}{{ page.title }}{% else %}nicdurish.ca{% endif %}</title>
 
   	<!-- styling -->
   	<link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -52,6 +52,9 @@
 	{% if page.subtitle %}
 	<meta property="og:description" content="{{ page.subtitle }}" />
 	<meta name="twitter:description" content="{{ page.subtitle }}">
+	{% else %}
+	<meta property="og:description" content="{{ site.description }}" />
+	<meta name="twitter:description" content="{{ site.description }}">
 	{% endif %}
 
 	<meta name="twitter:domain" content="nicdurish.ca">
