@@ -38,8 +38,8 @@
 	<meta property="og:author" content="https://nicdurish.ca/about" />
 
 	{% if page.banner %}
-		<meta property="og:image" content="url({{page.banner}})" />
-		<meta name="twitter:image:src" content="url({{page.banner}})">
+		<meta property="og:image" content="{{ site.url }}/{{ page.banner | slice: 2,page.banner.size }}" />
+		<meta name="twitter:image:src" content="{{ site.url }}/{{ page.banner | slice: 2,page.banner.size }}">
 	{% else %}
 		<meta property="og:image" content="http://nicdurish.ca/img/banner/banner_0.jpg" />
 		<meta name="twitter:image:src" content="http://nicdurish.ca/img/banner/banner_0.jpg">
