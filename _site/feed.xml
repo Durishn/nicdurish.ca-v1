@@ -2,9 +2,153 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <description>The slightly personal, slightly professional site of Nic Durish - Check out my portfolio, resume, or read some of my blogs!</description>
+    <description>Part professional portfolio - part personal projects - part nonsense</description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>My Wedding Ring is a Dollar</title>
+        <description>&lt;p&gt;As those of you that know me likely know, Emma and I have been hard at work preparing for our wedding. It is now officially less than one month away, which means time to pull up the bootstraps and get everything done! We got Emma’s wedding band almost a month ago. It was made to match by &lt;a href=&quot;https://allysonsimmie.com&quot;&gt;Allyson Simmie&lt;/a&gt;, the same artisan from Nova Scotia that made her engagement ring. My wedding band on the other hand was a to-do list item that had yet to be checked off. Its not that I had completely forgotten about it so much as that I couldn’t make up my mind. I wanted something simple, if not a little rough - I didn’t particularly want to buy some ring from a big retail jewellery store, and most artist/artisan’s rings were a bit out of my budget. This matter was only made worse when I was looking around some stores in Hamilton the other week with my friend Jeff, and realized almost no stores had any rings in my size anyway and it took up to 6 weeks to order them in. After stewing further, and finding some inspiring posts on &lt;a href=&quot;https://reddit.com/r/DIY&quot;&gt;r/DIY&lt;/a&gt; I decided to make one myself! Before going out to buy a crucible, torch and molding-sand - I figured I’d give hammering one a try. A day and a half and one failed attempt later, I’m actually pretty darn happy with how it turned out! But enough with all the chit-chat, here’s how I made it:&lt;/p&gt;
+
+&lt;p&gt;Silver interestingly enough refers to Sterling Silver as opposed to Fine Silver - Fine Silver had a purity of 99.9% silver and is simply too soft to be used for jewellery. Sterling Silver on the other hand is an alloy created from silver and copper, usually containing above 90% silver. Finally COIN silver for both economic and density reasons refers to Silver/Copper alloys with a purity of 80% or higher. For this project I was looking for either Coin Silver or Sterling Silver. Turns out Canadian silver dollars before 1967 have 80% purity of silver&lt;sup&gt;&lt;a href=&quot;#foot1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; which was exactly what I needed, so off I went in search of a Canadian silver dollar. After a couple hours and quite the hunt around Guelph, I bought one from a guy who coincidentally was going around to pawn shops at the exact same time trying to SELL a couple silver dollars. Thankfully I got two, cause the first attempt did not quite work out as planned. I’ll conveniently skip over that whole debacle and only show the pretty one that worked out, this IS the internet of course.&lt;/p&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_a.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next I pulled out my calipers, measured the coins and locked the calipers onto half their diameter, and measured lines from a few edge points until they formed an intersection at the exact center of the coin. I also learned from my last failed ring, that a whole silver dollar is simply too much metal - my last one started to crack before I was able to get it small enough. So with that in mind, I set my calipers to a few millimeters and scored a circle around the coin to mark what I was to remove.&lt;/p&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_b.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;I kicked myself for not buying a proper angle grinder or bench grinder earlier on this step. To make the cuts, I drilled a small hole into the coin (first using an impact nail to make a nice spot to seat my drill-bit) and screwed it down to some scrap-wood. Pure silver has a density of 10.49 g/cm3, ergo, its pretty damn soft - so I was pleasantly surprised by how easily it was to cut, sand and form. My hacksaw made quick, if not a bit rough, work of the coin.&lt;/p&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_d.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_e.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Obviously my hacksaw couldn’t cut a perfect circle, but because my hold was perfectly center, and my score lines for my aimed circumference were still visible, I was able to sand it down to size fairly accurately. Without a proper bench-grinder, I opted to put my orbital palm sander with 50-grit course paper into my vice. A tad sketchy, but hot damn did it work well. Within a couple minutes I had the ring shaped into a rough circle with the right proportions.&lt;/p&gt;
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_f.gif&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_g.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now for the real fun - just start wacking! The aim is not to beat the thing to death, just give it an even and consistent tap as you spin. I probably tapped this coin for about 2.5 hours total before deciding that whether or not it needed more, it was done.&lt;/p&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_h.gif&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_j.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;I got onto a bit of a roll here and forgot to take some pictures, but I pretty much just kept hammering until the outer diameter matched my sizing ring, then drilled out the inner hole and started filing the interior until it was reasonably smooth and a bit smaller than my fit. Dont worry, it looks bad now but this is simply a crude form, it’ll start getting better I swear.&lt;/p&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_k.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_l.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next I put my ring onto a mandrel, and continued hammering to make sure the ring was a perfect circle. At this point, you also want to expand the ring to ever so slightly smaller than your fit. Once this is done, the ring is officially its final size.&lt;/p&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_m.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_n.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_o.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now just to sand and polish until your hands bleed! Get cozy, this process took me about 3 hours total. Watching the newest season of one of your shows or chilling outside with a beer and some puppers will make this process feel a whole lot quicker. I started with wet, fine sandpaper slowly working my way from 120-grit up to 1000-grit. For the final sanding I created an abrasive paste using baking soda and water. Then as a finish touch, I grabbed a shammy and rubbed the ring down with silver polish.&lt;/p&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_p.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_q.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_r.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_s.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;And look at that! Only 8-10 hours of work, 1 failed attempt, a workshop full of tools, and metric butt-tonne of elbow grease later - I’ve got a wedding ring! Simple!&lt;/p&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_t.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_u.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/19-07-26_v.jpg&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:center; width:96%; max-width:700px;  margin: 0 auto; &quot;&gt;
+  &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/19-07-26/suckers.gif&quot; alt=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&quot;foot1&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; - Canadian Nickels and Dimes from around the same era will also work, but you get extra swag points for using a silver dollar&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 30 Jul 2019 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000//19-07-30/p1.html</link>
+        <guid isPermaLink="true">http://localhost:4000//19-07-30/p1.html</guid>
+      </item>
     
       <item>
         <title>Let's Talk About BellLetsTalk</title>
@@ -54,7 +198,7 @@ LetsTalk about investing in Mental Health professionals and research initiatives
         <title>What It Feels Like To Attend A Refreshingly Well-Run Conference</title>
         <description>&lt;p&gt;I’ve always had an excitable, yet tentative outlook on academic conferences. Most conferences that I’ve attended over the past year and a half of my Masters in CompSci have represented (as they should) an opportunity to think outside of the box, to understand how other researchers are solving problems, to network with like-minded individuals and to share research which could have a positive impact on the respective field. After attending a conference that has met these goals, I consistently end up leaving with, what I like to call, an after-conference glow, that leaves me feeling re-energized in my research; more curious, more productive, more insightful, and more willing to work and share with other researchers. For those of you that have experienced this academic bliss, you know that it’s a feeling worth striving for. That being said, not all conferences that I’ve been to, have impacted me in this way which is why I try to be prepared and excited for conferences, but never too expectant.&lt;/p&gt;
 
-&lt;p&gt;That is exactly what was going through my mind as my advisor Dr. Dan Gillis and I loaded our bags onto our flight towards the People, Places and Public Engagement Conference in St. Johns in October of 2018. The focus of the conference was on exploring how universities and the public, including communities, governments, industry, not-for-profits, and others, collaborate, and work together. We had applied to speak at the conference months earlier, through the recommendation of one of our research partners who noted that it might be a good opportunity to share our research and network with individuals who were doing work related to Public Engagement in the region. Without delving too much into our own research project (for more info visit: enuk.eco), we are in the process of building an environment and health monitoring application, built with a mesh network for the remote, indigenous community of Rigolet in Nunatsiavut. While Dan and I are more involved on the ‘technical’ side, the project lies at the intersection of a multitude of fields, including; Computer Science, Public Health, Environmental Sciences, Public Engagement, Indigenous Studies and many more. While having experts in each of these fields is a necessity, it’s also necessary to identify a common means of communication within the team, and to work to understand how Computer Science fits within each of these domains in the context of our project. After identifying the conference as a good fit, and receiving our acceptance to present, we were able to garner enough funding through PSEER to cover my 5 days in St. Johns.&lt;/p&gt;
+&lt;p&gt;That is exactly what was going through my mind as my advisor Dr. Dan Gillis and I loaded our bags onto our flight towards the People, Places and Public Engagement Conference in St. Johns in October of 2018. The focus of the conference was on exploring how universities and the public, including communities, governments, industry, not-for-profits, and others, collaborate, and work together. We had applied to speak at the conference months earlier, through the recommendation of one of our research partners who noted that it might be a good opportunity to share our research and network with individuals who were doing work related to Public Engagement in the region. Without delving too much into our own research project (for more info visit: enuk.ca), we are in the process of building an environment and health monitoring application, built with a mesh network for the remote, indigenous community of Rigolet in Nunatsiavut. While Dan and I are more involved on the ‘technical’ side, the project lies at the intersection of a multitude of fields, including; Computer Science, Public Health, Environmental Sciences, Public Engagement, Indigenous Studies and many more. While having experts in each of these fields is a necessity, it’s also necessary to identify a common means of communication within the team, and to work to understand how Computer Science fits within each of these domains in the context of our project. After identifying the conference as a good fit, and receiving our acceptance to present, we were able to garner enough funding through PSEER to cover my 5 days in St. Johns.&lt;/p&gt;
 
 &lt;p&gt;We arrived at our hotel with just enough time to unpack our bags and head up to Memorial Universities new building on Signal Hill for the ‘Welcome Social’ event. As we joined the queue for registration, I began to take in my surroundings, noting evidence which might support my hopes that this was indeed going to be one of the good ones. The building was fairly small; with one large conference room, a number of smaller meeting rooms, and an atrium that was full of smiles, deep conversation, a local band, and the aroma of local and traditional delicacies. By the end of the evening, Dan and I began walking back to our Hotel; our bellies satisfied, our heads full of excitement for the upcoming presentations, and pockets full of business cards and numbers from other researchers and our faces strained from smiling. It was going to be one of the good ones.&lt;/p&gt;
 
@@ -240,16 +384,20 @@ changed however when we needed to produce histograms using a subset of our data,
         <description>&lt;p&gt;Much like my first trip in November, I arrived at the airport at 6:30 in Goose Bay, and sleepily loaded my bags and self into the 19-seater Twin Otter airplane&lt;sup&gt;1&lt;/sup&gt;, headed to Rigolet, Labrador. Unlike my trip in August, however, the skies were dark, the air was cold, my bag was packed with Halloween costumes and candy, and most importantly, I knew where in the world I was going, both figuratively and literally.&lt;/p&gt;
 
 &lt;!--more--&gt;
-&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:left; width:60%&quot;&gt;
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:left; width:60%; max-width:; &quot;&gt;
   &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/17-11-29-i0.png&quot; alt=&quot;Rigolet, Nunatsiavut in the Autumn&quot; /&gt;
-  &lt;figcaption class=&quot;post-img-cap&quot;&gt;Rigolet, Nunatsiavut in the Autumn&lt;/figcaption&gt;
+   
+    &lt;figcaption class=&quot;post-img-cap&quot;&gt;Rigolet, Nunatsiavut in the Autumn&lt;/figcaption&gt;
+  
 &lt;/figure&gt;
 
-&lt;p&gt;If you don’t know already, our small multidisciplinary team is working closely with the community of Rigolet, to design, develop and distribute a community-led health and environmental monitoring application called &lt;a href=&quot;https://enuk.eco&quot;&gt;eNuk&lt;/a&gt;. Designed with and by the community of Rigolet, eNuk allows community members to geospatially and categorically track changes in land, environment, and wellbeing that are relevant to them. Users will be able to track thoughts, feelings, photos, videos, audio, and comments, effectively crowd-sourcing their traditional knowledge and stories. Data may be used to; improve safety and efficiency of land use, adapt to climate changes, understand significant environmental and health influences, and provide timely health intervention. To overcome the lack of cellular and poor internet connection in Rigolet, we’ve partnered with Dr Jason Ernst and the &lt;a href=&quot;https://www.rightmesh.io/&quot;&gt;RightMesh&lt;/a&gt; team, to integrate a mobile ad-hoc mesh network within the application and community. Though the project has been in the works for a few years now, its scope has been consistently expanding as we continue to better understand the niche that the application is attempting to fill. Specifically, the introduction of the mesh network into the application proposes a plethora of new potential features, and of course, problems. That being said, though our timeline has been extended, the goal of the project is more clear and dazzling than ever before.&lt;/p&gt;
+&lt;p&gt;If you don’t know already, our small multidisciplinary team is working closely with the community of Rigolet, to design, develop and distribute a community-led health and environmental monitoring application called &lt;a href=&quot;https://enuk.ca&quot;&gt;eNuk&lt;/a&gt;. Designed with and by the community of Rigolet, eNuk allows community members to geospatially and categorically track changes in land, environment, and wellbeing that are relevant to them. Users will be able to track thoughts, feelings, photos, videos, audio, and comments, effectively crowd-sourcing their traditional knowledge and stories. Data may be used to; improve safety and efficiency of land use, adapt to climate changes, understand significant environmental and health influences, and provide timely health intervention. To overcome the lack of cellular and poor internet connection in Rigolet, we’ve partnered with Dr Jason Ernst and the &lt;a href=&quot;https://www.rightmesh.io/&quot;&gt;RightMesh&lt;/a&gt; team, to integrate a mobile ad-hoc mesh network within the application and community. Though the project has been in the works for a few years now, its scope has been consistently expanding as we continue to better understand the niche that the application is attempting to fill. Specifically, the introduction of the mesh network into the application proposes a plethora of new potential features, and of course, problems. That being said, though our timeline has been extended, the goal of the project is more clear and dazzling than ever before.&lt;/p&gt;
 
-&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:right; width:40%&quot;&gt;
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:right; width:40%; max-width:; &quot;&gt;
   &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/17-11-29-i1.png&quot; alt=&quot;Exploring the boardwalk - 2017&quot; /&gt;
-  &lt;figcaption class=&quot;post-img-cap&quot;&gt;Exploring the boardwalk - 2017&lt;/figcaption&gt;
+   
+    &lt;figcaption class=&quot;post-img-cap&quot;&gt;Exploring the boardwalk - 2017&lt;/figcaption&gt;
+  
 &lt;/figure&gt;
 
 &lt;p&gt;So where do I fit into the picture, and what brought me to this 19-seater plane? Each team member is involved in almost every step of design &amp;amp; development, however, my focus is on the interactivity of the application; how do we make eNuk not only functional but interesting, fun, and engaging to users? During my trip in August, I had the opportunity of meeting with the team, introducing myself to community-members, understanding where the project has come so far, and understanding where I fit into the timeline. This time I had a more defined agenda; to solve the following question – What is the best strategy for designing an engagement, or gamification&lt;sup&gt;&lt;a href=&quot;#fnote3&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; piece for eNuk?&lt;/p&gt;
@@ -258,18 +406,22 @@ changed however when we needed to produce histograms using a subset of our data,
 
 &lt;p&gt;But first, there were more important matters that needed attending to; Halloween Festivities! What better way to thank the community for welcoming us and leading the research than to suit up in our Research Onesies and do some reverse trick-or-treating. Dan, Jason, Sheri, Jacquie and myself, dressed as a troupe of animals (fictional, extinct, and current), put together what I can only describe as a metric butt tonne of candy bags, and paraded to each house in the community to distribute them.&lt;/p&gt;
 
-&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:left; width:50%&quot;&gt;
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:left; width:50%; max-width:; &quot;&gt;
   &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/17-11-29-i2.png&quot; alt=&quot;Left to right: Nic, Jason, Jacquie, and a “metric butt tonne of candy”&quot; /&gt;
-  &lt;figcaption class=&quot;post-img-cap&quot;&gt;Left to right: Nic, Jason, Jacquie, and a “metric butt tonne of candy”&lt;/figcaption&gt;
+   
+    &lt;figcaption class=&quot;post-img-cap&quot;&gt;Left to right: Nic, Jason, Jacquie, and a “metric butt tonne of candy”&lt;/figcaption&gt;
+  
 &lt;/figure&gt;
 
 &lt;p&gt;Now that the important stuff was out of the way, it was time to get to our research! The next day was spent preparing for our presentation for the Grade 7/8 class at the elementary school and an Open-House for all community members at the new Strathcona building. I had planned on engaging the kids in some computer science related activities, namely building a game using &lt;a href=&quot;https://scratch.mit.edu/&quot;&gt;Scratch&lt;/a&gt;, then playing with some Hardware on the Raspberry Pi or Arduino. We’d then move on to explaining our project, then getting some ideas from them on their favourite forms of engagement within an application and how they might work in the setting of eNuk. However, much like our project, it seems you can’t design something for an audience that you don’t truly understand, and thankfully, my presentation was more led by the kids, than it was by me.&lt;/p&gt;
 
 &lt;p&gt;After meeting the school Principle, Tom, the previous night, he recommended that I instead start the presentation with a brief introduction to myself and my interests, namely, the school bus that I converted into a Tiny Home and travelled the country with a year ago&lt;sup&gt;&lt;a href=&quot;#fnote3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. We then moved onto our discussion about eNuk.&lt;/p&gt;
 
-&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:right; width:50%&quot;&gt;
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:right; width:50%; max-width:; &quot;&gt;
   &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/17-11-29-i3.png&quot; alt=&quot;Learning from the students at Northern Lights Academy.&quot; /&gt;
-  &lt;figcaption class=&quot;post-img-cap&quot;&gt;Learning from the students at Northern Lights Academy.&lt;/figcaption&gt;
+   
+    &lt;figcaption class=&quot;post-img-cap&quot;&gt;Learning from the students at Northern Lights Academy.&lt;/figcaption&gt;
+  
 &lt;/figure&gt;
 
 &lt;p&gt;&lt;strong&gt;This is how I thought it would play out:&lt;/strong&gt; I’d spend most of my time attempting to explain the methods and goals behind eNuk. I’d explain engagement in other applications, such as skill-trees in video games or badges in online education systems, and have them name some examples. Finally, if time permitted, we’d talk about some decent badges that might work in eNuk, like, ‘walk the entire boardwalk’, ‘make a post every-day for a week’, or ‘use eNuk to post a picture’.&lt;/p&gt;
@@ -278,9 +430,11 @@ changed however when we needed to produce histograms using a subset of our data,
 
 &lt;p&gt;Now armed with the ideas and enthusiasm of the Grade 7/8 classroom, the team and I had an Open House to run. Each member set up their respective booths, explaining some section of the project. Initially, the intent of my booth was to gather a few more badge ideas and have participants draw what a given badge might look like. However, as I explained the results of my visit to the school with community members, their eyes lit up with possibilities – this might not only be a way of engaging kids/users in the application but also their traditional knowledge and skills! We started by writing down some of the ideas that the kids in the school had on post-it notes, then we asked participants to write down things that they thought it was important for kids in the community to learn, and the necessary steps to learn that skill.&lt;/p&gt;
 
-&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:left; width:50%&quot;&gt;
+&lt;figure class=&quot;post-img-fig&quot; style=&quot;float:left; width:50%; max-width:; &quot;&gt;
   &lt;img class=&quot;post-img&quot; src=&quot;../img/posts/17-11-29-i4.png&quot; alt=&quot;Post-its: the beginning of an eNuk engagement piece, by Rigolet, for Rigolet.&quot; /&gt;
-  &lt;figcaption class=&quot;post-img-cap&quot;&gt;Post-its: the beginning of an eNuk engagement piece, by Rigolet, for Rigolet.&lt;/figcaption&gt;
+   
+    &lt;figcaption class=&quot;post-img-cap&quot;&gt;Post-its: the beginning of an eNuk engagement piece, by Rigolet, for Rigolet.&lt;/figcaption&gt;
+  
 &lt;/figure&gt;
 
 &lt;p&gt;Over the course of a couple hours, I ended up with 59 different Rigolet-specific skills in 13 categories such as; &lt;em&gt;Language, Beading, Sewing, Winter Safety, Trapping, Cooking, Hunting, and Tool Making&lt;/em&gt;, to name a few. While obviously not a complete and exclusive list, my badge system was beginning to transform into an educational tree; a curriculum for self-learning of traditional knowledge and skills.&lt;/p&gt;
