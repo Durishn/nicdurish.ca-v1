@@ -11,6 +11,4 @@ You've stumbled upon the repository for Nic's website aka [Durishn.github.io](ht
 To try this code for yourself, simply download it along with Jekyll and run `bundle exec jekyll serve`. To build and host use `bundle exec jekyll build`.
 
 
-This site has been a fun side project for me. An opportunity to freely experiment with building a website from scratch - with heavy support from tutorials, codepens, and trial & error. Code used directly from or influenced from other sources are referenced within comments. 
-
-This code is free under the MIT [LICENSE](LICENSE.md). Use what you will, references are appreciated.
+This site has been a fun side project for me. An opportunity to freely experiment with building a website from scratch. This code is free under the MIT [LICENSE](LICENSE.md). Use what you will, references are appreciated.
