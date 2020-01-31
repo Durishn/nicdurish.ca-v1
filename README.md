@@ -13,4 +13,4 @@ To try this code for yourself, simply download it and run using `bundle exec jek
 
 This site has been a fun side project for me. An opportunity to freely experiment with building a website from scratch - with heavy support from tutorials, codepens, and trial & error. Code used directly from or heavily influenced from other open source sources are referenced within comments. 
 
-This code is free under the (MIT)! [LICENSE.md](LICENSE.md). Use what you will, references are appreciated.
+This code is free under the MIT [LICENSE](LICENSE.md). Use what you will, references are appreciated.
