@@ -7,12 +7,21 @@ sections:
 - type: jekyll-pages
   label: Pages
   create: all
+  templates:
+  - blog
 - type: jekyll-posts
   label: Posts
   create: all
+  templates:
+  - blog
 - type: directory
   path: _category
   label: Category
+  create: all
+  match: "**/*"
+- type: directory
+  path: _tag
+  label: Tags
   create: all
   match: "**/*"
 upload_dir: img
