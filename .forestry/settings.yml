@@ -21,7 +21,7 @@ sections:
   match: "**/*"
 - type: directory
   path: _tag
-  label: Tags
+  label: Tag
   create: all
   match: "**/*"
 upload_dir: img
