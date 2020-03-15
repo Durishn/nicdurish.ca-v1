@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="UTF-8">
   	<title>'Good Ideas Through The Looking Glass' by Niklaus Wirth</title>
-  	<meta name="description" content="Part professional portfolio - part personal projects - part nonsense" />
+  	<meta name="description" content="Nic Durish is a Designer, Developer, Integrator based out of Guelph Ontario. This site serves as his personal hub on the web. Consider it part living document - part professional portfolio - part personal projects - part nonsense." />
 
   	<!-- styling -->
   	<link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -277,11 +277,13 @@
 		<div class="post-contents"><p>A spent a significantly larger portion of my time preparing for this assignment, than I did actually writing it. I read large sections of many of the papers and realized how difficult it was going to be to support my review with valid criticisms without being to subjective. This is especially true when reviewing comments that were made by some of the most renown programmers of our time; Djistra, Holt, Wirth, Hoare &amp; Ritchie. For this reason, instead of formal critique, my paper expands on quote’s by the author that may have been vague, unclear or needed a devil’s advocate (such as myself).</p>
 
 <h1 id="introduction">Introduction</h1>
+
 <p>“Good ideas, through the looking glass” is a Computer Science paper written by Niklaus Wirth in 2005. Unlike many other popular STEM articles, Wirth didn’t focus on the introduction, benefits or flaws of any specific computer system or paradigm. Instead, Wirth wanted to discuss “an entire potpourri of ideas, listed from the past decades of Computer Science and Computer Technology”. Specifically, he brought his attention to historically unique or novel ideas, and whether or not they withstood the test of time. As Wirth points out, it’s important to “try to learn from the past, be it for the sake of progress, intellectual stimulation, or fun” <a href="#wirt6">(Wirth, 2006)</a></p>
 
 <p>The article is a fantastic read, and brings due credit to many forgotten concepts, though there were some areas where Wirth’s statements are slightly unclear, or exaggerated. Specifically, my review will discuss a single statement from each of the three sections of the article. Within Programming Language Features, I discuss the statement that the equal sign as an assignment was “a notorious example for a bad idea”. In Miscellaneous Techniques I explore the idea that Wizards typically “are obstinate and immortal like devils”. Finally in Computer Architecture, the notion that “the idea of an expression stack proved to be rather questionable”. In no way are these statements wrong, but due to their subjective nature, they deserve to be explored further. My comments should be considered additions to Wirth’s original paper, as opposed to replacements.</p>
 
 <h1 id="programming-language-features---the-equal-sign">Programming Language Features - The Equal Sign</h1>
+
 <blockquote>
   <p>“A notorious example for a bad idea was the choice of the equal sign to denote assignment. It goes back to FORTRAN in 1957 and has blindly been copied by armies of language designers. Why is it a bad idea? Because it overthrows a century old tradition to let <code class="highlighter-rouge">=</code> denote a comparison for equality, a predicate which is either true or false”</p>
 </blockquote>
@@ -296,21 +298,23 @@ there was not a universal symbol for assignments, and documents were still full 
 <figure class="highlight"><pre><code class="language-lisp" data-lang="lisp">x = 5
 y = x + 5 + 2
 if (y = x + 7)
-	printf("TRUE")
+printf("TRUE")
 y = x + 5 = 10 + 2 = 12</code></pre></figure>
 
 <p>Wirth also expands his distaste to other symbols, such as incrementing via <code class="highlighter-rouge">++</code>. This, like Right-Associativity was indeed a poor design decision, as it can’t distinguish between statements and expressions. While there’s no saying which usage of the equal symbol is best (it’s subjective!), it’s easy to see that there should be two universally accepted symbols for conditions and absolute assignments that are mutually exclusive.</p>
 
 <h1 id="miscellaneous-techniques---wizards">Miscellaneous Techniques - Wizards</h1>
+
 <blockquote>
   <p>“This author’s experiences with wizards were largely unfortunate. He found it impossible to avoid confronting them in text editors. Worst are those wizards that constantly interfere with one’s writing… if at least they could easily be deactivated, but typically they are obstinate and immortal like devils.”</p>
 </blockquote>
 
 <p>Within Wirth’s Miscellaneous Techniques section he touches on the poor implementation of Wizards, implying that generally do more bad than good. He defends that wizards are indeed necessary, but are largely executed improperly. While I don’t disagree that there was and still is very evil software wizards out there, it’s important to give due credit to the good wizards, if you will. A Wizard (also known as Assistant, or Helper) is a help feature of a software package that automates complex tasks based on user-inputs <a href="#chri6">(Christensson, 2006)</a>. Wizards (as opposed to daemons) are processes or features within a program, never a program itself. They are most common when installing new software, as a Setup Assistant. However they are used frequently to automate tasks within software, such as with text-editors; spellchecking, auto-indenting, auto- capitalization, auto-saving etc. More or less any action that occurs without being explicitly told to do so <a href="#scot1">(Scott, 2011)</a>.</p>
 
-<p>Wirth’s most significant gripe with Wizards, is that they generally cannot be customized and are permanent. However, this is one of the only features that make wizards, well, wizards! If a user needed to initialize or start-up a wizard, it would simply be a separate task or process. It’s important to realize that we’ve been spoiled by the wonders of wizards. Most individuals recognize when wizards aren’t working properly, such as inaccurate autocorrecting, or automatically changing certain strings into symbols. But no longer recognize it’s plentiful benefits; capitalizing, saving, or using the open/closing quotation points when necessary. I agree with Wirth’s sentiments; Wizards that get in the way of the task at hand should be quickly re-evaluated or destroyed. But that isn’t to say that we shouldn’t be forever grateful to all of the work performed be our wizards. I mean, they are called Wizards for a reason! </p>
+<p>Wirth’s most significant gripe with Wizards, is that they generally cannot be customized and are permanent. However, this is one of the only features that make wizards, well, wizards! If a user needed to initialize or start-up a wizard, it would simply be a separate task or process. It’s important to realize that we’ve been spoiled by the wonders of wizards. Most individuals recognize when wizards aren’t working properly, such as inaccurate autocorrecting, or automatically changing certain strings into symbols. But no longer recognize it’s plentiful benefits; capitalizing, saving, or using the open/closing quotation points when necessary. I agree with Wirth’s sentiments; Wizards that get in the way of the task at hand should be quickly re-evaluated or destroyed. But that isn’t to say that we shouldn’t be forever grateful to all of the work performed be our wizards. I mean, they are called Wizards for a reason!</p>
 
 <h1 id="computer-architecture---expression-stacks">Computer Architecture - Expression Stacks</h1>
+
 <blockquote>
   <p>“Still, the idea of an expression stack proved to be rather questionable, particularly after the advent of architectures with register banks in the mid 1960s. Now simplicity of compilation was sacrificed for any gain in execution speed. The stack organization had restricted the use of a scarce resource to a fixed strategy. “</p>
 </blockquote>
@@ -322,9 +326,11 @@ y = x + 5 = 10 + 2 = 12</code></pre></figure>
 <p>Wirth explains these events quite well in his article, and outlines the advantages that architectures with register banks had over expression stacks. However stack machines do have their advantages, and it wouldn’t be doing expressions stacks any justice to not discuss them. Stack machines may have larger operand loads than register machines, but smaller instructions and smaller total object code <a href="#shan6">(Shannon, 2006)</a>. A stack machine’s compact code naturally fits more instructions in cache, and therefore could achieve better cache efficiency, reducing memory costs or permitting faster memory systems for a given cost. Also, what stack machines lacked in performance, they made up for in the efficiency of their compilers. While many of these benefits are overshadowed by the massive performance enhancement provided by register computing, they are not without value. Stack machines are still used today in some research, small hardware and in hybrid machines. Expression stacks served as a novel solution at the time, only retired after better hardware introductions allowed for more dynamic approaches <a href="#sinn2">(Sinnathanby 2012)</a>. I might argue that instead of “expression stacks [being…] rather questionable”, it was the notion that stack machines were the best architecture for our computing that was questionable.</p>
 
 <h1 id="conclusion">Conclusion</h1>
+
 <p>Niklaus Wirth’s article “Good ideas, through the looking glass” was a fantastic piece of literature. He outlined the most significant ideas of computation within the last century, not by their success, but by their novelty and genius. Through his discussion of computer architectures, language features, and miscellaneous techniques, he does his best to provide as much information about each idea, it’s benefits and downfalls, as possible. While I certainly wouldn’t change anything about the article, there were some topics which I felt could have been explored further, and presented differently. His statements about equal signs as assignments, wizards and expressions stacks were informative and quite accurate. However, he seemed to end the sections by defining them as bad, or questionable ideas (if not outright calling them devils). While, again, potentially valid, I believe these ideas deserve a little more credit, and their benefits could have been further explored. Subjectivity aside however, another fantastic article from Niklaus Wirth.</p>
 
 <h4 id="references">References</h4>
+
 <p><a name="chri6">Christensson, P. (2006). Wizard Definition. Retrieved 2016, Feb 28, from http://techterms.com </a><br />
 <a name="germ6">Germain, J. (2006). Variable Assignment. Retrieved February 28th, 2016, from http://www.cs.utah.edu/~germain/PPS/Topics/assignment_statement.html</a><br />
 <a name="koop4">Koopman, P (1994). “A Preliminary Exploration of Optimized Stack Code Generation” (PDF). Journal of Forth applications and Research 6 (3).</a><br />
@@ -453,10 +459,10 @@ y = x + 5 = 10 + 2 = 12</code></pre></figure>
 		<i class="fa fa-envelope" ></i>
 	</a>
 
-	<!-- Facebook -->
+	<!-- Facebook
 	<a rel="noopener" target="_blank" aria-label="Facebook" href="https://facebook.com/ndurish">
 		<i class="fab fa-facebook"></i>
-	</a>
+	</a>-->
 
 	<!-- LinkedIn -->
 	<a rel="noopener" target="_blank" aria-label="LinkedIn" href="http://linkedin.com/in/nicdurish">
@@ -473,12 +479,12 @@ y = x + 5 = 10 + 2 = 12</code></pre></figure>
 		<i class="fab fa-instagram"></i>
 	</a>
 
-	<!-- Couchsurfing -->
+	<!-- Couchsurfing
 	<a rel="noopener" target="_blank" aria-label="CouchSurfing" href="https://couchsurfing.com/people/ndurish">
 		<i class="fas fa-couch"></i>
-	</a>
+	</a>-->
 
-	<!-- Spotify 
+	<!-- Spotify
 	<a rel="noopener" target="_blank" aria-label="Spotify" href="https://open.spotify.com/user/durishn">
 		<i class="fab fa-spotify"></i>
 	</a> -->
@@ -494,13 +500,14 @@ y = x + 5 = 10 + 2 = 12</code></pre></figure>
 	</a>
 </div>
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></link>
+
           
         </div>
       </div>
       <div class="row">
         <div class="col copyright" onclick="location.href='https://github.com/Durishn/Durishn.github.io';">
-          All content copyright Nic Durish &copy; 2019.
+          All content copyright Nic Durish &copy; 2020.
         </div>
       </div>
     </div>
