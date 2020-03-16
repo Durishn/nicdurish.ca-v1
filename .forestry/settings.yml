@@ -7,8 +7,6 @@ sections:
 - type: jekyll-pages
   label: Pages
   create: all
-  templates:
-  - blog
 - type: jekyll-posts
   label: Posts
   create: all
@@ -20,8 +18,8 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: _tag
-  label: Tag
+  path: _projects
+  label: Projects
   create: all
   match: "**/*"
 upload_dir: img
