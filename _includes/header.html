@@ -14,67 +14,67 @@
   <div id="mainListDiv" class="main_list">
     <ul class="navlinks">
 
-      <!-- About -->
+      <!-- About
       <li {% if page.url contains '/about/' or page.path contains "about/"%} id="current" {% endif %} class="nav-item">
-        <a aria-label="Go to About" href="{{ site.baseurl }}/about/" class="nav-link">ABOUT</a> 
+        <a aria-label="Go to About" href="{{ site.baseurl }}/about/" class="nav-link">ABOUT</a>
+      </li>-->
+
+      <!-- Resume -->
+      <li {% if page.url contains '/resume/' or page.path contains "resume/"%} id="current" {% endif %} class="nav-item">
+        <a href="{{ site.baseurl }}/resume/" class="nav-link">RÉSUMÉ</a>
       </li>
 
       <!-- Portfolio -->
-        <li {% if page.url contains '/portfolio/' or page.path contains "portfolio/"%} id="current" {% endif %} class="nav-dropdown nav-item">
+        <li {% if page.url contains '/portfolio/'"%} id="current" {% endif %} class="nav-dropdown nav-item">
           <a class="nav-link portfolio-link">PORTFOLIO
             <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
-          </a> 
+          </a>
           <ul class="drop-menu menu-2">
             <li {% if page.url contains '/projects/' or page.path contains "projects/"%} id="current" {% endif %}>
-              <a href="{{ site.baseurl }}/projects/">PROJECTS</a> 
+              <a href="{{ site.baseurl }}/projects/">PROJECTS</a>
             </li>
             <li {% if page.url contains '/presentations/' or page.path contains "presentations/"%} id="current" {% endif %}>
-              <a href="{{ site.baseurl }}/presentations/">PRESENTATIONS</a> 
+              <a href="{{ site.baseurl }}/presentations/">PRESENTATIONS</a>
             </li>
             <li {% if page.url contains '/service/' or page.path contains "service/"%} id="current" {% endif %}>
-              <a href="{{ site.baseurl }}/service/">SERVICE</a> 
+              <a href="{{ site.baseurl }}/service/">SERVICE</a>
             </li>
             <li {% if page.url contains '/awards/' or page.path contains "awards/"%} id="current" {% endif %}>
-              <a href="{{ site.baseurl }}/awards/">AWARDS</a> 
+              <a href="{{ site.baseurl }}/awards/">AWARDS</a>
             </li>
             <li {% if page.url contains '/press/' or page.path contains "press/"%} id="current" {% endif %}>
-              <a href="{{ site.baseurl }}/press/">PRESS</a> 
+              <a href="{{ site.baseurl }}/press/">PRESS</a>
             </li>
           </ul>
         </li>
 
-      <!-- Resume -->
-      <li {% if page.url contains '/resume/' or page.path contains "resume/"%} id="current" {% endif %} class="nav-item">
-        <a href="{{ site.baseurl }}/resume/" class="nav-link">RÉSUMÉ</a> 
-      </li>
-
       <!-- Buckets -->
-      <li {% if page.url contains '/buckets/' or page.path contains "buckets/"%} id="current" {% endif %} class="nav-dropdown nav-item">
+      <li {% if page.url contains '/buckets/' "%} id="current" {% endif %} class="nav-dropdown nav-item">
           <a class="nav-link buckets-link">BUCKETS
             <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
-          </a> 
+          </a>
           <ul class="drop-menu menu-2">
             <li {% if page.url contains '/bucket_list/' or page.path contains "bucket_list/"%} id="current" {% endif %}>
-              <a href="{{ site.baseurl }}/bucket_list/">BUCKET LIST</a> 
+              <a href="{{ site.baseurl }}/bucket_list/">BUCKET LIST</a>
             </li>
             <li {% if page.url contains '/set_list/' or page.path contains "set_list/"%} id="current" {% endif %}>
-              <a href="{{ site.baseurl }}/set_list/">SET LIST</a> 
+              <a href="{{ site.baseurl }}/set_list/">SET LIST</a>
             </li>
             <!--<li {% if page.url contains '/photo_bucket/' or page.path contains "photo_bucket/"%} id="current" {% endif %}>
-              <a href="{{ site.baseurl }}/photo_bucket/">PHOTO BUCKET</a> 
+              <a href="{{ site.baseurl }}/photo_bucket/">PHOTO BUCKET</a>
             </li>
             <li {% if page.url contains '/travel_bucket/' or page.path contains "travel_bucket/"%} id="current" {% endif %}>
-              <a href="{{ site.baseurl }}/travel_bucket/">TRAVEL BUCKET</a> 
+              <a href="{{ site.baseurl }}/travel_bucket/">TRAVEL BUCKET</a>
             </li>-->
           </ul>
       </li>
 
       <!-- Blog -->
       <li {% if page.url contains '/blog/' or page.path contains "blog/"%} id="current" {% endif %} class="nav-item">
-        <a href="{{ site.baseurl }}/blog/" class="nav-link">BLOG</a> 
+        <a href="{{ site.baseurl }}/blog/" class="nav-link">BLOG</a>
       </li>
     </ul>
-  </div> 
+  </div>
 
 <!-- Mobile Navigation -->
   <a class="navTrigg">
@@ -86,64 +86,64 @@
   <div class="mobile-nav">
     <ul class="mobile-navlinks">
 
-      <!-- About -->
+      <!-- About
       <li {% if page.url contains '/about/' or page.path contains "about/"%} id="current" {% endif %} class="mobile-nav-item">
-        <a href="{{ site.baseurl }}/about/" class="nav-link">ABOUT</a> 
-      </li>
-
-      <!-- Portfolio -->
-      <li {% if page.url contains '/portfolio/' or page.path contains "portfolio/"%} id="current" {% endif %} class="mobile-nav-item mobile-nav-dropdown">
-        <a class="nav-link portfolio-link">PORTFOLIO
-          <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
-        </a> 
-        <ul class="mobile-drop-menu">
-          <li {% if page.url contains '/projects/' or page.path contains "projects/"%} id="current" {% endif %}>
-            <a href="{{ site.baseurl }}/projects/">PROJECTS</a> 
-          </li>
-          <li {% if page.url contains '/presentations/' or page.path contains "presentations/"%} id="current" {% endif %}>
-            <a href="{{ site.baseurl }}/presentations/">PRESENTATIONS</a> 
-          </li>
-          <li {% if page.url contains '/service/' or page.path contains "service/"%} id="current" {% endif %}>
-            <a href="{{ site.baseurl }}/service/">SERVICE</a> 
-          </li>
-          <li {% if page.url contains '/awards/' or page.path contains "awards/"%} id="current" {% endif %}>
-            <a href="{{ site.baseurl }}/awards/">AWARDS</a> 
-          </li>
-          <li {% if page.url contains '/press/' or page.path contains "press/"%} id="current" {% endif %}>
-            <a href="{{ site.baseurl }}/press/">PRESS</a> 
-          </li>
-        </ul>
-      </li>
+        <a href="{{ site.baseurl }}/about/" class="nav-link">ABOUT</a>
+      </li> -->
 
       <!-- Resume -->
       <li {% if page.url contains '/resume/' or page.path contains "resume/"%} id="current" {% endif %} class="mobile-nav-item">
-        <a href="{{ site.baseurl }}/resume/" class="nav-link">RÉSUMÉ</a> 
+        <a href="{{ site.baseurl }}/resume/" class="nav-link">RÉSUMÉ</a>
+      </li>
+
+      <!-- Portfolio -->
+      <li {% if page.url contains '/portfolio/'%} id="current" {% endif %} class="mobile-nav-item mobile-nav-dropdown">
+        <a class="nav-link portfolio-link">PORTFOLIO
+          <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
+        </a>
+        <ul class="mobile-drop-menu">
+          <li {% if page.url contains '/projects/'%} id="current" {% endif %}>
+            <a href="{{ site.baseurl }}/projects/">PROJECTS</a>
+          </li>
+          <li {% if page.url contains '/presentations/' or page.path contains "presentations/"%} id="current" {% endif %}>
+            <a href="{{ site.baseurl }}/presentations/">PRESENTATIONS</a>
+          </li>
+          <li {% if page.url contains '/service/' or page.path contains "service/"%} id="current" {% endif %}>
+            <a href="{{ site.baseurl }}/service/">SERVICE</a>
+          </li>
+          <li {% if page.url contains '/awards/' or page.path contains "awards/"%} id="current" {% endif %}>
+            <a href="{{ site.baseurl }}/awards/">AWARDS</a>
+          </li>
+          <li {% if page.url contains '/press/' or page.path contains "press/"%} id="current" {% endif %}>
+            <a href="{{ site.baseurl }}/press/">PRESS</a>
+          </li>
+        </ul>
       </li>
 
       <!-- Buckets -->
       <li {% if page.url contains '/buckets/' or page.path contains "buckets/"%} id="current" {% endif %} class="mobile-nav-item mobile-nav-dropdown">
         <a class="nav-link buckets-link">BUCKETS
           <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
-        </a> 
+        </a>
         <ul class="mobile-drop-menu">
           <li {% if page.url contains '/bucket_list/' or page.path contains "bucket_list/"%} id="current" {% endif %}>
-            <a href="{{ site.baseurl }}/bucket_list/">BUCKET LIST</a> 
+            <a href="{{ site.baseurl }}/bucket_list/">BUCKET LIST</a>
           </li>
           <li {% if page.url contains '/set_list/' or page.path contains "set_list/"%} id="current" {% endif %}>
-            <a href="{{ site.baseurl }}/set_list/">SET LIST</a> 
+            <a href="{{ site.baseurl }}/set_list/">SET LIST</a>
           </li>
           <!--<li {% if page.url contains '/photo_bucket/' or page.path contains "photo_bucket/"%} id="current" {% endif %}>
-            <a href="{{ site.baseurl }}/photo_bucket/">PHOTO BUCKET</a> 
+            <a href="{{ site.baseurl }}/photo_bucket/">PHOTO BUCKET</a>
           </li>
           <li {% if page.url contains '/travel_bucket/' or page.path contains "travel_bucket/"%} id="current" {% endif %}>
-            <a href="{{ site.baseurl }}/travel_bucket/">TRAVEL BUCKET</a> -->
-          </li>
+            <a href="{{ site.baseurl }}/travel_bucket/">TRAVEL BUCKET</a>
+          </li>-->
         </ul>
       </li>
 
       <!-- Blog -->
       <li {% if page.url contains '/blog/' or page.path contains "blog/"%} id="current" {% endif %} class="mobile-nav-item">
-        <a href="{{ site.baseurl }}/blog/" class="nav-link">BLOG</a> 
+        <a href="{{ site.baseurl }}/blog/" class="nav-link">BLOG</a>
       </li>
     </ul>
   </div>

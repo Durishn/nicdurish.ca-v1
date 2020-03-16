@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include head.html %}
+	<body class="fixedheader-body">
+  		{% include header.html %}
+  		<div class="fixed-nav-div"></div>
+
+      <div class="holds-the-iframe">
+      	<object class= "fullpdf" data={{page.pdflink}}>
+      		<body style="background-color:white;">
+      			<div class="warning-content" style=" width:80vw; left: 10vw; background-color:white;">
+      		        <h1>Oops!<br> Your browser doesn't support PDFs.<br></h1>
+      		        <p><a href={{page.pdflink}}>Download Instead</a></p>
+
+      		    </div>
+      		</body>
+      	</object>
+      </div>
+      
+  </body>
+
+</html>
+
+<script>
+  $(".nav").each(function() {
+    $(this).addClass("fixed-nav");
+    });
+</script>

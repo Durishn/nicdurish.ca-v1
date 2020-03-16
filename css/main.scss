@@ -146,7 +146,6 @@ SUPER-GENERAL STYLES
 
 .bucketlist-wrapper {
   text-align: left;
-  width: 66%;
 
   h3 {
     margin: 25px 0 5px;
@@ -156,11 +155,11 @@ SUPER-GENERAL STYLES
     margin: 0 0 1em;
   }
 
-  .strikeout {
+  del {
     position: relative;
   }
 
-  .strikeout::after {
+  del::after {
     border-bottom: 0.125em solid $primary;
     content: "";
     left: 0;

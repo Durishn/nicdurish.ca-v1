@@ -9,7 +9,7 @@ permalink: /category/
 	<div class="page-content">
 		<div class="bannertext-div  EP-fade-stay right-div">
 			<div id="bannertext-container">
-			<h1 class="banner-title">Writing: {{ page.tag }}</h1>
+			<h1 class="banner-title">Category: {{ page.tag }}</h1>
 			<p class="banner-text">{{ page.subtitle }}</p>
 			</div>
 		</div>
@@ -58,7 +58,7 @@ permalink: /category/
 						  	{% endif %}
 						{% assign categories_list = nil %}
 					- </b>
-						
+
 						{% assign tags_list = post.tags %}
 						  	{% if tags_list.first != null %}
 						    	{% for tag in tags_list %}
@@ -74,8 +74,5 @@ permalink: /category/
 		  {% endfor %}
 		</div>
 
-		<div class="row subbar has-separator"><div class="cell-text">SIGN-UP FOR EMAIL NOTIFICATIONS!</small></div></div>
-		{% include subscribe_form.html %}
-		
 	</section>
 </div>

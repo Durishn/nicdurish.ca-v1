@@ -54,7 +54,7 @@ permalink: /blog/
 						  	{% endif %}
 						{% assign categories_list = nil %}
 					- </b>
-						
+
 						{% assign tags_list = post.tags %}
 						  	{% if tags_list.first != null %}
 						    	{% for tag in tags_list %}
@@ -70,11 +70,5 @@ permalink: /blog/
 		  {% endfor %}
 		</div>
 
-		<div class="row subbar has-separator"><div class="cell-text">SIGN-UP FOR EMAIL NOTIFICATIONS!</small></div></div>
-		{% include subscribe_form.html %}
-
 	</section>
 </div>
-
-
-
