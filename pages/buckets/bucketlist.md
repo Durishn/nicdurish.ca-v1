@@ -1,5 +1,5 @@
 ---
-layout: defaultbanner
+layout: default
 title: Bucket-List
 subtitle: "This is not a list of goals to be completed before I 'kick the bucket', so much as a collection of things I think would be fun to do or learn in my lifetime. It's a subtle but significant difference - my true bucket list can be found at the bottom"
 banner: ../img/banner/banner_7.jpg
