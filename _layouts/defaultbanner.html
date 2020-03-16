@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include head.html %}
+	<body class="default-body">
+		{% include header.html %}
+		<div class="banner-div {{ page.divsize }}">
+			<div class="banner EP-stay-015" style="background: url({{page.banner}}) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
+			<div class="page-content">
+				<div class="bannertext-div {{page.divside}} EP-fade-stay">
+					<div id="bannertext-container">
+					<h1 class="banner-title">{{page.title}}</h1>
+					<p class="banner-text">{{page.subtitle}}</p>
+					</div>
+				</div>
+			</div>
+			<span class="scroll-down-arrow shortbann scrollvanish"></span>
+		</div>
+
+		<div class="page-div" style="min-height:80vh">
+			<section class="page-content {{page.customWrapperClass}}">
+				{{ content }}
+			</section>
+		</div>
+
+		{% include footer.html %}
+	</body>
+
+</html>
