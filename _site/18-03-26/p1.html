@@ -214,66 +214,53 @@
   </code>
 </nav>
 
-		<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=226927067364156&autoLogAppEvents=1"></script>
 
-<div class="banner-div half-div">
-	<div class="banner EP-stay-015-quick" style="background: url(../img/posts/18-03-26-b.jpg) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 80%; width: 100%; opacity: 0.15;"></div>
-	<div class="page-content post">
-		<div class="bannertext-div EP-fade-stay-quick EP-displaynone center-div">
-			<div id="bannertext-container">
-			<h1 class="post-title">Encountering The R Programming Language In The Wild</h1>
-			<p class="post-subtitle">A critique of the R programming language, generously padded with a personal anecdote.</p>
-			<div class="row">
-				<p class="post-details">
-					March 26, 2018
-					<span class="px2">•</span>15 min read
-					
-					  	
-					  		<span class="px2">•</span>
-					  		<b>
-					    	
-					      		<a href="/category/review">Review</a>
-					      		
-					    	
-					    	</b>
-					  	  -
-					
-					
-					  	
-					    	
-					      		<a href="/tag/academic">Academic</a>
-					      		,  
-					    	
-					      		<a href="/tag/compsci">CompSci</a>
-					      		,  
-					    	
-					      		<a href="/tag/programming">Programming</a>
-					      		
-					    	
-					  	
-					
-				</p>
+		<div class="banner-div half-div">
+			<div class="banner EP-stay-015-quick" style="background: url(../img/posts/18-03-26-b.jpg) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 80%; width: 100%; opacity: 0.15;"></div>
+			<div class="page-content post">
+				<div class="bannertext-div EP-fade-stay-quick EP-displaynone center-div">
+					<div id="bannertext-container">
+					<h1 class="post-title">Encountering The R Programming Language In The Wild</h1>
+					<p class="post-subtitle">A critique of the R programming language, generously padded with a personal anecdote.</p>
+					<div class="row">
+						<p class="post-details">
+							March 26, 2018
+							<span class="px2">•</span>15 min read
+							
+							  	
+							  		<span class="px2">•</span>
+							  		<b>
+							    	
+							      		<a href="/category/review">Review</a>
+							      		
+							    	
+							    	</b>
+							  	
+							
+						</p>
+					</div>
+					</div>
+				</div>
 			</div>
-			</div>
+			<span class="scroll-down-arrow shortbann scrollvanish"></span>
 		</div>
-	</div>
-	<span class="scroll-down-arrow shortbann scrollvanish"></span>
-</div>
 
 
-<div class="page-div post">
-	<section class="post-content-div page-content">
+		<div class="page-div post">
+			<section class="post-content-div page-content">
 
-		
-			<div id="alert" class="alert-div">
-		        <a class="alert-close"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line fill="none" stroke="#000" stroke-width="1.3" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.3" x1="13" y1="1" x2="1" y2="13"></line></svg></a>
-		        <p>This paper was originally written for my course CIS*6650(01) - Programming Language Evaluation (GR), taken at the University of Guelph.
-		        	</p>
-		  	</div>
-      	
+				<div id="fb-root"></div>
+				<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=226927067364156&autoLogAppEvents=1"></script>
 
-		<div class="post-contents"><p>If you’ve made it this far, you may have read the previous papers in this 6650(01) sega; <em>Why the C Programming Language Deserves an F</em> &amp; <em>A Scripture Reading - ‘The Humble Programmer’</em>, and probably noticed a trend in my writing style, namely that even in technical writing, I’m a sucker for anecdotes, idioms and good old fashion stories. I’ve found critical thinking is amplified when it’s applicable and relatable, and have always appreciated the use of personable and accessible writing styles in formal and academic documents. Given that I haven’t been reprimanded as of yet, for my potentially excessive use of personal anecdotes (thank you!), I thought I would take this opportunity to explore this writing style a bit further and tell the story of my first true reflection of a programming language; R.</p>
+				
+					<div id="alert" class="alert-div">
+				        <a class="alert-close"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><line fill="none" stroke="#000" stroke-width="1.3" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.3" x1="13" y1="1" x2="1" y2="13"></line></svg></a>
+				        <p>This paper was originally written for my course CIS*6650(01) - Programming Language Evaluation (GR), taken at the University of Guelph.
+				        	</p>
+				  	</div>
+		      	
+
+				<div class="post-contents"><p>If you’ve made it this far, you may have read the previous papers in this 6650(01) sega; <em>Why the C Programming Language Deserves an F</em> &amp; <em>A Scripture Reading - ‘The Humble Programmer’</em>, and probably noticed a trend in my writing style, namely that even in technical writing, I’m a sucker for anecdotes, idioms and good old fashion stories. I’ve found critical thinking is amplified when it’s applicable and relatable, and have always appreciated the use of personable and accessible writing styles in formal and academic documents. Given that I haven’t been reprimanded as of yet, for my potentially excessive use of personal anecdotes (thank you!), I thought I would take this opportunity to explore this writing style a bit further and tell the story of my first true reflection of a programming language; R.</p>
 
 <p>This paper explores my first impressions of R, introduced within a course called Econometrics, and how my work with the simple statistical analytics language had me flagged for potential academic misconduct. I describe my gripes with the language, such as it’s lack of defined programming paradigm (functional vs imperative), poor scoping, loosely and weakly typed data, and language inconsistencies and bloat in comparison to general-purpose languages. I also however explore some of the strengths I’ve grown to appreciate about R, from and since that experience, namely that it’s more accessible than I first thought and that the community, packages, as well graphical and data handling seem to have been designed with statistics and data in mind. In general, this paper avoids making objective and general statements about the overall quality of R, by instead making observations on it’s relative strengths and shortcomings.  </p>
 
@@ -371,7 +358,7 @@ changed however when we needed to produce histograms using a subset of our data,
 </div>
 
 
-		<div id="share-bar">
+				<div id="share-bar">
 
     <div class="row has-separator"><div class="cell-text">ENJOYED THIS ARTICLE?<br><small> SHARE IT WITH OTHERS!</small></div></div>
     <div class="row share-buttons" style="margin-bottom: 2em;">
@@ -390,58 +377,58 @@ changed however when we needed to produce histograms using a subset of our data,
 
 
 
-			<div id="nextart-bar">
-		        <p><a href="/blog/">← Article Index</a> <span class="px2">|</span> Next Article:</p>
+					<div id="nextart-bar">
+				        <p><a href="/blog/">← Article Index</a> <span class="px2">|</span> Next Article:</p>
 
-			        <div class="blog-card-div">
-					    <a href="/18-03-01/p1.html"><div class= "blog-card">
-					    	<div class="blog-card-img"><img alt="Blogpost Banner" src="../img/posts/18-03-01-b1.jpg" /></div>
-					    	<div class="blog-card-content">
-						      	<h3 class="blog-card-title">'The Humble Programmer' by Edsger Dijsktra</h3>
-						      	<h5 class="blog-card-sub">Did Edsger Dijkstra harness the power of precognition or have we still not learned from our past mistakes?</h5>
-								<p class="blog-card-details"><small>March  1, 2018<span class="px2">•</span>9 min read</small></p>
+					        <div class="blog-card-div">
+							    <a href="/18-03-01/p1.html"><div class= "blog-card">
+							    	<div class="blog-card-img"><img alt="Blogpost Banner" src="../img/posts/18-03-01-b1.jpg" /></div>
+							    	<div class="blog-card-content">
+								      	<h3 class="blog-card-title">'The Humble Programmer' by Edsger Dijsktra</h3>
+								      	<h5 class="blog-card-sub">Did Edsger Dijkstra harness the power of precognition or have we still not learned from our past mistakes?</h5>
+										<p class="blog-card-details"><small>March  1, 2018<span class="px2">•</span>9 min read</small></p>
 
-								<p class="blog-card-cat"><small><b>
-									
-									  	
-									    	
-									      		Literary Review
-									      		
-									    	
-									  	
-									
-								- </b>
-									
-									  	
-									    	
-									      		Academic
-									      		,  
-									    	
-									      		CompSci
-									      		,  
-									    	
-									      		Publication
-									      		
-									    	
-									  	
-									
-								</small></p>
+										<p class="blog-card-cat"><small><b>
+											
+											  	
+											    	
+											      		Literary Review
+											      		
+											    	
+											  	
+											
+										- </b>
+											
+											  	
+											    	
+											      		Academic
+											      		,  
+											    	
+											      		CompSci
+											      		,  
+											    	
+											      		Publication
+											      		
+											    	
+											  	
+											
+										</small></p>
+									</div>
+									<div class="blog-card-prevdiv"><div><p>It would be modest to call Edsger W. Dijkstra (May 1930 - August 2002) simply a programmer, computer scientist or software engineer. Dijkstra was; the father of structured programming, a visionary and a pioneer in computer science. Many of his ...</div></div>
+							    </div></a>
 							</div>
-							<div class="blog-card-prevdiv"><div><p>It would be modest to call Edsger W. Dijkstra (May 1930 - August 2002) simply a programmer, computer scientist or software engineer. Dijkstra was; the father of structured programming, a visionary and a pioneer in computer science. Many of his ...</div></div>
-					    </div></a>
-					</div>
 
-			    
-		    </div>
+					    
+				    </div>
 
-	</section>
-</div>
+			</section>
+		</div>
 
-<script>
-	$(".alert-close").click(function(){
-	  $("#alert").addClass("displaynone");
-	});
-</script>
+		<script>
+			$(".alert-close").click(function(){
+			  $("#alert").addClass("displaynone");
+			});
+		</script>
 
 		  <footer class="footer">
     <div class="footer-container text-center">

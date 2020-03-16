@@ -1,29 +1,33 @@
 ---
-layout: index
-comments: false
-
 ---
-<!--
-#	FULL SCREEN BANNER
--->
-<div style="height:100vh; width:100vw;">
-	<div class="index-center-div EP-fade EP-displaynone">
-	    <div class="row fade-in-3s name" onclick="location.href='{{ site.baseurl }}/about/';">
-	        <span class="index-title thin">Nic</span> <span class="index-title thick"><b>Durish</b></span>
-	    </div>
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <div id="particles-js"></div>
+    <body class="index-body">
+  		<div class="fade-in-wait-3s">{% include header.html %}</div>
+			<div style="height:100vh; width:100vw;">
+				<div class="index-center-div EP-fade EP-displaynone">
+				    <div class="row fade-in-3s name" onclick="location.href='{{ site.baseurl }}/about/';">
+				        <span class="index-title thin">Nic</span> <span class="index-title thick"><b>Durish</b></span>
+				    </div>
 
-	    <div class="row index-spacer1"></div>
-	    <div class="row fade-in-5s">
-	    	<h3 class="index-subtitle">Developer &nbsp; · &nbsp; Designer &nbsp; · &nbsp; Integrator</h3>
-	    </div>
+				    <div class="row index-spacer1"></div>
+				    <div class="row fade-in-5s">
+				    	<h3 class="index-subtitle">Developer &nbsp; · &nbsp; Designer &nbsp; · &nbsp; Integrator</h3>
+				    </div>
 
-	    <div class="row index-spacer2"></div>
-	    <div class="row fade-in-wait-3s">
-	        <div class="col social-links-container" style="opacity:0.9; width: 80%; margin: auto;">
-	          {% if site.show_social_icons %}
-	            {% include social_links.html %}
-	          {% endif %}
-	        </div>
-      	</div>
-	</div>
-</div>
+				    <div class="row index-spacer2"></div>
+				    <div class="row fade-in-wait-3s">
+				        <div class="col social-links-container" style="opacity:0.9; width: 80%; margin: auto;">
+				          {% if site.show_social_icons %}
+				            {% include social_links.html %}
+				          {% endif %}
+				        </div>
+			      	</div>
+				</div>
+			</div>
+
+	</body>
+
+</html>
