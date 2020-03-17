@@ -1,10 +1,10 @@
-#Durishn.github.io
+# Durishn.github.io
 
 "Hey!, Listen!"
 
 You've stumbled upon the repository for Nic's personal website aka [Durishn.github.io](https://github.com/Durishn/Durishn.github.io), located at [nicdurish.ca](https://nicdurish.ca). This site was built with [Jekyll](http://jekyllrb.com/), the open source static site generator that deserves a glance. Jekyll combines with Github to allow me to host my site for free using the basic HTML5, SCSS, Javascript and Markdown files you see here! This site has been a fun side project for me. An opportunity to freely experiment with building a website from scratch.
 
-##Installation
+## Installation
 Clone the repo
   $: git clone https://github.com/Durishn/Durishn.github.io.git
 
@@ -23,5 +23,5 @@ Changes made to `master` will automatically update the website - so commit with 
 ## Author
 * **[Durish, Nic](https://github.com/Durishn)**
 
-##License
+## License
 This code is free under the MIT [LICENSE](LICENSE.md). Use what you will, references are appreciated.
