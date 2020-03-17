@@ -14,7 +14,7 @@ sections:
   - blog
 - type: directory
   path: _category
-  label: Category
+  label: Post-Categories
   create: all
   match: "**/*"
   templates:

@@ -23,5 +23,3 @@ fields:
 - type: list
   name: link
   label: link
-pages:
-- _presentations/bridging-the-digital-divide-to-support-community-based-monitoring-in-the-circumpolar-north.md
