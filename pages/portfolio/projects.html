@@ -8,6 +8,41 @@ divside: left-div
 permalink: /projects/
 ---
 
+{% for project in site.projects %}
+	<div class="card fadein-top">
+		<div class="card-front" data-image-position="top">
+			<div class="card-image card-image-top">
+					<img alt={{ project.banneralttext }} src={{ project.banner }} />
+			</div>
+			<div class="card-content">
+				<div class="card-badgebox">
+					{% for tag2 in project.tags2 %}
+								<span class="card-badge bcl-llgreen darken">{{ tag2 }}</span>
+					{% endfor %}
+				</div>
+				<div class="card-badgebox bl2">
+					{% for tag in project.tags %}
+							<span class="card-badge bcl-llblue darken">{{ tag }}</span><br>
+					{% endfor %}
+				</div>
+				<div class="card-badgebox ribbon">
+					{% for category in project.categories %}
+						<span class="card-badge ribbon bcl-dlred darken">{{ category }}</span>
+					{% endfor %}
+				</div>
+				<h3>{{ project.title }}</h3>
+				<p>{{ project.description }}</p>
+			</div>
+			<div class="card-actions">
+				{% for atag in project.atags %}
+					{{ atag }}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+{% endfor %}
+
+
 <div class="card fadein-top">
 	<div class="card-front" data-image-position="top">
 		<div class="card-image card-image-top">
@@ -35,35 +70,6 @@ permalink: /projects/
     	<div class="card-actions">
         	<a rel="noopener" target="_blank" aria-label="See More" href="https://enuk.ca">See More</a>
         	<a rel="noopener" target="_blank" aria-label="View Prototype" href="https://xd.adobe.com/view/bdf885c4-0562-4a86-5e40-eefac662f704-cbc9/">View Proto</a>
-      	</div>
-     </div>
-</div>
-
-<div class="card fadein-top">
-	<div class="card-front" data-image-position="top">
-		<div class="card-image card-image-top">
-       		<img alt="NDCAP Mockup" src="../img/projects/NDCAP.jpg" />
-    	</div>
-      	<div class="card-content">
-      		<div class="card-badgebox">
-                	<span class="card-badge bcl-llgreen darken">Shell</span>
-                	<span class="card-badge bcl-llgreen darken">Python</span>
-                	<span class="card-badge bcl-llgreen darken">Ansible</span>
-             	</div>
-      		<div class="card-badgebox bl2">
-                	<span class="card-badge bcl-llblue darken">Developer</span><br>
-                	<span class="card-badge bcl-llblue darken">Project Lead</span>
-             	</div>
-			<div class="card-badgebox ribbon">
-                	<span class="card-badge ribbon bcl-dlred darken">Professional/Academic</span>
-             	</div>
-        	<h3>Rigolet Data-Comms Assessment Program</h3>
-        	<p> I worked on this project as a Mitacs intern on the Rightmesh Project, as well as a MSc thesis to support local monitoring systems in Rigolet. I built and loaded custom network monitors on Raspberry Pis to log the internet around town, and modeled the affects of external variables on transfer speeds. Unfortunately I can only share I tiny sliver of this research at this time.</p>
-      	</div>
-    	<div class="card-actions">
-        	<a rel="noopener" target="_blank" aria-label="Read More" href="https://www.rightmesh.io/">See More</a>
-        	<a rel="noopener" target="_blank" aria-label="View Pi Code" href="https://github.com/Durishn/Northern-Telecommunication-Assessment-Program_PiCode">View Code</a><br>
-        	<a rel="noopener" target="_blank" aria-label="View Graph of Data Speeds in my Household" href="https://nbmp-monitors.github.io/b8.27.eb.2f.b3.3f">View Sample Data</a>
       	</div>
      </div>
 </div>
