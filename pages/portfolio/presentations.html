@@ -8,6 +8,35 @@ divside: right-div
 permalink: /presentations/
 ---
 
+{% for presentation in site.presentations reversed %}
+	<div class="card fadein-top">
+		<div class="card-front" data-image-position="top">
+			<div class="card-image card-image-top">
+					<img alt={{ presentation.banneralttext }} src={{ presentation.banner }} />
+			</div>
+			<div class="card-content">
+				<div class="card-badgebox">
+					{% for year in presentation.year %}
+								<span class="card-badge bcl-llblue darken">{{ year }}</span>
+					{% endfor %}
+				</div>
+				<div class="card-badgebox ribbon v2">
+					{% for category in presentation.categories %}
+						<span class="card-badge ribbon bcl-dlred darken">{{ category }}</span>
+					{% endfor %}
+				</div>
+				<h3>{{ presentation.title }}</h3>
+				<p>{{ presentation.description }}</p>
+			</div>
+			<div class="card-actions">
+				{% for link in presentation.link %}
+					<a rel="noopener" target="_blank" aria-label="See More" href="{{ link }}">See Presentation</a>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+{% endfor %}
+
 		<div class="card fadein-top">
 			<div class="card-front" data-image-position="top">
 				<div class="card-image card-image-top">

@@ -39,6 +39,8 @@ google_analytics: UA-135084842-1
 collections:
   projects:
     output: true
+  presentations:
+    output: true
   category:
     output: true
 
