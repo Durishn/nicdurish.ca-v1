@@ -6,7 +6,6 @@ description: "The Open Guelph Transit App was a transit Android app built by scr
 categories:
 - Academic
 tags:
-- Management
 - Design
 - Development
 tags2:

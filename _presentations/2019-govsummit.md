@@ -8,6 +8,8 @@ categories:
 - SpringIT Day - Guelph, ON
 year:
 - 2019
+linktype:
+- Presentation
 link:
 - https://docs.google.com/presentation/d/1plNeNVf1ULa0TlecBnR4zKQwQM5pTNVe5iue2osp3AU/edit?usp=sharing
 ---

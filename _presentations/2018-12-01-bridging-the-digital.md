@@ -9,9 +9,9 @@ description: This hand-designed poster outlines the background research required
 categories:
 - ArticNet - Ottawa, On
 year:
-- '2018'
+- 2018
+linktype:
+- Poster
 link:
-- https://drive.google.com/open?id=1DGSbW_5MENuwmfq6t7051CCiM0oDv-QK
-published: false
-
+- https://drive.google.com/file/d/1GuSie2bLl8yjYcvTFtD08l5P9SYvHfKs/view?usp=sharing
 ---

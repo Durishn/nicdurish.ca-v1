@@ -6,7 +6,6 @@ description: "Winner of the UoG Food Waste Hackathon, Sustain-a-Bin is a smart c
 categories:
 - Academic
 tags:
-- Management
 - Design
 - Development
 tags2:

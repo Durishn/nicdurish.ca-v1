@@ -6,7 +6,6 @@ description: "Winner of the UoG NetZero Hackathon and 3rd in the Scotiabank Nati
 categories:
 - Academic
 tags:
-- Management
 - Design
 - Development
 tags2:
