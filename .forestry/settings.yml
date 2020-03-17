@@ -17,11 +17,15 @@ sections:
   label: Category
   create: all
   match: "**/*"
+  templates:
+  - category
 - type: directory
   path: _projects
   label: Projects
   create: all
   match: "**/*"
+  templates:
+  - project
 upload_dir: img
 public_path: "/img"
 front_matter_path: ''
