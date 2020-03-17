@@ -1,0 +1,25 @@
+---
+label: Presentation
+hide_body: true
+fields:
+- type: file
+  name: banner
+  label: banner
+- type: textarea
+  name: banneralttext
+  label: banneralttext
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: list
+  name: categories
+  label: categories
+- type: list
+  name: year
+  label: year
+- type: list
+  name: link
+  label: link

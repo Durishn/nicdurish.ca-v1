@@ -4,11 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: directory
-  path: _presentations
-  label: Presentations
-  create: all
-  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
@@ -31,6 +26,13 @@ sections:
   match: "**/*"
   templates:
   - project
+- type: directory
+  path: _presentations
+  label: Presentations
+  create: all
+  match: "**/*"
+  templates:
+  - presentations
 upload_dir: img
 public_path: "/img"
 front_matter_path: ''
