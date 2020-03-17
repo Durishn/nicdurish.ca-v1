@@ -33,6 +33,16 @@ sections:
   match: "**/*"
   templates:
   - presentations
+- type: directory
+  path: _service
+  label: Service
+  create: all
+  match: "**/*"
+- type: directory
+  path: _awards
+  label: Awards
+  create: all
+  match: "**/*"
 upload_dir: img
 public_path: "/img"
 front_matter_path: ''
