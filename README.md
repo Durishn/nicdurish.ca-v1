@@ -6,16 +6,16 @@ You've stumbled upon the repository for Nic's personal website aka [Durishn.gith
 
 ## Installation
 Clone the repo
-  $: git clone https://github.com/Durishn/Durishn.github.io.git
+  ` git clone https://github.com/Durishn/Durishn.github.io.git`
 
 Download jekyll on Mac:
-  $: brew install jekyll
+  ` brew install jekyll`
 
 Serve site locally:
-  $:bundle exec jekyll serve
+  `bundle exec jekyll serve`
 
 Build site: 
-  $:bundle exec jekyll build
+  `bundle exec jekyll build`
 
 ## Publishing
 Changes made to `master` will automatically update the website - so commit with caution! Ideally, larger development changes should be made on a separate branch and merged in.
