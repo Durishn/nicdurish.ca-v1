@@ -14,10 +14,10 @@ Download jekyll on Mac:
 Serve site locally:
   $:bundle exec jekyll serve
 
-Build site: `
+Build site: 
   $:bundle exec jekyll build
 
-##Publishing
+## Publishing
 Changes made to `master` will automatically update the website - so commit with caution! Ideally, larger development changes should be made on a separate branch and merged in.
 
 ## Author
