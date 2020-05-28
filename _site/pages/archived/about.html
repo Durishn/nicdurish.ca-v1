@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="UTF-8">
   	<title>About Me</title>
-  	<meta name="description" content="Nic Durish is a Designer, Developer, Integrator based out of Guelph Ontario. This site serves as his personal hub on the web. Consider it part living document - part professional portfolio - part personal projects - part nonsense." />
+  	<meta name="description" content="Nic Durish is a web developer and designer based out of Guelph, Ontario. This site serves as his personal hub on the web. You'll find a bit of professional content, some pages where a stage my living documents and some occasional ramblings." />
 
   	<!-- styling -->
   	<link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -60,6 +60,9 @@
 	<body class="default-body">
 		<!-- NAV -->
 <nav class="nav">
+
+<!-- Skip to content -->
+<a role='navigation' aria-label='Skip to content' class='screenreader' href='#content' style='scroll-behavior: smooth; color: white !important;'>Skip to main content</a>
 
 <!-- Logo to Homepage-->
   <div class="logo">
@@ -213,22 +216,23 @@
   </code>
 </nav>
 
-		<div class="banner-div ">
-			<div class="banner EP-stay-015" style="background: url(../img/banner/banner_1.jpg) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
-			<div class="page-content">
-				<div class="bannertext-div  EP-fade-stay">
-					<div id="bannertext-container">
-					<h1 class="banner-title">About Me</h1>
-					<p class="banner-text">Who in the world is Nic Durish?</p>
+		<div id="content" role="main">
+			<div class="banner-div ">
+				<div class="banner EP-stay-015" style="background: url(../img/banner/banner_1.jpg) no-repeat fixed 55% 0%; position: fixed; background-size: cover; color: $nav-back; height: 100%; width: 100%; opacity: 0.15;"></div>
+				<div class="page-content">
+					<div class="bannertext-div  EP-fade-stay">
+						<div id="bannertext-container">
+						<h1 class="banner-title">About Me</h1>
+						<p class="banner-text">Who in the world is Nic Durish?</p>
+						</div>
 					</div>
 				</div>
+				<span class="scroll-down-arrow shortbann scrollvanish"></span>
 			</div>
-			<span class="scroll-down-arrow shortbann scrollvanish"></span>
-		</div>
 
-		<div class="page-div" style="min-height:80vh">
-			<section class="page-content ">
-				<div class="banner-div">
+			<div class="page-div" style="min-height:80vh">
+				<section class="page-content ">
+					<div class="banner-div">
 	<div class="banner EP-stay-015" style="background: url(../img/banner/banner_1.jpg) no-repeat fixed 48% 0; position: fixed; background-size: cover; color: $nav-back;  height: 100%; width: 100%; opacity: 0.15;"></div>
 	<div class="page-content">
 		<div class="bannertext-div EP-fade-stay">
@@ -663,10 +667,10 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
-			</section>
-		</div>
+				</section>
+			</div>
 
-		  <footer class="footer">
+			  <footer class="footer">
     <div class="footer-container text-center">
       <div class="row">
         <div class="col social-links-container">
@@ -675,47 +679,47 @@ for (i = 0; i < coll.length; i++) {
 
 	<!-- Email -->
 	<a rel="noopener" target="_blank" aria-label="Mail" href="mailto:mail@nicdurish.ca">
-		<i class="fa fa-envelope" ></i>
+		<span class="fa fa-envelope" ></span>
 	</a>
 
 	<!-- Facebook
 	<a rel="noopener" target="_blank" aria-label="Facebook" href="https://facebook.com/ndurish">
-		<i class="fab fa-facebook"></i>
+		<span class="fab fa-facebook"></span>
 	</a>-->
 
 	<!-- LinkedIn -->
 	<a rel="noopener" target="_blank" aria-label="LinkedIn" href="http://linkedin.com/in/nicdurish">
-		<i class="fab fa-linkedin"></i>
+		<span class="fab fa-linkedin"></span>
 	</a>
 
 	<!-- Twitter -->
 	<a rel="noopener" target="_blank" aria-label="Twitter" href="https://twitter.com/durishn">
-		<i class="fab fa-twitter-square"></i>
+		<span class="fab fa-twitter-square"></span>
 	</a>
 
 	<!-- Instagram -->
 	<a rel="noopener" target="_blank" aria-label="Instagram" href="https://instagram.com/nicdurish">
-		<i class="fab fa-instagram"></i>
+		<span class="fab fa-instagram"></span>
 	</a>
 
 	<!-- Couchsurfing
 	<a rel="noopener" target="_blank" aria-label="CouchSurfing" href="https://couchsurfing.com/people/ndurish">
-		<i class="fas fa-couch"></i>
+		<span class="fas fa-couch"></span>
 	</a>-->
 
 	<!-- Spotify
 	<a rel="noopener" target="_blank" aria-label="Spotify" href="https://open.spotify.com/user/durishn">
-		<i class="fab fa-spotify"></i>
+		<span class="fab fa-spotify"></span>
 	</a> -->
 
 	<!-- Youtube -->
 	<a rel="noopener" target="_blank" aria-label="Youtube" href="https://www.youtube.com/user/NicDurish">
-		<i class="fab fa-youtube"></i>
+		<span class="fab fa-youtube"></span>
 	</a>
 
 	<!-- GitHub -->
 	<a rel="noopener" target="_blank" aria-label="GitHub" href="https://github.com/Durishn">
-		<i class="fab fa-github"></i>
+		<span class="fab fa-github"></span>
 	</a>
 </div>
 
@@ -731,6 +735,7 @@ for (i = 0; i < coll.length; i++) {
       </div>
     </div>
   </footer>
+		</div>
 	</body>
 
 </html>

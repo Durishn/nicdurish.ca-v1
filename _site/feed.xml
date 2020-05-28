@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <description>Nic Durish is a Designer, Developer, Integrator based out of Guelph Ontario. This site serves as his personal hub on the web. Consider it part living document - part professional portfolio - part personal projects - part nonsense.</description>
+    <description>Nic Durish is a web developer and designer based out of Guelph, Ontario. This site serves as his personal hub on the web. You'll find a bit of professional content, some pages where a stage my living documents and some occasional ramblings.</description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
