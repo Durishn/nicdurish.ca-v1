@@ -3,8 +3,8 @@
   <channel>
     <title></title>
     <description>Nic Durish is a web developer and designer based out of Guelph, Ontario. This site serves as his personal hub on the web. You'll find a bit of professional content, some pages where a stage my living documents and some occasional ramblings.</description>
-    <link>http://localhost:4000</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://nicdurish.ca</link>
+    <atom:link href="https://nicdurish.ca/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>My Wedding Ring is a Dollar</title>
@@ -146,8 +146,8 @@
 &lt;p&gt;&lt;a name=&quot;foot1&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; - Canadian Nickels and Dimes from around the same era will also work, but you get extra swag points for using a silver dollar&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 30 Jul 2019 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000//19-07-30/p1.html</link>
-        <guid isPermaLink="true">http://localhost:4000//19-07-30/p1.html</guid>
+        <link>https://nicdurish.ca//19-07-30/p1.html</link>
+        <guid isPermaLink="true">https://nicdurish.ca//19-07-30/p1.html</guid>
       </item>
     
       <item>
@@ -190,8 +190,8 @@ LetsTalk about investing in Mental Health professionals and research initiatives
 &lt;a name=&quot;ref7&quot;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt; - https://motherboard.vice.com/en_us/article/d3mvam/canadian-telecom-giant-bell-wanted-nafta-to-ban-some-vpns?fbclid=IwAR0DGP9AWTEXR_LmgMM8Eb6Q60NoMmKAbxtIhCSdLaG7ughZe9-xXnvoo1Q&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 30 Jan 2019 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000//19-01-30/p1.html</link>
-        <guid isPermaLink="true">http://localhost:4000//19-01-30/p1.html</guid>
+        <link>https://nicdurish.ca//19-01-30/p1.html</link>
+        <guid isPermaLink="true">https://nicdurish.ca//19-01-30/p1.html</guid>
       </item>
     
       <item>
@@ -227,8 +227,8 @@ LetsTalk about investing in Mental Health professionals and research initiatives
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 26 Oct 2018 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000//18-10-26/p1.html</link>
-        <guid isPermaLink="true">http://localhost:4000//18-10-26/p1.html</guid>
+        <link>https://nicdurish.ca//18-10-26/p1.html</link>
+        <guid isPermaLink="true">https://nicdurish.ca//18-10-26/p1.html</guid>
       </item>
     
       <item>
@@ -330,8 +330,8 @@ changed however when we needed to produce histograms using a subset of our data,
 &lt;p&gt;Comparing R to general purpose languages is akin to comparing apples to oranges, or PHP to MySQL. Tasks should be carefully selected to be sure they most appropriately handled with R, and problems should be reduced to tasks that can be handled by separate languages. For example, use R to manipulate vectors and create graphics, and Python or PERL for other data mining and analysis purposes. One thing, we can say about the R Project is that it is a Functional, Imperative, Dynamic, Weakly-typed, Lexical Scope-less, Bloated, Open-Source, Accessible programming language that was built with statistics, data and graphing in mind, and has a strong community and extensive package library.&lt;/p&gt;
 </description>
         <pubDate>Mon, 26 Mar 2018 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000//18-03-26/p1.html</link>
-        <guid isPermaLink="true">http://localhost:4000//18-03-26/p1.html</guid>
+        <link>https://nicdurish.ca//18-03-26/p1.html</link>
+        <guid isPermaLink="true">https://nicdurish.ca//18-03-26/p1.html</guid>
       </item>
     
       <item>
@@ -375,8 +375,8 @@ changed however when we needed to produce histograms using a subset of our data,
 &lt;a name=&quot;fnote1&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; http://www.stroustrup.com/japanese2010.pdf&lt;/p&gt;
 </description>
         <pubDate>Thu, 01 Mar 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000//18-03-01/p1.html</link>
-        <guid isPermaLink="true">http://localhost:4000//18-03-01/p1.html</guid>
+        <link>https://nicdurish.ca//18-03-01/p1.html</link>
+        <guid isPermaLink="true">https://nicdurish.ca//18-03-01/p1.html</guid>
       </item>
     
       <item>
@@ -457,8 +457,8 @@ changed however when we needed to produce histograms using a subset of our data,
 &lt;a name=&quot;fnote3&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; but that’s a story for another blog post.&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 29 Nov 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000//17-11-29/p1.html</link>
-        <guid isPermaLink="true">http://localhost:4000//17-11-29/p1.html</guid>
+        <link>https://nicdurish.ca//17-11-29/p1.html</link>
+        <guid isPermaLink="true">https://nicdurish.ca//17-11-29/p1.html</guid>
       </item>
     
       <item>
@@ -530,8 +530,8 @@ y = x + 5 = 10 + 2 = 12&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;a name=&quot;wirt6&quot;&gt;Wirth, N. (2006). Good ideas, through the looking glass [computing history]. Computer, 39(1), 28-39.&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 23 Feb 2016 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000//16-02-23/p1.html</link>
-        <guid isPermaLink="true">http://localhost:4000//16-02-23/p1.html</guid>
+        <link>https://nicdurish.ca//16-02-23/p1.html</link>
+        <guid isPermaLink="true">https://nicdurish.ca//16-02-23/p1.html</guid>
       </item>
     
   </channel>

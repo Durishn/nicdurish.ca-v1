@@ -7,6 +7,8 @@ divsize: half-div
 divside: left-div
 permalink: /bucket_list/
 customWrapperClass: "bucketlist-wrapper"
+sitemap:
+  exclude: 'yes'
 ---
 
 ### Travel
