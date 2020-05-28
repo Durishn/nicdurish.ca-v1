@@ -206,9 +206,12 @@ a.screenreader:focus, a.screenreader:active {
 /*********
 OVERWRITES
 **************/
-.social-links a span {
+.social-links a {
+  margin-right: 15px;
+  span {
     text-decoration: none;
     margin: 10px;
+  }
 }
 
 
