@@ -5,7 +5,7 @@ subtitle: "This is not a list of goals to be completed before I 'kick the bucket
 banner: ../img/banner/banner_7.jpg
 divsize: half-div
 divside: left-div
-permalink: /bucket_list/
+permalink: 
 customWrapperClass: "bucketlist-wrapper"
 sitemap:
   exclude: 'yes'
