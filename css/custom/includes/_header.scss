@@ -6,6 +6,16 @@
     Feel free to use some of this code :) However if you use ALL of it, please reference me
 */
 
+.notification-error{
+    background-color: red;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 6000;
+}
+
 /******** 
 On Hovers
 *********/
@@ -264,7 +274,7 @@ Main Nav Styles
     top: 0;
     text-align: center;
     font-family: "Roboto", Roboto, Arial, sans-serif;
-    padding-top: 20px;
+    padding-top: 70px;
     padding-bottom: 20px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;

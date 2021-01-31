@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+	<meta name="robots" content="noindex" />
 	<meta charset="UTF-8">
   	<title>'Good Ideas Through The Looking Glass' by Niklaus Wirth</title>
   	<meta name="description" content="Nic Durish is a web developer and designer based out of Guelph, Ontario. This site serves as his personal hub on the web. You'll find a bit of professional content, some pages where a stage my living documents and some occasional ramblings." />
@@ -59,8 +60,17 @@
 
 </head>
 	<body class="default-body">
-		<!-- NAV -->
+		<div class="notification-error">
+  <div class="notification-text">
+    <p>This site has been deprecated and is live only for reference and versioning purposes! Please visit the newest
+      version at <a style="text-decoration: underline; color: white;" href="https://nicdurish.ca">nicdurish.ca</a></p>
+  </div>
+</div>
+
+<!-- NAV -->
 <nav class="nav">
+
+<!-- end notification itself -->
 
 <!-- Skip to content
 <a role='navigation' aria-label='Skip to content' class='screenreader' href='#content' style='scroll-behavior: smooth; color: white !important;'>Skip to main content</a>
@@ -79,10 +89,10 @@
   <div id="mainListDiv" class="main_list">
     <ul class="navlinks">
 
-      <!-- About
+      <!-- About -->
       <li  class="nav-item">
         <a aria-label="Go to About" href="/about/" class="nav-link">ABOUT</a>
-      </li>-->
+      </li>
 
       <!-- Resume -->
       <li  class="nav-item">
@@ -114,7 +124,7 @@
         </li>
 
       <!-- Buckets -->
-      <!-- <li  class="nav-dropdown nav-item">
+      <li  class="nav-dropdown nav-item">
           <a class="nav-link buckets-link">BUCKETS
             <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
           </a>
@@ -125,18 +135,18 @@
             <li >
               <a href="/set_list/">SONG BUCKET</a>
             </li>
-            <li >
+            <!-- <li >
               <a href="/photo_bucket/">PHOTO BUCKET</a>
             </li>
             <li >
               <a href="/travel_bucket/">TRAVEL BUCKET</a>
-            </li>
+            </li>-->
           </ul>
-      </li> -->
+      </li>
 
       <!-- Blog -->
       <li class="nav-item">
-        <a href="//blog.nicdurish.ca" class="nav-link">BLOG</a>
+        <a href="/blog/" class="nav-link">BLOG</a>
       </li>
     </ul>
   </div>
@@ -151,10 +161,10 @@
   <div class="mobile-nav">
     <ul class="mobile-navlinks">
 
-      <!-- About
+      <!-- About -->
       <li  class="mobile-nav-item">
         <a href="/about/" class="nav-link">ABOUT</a>
-      </li> -->
+      </li> 
 
       <!-- Resume -->
       <li  class="mobile-nav-item">
@@ -186,7 +196,7 @@
       </li>
 
       <!-- Buckets -->
-      <!-- <li  class="mobile-nav-item mobile-nav-dropdown">
+      <li  class="mobile-nav-item mobile-nav-dropdown">
         <a class="nav-link buckets-link">BUCKETS
           <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7"> <polygon class="arrowpoly" points="0.06 1.19 5.5 6.53 10.94 1.19 10.24 0.47 5.5 5.13 0.76 0.47 0.06 1.19" fill="#fff"></polygon> </svg>
         </a>
@@ -197,18 +207,18 @@
           <li >
             <a href="/set_list/">SONG BUCKET</a>
           </li>
-          <li >
+          <!-- <li >
             <a href="/photo_bucket/">PHOTO BUCKET</a>
           </li>
           <li >
             <a href="/travel_bucket/">TRAVEL BUCKET</a>
-          </li>
+          </li> -->
         </ul>
-      </li> -->
+      </li>
 
       <!-- Blog -->
       <li class="mobile-nav-item">
-        <a href="//blog.nicdurish.ca" class="nav-link">BLOG</a>
+        <a href="/blog/" class="nav-link">BLOG</a>
       </li>
     </ul>
   </div>
